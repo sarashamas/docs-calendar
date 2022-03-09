@@ -39,6 +39,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: registry.webix.io/scheduler-docs-alt:${{ steps.vars.outputs.short_ref }}
+          tags: registry.webix.io/calendar-docs-alt:${{ steps.vars.outputs.short_ref }}
 
-      - run: curl "https://docs.dhtmlx.com/hooks/restart-docker?token=${{ secrets.RESTART_TOKEN }}&project=docs-scheduler-alt-${{ steps.vars.outputs.short_ref }}"
+      - run: curl "https://docs.dhtmlx.com/hooks/restart-docker?token=${{ secrets.RESTART_TOKEN }}&project=docs-calendar-alt-${{ steps.vars.outputs.short_ref }}"

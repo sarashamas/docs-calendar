@@ -135,12 +135,12 @@ const config = {
 	title: 'DHTMLX Scheduler Docs',
 	tagline: 'DHTMLX Scheduler Docs',
 	url: 'https://docs.dhtmlx.com',
-	baseUrl: '/scheduler/',
+	baseUrl: '/calendar/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.ico',
 	organizationName: 'DHTMLX', // Usually your GitHub org/user name.
-	projectName: 'docs-scheduler', // Usually your repo name.
+	projectName: 'docs-calendar', // Usually your repo name.
 	trailingSlash: true,
 	presets: [
 		[
@@ -158,7 +158,7 @@ const config = {
 				sitemap: {
 					changefreq: 'daily',
 					priority: 0.5,
-					trailingSlash: true
+					//trailingSlash: true
 				},
 			}),
 		],
@@ -212,7 +212,7 @@ const config = {
 				},
 				{
 					"label": "Download",
-					"href": "https://dhtmlx.com/docs/products/dhtmlxScheduler/download.shtml", // [TODO] change before release
+					"href": "https://dhtmlx.com/docs/products/dhtmlxCalendar/download.shtml", // [TODO] change before release
 					"position": "right"
 				}
 			],
@@ -297,7 +297,7 @@ const config = {
 			// free DocSearch program. The key is not sensitive. See https://docsearch.algolia.com/ for more details.
 			appId: '123',
 			apiKey: '123', // TODO: change it
-			indexName: 'scheduleralt', // TODO: change it
+			indexName: 'calendaralt', // TODO: change it
 			// Optional: see doc section bellow
 			contextualSearch: true,
 			// Optional: Algolia search parameters
