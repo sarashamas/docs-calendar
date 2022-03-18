@@ -21,38 +21,72 @@ new scheduler.Scheduler("#root", {
 
 ## Scheduler methods
 
-| Name                                               | Description                                               |
-| ---------------------------------------------------| ----------------------------------------------------------|
-| [](api/methods/scheduler_methodname_method.md)     | @getshort(api/methods/scheduler_methodname_method.md)     |
+| Name                                                 | Description                                                 |
+| ---------------------------------------------------- | ----------------------------------------------------------- |
+| [](api/methods/js_scheduler_addevent_method.md)      | @getshort(api/methods/js_scheduler_addevent_method.md)      |
+| [](api/methods/js_scheduler_closeeditor_method.md)   | @getshort(api/methods/js_scheduler_closeeditor_method.md)   |
+| [](api/methods/js_scheduler_createevent_method.md)   | @getshort(api/methods/js_scheduler_createevent_method.md)   |
+| [](api/methods/js_scheduler_deleteevent_method.md)   | @getshort(api/methods/js_scheduler_deleteevent_method.md)   |
+| [](api/methods/js_scheduler_destructor_method.md)    | @getshort(api/methods/js_scheduler_destructor_method.md)    |
+| [](api/methods/js_scheduler_getevent_method.md)      | @getshort(api/methods/js_scheduler_getevent_method.md)      |
+| [](api/methods/js_scheduler_hideeventinfo_method.md) | @getshort(api/methods/js_scheduler_hideiventinfo_method.md) |
+| [](api/methods/js_scheduler_openeditor_method.md)    | @getshort(api/methods/js_scheduler_openeditor_method.md)    |
+| [](api/methods/js_scheduler_parse_method.md)         | @getshort(api/methods/js_scheduler_parse_method.md)         |
+| [](api/methods/js_scheduler_serialize_method.md)     | @getshort(api/methods/js_scheduler_serialize_method.md)     |
+| [](api/methods/js_scheduler_setconfig_method.md)     | @getshort(api/methods/js_scheduler_setconfig_method.md)     |
+| [](api/methods/js_scheduler_setdate_method.md)       | @getshort(api/methods/js_scheduler_setdate_method.md)       |
+| [](api/methods/js_scheduler_setlocale_method.md)     | @getshort(api/methods/js_scheduler_setlocale_method.md)     |
+| [](api/methods/js_scheduler_setmode_method.md)       | @getshort(api/methods/js_scheduler_setmode_method.md)       |
+| [](api/methods/js_scheduler_showeventinfo_method.md) | @getshort(api/methods/js_scheduler_showeventinfo_method.md) |
+| [](api/methods/js_scheduler_updateevent_method.md)   | @getshort(api/methods/js_scheduler_updateevent_method.md)   |
 
 ## Scheduler internal API
 
 ### Event Bus methods
 
-| Name                                                    | Description                                                    |
-| --------------------------------------------------------| ---------------------------------------------------------------|
-| [](api/internal/scheduler_innermethodname_method.md) | @getshort(api/internal/scheduler_innermethodname_method.md) |
+| Name                                             | Description                                              |
+| ------------------------------------------------ | -------------------------------------------------------- |
+| [](api/internal/js_scheduler_exec_method.md)     | @getshort(api/internal/js_scheduler_exec_method.md)      |
+| [](api/internal/js_scheduler_intercept_method.md)| @getshort(api/internal/js_scheduler_intercept_method.md) |
+| [](api/internal/js_scheduler_on_method.md)       | @getshort(api/internal/js_scheduler_on_method.md)        |
+| [](api/internal/js_scheduler_setnext_method.md)  | @getshort(api/internal/js_scheduler_setnext_method.md)   |
 
 ### State methods
 
-| Name                                                   | Description                                                    |
-| -------------------------------------------------------| ---------------------------------------------------------------|
-| [](api/internal/scheduler_innermethodname_method.md)| @getshort(api/internal/scheduler_innermethodname_method.md) |
+| Name                                                    | Description                                                    |
+| ------------------------------------------------------- | -------------------------------------------------------------- |
+| [](api/internal/js_scheduler_getreactivestate_method.md)| @getshort(api/internal/js_scheduler_getreactivestate_method.md)|
+| [](api/internal/js_scheduler_getstate_method.md)        | @getshort(api/internal/js_scheduler_getstate_method.md)        |
+| [](api/internal/js_scheduler_getstores_method.md)       | @getshort(api/internal/js_scheduler_getstores_method.md)       |
 
 ### RestDataProvider methods
 
-| Name                                                    | Description                                                    |
-| --------------------------------------------------------| ---------------------------------------------------------------|
+| Name                                                 | Description                                                 |
+| -----------------------------------------------------| ----------------------------------------------------------- |
 | [](api/internal/scheduler_innermethodname_method.md) | @getshort(api/internal/scheduler_innermethodname_method.md) |
 
 ## Scheduler events
 
 | Name                                                 | Description                                                 |
-| -----------------------------------------------------| ------------------------------------------------------------|
-| [](api/events/scheduler_eventname_event.md)          | @getshort(api/events/scheduler_eventname_event.md)          |
+| ---------------------------------------------------- | ----------------------------------------------------------- |
+| [](api/events/js_scheduler_addevent_event.md)        | @getshort(api/events/js_scheduler_addevent_event.md)        |
+| [](api/events/js_scheduler_closeeventinfo_event.md)  | @getshort(api/events/js_scheduler_closeeventinfo_event.md)  |
+| [](api/events/js_scheduler_deleteevent_event.md)     | @getshort(api/events/js_scheduler_deleteevent_event.md)     |
+| [](api/events/js_scheduler_editevent_event.md)       | @getshort(api/events/js_scheduler_editevent_event.md)       |
+| [](api/events/js_scheduler_selectevent_event.md)     | @getshort(api/events/js_scheduler_selectevent_event.md)     |
+| [](api/events/js_scheduler_setbound_event.md)        | @getshort(api/events/js_scheduler_setbound_event.md)        |
+| [](api/events/js_scheduler_setdate_event.md)         | @getshort(api/events/js_scheduler_setdate_event.md)         |
+| [](api/events/js_scheduler_setmode_event.md)         | @getshort(api/events/js_scheduler_setmode_event.md)         |
+| [](api/events/js_scheduler_updateevent_event.md)     | @getshort(api/events/js_scheduler_updateevent_event.md)     |
 
 ## Scheduler properties
 
-| Name                                         | Description                                            |
-| ---------------------------------------------| -------------------------------------------------------|
-| [](api/config/scheduler_configname_config.md)| @getshort(api/config/scheduler_configname_config.md)   |
+| Name                                             | Description                                             |
+| ------------------------------------------------ | ------------------------------------------------------- |
+| [](api/config/js_scheduler_config_config.md)     | @getshort(api/config/js_scheduler_config_config.md)     |
+| [](api/config/js_scheduler_data_config.md)       | @getshort(api/config/js_scheduler_data_config.md)       |
+| [](api/config/js_scheduler_date_config.md)       | @getshort(api/config/js_scheduler_date_config.md)       |
+| [](api/config/js_scheduler_editorshape_config.md)| @getshort(api/config/js_scheduler_editorshape_config.md)|
+| [](api/config/js_scheduler_eventtypes_config.md) | @getshort(api/config/js_scheduler_eventtypes_config.md) |
+| [](api/config/js_scheduler_locale_config.md)     | @getshort(api/config/js_scheduler_locale_config.md)     |
+| [](api/config/js_scheduler_mode_config.md)       | @getshort(api/config/js_scheduler_mode_config.md)       |
