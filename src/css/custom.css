@@ -175,3 +175,19 @@ code {
 }
 
 /* end list */
+
+/* styles for tables */
+
+table{
+  width: 100%;
+}
+table th:first-child {
+  width: 25%;
+}
+
+table tr:nth-child(even) {
+  background: #f5f6f7;
+} 
+
+/* end styles for tables */
+
