@@ -54,7 +54,7 @@ For each event you can specify the following parameters (data):
 :::info
 To set the Scheduler data dynamically, you can use the 
 [**parse()**](api/methods/js_scheduler_parse_method.md) and
-[**setConfig()**](api/methods/js_scheduler_setconfig_method.md) methods
+[**setConfig()**](api/methods/js_scheduler_setconfig_method.md) methods. You can also update the event data using the [**updateEvent()**](api/methods/js_scheduler_updateevent_method.md) method.
 :::
 
 ### Example

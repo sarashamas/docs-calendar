@@ -28,7 +28,7 @@ config?: {
     dragResize?: boolean,
     readonly?: boolean,
     dragMove?: boolean,
-    editorOnDblClick?: boolean, 
+    editorOnDblClick?: boolean,
 
     // пока не описывал
     views?: { 

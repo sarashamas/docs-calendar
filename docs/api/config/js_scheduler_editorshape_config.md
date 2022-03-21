@@ -87,7 +87,7 @@ const editorShape = {
 - `config` - (optional) an object with the additional configurations of the field. Here you can specify the following parameters:
 	- `readonly` - (optional) enables/disables a readonly mode of the editor field
 	- `focus` - (optional) enables/disables a focus on the field
-	- `type` - (optional) a type of the field (only for **text** type). The full list of types can be found [here](https://www.w3schools.com/html/html_form_input_types.asp)
+	- `type` - (optional) a type of the field (only for **text** type). Here you can specify only the **password**, **number**, and **text** values
 	- `placeholder` - (optional) a placeholder of the field (only for the **text** and **textarea** types)
 
 :::info
