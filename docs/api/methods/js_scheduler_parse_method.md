@@ -13,7 +13,7 @@ description: You can learn about the parse method in the documentation of the DH
 ### Usage
 
 ~~~jsx {}
-parse( data: array ): void;
+parse(data: array): void;
 ~~~
 
 ### Parameters

@@ -8,7 +8,7 @@ description: You can learn about the hideEventInfo method in the documentation o
 
 ### Description
 
-@short: Hides an info popup
+@short: Hides an info popup window
 
 ### Usage
 

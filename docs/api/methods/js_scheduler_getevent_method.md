@@ -13,7 +13,7 @@ description: You can learn about the getEvent method in the documentation of the
 ### Usage
 
 ~~~jsx {}
-getEvent({id: string | number}): object;
+getEvent({ id: string | number }): object;
 ~~~
 
 ### Returns
@@ -32,6 +32,6 @@ const calendar = new scheduler.Scheduler("#root", {
 	// configuration parameters
 });
 // get an event data with the "1" ID
-const event_data = calendar.getEvent({id: "1"});
+const event_data = calendar.getEvent({ id: "1" });
 console.log(event_data);
 ~~~

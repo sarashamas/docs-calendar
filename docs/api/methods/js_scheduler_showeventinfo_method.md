@@ -13,7 +13,7 @@ description: You can learn about the showEventInfo method in the documentation o
 ### Usage
 
 ~~~jsx {}
-showEventInfo({id: string | number}): void;
+showEventInfo({ id: string | number }): void;
 ~~~
 
 ### Parameters
@@ -28,5 +28,5 @@ const calendar = new scheduler.Scheduler("#root", {
 	// initial configuration parameters
 });
 // open info popup for the event with the "1" ID
-calendar.showEventInfo({id: "1"});
+calendar.showEventInfo({ id: "1" });
 ~~~

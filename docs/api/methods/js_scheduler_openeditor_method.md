@@ -13,7 +13,7 @@ description: You can learn about the openEditor method in the documentation of t
 ### Usage
 
 ~~~jsx {}
-openEditor({id: string | number}): void;
+openEditor({ id: string | number }): void;
 ~~~
 
 ### Parameters
@@ -28,5 +28,5 @@ const calendar = new scheduler.Scheduler("#root", {
 	// configuration parameters
 });
 // open editor for the event with the "1" ID
-calendar.openEditor({id: 1});
+calendar.openEditor({ id: 1 });
 ~~~

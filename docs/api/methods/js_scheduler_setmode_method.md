@@ -8,12 +8,12 @@ description: You can learn about the setMode method in the documentation of the 
 
 ### Description
 
-@short: Sets view mode of Scheduler
+@short: Sets a view mode of Scheduler
 
 ### Usage
 
 ~~~jsx {}
-setMode({value: string}): void;
+setMode({ value: string }): void;
 ~~~
 
 ### Parameters
@@ -32,5 +32,5 @@ const calendar = new scheduler.Scheduler("#root", {
 	// initial configuration parameters
 });
 // set the "day" mode
-calendar.setMode({value: "day"});
+calendar.setMode({ value: "day" });
 ~~~
