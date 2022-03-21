@@ -8,10 +8,11 @@ description: You can have a Properties overview of JavaScript Scheduler in the d
 
 | Name                                            | Description                                            |
 | ----------------------------------------------- | ------------------------------------------------------ |
+| [](../config/js_scheduler_calendars_config.md)  | @getshort(../config/js_scheduler_calendars_config.md)  |
 | [](../config/js_scheduler_config_config.md)     | @getshort(../config/js_scheduler_config_config.md)     |
 | [](../config/js_scheduler_data_config.md)       | @getshort(../config/js_scheduler_data_config.md)       |
 | [](../config/js_scheduler_date_config.md)       | @getshort(../config/js_scheduler_date_config.md)       |
 | [](../config/js_scheduler_editorshape_config.md)| @getshort(../config/js_scheduler_editorshape_config.md)|
-| [](../config/js_scheduler_eventtypes_config.md) | @getshort(../config/js_scheduler_eventtypes_config.md) |
 | [](../config/js_scheduler_locale_config.md)     | @getshort(../config/js_scheduler_locale_config.md)     |
 | [](../config/js_scheduler_mode_config.md)       | @getshort(../config/js_scheduler_mode_config.md)       |
+| [](../config/js_scheduler_sidebar_config.md)    | @getshort(../config/js_scheduler_sidebar_config.md)    |

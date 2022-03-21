@@ -6,8 +6,8 @@ description: You can have an Events overview of JavaScript Scheduler in the docu
 
 # Events overview
 
-| Name                                                 | Description                                                 |
-| -----------------------------------------------------| ------------------------------------------------------------|
+| Name                                                | Description                                                |
+| --------------------------------------------------- | ---------------------------------------------------------- |
 | [](../events/js_scheduler_addevent_event.md)        | @getshort(../events/js_scheduler_addevent_event.md)        |
 | [](../events/js_scheduler_closeeventinfo_event.md)  | @getshort(../events/js_scheduler_closeeventinfo_event.md)  |
 | [](../events/js_scheduler_deleteevent_event.md)     | @getshort(../events/js_scheduler_deleteevent_event.md)     |
@@ -16,4 +16,7 @@ description: You can have an Events overview of JavaScript Scheduler in the docu
 | [](../events/js_scheduler_setbound_event.md)        | @getshort(../events/js_scheduler_setbound_event.md)        |
 | [](../events/js_scheduler_setdate_event.md)         | @getshort(../events/js_scheduler_setdate_event.md)         |
 | [](../events/js_scheduler_setmode_event.md)         | @getshort(../events/js_scheduler_setmode_event.md)         |
+| [](../events/js_scheduler_togglesidebar_event.md)   | @getshort(../events/js_scheduler_togglesidebar_event.md)   |
+| [](../events/js_scheduler_updatecalendar_event.md)  | @getshort(../events/js_scheduler_updatecalendar_event.md)  |
 | [](../events/js_scheduler_updateevent_event.md)     | @getshort(../events/js_scheduler_updateevent_event.md)     |
+

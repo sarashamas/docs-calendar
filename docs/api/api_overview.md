@@ -29,7 +29,7 @@ new scheduler.Scheduler("#root", {
 | [](api/methods/js_scheduler_deleteevent_method.md)   | @getshort(api/methods/js_scheduler_deleteevent_method.md)   |
 | [](api/methods/js_scheduler_destructor_method.md)    | @getshort(api/methods/js_scheduler_destructor_method.md)    |
 | [](api/methods/js_scheduler_getevent_method.md)      | @getshort(api/methods/js_scheduler_getevent_method.md)      |
-| [](api/methods/js_scheduler_hideeventinfo_method.md) | @getshort(api/methods/js_scheduler_hideiventinfo_method.md) |
+| [](api/methods/js_scheduler_hideeventinfo_method.md) | @getshort(api/methods/js_scheduler_hideeventinfo_method.md) |
 | [](api/methods/js_scheduler_openeditor_method.md)    | @getshort(api/methods/js_scheduler_openeditor_method.md)    |
 | [](api/methods/js_scheduler_parse_method.md)         | @getshort(api/methods/js_scheduler_parse_method.md)         |
 | [](api/methods/js_scheduler_serialize_method.md)     | @getshort(api/methods/js_scheduler_serialize_method.md)     |
@@ -38,6 +38,8 @@ new scheduler.Scheduler("#root", {
 | [](api/methods/js_scheduler_setlocale_method.md)     | @getshort(api/methods/js_scheduler_setlocale_method.md)     |
 | [](api/methods/js_scheduler_setmode_method.md)       | @getshort(api/methods/js_scheduler_setmode_method.md)       |
 | [](api/methods/js_scheduler_showeventinfo_method.md) | @getshort(api/methods/js_scheduler_showeventinfo_method.md) |
+| [](api/methods/js_scheduler_togglesidebar_method.md) | @getshort(api/methods/js_scheduler_togglesidebar_method.md) |
+| [](api/methods/js_scheduler_updatecalendar_method.md)| @getshort(api/methods/js_scheduler_updatecalendar_method.md)|
 | [](api/methods/js_scheduler_updateevent_method.md)   | @getshort(api/methods/js_scheduler_updateevent_method.md)   |
 
 ## Scheduler internal API
@@ -77,16 +79,20 @@ new scheduler.Scheduler("#root", {
 | [](api/events/js_scheduler_setbound_event.md)        | @getshort(api/events/js_scheduler_setbound_event.md)        |
 | [](api/events/js_scheduler_setdate_event.md)         | @getshort(api/events/js_scheduler_setdate_event.md)         |
 | [](api/events/js_scheduler_setmode_event.md)         | @getshort(api/events/js_scheduler_setmode_event.md)         |
+| [](api/events/js_scheduler_togglesidebar_event.md)   | @getshort(api/events/js_scheduler_togglesidebar_event.md)   |
+| [](api/events/js_scheduler_updatecalendar_event.md)  | @getshort(api/events/js_scheduler_updatecalendar_event.md)  |
 | [](api/events/js_scheduler_updateevent_event.md)     | @getshort(api/events/js_scheduler_updateevent_event.md)     |
+
 
 ## Scheduler properties
 
 | Name                                             | Description                                             |
 | ------------------------------------------------ | ------------------------------------------------------- |
+| [](api/config/js_scheduler_calendars_config.md)  | @getshort(api/config/js_scheduler_calendars_config.md)  |
 | [](api/config/js_scheduler_config_config.md)     | @getshort(api/config/js_scheduler_config_config.md)     |
 | [](api/config/js_scheduler_data_config.md)       | @getshort(api/config/js_scheduler_data_config.md)       |
 | [](api/config/js_scheduler_date_config.md)       | @getshort(api/config/js_scheduler_date_config.md)       |
 | [](api/config/js_scheduler_editorshape_config.md)| @getshort(api/config/js_scheduler_editorshape_config.md)|
-| [](api/config/js_scheduler_eventtypes_config.md) | @getshort(api/config/js_scheduler_eventtypes_config.md) |
 | [](api/config/js_scheduler_locale_config.md)     | @getshort(api/config/js_scheduler_locale_config.md)     |
 | [](api/config/js_scheduler_mode_config.md)       | @getshort(api/config/js_scheduler_mode_config.md)       |
+| [](api/config/js_scheduler_sidebar_config.md)    | @getshort(api/config/js_scheduler_sidebar_config.md)    |

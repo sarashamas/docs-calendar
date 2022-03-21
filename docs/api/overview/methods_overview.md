@@ -23,4 +23,6 @@ description: You can have a Methods overview of JavaScript Scheduler in the docu
 | [](../methods/js_scheduler_setlocale_method.md)     | @getshort(../methods/js_scheduler_setlocale_method.md)     |
 | [](../methods/js_scheduler_setmode_method.md)       | @getshort(../methods/js_scheduler_setmode_method.md)       |
 | [](../methods/js_scheduler_showeventinfo_method.md) | @getshort(../methods/js_scheduler_showeventinfo_method.md) |
+| [](../methods/js_scheduler_togglesidebar_method.md) | @getshort(../methods/js_scheduler_togglesidebar_method.md) |
+| [](../methods/js_scheduler_updatecalendar_method.md)| @getshort(../methods/js_scheduler_updatecalendar_method.md)|
 | [](../methods/js_scheduler_updateevent_method.md)   | @getshort(../methods/js_scheduler_updateevent_method.md)   |
