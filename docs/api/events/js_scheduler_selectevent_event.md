@@ -1,5 +1,5 @@
 ---
-sidebar_label: select-event
+sidebar_label: select-event+
 title: select-event Event
 description: You can learn about the select-event event in the documentation of the DHTMLX JavaScript Scheduler library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Scheduler.
 ---
@@ -8,13 +8,14 @@ description: You can learn about the select-event event in the documentation of 
 
 ### Description
 
-@short: fires when ...
+@short: Fires when showing an info popup window
 
 ### Usage
 
 ~~~jsx {}
 "select-event": ({
-	...	
+	id: string | number,
+	popup?: boolean
 }) => void;
 ~~~
 
@@ -22,22 +23,22 @@ description: You can learn about the select-event event in the documentation of 
 
 The callback of the **select-event** event can take an object with the following parameters:
 
-...
+- `id` - (required) an ID of the event to be selected
+- `popup` - (optional) allows to show an info popup window (if ***true***)
 
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/api_overview.md/#event-bus-methods)
+For handling the inner events of Scheduler you can use the [**Event Bus methods**](api/overview/eventbus_overview.md)
 :::
 
 ### Example
 
-~~~jsx {7-9}
+~~~jsx {6-8}
 // create Scheduler
 const calendar = new scheduler.Scheduler("#root", {
-	// initial configuration parameters
+	// configuration parameters
 });
-
 // subscribe on the "select-event" event
 calendar.api.on("select-event", (obj) => {
-	...
+	console.log(obj);
 });
 ~~~

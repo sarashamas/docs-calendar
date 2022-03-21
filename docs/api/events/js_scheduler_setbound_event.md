@@ -1,5 +1,5 @@
 ---
-sidebar_label: set-bound
+sidebar_label: set-bound+
 title: set-bound Event
 description: You can learn about the set-bound event in the documentation of the DHTMLX JavaScript Scheduler library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Scheduler.
 ---
@@ -8,36 +8,33 @@ description: You can learn about the set-bound event in the documentation of the
 
 ### Description
 
-@short: fires when ...
+@short: Fires when making a next/previous step (date) in a calendar
 
 ### Usage
 
 ~~~jsx {}
-"set-bound": ({
-	...	
-}) => void;
+"set-bound": ({ step: number }) => void;
 ~~~
 
 ### Parameters
 
-The callback of the **set-bound** event can take an object with the following parameters:
+The callback of the **set-bound** event can take an object with the following parameter:
 
-...
+- `step` - (required) a value that allows to switch to the next/previous date in a calendar
 
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/api_overview.md/#event-bus-methods)
+For handling the inner events of Scheduler you can use the [**Event Bus methods**](api/overview/eventbus_overview.md)
 :::
 
 ### Example
 
-~~~jsx {7-9}
+~~~jsx {6-8}
 // create Scheduler
 const calendar = new scheduler.Scheduler("#root", {
-	// initial configuration parameters
+	// configuration parameters
 });
-
 // subscribe on the "set-bound" event
 calendar.api.on("set-bound", (obj) => {
-	...
+	console.log(obj); 
 });
 ~~~

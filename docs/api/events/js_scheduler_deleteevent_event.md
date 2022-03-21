@@ -1,5 +1,5 @@
 ---
-sidebar_label: delete-event
+sidebar_label: delete-event+
 title: delete-event Event
 description: You can learn about the delete-event event in the documentation of the DHTMLX JavaScript Scheduler library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Scheduler.
 ---
@@ -8,36 +8,33 @@ description: You can learn about the delete-event event in the documentation of 
 
 ### Description
 
-@short: fires when ...
+@short: Fires when removing an event
 
 ### Usage
 
 ~~~jsx {}
-"delete-event": ({
-	...	
-}) => void;
+"delete-event": ({ id: string | number }) => void;
 ~~~
 
 ### Parameters
 
-The callback of the **delete-event** event can take an object with the following parameters:
+The callback of the **delete-event** event can take an object with the following parameter:
 
-...
+- `id` - (required) an ID of the event to be deleted
 
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/api_overview.md/#event-bus-methods)
+For handling the inner events of Scheduler you can use the [**Event Bus methods**](api/overview/eventbus_overview.md)
 :::
 
 ### Example
 
-~~~jsx {7-9}
+~~~jsx {6-8}
 // create Scheduler
 const calendar = new scheduler.Scheduler("#root", {
-	// initial configuration parameters
+	// configuration parameters
 });
-
 // subscribe on the "delete-event" event
 calendar.api.on("delete-event", (obj) => {
-	...
+	console.log(obj);
 });
 ~~~
