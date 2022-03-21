@@ -101,7 +101,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 /* styles for tables */
 
-table {
+/*table {
   display: inline-table;
 }
 
@@ -114,7 +114,7 @@ tr {
 }
 table {
   text-align: left;
-}
+}*/
 
 /* end styles for tables */
 
@@ -179,6 +179,7 @@ code {
 /* styles for tables */
 
 table{
+  display: inline-table;
   width: 100%;
 }
 table th:first-child {
@@ -186,7 +187,7 @@ table th:first-child {
 }
 
 table tr:nth-child(even) {
-  background: #f5f6f7;
+  /*background: #f5f6f7;*/
 } 
 
 /* end styles for tables */

@@ -40,18 +40,17 @@ module.exports = {
 						"api/methods/js_scheduler_deleteevent_method",
 						"api/methods/js_scheduler_destructor_method",
 						"api/methods/js_scheduler_getevent_method",
-						//"api/methods/js_scheduler_getstate_method",
 						"api/methods/js_scheduler_hideeventinfo_method",
 						"api/methods/js_scheduler_openeditor_method",
 						"api/methods/js_scheduler_parse_method",
-						//"api/methods/js_scheduler_selectevent_method",
 						"api/methods/js_scheduler_serialize_method",
 						"api/methods/js_scheduler_setconfig_method",
 						"api/methods/js_scheduler_setdate_method",
 						"api/methods/js_scheduler_setlocale_method",
 						"api/methods/js_scheduler_setmode_method",
 						"api/methods/js_scheduler_showeventinfo_method",
-						//"api/methods/js_scheduler_unselectevent_method",
+						"api/methods/js_scheduler_togglesidebar_method",
+						"api/methods/js_scheduler_updatecalendar_method",
 						"api/methods/js_scheduler_updateevent_method",
 						// other methods
 					]
@@ -134,7 +133,10 @@ module.exports = {
 						"api/events/js_scheduler_setbound_event",
 						"api/events/js_scheduler_setdate_event",
 						"api/events/js_scheduler_setmode_event",
-						"api/events/js_scheduler_updateevent_event"
+						"api/events/js_scheduler_togglesidebar_event",
+						"api/events/js_scheduler_updatecalendar_event",
+						"api/events/js_scheduler_updateevent_event",
+						
 					]
 				},
 				{
@@ -148,14 +150,14 @@ module.exports = {
 					},
 					items: [
 						// Scheduler properties
+						"api/config/js_scheduler_calendars_config",
 						"api/config/js_scheduler_config_config",
 						"api/config/js_scheduler_data_config",
 						"api/config/js_scheduler_date_config",
 						"api/config/js_scheduler_editorshape_config",
-						"api/config/js_scheduler_eventtypes_config",
 						"api/config/js_scheduler_locale_config",
 						"api/config/js_scheduler_mode_config",
-						//"api/config/js_scheduler_readonly_config"
+						"api/config/js_scheduler_sidebar_config"
 					]
 				}
 			]
