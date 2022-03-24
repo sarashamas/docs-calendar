@@ -6,16 +6,16 @@ description: SEO data
 
 # How to start
 
-This clear and comprehensive tutorial will guide your through the steps you need to take in order to get a full-functional Scheduler on a page.
+This clear and comprehensive tutorial will guide your through the steps you need to take in order to get a full-functional Event Calendar on a page.
 
 ## Step 1. Including source files
 
-Start from creating an HTML file and call it *index.html*. Then proceed to include Scheduler source files into the created file.
+Start from creating an HTML file and call it *index.html*. Then proceed to include Event Calendar source files into the created file.
 
 There are two necessary files:
 
-- the JS file of Scheduler
-- the CSS file of Scheduler
+- the JS file of Event Calendar
+- the CSS file of Event Calendar
 
 and
 
@@ -25,7 +25,7 @@ and
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>How to Start with Scheduler</title>
+		<title>How to Start with Event Calendar</title>
 		<script src="./dist/scheduler.js"></script>   
 
 		<link href="./dist/scheduler.css" rel="stylesheet">
@@ -40,20 +40,20 @@ and
 </html>
 ~~~
 
-## Step 2. Creating Scheduler
+## Step 2. Creating Event Calendar
 
-Now you are ready to add Scheduler to the page. For this you need to take the following steps:
+Now you are ready to add Event Calendar to the page. For this you need to take the following steps:
 
 - specify a DIV container in the *index.html* file
 - initialize component using the **scheduler.Scheduler** constructor
 
-As a parameter, the constructor takes an HTML container where the Scheduler will be placed into and the corresponding configuration object. See an example below:
+As a parameter, the constructor takes an HTML container where the Event Calendar will be placed into and the corresponding configuration object. See an example below:
 
 ~~~html {12,14-18} title="index.html"
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>How to Start with Scheduler</title>
+		<title>How to Start with Event Calendar</title>
 		<script src="./dist/sheduler.js"></script>   
 
 		<link href="./dist/scheduler.css" rel="stylesheet">  
@@ -72,9 +72,9 @@ As a parameter, the constructor takes an HTML container where the Scheduler will
 </html>
 ~~~
 
-## Step 3. Configuring Scheduler
+## Step 3. Configuring Event Calendar
 
-Next you can specify configuration properties you want the Scheduler component to have when initialized.
+Next you can specify configuration properties you want the Event Calendar component to have when initialized.
 
 ~~~jsx {}
 const calendar = new scheduler.Scheduler("#root", {
@@ -84,4 +84,4 @@ const calendar = new scheduler.Scheduler("#root", {
 
 ## What's next
 
-That's all. Just three simple steps and you have a handy tool for scheduling and managing your daily events. Now you can start working with your tasks or keep exploring the inner world of JavaScript Scheduler.
+That's all. Just three simple steps and you have a handy tool for scheduling and managing your daily events. Now you can start working with your tasks or keep exploring the inner world of JavaScript Event Calendar.

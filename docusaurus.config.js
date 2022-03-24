@@ -132,8 +132,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 	noIndex: true, // TODO: delete before release
-	title: 'DHTMLX Scheduler Docs',
-	tagline: 'DHTMLX Scheduler Docs',
+	title: 'DHTMLX Event Calendar Docs',
+	tagline: 'DHTMLX Event Calendar Docs',
 	url: 'https://docs.dhtmlx.com',
 	baseUrl: '/calendar/',
 	onBrokenLinks: 'warn',
@@ -149,7 +149,7 @@ const config = {
 			({
 				docs: {
 					sidebarPath: require.resolve('./sidebars.js'),
-					//editUrl: 'https://github.com/DHTMLX/docs-scheduler/edit/master/',
+					//editUrl: 'https://github.com/DHTMLX/docs-calendar/edit/master/',
 					routeBasePath: '/',
 				},
 				theme: {
@@ -186,11 +186,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
 		// hideableSidebar: true,
+		autoCollapseSidebarCategories: true, // collapse a sidebar category when clicking on the other category
 		navbar: {
 			// hideOnScroll:true,
-			title: 'JavaScript Scheduler Documentation',
+			title: 'JavaScript Event Calendar Documentation',
 			logo: {
-				alt: 'DHTMLX JavaScript Scheduler Logo',
+				alt: 'DHTMLX JavaScript Event Calendar Logo',
 				src: 'img/logo.svg',
 				href: 'https://docs.dhtmlx.com/'
 			},
@@ -212,7 +213,7 @@ const config = {
 				},
 				{
 					"label": "Download",
-					"href": "https://dhtmlx.com/docs/products/dhtmlxCalendar/download.shtml", // [TODO] change before release
+					"href": "https://dhtmlx.com/docs/products/dhtmlxEventCalendar/download.shtml", // [TODO] change before release
 					"position": "right"
 				}
 			],
@@ -224,8 +225,8 @@ const config = {
 					"title": "Development center",
 					"items": [
 						{
-							"label": "Download Scheduler",
-							"href": "https://dhtmlx.com/docs/products/dhtmlxScheduler/download.shtml", // [TODO] change before release
+							"label": "Download Event Calendar",
+							"href": "https://dhtmlx.com/docs/products/dhtmlxEventCalendar/download.shtml", // [TODO] change before release
 							"position": "right"
 						},
 						{
@@ -282,7 +283,7 @@ const config = {
 						},
 						{
 							"label": "Licensing",
-							"href": "https://dhtmlx.com/docs/products/dhtmlxScheduler/#licensing" // [TODO] change before release
+							"href": "https://dhtmlx.com/docs/products/dhtmlxEventCalendar/#licensing" // [TODO] change before release
 						}
 					]
 				}

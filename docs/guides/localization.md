@@ -1,12 +1,12 @@
 ---
 sidebar_label: Localization
 title: Localization
-description: You can learn about the localization in the documentation of the DHTMLX JavaScript Scheduler library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Scheduler.
+description: You can learn about the localization in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
 
 # Localization
 
-You can localize labels in the interface of JavaScript Scheduler and present it in any necessary language. You just need to provide localized strings for labels and apply your locale to the component.
+You can localize labels in the interface of JavaScript Event Calendar and present it in any necessary language. You just need to provide localized strings for labels and apply your locale to the component.
 
 ## Default locale
 
@@ -15,14 +15,14 @@ The English locale is used by default:
 ~~~jsx {}
 const en = {
 	lang: "en",
-	sheduler: {
+	event_calendar: {
 		...
 	}
 };
 ~~~
 
 :::info
-Besides the ***en*** locale, Scheduler also includes the built-in ***ru*** and ***cn*** locales
+Besides the ***en*** locale, Event Calendar also includes the built-in ***ru*** and ***cn*** locales
 :::
 
 <details>
@@ -31,7 +31,7 @@ Besides the ***en*** locale, Scheduler also includes the built-in ***ru*** and *
 ~~~jsx
 const ru = {
 	lang: "ru",
-	sheduler: {
+	event_calendar: {
 		...
 	}
 };
@@ -44,7 +44,7 @@ const ru = {
 ~~~jsx {}
 const cn = {
 	lang: "cn",
-	scheduler: {
+	event_calendar: {
 		...
 	}
 };
@@ -56,8 +56,8 @@ const cn = {
 
 To apply a custom locale you need to:
 
-- create the custom locale (or modify the existed one) and provide translations for all text labels in Scheduler (it can be any language you need)
-- apply the new locale via the [**locale**](api/config/scheduler_locale_config.md) property or by calling the [**setLocale()**](api/methods/scheduler_setlocale_method.md) method, that takes an object with translations (custom locale) as a parameter
+- create the custom locale (or modify the existed one) and provide translations for all text labels in Event Calendar (it can be any language you need)
+- apply the new locale via the [**locale**](api/config/event_calendar_locale_config.md) property or by calling the [**setLocale()**](api/methods/event_calendar_setlocale_method.md) method, that takes an object with translations (custom locale) as a parameter
 
 ## Example
 

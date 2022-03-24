@@ -190,5 +190,14 @@ table tr:nth-child(even) {
   /*background: #f5f6f7;*/
 } 
 
+nav.menu {
+  /*width: 320px;*/
+}
+
+button.clean-btn.menu__caret {
+  width: 33px;
+  padding: 6px;
+}
+
 /* end styles for tables */
 
