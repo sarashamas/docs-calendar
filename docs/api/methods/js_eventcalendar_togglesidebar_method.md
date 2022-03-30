@@ -8,7 +8,7 @@ description: You can learn about the toggleSidebar method in the documentation o
 
 ### Description
 
-@short: Allows to show/hide a sidebar
+@short: Shows/hides a sidebar
 
 ### Usage
 
