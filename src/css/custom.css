@@ -99,26 +99,6 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 /* end Header link */
 
-/* styles for tables */
-
-/*table {
-  display: inline-table;
-}
-
-table tr:nth-child(2n) {
-  background-color: var(--ifm-table-background);
-}
-
-tr {
-  line-height: 1.2;
-}
-table {
-  text-align: left;
-}*/
-
-/* end styles for tables */
-
-
 /* imgs */
 
 .markdown img {
@@ -186,18 +166,13 @@ table th:first-child {
   width: 25%;
 }
 
-table tr:nth-child(even) {
-  /*background: #f5f6f7;*/
-} 
+/* end styles for tables */
 
-nav.menu {
-  /*width: 320px;*/
-}
+/* sidebar collapse button*/
 
 button.clean-btn.menu__caret {
   width: 33px;
   padding: 6px;
 }
 
-/* end styles for tables */
-
+/* end sidebar collapse button */

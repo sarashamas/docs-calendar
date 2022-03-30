@@ -24,7 +24,7 @@ INNER_METHOD_TEMPLATE(
 
 ~~~jsx {7-10}
 // create Event Calendar
-const scheduler = new scheduler.Scheduler("#root", {
+const scheduler = new eventCalendar.EventCalendar("#root", {
 	// initial configuration parameters
 });
 

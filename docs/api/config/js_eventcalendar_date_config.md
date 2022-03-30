@@ -8,7 +8,7 @@ description: You can learn about the date config in the documentation of the DHT
 
 ### Description
 
-@short: Optional. Initial date of Event Calendar
+@short: Optional. The initial date of Event Calendar
 
 ### Usage
 
@@ -26,7 +26,7 @@ To set the **date** property dynamically, you can use the
 
 ~~~jsx {3}
 // create Event Calendar
-new scheduler.Scheduler("#root", {
+new eventCalendar.EventCalendar("#root", {
     date: new Date("2022-03-15 00:00:00"),
 	// other configuration parameters
 });

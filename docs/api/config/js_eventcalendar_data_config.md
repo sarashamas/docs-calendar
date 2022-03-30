@@ -61,7 +61,7 @@ To set the Event Calendar data dynamically, you can use the
 
 ~~~jsx {3-20}
 // create Event Calendar
-new scheduler.Scheduler("#root", {
+new eventCalendar.EventCalendar("#root", {
     data: [
         {
             start_date: new Date("2021-05-24 00:00:00"),

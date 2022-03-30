@@ -32,7 +32,7 @@ Depending on the passed parameters, you can perform the following operations:
 
 ~~~jsx {6}
 // create Event Calendar
-const calendar = new scheduler.Scheduler("#root", {
+const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration parameters
 });
 // open the editor for the event with the "1" ID
@@ -61,7 +61,7 @@ For handling the inner events of Event Calendar you can use the [**Event Bus met
 
 ~~~jsx {7-9}
 // create Event Calendar
-const calendar = new scheduler.Scheduler("#root", {
+const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration parameters
 });
 

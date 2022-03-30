@@ -28,7 +28,7 @@ The **getEvent()** method returns an object of the event data by the specified I
 
 ~~~jsx {6}
 // create Event Calendar
-const calendar = new scheduler.Scheduler("#root", {
+const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration parameters
 });
 // get an event data with the "1" ID

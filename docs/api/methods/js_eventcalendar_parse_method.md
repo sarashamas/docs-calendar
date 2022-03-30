@@ -28,7 +28,7 @@ For details, see the [**data**](../../config/js_eventcalendar_data_config) confi
 
 ~~~jsx {6-23,25}
 // create Event Calendar
-const calendar = new scheduler.Scheduler("#root", {
+const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration parameters
 });
 

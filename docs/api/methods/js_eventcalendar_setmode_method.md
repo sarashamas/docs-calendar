@@ -28,7 +28,7 @@ You can set the **value** parameter to the *"day"*, *"week"* or *"month"* values
 
 ~~~jsx {6}
 // create Event Calendar
-const calendar = new scheduler.Scheduler("#root", {
+const calendar = new eventCalendar.EventCalendar("#root", {
 	// initial configuration parameters
 });
 // set the "day" mode

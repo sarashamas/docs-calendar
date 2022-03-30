@@ -8,7 +8,7 @@ description: You can learn about the locale config in the documentation of the D
 
 ### Description
 
-@short: Optional. Sets the built-in or custom locale
+@short: Optional. An object of the built-in or custom locale
 
 :::info
 The **locale** object includes all labels of Event Calendar with the corresponding translations
@@ -38,7 +38,7 @@ To apply new locale dynamically, you can use the
 
 ~~~jsx {3}
 // create Event Calendar
-new scheduler.Scheduler("#root", {
+new eventCalendar.EventCalendar("#root", {
 	locale: eventcalendar.ru // apply the "ru" locale by default
 	// other configuration parameters
 });

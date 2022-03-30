@@ -28,7 +28,7 @@ The full list of the **event** parameters can be found [**here**](api/config/js_
 
 ~~~jsx {15}
 // create Event Calendar
-const calendar = new scheduler.Scheduler("#root", {
+const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration parameters
 });
 // event data

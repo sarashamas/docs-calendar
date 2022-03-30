@@ -32,7 +32,7 @@ Note, the **ID** of the calendar to be updated is required. Other calendar param
 
 ~~~jsx {6-17,19-22}
 // create Event Calendar
-const calendar = new scheduler.Scheduler("#root", {
+const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration parameters
 });
 

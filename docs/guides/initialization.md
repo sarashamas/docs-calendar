@@ -45,7 +45,7 @@ Initialize Event Calendar using the **scheduler.Scheduler** constructor. It take
 
 ~~~jsx title="index.html"
 // create Event Calendar
-new scheduler.Scheduler("#root", {
+new eventCalendar.EventCalendar("#root", {
     // configuration properties
 });
 ~~~

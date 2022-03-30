@@ -28,7 +28,7 @@ Using this method, you can set a built-in locale (**en**, **ru**) as well as a c
 
 ~~~jsx {6}
 // create Event Calendar
-const calendar = new scheduler.Scheduler("#root", {
+const calendar = new eventCalendar.EventCalendar("#root", {
 	locale: eventcalendar.en // the "en" locale is set by default
 });
 // apply "ru" locale

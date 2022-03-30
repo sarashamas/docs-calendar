@@ -8,7 +8,7 @@ description: You can learn about the mode config in the documentation of the DHT
 
 ### Description
 
-@short: Optional. Sets initial view mode of Event Calendar
+@short: Optional. The initial view mode of Event Calendar
 
 ### Usage
 
@@ -42,7 +42,7 @@ To set the view mode dynamically, you can use the
 
 ~~~jsx {3}
 // create Event Calendar
-new scheduler.Scheduler("#root", {
+new eventCalendar.EventCalendar("#root", {
     mode: "month"
 	// other configuration parameters
 });

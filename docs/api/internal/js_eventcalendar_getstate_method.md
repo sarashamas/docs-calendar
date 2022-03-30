@@ -43,7 +43,7 @@ The **getState()** method returns an object with the following properties:
 
 ~~~jsx {6}
 // create Event Calendar
-const calendar = new scheduler.Scheduler("#root", {
+const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration parameters
 });
 // get the state of Event Calendar

@@ -34,7 +34,7 @@ The full list of the Event Calendar internal events can be found [**here**](api/
 
 ~~~jsx {6-8}
 // create Event Calendar
-const calendar = new scheduler.Scheduler("#root", {
+const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration properties
 });
 // output the event data in console when its deleting

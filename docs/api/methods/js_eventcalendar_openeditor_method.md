@@ -24,7 +24,7 @@ openEditor({ id: string | number }): void;
 
 ~~~jsx {6}
 // create Event Calendar
-const calendar = new scheduler.Scheduler("#root", {
+const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration parameters
 });
 // open editor for the event with the "1" ID

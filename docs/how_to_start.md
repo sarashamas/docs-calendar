@@ -64,7 +64,7 @@ As a parameter, the constructor takes an HTML container where the Event Calendar
 		<div id="root"></div>
 
 		<script>
-			const calendar = new scheduler.Scheduler("#root", {
+			const calendar = new eventCalendar.EventCalendar("#root", {
 				// configuration properties
 			});
 		</script>
@@ -77,7 +77,7 @@ As a parameter, the constructor takes an HTML container where the Event Calendar
 Next you can specify configuration properties you want the Event Calendar component to have when initialized.
 
 ~~~jsx {}
-const calendar = new scheduler.Scheduler("#root", {
+const calendar = new eventCalendar.EventCalendar("#root", {
     ...
 });
 ~~~

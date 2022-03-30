@@ -30,7 +30,7 @@ The method returns an object of Event Calendar data
 
 ~~~jsx {6}
 // create Event Calendar
-const calendar = new scheduler.Scheduler("#root", { 
+const calendar = new eventCalendar.EventCalendar("#root", { 
 	// configuration parameters
 });
 // get an object of the Event Calendar data

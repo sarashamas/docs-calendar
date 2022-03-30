@@ -30,7 +30,7 @@ The method returns an object with **DataStore**:
 
 ~~~jsx {6}
 // create Event Calendar
-const calendar = new scheduler.Scheduler("#root", {
+const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration properties
 });
 // get the DataStore object of Event Calendar

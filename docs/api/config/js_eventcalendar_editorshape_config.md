@@ -164,7 +164,7 @@ const editorShape = [
 	}
 ];
 // create Event Calendar
-new scheduler.Scheduler("#root", {
+new eventCalendar.EventCalendar("#root", {
 	editorSchape
 	// other configuration parameters
 });

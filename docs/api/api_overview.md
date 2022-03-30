@@ -9,7 +9,7 @@ description: You can explore an API overview in the documentation of the DHTMLX 
 ## Event Calendar constructor
 
 ~~~jsx {}
-new scheduler.Scheduler("#root", {
+new eventCalendar.EventCalendar("#root", {
 	// configuration parameters
 });
 ~~~
@@ -95,3 +95,4 @@ new scheduler.Scheduler("#root", {
 | [](api/config/js_eventcalendar_locale_config.md)     | @getshort(api/config/js_eventcalendar_locale_config.md)     |
 | [](api/config/js_eventcalendar_mode_config.md)       | @getshort(api/config/js_eventcalendar_mode_config.md)       |
 | [](api/config/js_eventcalendar_sidebar_config.md)    | @getshort(api/config/js_eventcalendar_sidebar_config.md)    |
+| [](api/config/js_eventcalendar_templates_config.md)  | @getshort(api/config/js_eventcalendar_templates_config.md)  |

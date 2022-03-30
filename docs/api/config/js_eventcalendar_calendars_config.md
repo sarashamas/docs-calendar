@@ -114,7 +114,7 @@ const calendars = [
 	}
 ];
 // create Event Calendar
-new scheduler.Scheduler("#root", {
+new eventCalendar.EventCalendar("#root", {
     calendars
 	// other configuration parameters
 });

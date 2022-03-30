@@ -24,7 +24,7 @@ toggleSidebar({ show?: boolean }): void;
 
 ~~~jsx {6}
 // create Event Calendar
-const calendar = new scheduler.Scheduler("#root", {
+const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration parameters
 });
 // hide sidebar

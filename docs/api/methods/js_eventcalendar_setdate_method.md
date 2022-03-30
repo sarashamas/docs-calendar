@@ -24,7 +24,7 @@ setDate({ value: Date }): void;
 
 ~~~jsx {6-7}
 // create Event Calendar
-const calendar = new scheduler.Scheduler("#root", {
+const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration parameters
 });
 //set current date

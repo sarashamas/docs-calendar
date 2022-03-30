@@ -28,7 +28,7 @@ Using this method, you can set the configuration parameters of the Event Calenda
 
 ~~~jsx {6-17}
 // create Event Calendar
-const calendar = new scheduler.Scheduler("#root", {
+const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration parameters
 });
 // set the configuration parameters of Event Calendar

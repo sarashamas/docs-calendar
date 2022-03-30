@@ -43,7 +43,7 @@ The method returns an object with the following properties:
 
 ~~~jsx {6-11}
 // create Event Calendar
-const calendar = new scheduler.Scheduler("#root", {
+const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration properties
 });
 // subscribe on the event selection

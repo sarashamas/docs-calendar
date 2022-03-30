@@ -29,7 +29,7 @@ const restProvider = new scheduler.RestDataProvider(url);
 Promise.all([
 	...
 ]).then(([cards, columns, rows]) => {
-	const calendar = new Scheduler.Scheduler("#root", {
+	const calendar = new eventCalendar.EventCalendar("#root", {
 		...
 	});
 	calendar.api.setNext(restProvider);

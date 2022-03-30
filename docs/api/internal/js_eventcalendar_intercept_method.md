@@ -34,7 +34,7 @@ The full list of the Event Calendar internal events can be found [**here**](api/
 
 ~~~jsx {6-11}
 // create Event Calendar
-const calendar = new scheduler.Scheduler("#root", {
+const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration properties
 });
 // prevent the "select-event" inner event

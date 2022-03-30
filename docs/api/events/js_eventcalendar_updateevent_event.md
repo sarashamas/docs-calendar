@@ -34,7 +34,7 @@ For handling the inner events of Event Calendar you can use the [**Event Bus met
 
 ~~~jsx {6-8}
 // create Event Calendar
-const calendar = new scheduler.Scheduler("#root", {
+const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration parameters
 });
 // subscribe on the "update-event" event

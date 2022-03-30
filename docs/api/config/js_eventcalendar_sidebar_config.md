@@ -39,7 +39,7 @@ To set the **sidebar** property dynamically, you can use the
 
 ~~~jsx {3}
 // create Event Calendar
-new scheduler.Scheduler("#root", {
+new eventCalendar.EventCalendar("#root", {
     sidebar: { show: false }
     // other configuration parameters
 });
