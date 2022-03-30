@@ -26,7 +26,7 @@ templates?: {
 
 In the **templates** object you can specify custom templates for the following elements of Event Calendar:
 
-- `weekEvent` - (optional) a function needs to return a custom template of the event in the **Week** mode. It takes an object with the following parameters:
+- `weekEvent` - (optional) a function needs to return a custom template of the event in the **Week** and **Day** modes. It takes an object with the following parameters:
     - ***event*** - current event data
     - ***calendar*** - current calendar data
 - `monthEvent` - (optional) a function needs to return a custom template of the event in the **Month** mode. It takes an object with the following parameters:
@@ -53,7 +53,7 @@ To set the templates dynamically, you can use the
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
     templates: {
-        // the event template of the "Week" mode
+        // the event template of the "Week" and "Day" modes
         weekEvent: ({ event, calendar }) => {
             const start_date = format(event.start_date, "HH:mm");
             const end_date = format(event.end_date, "HH:mm");
