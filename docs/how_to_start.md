@@ -26,9 +26,9 @@ and
 <html>
 	<head>
 		<title>How to Start with Event Calendar</title>
-		<script src="./dist/scheduler.js"></script>   
+		<script src="./dist/eventCalendar.js"></script>   
 
-		<link href="./dist/scheduler.css" rel="stylesheet">
+		<link href="./dist/eventCalendar.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500"
 		rel="stylesheet">
 	</head>
@@ -45,18 +45,18 @@ and
 Now you are ready to add Event Calendar to the page. For this you need to take the following steps:
 
 - specify a DIV container in the *index.html* file
-- initialize component using the **scheduler.Scheduler** constructor
+- initialize component using the **eventCalendar.EventCalendar()** constructor
 
-As a parameter, the constructor takes an HTML container where the Event Calendar will be placed into and the corresponding configuration object. See an example below:
+The constructor takes an HTML container where the Event Calendar will be placed into and the corresponding configuration object. See an example below:
 
 ~~~html {12,14-18} title="index.html"
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>How to Start with Event Calendar</title>
-		<script src="./dist/sheduler.js"></script>   
+		<script src="./dist/eventCalendar.js"></script>   
 
-		<link href="./dist/scheduler.css" rel="stylesheet">  
+		<link href="./dist/eventCalendar.css" rel="stylesheet">  
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500"
 		rel="stylesheet">
 	</head>
@@ -64,7 +64,7 @@ As a parameter, the constructor takes an HTML container where the Event Calendar
 		<div id="root"></div>
 
 		<script>
-			const calendar = new eventCalendar.EventCalendar("#root", {
+			new eventCalendar.EventCalendar("#root", {
 				// configuration properties
 			});
 		</script>
@@ -76,9 +76,17 @@ As a parameter, the constructor takes an HTML container where the Event Calendar
 
 Next you can specify configuration properties you want the Event Calendar component to have when initialized.
 
-~~~jsx {}
-const calendar = new eventCalendar.EventCalendar("#root", {
-    ...
+~~~jsx {2-10}
+new eventCalendar.EventCalendar("#root", {
+	calendars,
+	config,
+	data,
+	date,
+	editorShape,
+	locale,
+	mode,
+	sidebar,
+	templates
 });
 ~~~
 
