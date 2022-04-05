@@ -1,16 +1,16 @@
-<h1 align="center"><a href="https://docs.dhtmlx.com/scheduler/">DHTMLX Scheduler Documentation</a></h1>
+<h1 align="center"><a href="https://docs.dhtmlx.com/calendar/">DHTMLX Event Calendar Documentation</a></h1>
 
-New Scheduler description here
+New Event Calendar description here
 
 ## Explore documentation locally
 
-To run the Scheduler documentation locally, take the following steps:
+To run the Event Calendar documentation locally, take the following steps:
 
 #### 1. Clone the documentation to the local folder
 
 ```
-$ git clone git@github.com:DHTMLX/docs-scheduler.git
-$ cd docs-scheduler
+$ git clone git@github.com:DHTMLX/docs-calendar.git
+$ cd docs-calendar
 ```
 
 #### 2. Install dependencies
@@ -27,7 +27,7 @@ $ yarn start
 
 ## Related sources
 
-[Download DHTMLX Kanban](https://dhtmlx.com/docs/products/dhtmlxScheduler/download.shtml)
+[Download DHTMLX Kanban](https://dhtmlx.com/docs/products/dhtmlxEventCalendar/download.shtml)
 
 [Live demos](https://snippet.dhtmlx.com/)
 
