@@ -11,21 +11,31 @@ description: You can learn about the locale config in the documentation of the D
 @short: Optional. An object of the built-in or custom locale
 
 :::info
-The **locale** object includes all labels of Event Calendar with the corresponding translations
+The **locale** object includes all labels of Event Calendar with the corresponding translations and other parameters
 :::
 
 ### Usage
 
 ~~~jsx {}
-locale?: object;
+locale?: object; // TODO дать расширенное описание объекта локализации
 ~~~
+
+### Parameters
+
+In the **locale** object you can specify the following parameters:
+
+- TODO
+
+- `timeFormat` - (optional) a time format of Event Calendar. See the available formats [here](https://date-fns.org/v2.27.0/docs/format)
+- `dateFormat` - (optional) a date format of Event Calendar. See the available formats [here](https://date-fns.org/v2.27.0/docs/format)
+- `weekStartsOn` - (optional) a start day of week. Here you can specify values from 0 (Sunday) to 6 (Saturday)
 
 ### Default config
 
 By default, the **locale** parameter is set to the built-in **en** locale. You can set it to the **ru** or custom locale as well
 
 ~~~jsx {}
-locale: eventcalendar.en
+locale: eventCalendar.en
 ~~~
 
 :::info
@@ -39,7 +49,7 @@ To apply new locale dynamically, you can use the
 ~~~jsx {3}
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
-	locale: eventcalendar.ru // apply the "ru" locale by default
+	locale: eventСalendar.ru // apply the "ru" locale by default
 	// other configuration parameters
 });
 ~~~

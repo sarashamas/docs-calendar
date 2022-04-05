@@ -14,10 +14,7 @@ description: You can learn about the config config in the documentation of the D
 
 ~~~jsx {}
 config?: {
-    timeFormat?: string, 
-    dateFormat?: string,
     tableHeaderHeight?: number,
-    weekStartsOn?: number,
     timeStep?: number,
     dragCreate?: boolean, 
     eventInfoOnClick?: boolean, 
@@ -41,10 +38,7 @@ config?: {
 
 In the **config** object you can specify the following parameters:
 
-- `timeFormat` - (optional) a time format of Event Calendar. See the available formats [here](https://date-fns.org/v2.27.0/docs/format)
-- `dateFormat` - (optional) a date format of Event Calendar. See the available formats [here](https://date-fns.org/v2.27.0/docs/format)
 - `tableHeaderHeight` - (optional) a height of the Event Calendar header (px)
-- `weekStartsOn` - (optional) a start day of week. Here you can specify values from 0 (Sunday) to 6 (Saturday)
 - `timeStep` - (optional) a step of moving an event
 - `dragCreate` - (optional) enables/disables an ability to create new events via d-n-d
 - `eventInfoOnClick` - (optional) enables/disables an ability to show info popup by click
@@ -66,18 +60,15 @@ To configure the **Day**, **Week** and **Month** view modes separately, you can 
 - `eventsOverlay` - (optional) enables/disables an ability to overlay events (for **Day** and **Week** modes only)
 - `timeStep` - (optional) a step of moving an event (for **Day** and **Week** modes only)
 - `eventHeight` - (optional) enables/disables an ability to overlay events (for all view modes)
-- `weekStartsOn` - (optional) a start day of week. Here you can specify values from 0 (Sunday) to 6 (Saturday) (for **Month** and **Week** modes only)
 - `timeRange` - (optional) an array with start time and end time of the day/week mode (for **Day** and **Week** modes only)
-- `dateFormat` - (optional) a date format of Event Calendar (for all view modes)
-- `timeFormat` - (optional) a time format of Event Calendar (for **Day** and **Week** modes only)
 - `maxEventsPerCell` - (optional) a max mumber of events per cell (for the **Month** mode only)
 - `dayHeight` - (optional) a min height of a grid cell (for the **Month** mode only)
-- `dateHeight` - (optional)??? под вопросом
 - `hourScaleWidth` - (optional) a column width of the "hour" scale of the grid (for **Day** and **Week** modes only)
 - `hourHeight` - (optional) a row height of the "hour" scale (for **Day** and **Week** modes only)
 - `eventMargin` - (optional) a space between events when **eventsOverlay** is set to *false* (for **Day** and **Week** modes only)
 - `columnPadding` - (optional) a right padding of the grid column (for **Day** and **Week** modes only)
 :::
+
 ### Default config
 
 ~~~jsx {}
@@ -85,23 +76,19 @@ const defaultWeekConfig = {
 	hourScaleWidth: 50,
 	hourHeight: 42,
 	eventMargin: "3px",
-	columnPadding: "8px",
+	columnPadding: "8px"
 };
 
 const defaultMonthConfig = {
 	dateHeight: 30,
 	dayHeight: 200,
-	maxEventsPerCell: 4,
-	dateFormat: "EEEE",
+	maxEventsPerCell: 4
 };
 
-const defaultEventCalendarConfig = {
+const defaultConfig = {
 	timeRange: [0, 24],
 	timeStep: 5,
 	tableHeaderHeight: 32,
-	dateFormat: "EEEE, d",
-	timeFormat: "HH:mm",
-	weekStartsOn: 1,
 	readonly: false,
 	dragCreate: true,
 	autoSave: true,
@@ -115,7 +102,7 @@ const defaultEventCalendarConfig = {
 		week: defaultWeekConfig,
 		day: defaultWeekConfig,
 		month: defaultMonthConfig
-	},
+	}
 };
 ~~~
 
@@ -126,7 +113,7 @@ To set the **config** property dynamically, you can use the
 
 ### Example
 
-~~~jsx {3-22}
+~~~jsx {3-20}
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
     config: {
@@ -143,9 +130,7 @@ new eventCalendar.EventCalendar("#root", {
                 eventHeight: 30,
                 eventMargin:"10px",
                 columnPadding: "450px", 
-                timeRange: [8, 18], 
-                dateFormat: "MMMM", 
-                timeFormat: "hh:mm"
+                timeRange: [8, 18]
             }
         }
     },
