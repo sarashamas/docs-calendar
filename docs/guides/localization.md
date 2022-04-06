@@ -15,14 +15,35 @@ The English locale is used by default:
 ~~~jsx {}
 const en = {
 	lang: "en",
-	event_calendar: {
+    dateFnsLocale: dateFnsLocaleEn, // TODO
+    scheduler: {
+        "Create event": "Create event",
+        "Edit event": "Edit event",
+        "Delete event": "Delete event",
+        "Event name": "Event name",
+        "Start date": "Start date",
+        "End date": "End date",
+        "All day": "All day",
+        Type: "Type",
+        Description: "Description",
+        Today: "Today",
+        Day: "Day",
+        Week: "Week",
+        Month: "Month",
+        Calendars: "Calendars",
+        timeFormat: "h a",
+        monthFormat: "EEE",
+        dateFormat: "EEE, d"
+    },
+    core: { // TODO
 		...
+		weekStart: 7
 	}
 };
 ~~~
 
 :::info
-Besides the ***en*** locale, Event Calendar also includes the built-in ***ru*** and ***cn*** locales
+Besides the ***en*** locale, Event Calendar also includes a built-in ***ru*** one
 :::
 
 <details>
@@ -30,25 +51,32 @@ Besides the ***en*** locale, Event Calendar also includes the built-in ***ru*** 
 
 ~~~jsx
 const ru = {
-	lang: "ru",
-	event_calendar: {
+	lang: "en",
+    dateFnsLocale: dateFnsLocaleEn, // TODO
+    scheduler: {
+        "Create event": "Создать событие",
+        "Edit event": "Редактировать событие",
+        "Delete event": "Удалить событие",
+        "Event name": "Название события",
+        "Start date": "Дата начала",
+        "End date": "Дата конца",
+        "All day": "Весь день",
+        Type: "Тип",
+        Description: "Описание",
+        Today: "Сегодня",
+        Day: "День",
+        Week: "Неделя",
+        Month: "Месяц",
+        Calendars: "Календари",
+        timeFormat: "h a",
+        monthFormat: "EEE",
+        dateFormat: "EEE, d"
+    },
+    core: { // TODO
 		...
+		weekStart: 7
 	}
 };
-~~~
-</details>
-
-<details>
-<summary><b>cn</b> locale</summary>
-
-~~~jsx {}
-const cn = {
-	lang: "cn",
-	event_calendar: {
-		...
-	}
-};
-
 ~~~
 </details>
 
@@ -56,7 +84,7 @@ const cn = {
 
 To apply a custom locale you need to:
 
-- create the custom locale (or modify the existed one) and provide translations for all text labels in Event Calendar (it can be any language you need)
+- create the custom locale (or modify the existing one) and provide translations for all text labels in Event Calendar (it can be any language you need)
 - apply the new locale via the [**locale**](api/config/event_calendar_locale_config.md) property or by calling the [**setLocale()**](api/methods/event_calendar_setlocale_method.md) method, that takes an object with translations (custom locale) as a parameter
 
 ## Example
