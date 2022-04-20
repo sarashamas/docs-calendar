@@ -26,6 +26,7 @@ config?: {
     readonly?: boolean,
     dragMove?: boolean,
     editorOnDblClick?: boolean,
+    defaultEventDuration?: number,
     views?: { 
        day?: object,
        week?: object,
@@ -50,6 +51,7 @@ In the **config** object you can specify the following parameters:
 - `readonly` - (optional) enables/disables an ability to perform operations on events
 - `dragMove` - (optional) enables/disables an ability to move events via d-n-d
 - `editorOnDblClick` - (optional) enables/disables an ability to open editor by double click
+- `defaultEventDuration` - (optional) a duration of the new created event by default (without taking into account creating an event via d-n-d)
 - `views` - (optional) an object of view modes configuration. Here you can specify the following objects of parameters:
     - `day` - (optional) an object of the "Day" view mode configuration
     - `week` - (optional) an object of the "Week" view mode configuration
@@ -86,18 +88,19 @@ const defaultMonthConfig = {
 };
 
 const defaultConfig = {
-	timeRange: [0, 24],
+    tableHeaderHeight: 32,
 	timeStep: 5,
-	tableHeaderHeight: 32,
-	readonly: false,
 	dragCreate: true,
-	autoSave: true,
+    eventInfoOnClick: true,
+    timeRange: [0, 24],
+    eventsOverlay: false,
+    eventHeight: 24,
+    autoSave: true,
+    dragResize: true,
+	readonly: false,
 	dragMove: true,
-	dragResize: true,
-	eventInfoOnClick: true,
 	editorOnDblClick: true,
-	eventsOverlay: false,
-	eventHeight: 24,
+    defaultEventDuration: 60,
 	views: {
 		week: defaultWeekConfig,
 		day: defaultWeekConfig,
