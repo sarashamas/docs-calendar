@@ -22,7 +22,9 @@ locale?: {
 	dateFnsLocale?: ..., // ???
 	scheduler?: {
 		[control_name: string]?: string,
-		timeFormat?: string,
+		timeFormat?: number, // 12 | 24
+		hourFormat?: string,
+		minuteFormat?: string,
 		monthFormat?: string,
 		dateFormat?: string
 	},
@@ -42,7 +44,9 @@ In the **locale** object you can specify the following parameters:
 - `dateFnsLocale` - (optional) **TODO** ???
 - `scheduler` - (optional) an object of translations of the "Event Calendar" labels
 	- `control_name` - (optional) a label translation
-	- `timeFormat` - (optional) a time format of Event Calendar. See the available formats [here](https://date-fns.org/v2.27.0/docs/format)
+	- `timeFormat` -  (optional) a time format of Event Calendar. The available values are **12** and **24**
+	- `hourFormat` - (optional) an hour format of Event Calendar. See the available formats [here](https://date-fns.org/v2.27.0/docs/format)
+	- `minuteFormat` - (optional) a minute format of Event Calendar. See the available formats [here](https://date-fns.org/v2.27.0/docs/format)
 	- `monthFormat` - (optional) a month format of Event Calendar. See the available formats [here](https://date-fns.org/v2.27.0/docs/format)
 	- `dateFormat` - (optional) a date format of Event Calendar. See the available formats [here](https://date-fns.org/v2.27.0/docs/format)
 - `core` - (optional) an object of translations of the core elements 
@@ -73,8 +77,11 @@ const en = {
         Week: "Week",
         Month: "Month",
         Calendars: "Calendars",
-        timeFormat: "h a",
-        monthFormat: "EEE",
+
+		timeFormat: 12,
+		hourFormat: "h",
+		minuteFormat: "mm", 
+		monthFormat: "EEE",
         dateFormat: "EEE, d"
     },
     core: { // TODO
