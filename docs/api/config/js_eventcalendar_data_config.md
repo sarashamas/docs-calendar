@@ -17,6 +17,7 @@ data?: [
     {
         start_date: Date,
         end_date: Date,
+        allDay?: boolean, // !!! ToDo
         id?: string | number,
         type?: string | number,
         text?: string,
@@ -39,6 +40,7 @@ For each event you can specify the following parameters (data):
 
 - `start_date` - (required) a start date of the event
 - `end_date` - (required) an end date of the event
+- `allDay` - (optional) **!!! ToDo**
 - `id` - (optional) an ID of the event
 - `type` - (optional) a type of the event
 - `text` - (optional) a label of the event
