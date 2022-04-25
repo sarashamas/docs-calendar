@@ -1,5 +1,5 @@
 ---
-sidebar_label: delete-event+
+sidebar_label: delete-event
 title: delete-event Event
 description: You can learn about the delete-event event in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---

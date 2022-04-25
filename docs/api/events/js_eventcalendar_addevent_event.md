@@ -1,5 +1,5 @@
 ---
-sidebar_label: add-event+
+sidebar_label: add-event
 title: add-event Event
 description: You can learn about the add-event event in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---

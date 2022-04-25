@@ -1,5 +1,5 @@
 ---
-sidebar_label: toggle-sidebar+
+sidebar_label: toggle-sidebar
 title: toggle-sidebar Event
 description: You can learn about the toggle-sidebar event in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---

@@ -1,5 +1,5 @@
 ---
-sidebar_label: set-mode+
+sidebar_label: set-mode
 title: set-mode Event
 description: You can learn about the set-mode event in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---

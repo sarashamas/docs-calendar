@@ -1,5 +1,5 @@
 ---
-sidebar_label: close-event-info+
+sidebar_label: close-event-info
 title: close-event-info Event
 description: You can learn about the close-event-info event in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
