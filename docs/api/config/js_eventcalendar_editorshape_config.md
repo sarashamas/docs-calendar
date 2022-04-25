@@ -1,5 +1,5 @@
 ---
-sidebar_label: editorShape+
+sidebar_label: editorShape
 title: editorShape Config
 description: You can learn about the editorShape config in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
@@ -8,31 +8,64 @@ description: You can learn about the editorShape config in the documentation of 
 
 ### Description
 
-@short: Optional. An array of objects containing settings for managing the appearance and functionality of the Event Calendar editor
+@short: Optional. An array of objects containing the editor's settings
 
 ### Usage
 
 ~~~jsx {}
-editorShape?: {
-	type: string,
-	key: string,
-	label?: string,
-	options?: [
-		{
-			id: any,
-			label: string
+editorShape?: [
+	{
+		// common settings
+		type: string,
+		key: string,
+		label?: string,
+
+		// for "text" and "textarea" types
+		config?: {
+			readonly?: boolean,
+			focus?: boolean,
+			disabled?: boolean,
+			placeholder?: string,
+			type?: string,
+			inputStyle?: string
 		},
-		{...} // other options
-	],
-	time?: boolean,
-	colors?: array,
-	text?: string,
-	config?: {
-		readonly?: boolean,
-		focus?: boolean,
-		type?: string,
-		placeholder?: string
-	}
+
+		// for a "combo" type only ( TODO "select" and "multiview" ???)
+		options?: [
+			{
+				id: any,
+				label: string
+			},
+			{...} // other options
+		],
+		config?: {
+			placeholder?: string,
+			disabled?: boolean
+		},
+
+		// for a "color" type only
+		colors?: array,
+		config?: {
+			placeholder?: string,
+			clear?: boolean
+		},
+
+		// for a "checkbox" type only
+		text?: string,
+
+		// for a "date" type only
+		time?: boolean
+
+		// radio TODO ? !!!
+		// uploader TODO ? !!!
+
+		// TODO
+		// common configs ???
+		/*config?: {
+			placeholder?: string,
+			disabled?: boolean
+		}*/
+	},{...}
 };
 ~~~
 
@@ -40,27 +73,21 @@ editorShape?: {
 
 To configure the editor appearance and functionality, you can specify the following parameters (fields):
 
-- `type` - (required) an editor field type. Here you can specify the following types: 
-**text**, **date**, **checkbox**, **combo**, **color** and **textarea**
+#### - Common parameters for all types
+
+- `type` - (required) an editor field type. Here you can specify the following types: **text**, **textarea**,  **combo** ( **select** and **multiselect**? **radio**? **files**?) **color**, **checkbox**, **date**
 - `key` - (required) an editor field key. Here you need to use the value specified in the [data](../js_eventcalendar_data_config) property. See the example below:
 
-~~~js {4-6,13,19,27}
+~~~js {4-5,12,20}
 // event data
 const data = [
 	{
-		start_date: new Date("2021-05-24 00:00:00"),
 		text: "Current event",
-		type: "Work"
+		start_date: new Date("2021-05-24 00:00:00")
 	}, {...}
 ];
 // editor settings
-const editorShape = { 
-	{
-		type: "date",
-		key: "start_date",
-		label: "Start date",
-		time: true
-	},
+const editorShape = [ 
 	{
 		type: "text",
 		key: "text",
@@ -70,28 +97,52 @@ const editorShape = {
 		}
 	},
 	{
-		type: "combo",
-		key: "type",
-		label: "Type"
+		type: "date",
+		key: "start_date", 
+		label: "Start date",
+		time: true
 	}
-};
+];
 ~~~
 
 - `label` - (optional) an editor field label
-- `options` - (optional) an array of objects with the dropdown options (only for **combo** type). Here you can specify the following fields:
-	- `id` - (required) an option **ID**
-	- `label` - (required) an option label
-- `time` - (optional) enables/disables a time selector (only for **date** type)
+
+#### - Parameters for "text" and "textarea" types
+
+- `config` - (optional) a configuration object of the **"text"** and **"textarea"** fields. Here you can specify the following parameters:
+	- `readonly` - (optional) enables/disables a readonly mode
+	- `focus` - (optional) enables/disables a focus
+	- `disabled` - (optional) enables/disables a field state
+	- `placeholder` - (optional) a placeholder value
+	- `type` - (optional) a type of the input field (only for **text** type). Here you can specify only the **password**, **number**, and **text** values)
+	- `inputStyle` - (optional) a custom css style
+
+#### - Parameters for a "combo" type (TODO "select" and "multiselect"?)
+
+- `options` - (optional) an array of objects containing the dropdown options data. Here you can specify the following parameters:
+	- `id` - (required) an option **ID** 
+	- `label` - (required) an option label 
+- `config` - (optional) a configuration object of the **"combo"** field. Here you can specify the following parameters:
+	- `placeholder` - (optional) a placeholder value
+	- `disabled` - (optional) enables/disables a field state
+
+#### - Parameters for a "color" type
+
+- `colors` - (optional) an array with valid HEX codes
+- `config` - (optional) a configuration object of the **"color"** field. Here you can specify the following parameters:
+	- `placeholder` - (optional) a placeholder value
+	- `clear` - (optional) shows/hides a "clear" icon
+
+#### - Parameters for a "checkbox" type
+
 - `text` - (optional) text label (only for **checkbox** type)
-- `colors` - (optional) an array with valid HEX codes (only for **color** type)
-- `config` - (optional) an object with the additional configurations of the field. Here you can specify the following parameters:
-	- `readonly` - (optional) enables/disables a readonly mode of the editor field
-	- `focus` - (optional) enables/disables a focus on the field
-	- `type` - (optional) a type of the field (only for **text** type). Here you can specify only the **password**, **number**, and **text** values
-	- `placeholder` - (optional) a placeholder of the field (only for the **text** and **textarea** types)
+
+#### - Parameters for a "date" type
+
+- `time` - (optional) - enables/disables a *timepicker* (besides a *datepicker*)
 
 :::info
-Unless you specify the editor settings via the **editorShape** property, the widget will apply a **defaultEditorShape** set of parameters!
+Unless you specify the editor settings via the **editorShape** property, the widget will apply the **defaultEditorShape** set of parameters!
 :::
 
 ### Default config
@@ -140,7 +191,7 @@ const defaultEditorShape = [
 ~~~
 
 :::info
-To set the **editorShape** property dynamically, you can use the 
+To set the **editorShape** config dynamically, you can use the 
 [**setConfig()**](api/methods/js_eventcalendar_setconfig_method.md) method
 :::
 
@@ -155,7 +206,7 @@ const priorities = [
 ];
 // editor settings
 const editorShape = [ 
-	...scheduler.defaultEditorShape, // include the default settings
+	...eventCalendar.defaultEditorShape, // include the default settings
 	{ // add custom field
 		type: "combo",
 		key: "priority",
@@ -165,7 +216,7 @@ const editorShape = [
 ];
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
-	editorSchape
+	editorShape
 	// other configuration parameters
 });
 ~~~

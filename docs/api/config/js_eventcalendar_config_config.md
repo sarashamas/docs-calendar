@@ -1,5 +1,5 @@
 ---
-sidebar_label: config+
+sidebar_label: config
 title: config Config
 description: You can learn about the config config in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
@@ -14,19 +14,25 @@ description: You can learn about the config config in the documentation of the D
 
 ~~~jsx {}
 config?: {
-    tableHeaderHeight?: number,
-    timeStep?: number,
     dragCreate?: boolean, 
-    eventInfoOnClick?: boolean, 
-    timeRange?: [number, number],
-    eventsOverlay?: boolean,
-    eventHeight?: number,
-    autoSave?: boolean,
     dragResize?: boolean,
-    readonly?: boolean,
     dragMove?: boolean,
-    editorOnDblClick?: boolean,
+
+    tableHeaderHeight?: number,
+    eventHeight?: number,
+
+    timeStep?: number,
+    timeRange?: [number, number],
     defaultEventDuration?: number,
+
+    eventInfoOnClick?: boolean, 
+    editorOnDblClick?: boolean,
+    createEventOnDbClick?: boolean,
+
+    eventsOverlay?: boolean,
+    autoSave?: boolean,
+    readonly?: boolean,
+
     views?: { 
        day?: object,
        week?: object,
@@ -39,30 +45,31 @@ config?: {
 
 In the **config** object you can specify the following parameters:
 
-- `tableHeaderHeight` - (optional) a height of the Event Calendar header (px)
-- `timeStep` - (optional) a step of moving an event
 - `dragCreate` - (optional) enables/disables an ability to create new events via d-n-d
-- `eventInfoOnClick` - (optional) enables/disables an ability to show info popup by click
-- `timeRange` - (optional) an array with start time and end time of the day/week mode
-- `eventsOverlay` - (optional) enables/disables an ability to overlay events
-- `eventHeight` - (optional) a height of the Event Calendar events
-- `autoSave` - (optional) enables/disables an ability to auto save event data (via the editor)
 - `dragResize` - (optional) enables/disables an ability to resize events via d-n-d
-- `readonly` - (optional) enables/disables an ability to perform operations on events
 - `dragMove` - (optional) enables/disables an ability to move events via d-n-d
-- `editorOnDblClick` - (optional) enables/disables an ability to open editor by double click
+- `tableHeaderHeight` - (optional) a height of the Event Calendar header (px)
+- `eventHeight` - (optional) a height of the Event Calendar events
+- `timeStep` - (optional) a step of moving an event via d-n-d
+- `timeRange` - (optional) an array with start and end time of day in the "day" and "week" modes
 - `defaultEventDuration` - (optional) a duration of the new created event by default (without taking into account creating an event via d-n-d)
-- `views` - (optional) an object of view modes configuration. Here you can specify the following objects of parameters:
-    - `day` - (optional) an object of the "Day" view mode configuration
-    - `week` - (optional) an object of the "Week" view mode configuration
-    - `month` - (optional) an object of the "Month" view mode configuration
+- `eventInfoOnClick` - (optional) enables/disables an ability to show info popup by click
+- `editorOnDblClick` - (optional) enables/disables an ability to open editor by double click
+- `createEventOnDbClick` - (optional) enables/disables an ability to create an event by double click
+- `eventsOverlay` - (optional) enables/disables an ability to overlay events
+- `autoSave` - (optional) enables/disables an ability to auto save event data (via the editor)
+- `readonly` - (optional) enables/disables an ability to perform operations on events
+- `views` - (optional) an object of configurations of the specific view modes. Here you can specify the following objects of settings:
+    - `day` - (optional) an object of settings of the "Day" view mode
+    - `week` - (optional) an object of settings of the "Week" view mode
+    - `month` - (optional) an object of settings of the "Month" view mode
 
 :::info
 To configure the **Day**, **Week** and **Month** view modes separately, you can specify the following parameters:
 - `eventsOverlay` - (optional) enables/disables an ability to overlay events (for **Day** and **Week** modes only)
-- `timeStep` - (optional) a step of moving an event (for **Day** and **Week** modes only)
-- `eventHeight` - (optional) enables/disables an ability to overlay events (for all view modes)
-- `timeRange` - (optional) an array with start time and end time of the day/week mode (for **Day** and **Week** modes only)
+- `timeStep` - (optional) a step of moving an event via d-n-d (for **Day** and **Week** modes only)
+- `eventHeight` - (optional) a height of the Event Calendar events (for all view modes)
+- `timeRange` - (optional) an array with start and end time of day (for **Day** and **Week** modes only)
 - `maxEventsPerCell` - (optional) a max mumber of events per cell (for the **Month** mode only)
 - `dayHeight` - (optional) a min height of a grid cell (for the **Month** mode only)
 - `hourScaleWidth` - (optional) a column width of the "hour" scale of the grid (for **Day** and **Week** modes only)
@@ -75,37 +82,37 @@ To configure the **Day**, **Week** and **Month** view modes separately, you can 
 
 ~~~jsx {}
 const defaultWeekConfig = {
-	hourScaleWidth: 50,
-	hourHeight: 42,
-	eventMargin: "3px",
-	columnPadding: "8px"
+    hourScaleWidth: 70,
+    hourHeight: 42,
+    eventMargin: "3px",
+    columnPadding: "8px"
 };
 
 const defaultMonthConfig = {
-	dateHeight: 30,
-	dayHeight: 200,
-	maxEventsPerCell: 4
+    dayHeight: 200,
+    maxEventsPerCell: 4
 };
 
 const defaultConfig = {
-    tableHeaderHeight: 32,
-	timeStep: 5,
-	dragCreate: true,
-    eventInfoOnClick: true,
-    timeRange: [0, 24],
-    eventsOverlay: false,
-    eventHeight: 24,
-    autoSave: true,
+    dragCreate: true,
     dragResize: true,
-	readonly: false,
-	dragMove: true,
-	editorOnDblClick: true,
+    dragMove: true,
+    tableHeaderHeight: 32,
+    eventHeight: 24,
+    timeStep: 5,
+    timeRange: [0, 24],
     defaultEventDuration: 60,
-	views: {
-		week: defaultWeekConfig,
-		day: defaultWeekConfig,
-		month: defaultMonthConfig
-	}
+    eventInfoOnClick: true,
+    editorOnDblClick: true,
+    createEventOnDbClick: true,
+    eventsOverlay: false,
+    autoSave: true,
+    readonly: false,
+    views: {
+        week: defaultWeekConfig,
+        day: defaultWeekConfig,
+        month: defaultMonthConfig
+    }
 };
 ~~~
 
@@ -126,14 +133,14 @@ new eventCalendar.EventCalendar("#root", {
         dragMove: false,
         views: {
             day: {
-                hourScaleWidth: 60,
+                hourScaleWidth: 60, 
                 hourHeight: 50, 
-                eventsOverlay: false, 
+                eventsOverlay: false,  
                 timeStep: 20, 
-                eventHeight: 30,
-                eventMargin:"10px",
+                eventHeight: 30, 
+                eventMargin: "10px", 
                 columnPadding: "450px", 
-                timeRange: [8, 18]
+                timeRange: [8, 18] 
             }
         }
     },

@@ -1,5 +1,5 @@
 ---
-sidebar_label: templates+
+sidebar_label: templates
 title: templates Config
 description: You can learn about the templates config in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
@@ -8,7 +8,7 @@ description: You can learn about the templates config in the documentation of th
 
 ### Description
 
-@short: Optional. An object of custom templates of the Event Calendar visual elements
+@short: Optional. An object with custom templates of the Event Calendar visual elements
 
 ### Usage
 

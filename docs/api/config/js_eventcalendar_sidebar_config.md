@@ -1,5 +1,5 @@
 ---
-sidebar_label: sidebar+
+sidebar_label: sidebar
 title: sidebar Config
 description: You can learn about the sidebar config in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
@@ -20,9 +20,9 @@ sidebar?: { show?: boolean } | null;
 
 The **sidebar** property can be set to the following parameters:
 
-- an object with a **show** property to show/hide a sidebar:
+- an object with a **show** property for displaying a sidebar:
     - `show` - (optional) shows/hides a sidebar
-- a **null** value to deactivate sidebar and hide a toggle button
+- a **null** value deactivates sidebar and hides a toggle button
 
 ### Default config
 
@@ -31,7 +31,7 @@ sidebar: { show: true }
 ~~~
 
 :::info
-To set the **sidebar** property dynamically, you can use the 
+To set the **sidebar** config dynamically, you can use the 
 [**setConfig()**](api/methods/js_eventcalendar_setconfig_method.md) method
 :::
 

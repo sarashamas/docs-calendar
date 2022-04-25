@@ -1,5 +1,5 @@
 ---
-sidebar_label: locale+
+sidebar_label: locale
 title: locale Config
 description: You can learn about the locale config in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
@@ -18,10 +18,11 @@ The **locale** object includes all labels of Event Calendar with the correspondi
 
 ~~~jsx {}
 locale?: {
-	lang?: string, // "en", "ru" or custom
-	dateFnsLocale?: ..., // ???
+	dateFnsLocale?: ..., // ??? TODO
 	scheduler?: {
+		// UI controls translations
 		[control_name: string]?: string,
+		// time and date settings
 		timeFormat?: number, // 12 | 24
 		hourFormat?: string,
 		minuteFormat?: string,
@@ -29,8 +30,13 @@ locale?: {
 		dateFormat?: string
 	},
 	core?: {
+		// UI controls translations
 		[control_name: string]?: string,
-		[control_set: string]?: array,
+		// months and days translations 
+		months?: array,
+		monthsShort?: array,
+		days?: array,
+		// start day of week
 		weekStart?: number
 	}
 };
@@ -40,29 +46,29 @@ locale?: {
 
 In the **locale** object you can specify the following parameters:
 
-- `lang` - (optional) a locale name
 - `dateFnsLocale` - (optional) **TODO** ???
-- `scheduler` - (optional) an object of translations of the "Event Calendar" labels
+- `scheduler` - (optional) an object with translations, date and time settings of Event Calendar
 	- `control_name` - (optional) a label translation
 	- `timeFormat` -  (optional) a time format of Event Calendar. The available values are **12** and **24**
 	- `hourFormat` - (optional) an hour format of Event Calendar. See the available formats [here](https://date-fns.org/v2.27.0/docs/format)
 	- `minuteFormat` - (optional) a minute format of Event Calendar. See the available formats [here](https://date-fns.org/v2.27.0/docs/format)
 	- `monthFormat` - (optional) a month format of Event Calendar. See the available formats [here](https://date-fns.org/v2.27.0/docs/format)
 	- `dateFormat` - (optional) a date format of Event Calendar. See the available formats [here](https://date-fns.org/v2.27.0/docs/format)
-- `core` - (optional) an object of translations of the core elements 
+- `core` - (optional) an object of translations of the core elements
 	- `control_name` - (optional) a label translation
-	- `control_set` - (optional) an array of the label translations
+	- `months` - (optional) an array with full names of months
+	- `monthsShort` - (optional) an array with short names of months
+	- `days` - (optional) an array with short names of days
 	- `weekStart` - (optional) a start day of week. Here you can specify values from 1 (Monday) to 7 (Sunday)
 
 ### Default config
 
-By default, the **locale** parameter is set to the built-in **en** locale
+By default, the **locale** config is set to the built-in **en** locale
 
 ~~~jsx {
 const en = {
-	lang: "en",
-    dateFnsLocale: dateFnsLocaleEn, // TODO
-    scheduler: {
+    dateFnsLocale: dateFnsLocaleEn, // ??? TODO
+    scheduler: { // ??? TODO
         "Create event": "Create event",
         "Edit event": "Edit event",
         "Delete event": "Delete event",
@@ -77,22 +83,36 @@ const en = {
         Week: "Week",
         Month: "Month",
         Calendars: "Calendars",
-
-		timeFormat: 12,
-		hourFormat: "h",
-		minuteFormat: "mm", 
-		monthFormat: "EEE",
+        // time and date settings
+        timeFormat: 12,
+        hourFormat: "h",
+        minuteFormat: "mm",
+        monthFormat: "EEE",
         dateFormat: "EEE, d"
     },
-    core: { // TODO
-		...
-		weekStart: 7
-	}
+    core: {
+        // UI controls translations here (TODO !!!)
+        ..., 
+        // months and days translations  
+        months: [
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        ],
+        monthsShort: [
+            "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+        ],
+        days: [ 
+            "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" 
+        ],
+        // start of week
+        weekStart: 7
+    }
 };
 ~~~
 
 :::info
-You can set the **locale** parameter to the **ru** or custom locale as well. To apply new locale dynamically, you can use the
+You can set the **locale** config to the **ru** or custom locale as well. To apply new locale dynamically, you can use the
 [**setLocale()**](../../methods/js_eventcalendar_setlocale_method) and 
 [**setConfig()**](../../methods/js_eventcalendar_setconfig_method) methods
 :::
@@ -102,7 +122,7 @@ You can set the **locale** parameter to the **ru** or custom locale as well. To 
 ~~~jsx {3}
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
-	locale: eventСalendar.ru // apply the "ru" locale by default
+	locale: eventСalendar.ru // apply the "ru" locale
 	// other configuration parameters
 });
 ~~~

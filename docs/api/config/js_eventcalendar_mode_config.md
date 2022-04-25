@@ -1,5 +1,5 @@
 ---
-sidebar_label: mode+
+sidebar_label: mode
 title: mode Config
 description: You can learn about the mode config in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
@@ -26,7 +26,7 @@ You can set the **mode** parameter to the following values:
 
 ### Default config
 
-By default, the **mode** property is set to the **"week"** value
+By default, the **mode** config is set to the **"week"** value
 
 ~~~jsx {}
 mode: "week" 
