@@ -1,5 +1,5 @@
 ---
-sidebar_label: api.setNext()?
+sidebar_label: api.setNext()-
 title: setNext Method
 description: You can learn about the setNext method in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
@@ -24,13 +24,13 @@ api.setNext(next: any): void;
 
 ~~~jsx {15}
 const url = "https://some_backend_url";
-const restProvider = new scheduler.RestDataProvider(url);
+const restProvider = new eventCalendar.RestDataProvider(url);
 
 Promise.all([
 	...
-]).then(([cards, columns, rows]) => {
+]).then((data) => {
 	const calendar = new eventCalendar.EventCalendar("#root", {
-		...
+		data
 	});
 	calendar.api.setNext(restProvider);
 });

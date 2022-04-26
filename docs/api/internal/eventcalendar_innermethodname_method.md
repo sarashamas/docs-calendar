@@ -1,19 +1,19 @@
 ---
-sidebar_label: INNER_METHOD_TEMPLATE()
-title: INNER_METHOD_TEMPLATE Method
-description: You can learn about the INNER_METHOD_TEMPLATE method in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
+sidebar_label: REST()
+title: REST Method
+description: You can learn about the REST method in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
 
-# INNER_METHOD_TEMPLATE()
+# REST()
 
 ### Description
 
-@short: short description...
+@short: Rest Methods description
 
 ### Usage
 
 ~~~jsx {}
-INNER_METHOD_TEMPLATE(
+REST(
 	parameter: type
 ): void;
 ~~~
@@ -22,13 +22,13 @@ INNER_METHOD_TEMPLATE(
 
 ### Example
 
-~~~jsx {7-10}
+~~~jsx {}
 // create Event Calendar
-const scheduler = new eventCalendar.EventCalendar("#root", {
+const calendar = new eventCalendar.EventCalendar("#root", {
 	// initial configuration parameters
 });
 
-scheduler.api.INNER_METHOD_TEMPLATE("event", {
+calendar.api.REST("event", {
    // parameters
 });
 ~~~
