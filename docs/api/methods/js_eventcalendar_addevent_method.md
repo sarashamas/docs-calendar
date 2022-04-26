@@ -1,5 +1,5 @@
 ---
-sidebar_label: addEvent()+
+sidebar_label: addEvent()
 title: addEvent Method
 description: You can learn about the addEvent method in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
@@ -8,12 +8,12 @@ description: You can learn about the addEvent method in the documentation of the
 
 ### Description
 
-@short: Adds a new event to Event Calendar
+@short: Adds new event (without opening an editor)
 
 ### Usage
 
 ~~~jsx {}
-addEvent({ event: object}): void;
+addEvent({ event: object }): void;
 ~~~
 
 ### Parameters

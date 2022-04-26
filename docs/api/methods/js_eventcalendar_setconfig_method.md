@@ -1,5 +1,5 @@
 ---
-sidebar_label: setConfig()+
+sidebar_label: setConfig()
 title: setConfig Method
 description: You can learn about the setConfig method in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
@@ -41,7 +41,7 @@ calendar.setConfig({
 		dragResize: true,
 		dragMove: true
 	},
-	locale: eventcalendar.ru,
+	locale: eventCalendar.ru,
 	mode: "month"
 });
 ~~~

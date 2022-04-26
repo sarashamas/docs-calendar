@@ -1,5 +1,5 @@
 ---
-sidebar_label: updateCalendar()+
+sidebar_label: updateCalendar()
 title: updateCalendar Method
 description: You can learn about the updateCalendar method in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
@@ -37,16 +37,13 @@ const calendar = new eventCalendar.EventCalendar("#root", {
 });
 
 const new_calendar_data = {
-	calendar:  {
-		id: "Movie",
-		active: true,
-		label: "New Calendar",
-		color: {
-			background: "#CEEDC3",
-			border: "#77D257"
-		}
-	},
-	id: "Movie"
+	id: "Movie",
+	active: true,
+	label: "New Calendar",
+	color: {
+		background: "#CEEDC3",
+		border: "#77D257"
+	}
 };
 // update data of the calendar with the "Movie" ID
 calendar.updateCalendar({
