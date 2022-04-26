@@ -8,9 +8,9 @@ description: You can learn about the initialization in the documentation of the 
 
 This guide will give you detailed instructions on how to create Event Calendar on a page to enrich your application with rich features of this tool. Take the following steps to get a ready-to-use component:
 
-1. [Include the Event Calendar source files on a page](#including-source-files).
-2. [Create a container for Event Calendar](#creating-container).
-3. [Initialize Event Calendar with a constructor](#initializing-event-calendar).
+1. [Include the Event Calendar source files on a page](#including-source-files)
+2. [Create a container for Event Calendar](#creating-container)
+3. [Initialize Event Calendar with a constructor](#initializing-event-calendar)
 
 ## Including source files
 
@@ -21,7 +21,7 @@ To create Event Calendar, you need to include 2 source files on your page:
 - *eventCalendar.js*
 - *eventCalendar.css*
 
-Make sure that you set correct relative paths to the source files:
+Make sure that you set the correct paths to the source files:
 
 ~~~html title="index.html"
 <script type="text/javascript" src="./dist/eventCalendar.js"></script>  
@@ -49,8 +49,6 @@ new eventCalendar.EventCalendar("#root", {
     // configuration properties
 });
 ~~~
-
-### Configuration properties
 
 :::tip
 The list of the Event Calendar configuration properties can be found [**here**](../../api/overview/properties_overview).
