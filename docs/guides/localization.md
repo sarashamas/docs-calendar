@@ -14,9 +14,8 @@ The English locale is used by default:
 
 ~~~jsx {}
 const en = {
-	lang: "en",
-    dateFnsLocale: dateFnsLocaleEn, // TODO
-    scheduler: {
+    dateFnsLocale: dateFnsLocaleEn, // ??? TODO
+    scheduler: { // ??? Rename
         "Create event": "Create event",
         "Edit event": "Edit event",
         "Delete event": "Delete event",
@@ -31,14 +30,31 @@ const en = {
         Week: "Week",
         Month: "Month",
         Calendars: "Calendars",
-        timeFormat: "h a",
+        // time and date settings
+        timeFormat: 12,
+        hourFormat: "h",
+        minuteFormat: "mm",
         monthFormat: "EEE",
         dateFormat: "EEE, d"
     },
-    core: { // TODO
-		...
-		weekStart: 7
-	}
+    core: {
+        // UI controls translations here (TODO !!!)
+        ..., 
+        // months and days translations  
+        months: [
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        ],
+        monthsShort: [
+            "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+        ],
+        days: [ 
+            "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" 
+        ],
+        // start of week
+        weekStart: 7
+    }
 };
 ~~~
 
@@ -51,9 +67,8 @@ Besides the ***en*** locale, Event Calendar also includes a built-in ***ru*** on
 
 ~~~jsx
 const ru = {
-	lang: "en",
-    dateFnsLocale: dateFnsLocaleEn, // TODO
-    scheduler: {
+    dateFnsLocale: dateFnsLocaleRu, // ??? TODO
+    scheduler: { // ??? Rename
         "Create event": "Создать событие",
         "Edit event": "Редактировать событие",
         "Delete event": "Удалить событие",
@@ -68,14 +83,31 @@ const ru = {
         Week: "Неделя",
         Month: "Месяц",
         Calendars: "Календари",
-        timeFormat: "h a",
+        // настройки даты и времени
+        timeFormat: 24,
+        hourFormat: "H",
+        minuteFormat: "mm",
         monthFormat: "EEE",
         dateFormat: "EEE, d"
     },
-    core: { // TODO
-		...
-		weekStart: 7
-	}
+    core: {
+        // здесь будут переводы контролов календаря (TODO !!!)
+        ..., 
+        // переводы для месяцев и дней календаря 
+        months: [
+            "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", 
+            "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
+        ],
+        monthsShort: [
+            "Янв", "Фев", "Мар", "Апр", "Май", "Июн",
+            "Июл", "Авг", "Сен", "Окт", "Ноя", "Дек"
+        ],
+        days: [ 
+            "Вск", "Пон", "Втр", "Срд", "Чет", "Птн", "Суб"
+        ],
+        // день начала недели
+        weekStart: 7
+    }
 };
 ~~~
 </details>
@@ -84,12 +116,12 @@ const ru = {
 
 To apply a custom locale you need to:
 
-- create the custom locale (or modify the existing one) and provide translations for all text labels in Event Calendar (it can be any language you need)
-- apply the new locale via the [**locale**](api/config/event_calendar_locale_config.md) property or by calling the [**setLocale()**](api/methods/event_calendar_setlocale_method.md) method, that takes an object with translations (custom locale) as a parameter
+- create the custom locale (or modify the existing one) and provide translations for all text labels of Event Calendar (it can be any language you need)
+- apply the new locale via the [**locale**](api/config/event_calendar_locale_config.md) property or via the [**setLocale()**](api/methods/event_calendar_setlocale_method.md) method, that takes an object with translations (custom locale) as a parameter
 
 ## Example
 
-In this snippet you can see how to switch through the *EN*, *RU* and *CN* locales:
+In this snippet you can see how to switch between the *EN* and *RU* locales:
 
 **[TODO]!!! Заменить ссылку на сниппет с локализацией**
 <iframe src="" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
