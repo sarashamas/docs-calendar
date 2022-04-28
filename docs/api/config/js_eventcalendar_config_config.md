@@ -18,13 +18,6 @@ config?: {
     dragResize?: boolean,
     dragMove?: boolean,
 
-    tableHeaderHeight?: number,
-    eventHeight?: number,
-
-    timeStep?: number,
-    timeRange?: [number, number],
-    defaultEventDuration?: number,
-
     eventInfoOnClick?: boolean, 
     editorOnDblClick?: boolean,
     createEventOnDbClick?: boolean,
@@ -32,6 +25,13 @@ config?: {
     eventsOverlay?: boolean,
     autoSave?: boolean,
     readonly?: boolean,
+
+    tableHeaderHeight?: number,
+    eventHeight?: number,
+
+    timeStep?: number,
+    timeRange?: [number, number],
+    defaultEventDuration?: number,
 
     views?: { 
        day?: object,
@@ -48,34 +48,43 @@ In the **config** object you can specify the following parameters:
 - `dragCreate` - (optional) enables/disables an ability to create new events via d-n-d
 - `dragResize` - (optional) enables/disables an ability to resize events via d-n-d
 - `dragMove` - (optional) enables/disables an ability to move events via d-n-d
-- `tableHeaderHeight` - (optional) a height of the Event Calendar header (px)
-- `eventHeight` - (optional) a height of the Event Calendar events
-- `timeStep` - (optional) a step of moving an event via d-n-d
-- `timeRange` - (optional) an array with start and end time of day in the "day" and "week" modes
-- `defaultEventDuration` - (optional) a duration of the new created event by default (without taking into account creating an event via d-n-d)
 - `eventInfoOnClick` - (optional) enables/disables an ability to show info popup by click
 - `editorOnDblClick` - (optional) enables/disables an ability to open editor by double click
 - `createEventOnDbClick` - (optional) enables/disables an ability to create an event by double click
 - `eventsOverlay` - (optional) enables/disables an ability to overlay events
 - `autoSave` - (optional) enables/disables an ability to auto save event data (via the editor)
 - `readonly` - (optional) enables/disables an ability to perform operations on events
+- `tableHeaderHeight` - (optional) a height of the Event Calendar header (px)
+- `eventHeight` - (optional) a height of the Event Calendar multievents
+- `timeStep` - (optional) a step of moving an event via d-n-d
+- `timeRange` - (optional) an array with start and end time of day in the "day" and "week" modes (*0-24*)
+- `defaultEventDuration` - (optional) a duration of the new created event by default (without taking into account creating an event via d-n-d)
 - `views` - (optional) an object of configurations of the specific view modes. Here you can specify the following objects of settings:
     - `day` - (optional) an object of settings of the "Day" view mode
     - `week` - (optional) an object of settings of the "Week" view mode
     - `month` - (optional) an object of settings of the "Month" view mode
 
-:::info
+:::note
 To configure the **Day**, **Week** and **Month** view modes separately, you can specify the following parameters:
-- `eventsOverlay` - (optional) enables/disables an ability to overlay events (for **Day** and **Week** modes only)
-- `timeStep` - (optional) a step of moving an event via d-n-d (for **Day** and **Week** modes only)
-- `eventHeight` - (optional) a height of the Event Calendar events (for all view modes)
-- `timeRange` - (optional) an array with start and end time of day (for **Day** and **Week** modes only)
-- `maxEventsPerCell` - (optional) a max mumber of events per cell (for the **Month** mode only)
-- `dayHeight` - (optional) a min height of a grid cell (for the **Month** mode only)
-- `hourScaleWidth` - (optional) a column width of the "hour" scale of the grid (for **Day** and **Week** modes only)
-- `hourHeight` - (optional) a row height of the "hour" scale (for **Day** and **Week** modes only)
-- `eventMargin` - (optional) a space between events when **eventsOverlay** is set to *false* (for **Day** and **Week** modes only)
-- `columnPadding` - (optional) a right padding of the grid column (for **Day** and **Week** modes only)
+
+<h4 style = {{color: "green"}}>Common settings</h4>
+
+- `eventHeight?: number` - (optional) a height of the Event Calendar multievents
+
+<h4 style = {{color: "green"}}>"Day" and "Week" view modes settings</h4>
+
+- `eventsOverlay?: boolean` - (optional) enables/disables an ability to overlay events
+- `timeStep?: number` - (optional) a step of moving an event via d-n-d
+- `timeRange?: array` - (optional) an array with start and end time of day
+- `hourScaleWidth?: number` - (optional) a column width of the "hour" scale of the grid
+- `hourHeight?: number` - (optional) a row height of the "hour" scale
+- `eventMargin?: string` - (optional) a space between events (*px*). To use this parameter, you need to set ***eventsOverlay*** to ***false***
+- `columnPadding?: string` - (optional) a right padding of the grid column (*px*)
+
+<h4 style = {{color: "green"}}>"Month" view mode settings</h4>
+
+- `dayHeight?: number` - (optional) a min height of a grid cell 
+- `maxEventsPerCell?: number` - (optional) a max number of events per cell
 :::
 
 ### Default config
@@ -97,17 +106,22 @@ const defaultConfig = {
     dragCreate: true,
     dragResize: true,
     dragMove: true,
-    tableHeaderHeight: 32,
-    eventHeight: 24,
-    timeStep: 5,
-    timeRange: [0, 24],
-    defaultEventDuration: 60,
+
     eventInfoOnClick: true,
     editorOnDblClick: true,
     createEventOnDbClick: true,
+
     eventsOverlay: false,
     autoSave: true,
     readonly: false,
+
+    tableHeaderHeight: 32,
+    eventHeight: 24,
+
+    timeStep: 5,
+    timeRange: [0, 24],
+    defaultEventDuration: 60,
+    
     views: {
         week: defaultWeekConfig,
         day: defaultWeekConfig,
@@ -133,14 +147,14 @@ new eventCalendar.EventCalendar("#root", {
         dragMove: false,
         views: {
             day: {
+                eventsOverlay: false, 
                 hourScaleWidth: 60, 
                 hourHeight: 50, 
-                eventsOverlay: false,  
                 timeStep: 20, 
                 eventHeight: 30, 
+                timeRange: [8, 18], 
                 eventMargin: "10px", 
-                columnPadding: "450px", 
-                timeRange: [8, 18] 
+                columnPadding: "450px"
             }
         }
     },
