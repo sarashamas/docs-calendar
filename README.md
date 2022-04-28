@@ -27,7 +27,7 @@ $ yarn start
 
 ## Related sources
 
-[Download DHTMLX Kanban](https://dhtmlx.com/docs/products/dhtmlxEventCalendar/download.shtml)
+[Download DHTMLX Event Calendar](https://dhtmlx.com/docs/products/dhtmlxEventCalendar/download.shtml)
 
 [Live demos](https://snippet.dhtmlx.com/)
 
