@@ -116,8 +116,8 @@ const ru = {
 
 To apply a custom locale you need to:
 
-- create the custom locale (or modify the existing one) and provide translations for all text labels of Event Calendar (it can be any language you need)
-- apply the new locale via the [**locale**](api/config/event_calendar_locale_config.md) property or via the [**setLocale()**](api/methods/event_calendar_setlocale_method.md) method, that takes an object with translations (custom locale) as a parameter
+- create custom locale (or modify the existing one) and provide translations for all text labels of Event Calendar (it can be any language you need)
+- apply new locale via the [**locale**](api/config/js_eventcalendar_locale_config.md) property or via the [**setLocale()**](api/methods/js_eventcalendar_setlocale_method.md) method, that takes an object with translations (custom locale) as a parameter
 
 ## Example
 
