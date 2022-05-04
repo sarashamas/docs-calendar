@@ -17,7 +17,7 @@ data?: [
     {
         start_date: Date,
         end_date: Date,
-        allDay?: boolean, // !!! TODO
+        allDay?: boolean, 
         id?: string | number,
         type?: string | number,
         text?: string,
@@ -40,7 +40,12 @@ For each *event* you can specify the following parameters (data):
 
 - `start_date` - (required) a start date of the event
 - `end_date` - (required) an end date of the event
-- `allDay` - (optional) **!!! TODO**
+- `allDay` - (optional) enables/disables the event duration throughout the day
+
+:::note
+If the **allDay** parameter is set to *true*, the **start_date** and **end_date** parameters of the event will be ignored!
+:::
+
 - `id` - (optional) an ID of the event
 - `type` - (optional) a type (calendar) of the event
 - `text` - (optional) a label of the event
@@ -61,13 +66,14 @@ To set the Event Calendar data dynamically, you can use the
 
 ### Example
 
-~~~jsx {3-20}
+~~~jsx {3-21}
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
     data: [
         {
             start_date: new Date("2021-05-24 00:00:00"),
             end_date: new Date("2021-06-08 00:00:00"),
+            allDay: false,
             id: "1",
             type: "Work",
             text: "Current event",
