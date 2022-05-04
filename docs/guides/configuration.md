@@ -34,15 +34,15 @@ To configure the appearance and functionality of *timetable grid*, you can use t
 
 In the object of the **config** parameter you can manage the following behaviour:
 
-- an ability to create new events by drag-n-drop `dragCreate: true`
-- an ability to reschedule events by resizing `dragResize: true`
-- an ability to reschedule events by drag-n-drop `dragMove: true`
-- an ability to display info popup by click `eventInfoOnClick: true`
-- an ability to open editor by double click `editorOnDblClick: true`
-- an ability to create new event by double click `createEventOnDbClick: true`
-- an ability to overlay events `eventsOverlay: true`
-- an ability to auto save the event data (via the editor) `autoSave: true`
-- an ability to block all operations with events `readonly: true`
+- an ability to create new events by drag-n-drop `dragCreate: boolean`
+- an ability to reschedule events by resizing `dragResize: boolean`
+- an ability to reschedule events by drag-n-drop `dragMove: boolean`
+- an ability to display info popup by click `eventInfoOnClick: boolean`
+- an ability to open editor by double click `editorOnDblClick: boolean`
+- an ability to create new event by double click `createEventOnDbClick: boolean`
+- an ability to overlay events `eventsOverlay: boolean`
+- an ability to auto save the event data (via the editor) `autoSave: boolean`
+- an ability to block all operations with events `readonly: boolean`
 
 ~~~jsx {4-12}
 // create Event Calendar
@@ -67,11 +67,11 @@ new eventCalendar.EventCalendar("#root", {
 
 In the object of the **config** parameter you can also set the grid appearance:
 
-- a height of the grid header (px) `tableHeaderHeight: 20`
-- a height of the events (px) `eventHeight: 50`
-- a step of moving events via drag-n-drop `timeStep: 5`
-- a start and end time of day `timeRange: [9,17]`
-- a duration of the new created events by default `defaultEventDuration: 60`
+- a height of the grid header `tableHeaderHeight: number`
+- a height of the events `eventHeight: number`
+- a step of moving events via drag-n-drop `timeStep: number`
+- a start and end time of day `timeRange: [number, number]`
+- a duration of the new created events by default `defaultEventDuration: number`
 
 ~~~jsx {3-7}
 config: {
@@ -79,7 +79,7 @@ config: {
     tableHeaderHeight: 20,
     eventHeight: 50,
     timeStep: 5,
-    timeRange: [9,17],
+    timeRange: [9, 17],
     defaultEventDuration: 60
 }
 ~~~
@@ -171,7 +171,7 @@ new eventCalendar.EventCalendar("#root", {
             type: "text", // or "textarea"
             key: "label_key",
             label: "Event label",
-            config: {
+            config: { 
                 readonly: false,
                 focus: true,
                 disabled: false,
@@ -219,7 +219,7 @@ The editor field of **color** type you can set in the following way:
 new eventCalendar.EventCalendar("#root", {
     editorShape: [
         {
-            type: "color", // select and multiselect TODO ?
+            type: "color", 
             key: "color_key",
             label: "Event color",
             colors: ["#65D3B3", "#FFC975", "#58C3FE"],
@@ -331,6 +331,14 @@ To configure a sidebar state, you can use the [sidebar](api/config/js_eventcalen
 - `sidebar: {show: hide}` - a sidebar is hidden (a toggle button for switching sidebar is shown)
 - `sidebar: null` - the sidebar and toggle button are hidden
 
+~~~jsx {3}
+// create Event Calendar
+new eventCalendar.EventCalendar("#root", {
+    sidebar: { show: false }, // the sidebar is hidden initially
+    // other configuration parameters
+});
+~~~
+
 ## View Modes
 
 To set an initial view mode, you can use the [mode](api/config/js_eventcalendar_mode_config.md) property. There are 3 available view modes:
@@ -339,8 +347,23 @@ To set an initial view mode, you can use the [mode](api/config/js_eventcalendar_
 - `mode: "week"` - a "Week" view mode
 - `mode: "month"` - a "Month" view mode
 
+~~~jsx {3}
+// create Event Calendar
+new eventCalendar.EventCalendar("#root", {
+    mode: "week", // the "Week" mode is displayed initially
+    // other configuration parameters
+});
+~~~
+
 ## Initial Date
 
 To set (select) an initial date, you can use the [date](api/config/js_eventcalendar_date_config.md) property:
 
 - `date: new Date("2022-04-28 09:00:00")` - an initial selected date
+~~~jsx {3}
+// create Event Calendar
+new eventCalendar.EventCalendar("#root", {
+    date: new Date("2022-04-28 09:00:00", // the initially selected date
+    // other configuration parameters
+});
+~~~
