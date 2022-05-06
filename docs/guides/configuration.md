@@ -8,27 +8,21 @@ description: You can learn about the configuration in the documentation of the D
 
 You can configure the *Event Calendar* appearance and functionality via corresponding API. The available parameters will allow you to: 
 
-- configure the timetable grid (the [**config**](api/config/js_eventcalendar_config_config.md) property) 
-- configure the editor fields (the [**editorShape**](api/config/js_eventcalendar_editorshape_config.md) property)
-- set the initial sidebar state (the [**sidebar**](api/config/js_eventcalendar_sidebar_config.md) property) 
-- set the initial view mode (the [**mode**](api/config/js_eventcalendar_mode_config.md) property)
-- set the initial date (the [**date**](api/config/js_eventcalendar_date_config.md) property) 
-- customize the appearance of visual elements (the [**templates**](api/config/js_eventcalendar_templates_config.md) property)
-:::tip
-*Refer to the [**Customisation**](guides/customization.md) section for details*
-:::
-- apply the desired locale (the [**locale**](api/config/js_eventcalendar_locale_config.md) property)
-:::tip
-*Refer to the [**Localization**](guides/localization.md) section for details*
-:::
-- load data for events and calendars (the [**data**](api/config/js_eventcalendar_data_config.md) and [**calendars**](api/config/js_eventcalendar_calendars_config.md) properties) 
-:::tip
-*Refer to the [**Working with data**](guides/working_with_data.md) section for details*
-:::
+- configure the timetable grid via the [`config`](api/config/js_eventcalendar_config_config.md) property
+- configure the editor fields via the [`editorShape`](api/config/js_eventcalendar_editorshape_config.md) property
+- set the initial sidebar state via the [`sidebar`](api/config/js_eventcalendar_sidebar_config.md) property
+- set the initial view mode via the [`mode`](api/config/js_eventcalendar_mode_config.md) property
+- set the initial date via the [`date`](api/config/js_eventcalendar_date_config.md) property
+- customize the appearance of visual elements via the [`templates`](api/config/js_eventcalendar_templates_config.md) property
+    - *Refer to the [**Customisation**](guides/customization.md) section for details!*
+- apply the desired locale via the [`locale`](api/config/js_eventcalendar_locale_config.md) property
+    - *Refer to the [**Localization**](guides/localization.md) section for details!*
+- load data for events and calendars via the [`data`](api/config/js_eventcalendar_data_config.md) and [`calendars`](api/config/js_eventcalendar_calendars_config.md) properties 
+    - *Refer to the [**Working with data**](guides/working_with_data.md) section for details!*
 
 ## Timetable grid
 
-To configure the appearance and functionality of *timetable grid*, you can use the [config](api/config/js_eventcalendar_config_config.md) property. 
+To configure the appearance and functionality of *timetable grid*, you can use the [config](api/config/js_eventcalendar_config_config.md) property.
 
 ### Configuring behaviour
 
@@ -327,8 +321,8 @@ Unless you specify the editor settings via the [**editorShape**](api/config/js_e
 
 To configure a sidebar state, you can use the [sidebar](api/config/js_eventcalendar_sidebar_config.md) property. There are 3 available states:
 
-- `sidebar: {show: true}` - a sidebar is shown (a toggle button for switching sidebar is shown)
-- `sidebar: {show: hide}` - a sidebar is hidden (a toggle button for switching sidebar is shown)
+- `sidebar: { show: true }` - a sidebar is shown (a toggle button for switching sidebar is shown)
+- `sidebar: { show: hide }` - a sidebar is hidden (a toggle button for switching sidebar is shown)
 - `sidebar: null` - the sidebar and toggle button are hidden
 
 ~~~jsx {3}
