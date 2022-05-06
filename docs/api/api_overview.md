@@ -23,9 +23,11 @@ new eventCalendar.EventCalendar("#root", {
 
 | Name                                                     | Description                                                     |
 | -------------------------------------------------------- | --------------------------------------------------------------- |
+| [](api/methods/js_eventcalendar_addcalendar_method.md)   | @getshort(api/methods/js_eventcalendar_addcalendar_method.md)   |
 | [](api/methods/js_eventcalendar_addevent_method.md)      | @getshort(api/methods/js_eventcalendar_addevent_method.md)      |
 | [](api/methods/js_eventcalendar_closeeditor_method.md)   | @getshort(api/methods/js_eventcalendar_closeeditor_method.md)   |
 | [](api/methods/js_eventcalendar_createevent_method.md)   | @getshort(api/methods/js_eventcalendar_createevent_method.md)   |
+| [](api/methods/js_eventcalendar_deletecalendar_method.md)| @getshort(api/methods/js_eventcalendar_deletecalendar_method.md)|
 | [](api/methods/js_eventcalendar_deleteevent_method.md)   | @getshort(api/methods/js_eventcalendar_deleteevent_method.md)   |
 | [](api/methods/js_eventcalendar_destructor_method.md)    | @getshort(api/methods/js_eventcalendar_destructor_method.md)    |
 | [](api/methods/js_eventcalendar_getevent_method.md)      | @getshort(api/methods/js_eventcalendar_getevent_method.md)      |

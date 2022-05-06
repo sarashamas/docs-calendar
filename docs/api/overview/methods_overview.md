@@ -8,9 +8,11 @@ description: You can explore a methods overview in the documentation of the DHTM
 
 | Name                                                    | Description                                                    |
 | ------------------------------------------------------- | -------------------------------------------------------------- |
+| [](../methods/js_eventcalendar_addcalendar_method.md)   | @getshort(../methods/js_eventcalendar_addcalendar_method.md)   |
 | [](../methods/js_eventcalendar_addevent_method.md)      | @getshort(../methods/js_eventcalendar_addevent_method.md)      |
 | [](../methods/js_eventcalendar_closeeditor_method.md)   | @getshort(../methods/js_eventcalendar_closeeditor_method.md)   |
 | [](../methods/js_eventcalendar_createevent_method.md)   | @getshort(../methods/js_eventcalendar_createevent_method.md)   |
+| [](../methods/js_eventcalendar_deletecalendar_method.md)| @getshort(../methods/js_eventcalendar_deletecalendar_method.md)|
 | [](../methods/js_eventcalendar_deleteevent_method.md)   | @getshort(../methods/js_eventcalendar_deleteevent_method.md)   |
 | [](../methods/js_eventcalendar_destructor_method.md)    | @getshort(../methods/js_eventcalendar_destructor_method.md)    |
 | [](../methods/js_eventcalendar_getevent_method.md)      | @getshort(../methods/js_eventcalendar_getevent_method.md)      |

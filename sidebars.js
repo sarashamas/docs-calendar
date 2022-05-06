@@ -34,9 +34,11 @@ module.exports = {
 						id: "api/overview/methods_overview"
 					},
 					items: [
+						"api/methods/js_eventcalendar_addcalendar_method",
 						"api/methods/js_eventcalendar_addevent_method",
 						"api/methods/js_eventcalendar_closeeditor_method",
 						"api/methods/js_eventcalendar_createevent_method",
+						"api/methods/js_eventcalendar_deletecalendar_method",
 						"api/methods/js_eventcalendar_deleteevent_method",
 						"api/methods/js_eventcalendar_destructor_method",
 						"api/methods/js_eventcalendar_getevent_method",
