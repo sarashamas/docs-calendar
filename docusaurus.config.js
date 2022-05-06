@@ -186,7 +186,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
 		// hideableSidebar: true,
-		autoCollapseSidebarCategories: true, // collapse a sidebar category when clicking on the other category
+		// (deprecated) autoCollapseSidebarCategories: true, // collapse a sidebar category when clicking on the other category
 		navbar: {
 			// hideOnScroll:true,
 			title: 'JavaScript Event Calendar Documentation',
