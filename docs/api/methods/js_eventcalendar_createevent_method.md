@@ -8,7 +8,7 @@ description: You can learn about the createEvent method in the documentation of 
 
 ### Description
 
-@short: Creates new event and opens an editor
+@short: Creates a new event and opens an editor
 
 ### Usage
 

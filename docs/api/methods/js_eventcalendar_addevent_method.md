@@ -8,7 +8,7 @@ description: You can learn about the addEvent method in the documentation of the
 
 ### Description
 
-@short: Adds new event (without opening an editor)
+@short: Adds a new event (without opening an editor)
 
 ### Usage
 

@@ -8,7 +8,7 @@ description: You can learn about the setLocale method in the documentation of th
 
 ### Description
 
-@short: Applies a new locale to the Event Calendar widget
+@short: Applies a new locale to Event Calendar
 
 ### Usage
 

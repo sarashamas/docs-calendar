@@ -30,7 +30,7 @@ Note, the **ID** of the calendar to be updated is required. Other calendar param
 
 ### Example
 
-~~~jsx {6-17,19-22}
+~~~jsx {6-14,16-19}
 // create Event Calendar
 const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration parameters

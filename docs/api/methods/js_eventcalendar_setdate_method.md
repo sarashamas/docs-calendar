@@ -8,7 +8,7 @@ description: You can learn about the setDate method in the documentation of the 
 
 ### Description
 
-@short: Sets the current date of Event Calendar
+@short: Sets a current date of Event Calendar
 
 ### Usage
 

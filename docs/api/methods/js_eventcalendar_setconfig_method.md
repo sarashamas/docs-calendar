@@ -8,7 +8,7 @@ description: You can learn about the setConfig method in the documentation of th
 
 ### Description
 
-@short: Sets the config parameters of the Event Calendar widget
+@short: Sets the config parameters of Event Calendar
 
 ### Usage
 

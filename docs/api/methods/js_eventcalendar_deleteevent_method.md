@@ -8,7 +8,7 @@ description: You can learn about the deleteEvent method in the documentation of 
 
 ### Description
 
-@short: Removes an event by its ID from datastore of Event Calendar
+@short: Removes an event by its ID
 
 ### Usage
 
@@ -27,6 +27,6 @@ deleteEvent({ id: string | number }): void;
 const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration parameters
 });
-// remove an event with the "1" ID
+// delete an event with the "1" ID
 calendar.deleteEvent({ id: "1" });
 ~~~

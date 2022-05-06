@@ -8,7 +8,7 @@ description: You can learn about the openEditor method in the documentation of t
 
 ### Description
 
-@short: Opens an editor for the event by its ID
+@short: Opens an editor for an event by its ID
 
 ### Usage
 
