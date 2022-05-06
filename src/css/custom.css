@@ -99,10 +99,25 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 /* end Header link */
 
+/* icons styles */
+
+.iconExternalLink_I5OW { /* hides the link icon */
+  display: none
+}
+
+/* end icons styles */
+
 /* imgs */
 
 .markdown img {
   margin-bottom: var(--ifm-leading);
+
+    /* center alignment of images */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  
+    border-radius: 3px;
 }
 
 /* end imgs */
@@ -127,8 +142,10 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 /* for Code Snippet iframe */
 
 .snippet_iframe {
-border: 1px solid var(--ifm-hr-border-color);
-margin-bottom: var(--ifm-leading);
+  border: 1px solid var(--ifm-hr-border-color);
+  margin-bottom: var(--ifm-leading);
+
+  border-radius: 5px; /* new */
 }
 
 /* end for Code Snippet iframe */
@@ -143,9 +160,17 @@ code {
 
 /* end small code block */
 
+/* styles for block of code */
+
+.token-line.theme-code-block-highlighted-line{ /* added after updating to 2.0.0-beta.19 */
+  background-color: rgb(156 159 166 / 30%);
+}
+
+/* end styles for block of code */
+
 /* list */
 
-.markdown ul  {
+.markdown ul {
   margin-top: 10px;
   line-height: 38px;
 }
