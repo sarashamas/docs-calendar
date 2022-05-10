@@ -127,8 +127,10 @@ module.exports = {
 					},
 					items: [
 						// Event Calendar events
+						"api/events/js_eventcalendar_addcalendar_event",
 						"api/events/js_eventcalendar_addevent_event",
 						"api/events/js_eventcalendar_closeeventinfo_event",
+						"api/events/js_eventcalendar_deletecalendar_event",
 						"api/events/js_eventcalendar_deleteevent_event",
 						"api/events/js_eventcalendar_editevent_event",
 						"api/events/js_eventcalendar_selectevent_event",

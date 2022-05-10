@@ -37,7 +37,7 @@ const calendar = new eventCalendar.EventCalendar("#root", {
 });
 
 const new_calendar_data = {
-	id: "Movie",
+	id: "movie",
 	active: true,
 	label: "New Calendar",
 	color: {
@@ -48,6 +48,6 @@ const new_calendar_data = {
 // update data of the calendar with the "Movie" ID
 calendar.updateCalendar({
 	calendar: new_calendar_data,
-	id: "Movie"
+	id: "movie"
 });
 ~~~
