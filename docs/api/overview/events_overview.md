@@ -8,8 +8,10 @@ description: You can explore an events overview in the documentation of the DHTM
 
 | Name                                                    | Description                                                    |
 | ------------------------------------------------------- | -------------------------------------------------------------- |
+| [](../events/js_eventcalendar_addcalendar_event.md)     | @getshort(../events/js_eventcalendar_addcalendar_event.md)     |
 | [](../events/js_eventcalendar_addevent_event.md)        | @getshort(../events/js_eventcalendar_addevent_event.md)        |
 | [](../events/js_eventcalendar_closeeventinfo_event.md)  | @getshort(../events/js_eventcalendar_closeeventinfo_event.md)  |
+| [](../events/js_eventcalendar_deletecalendar_event.md)  | @getshort(../events/js_eventcalendar_deletecalendar_event.md)  |
 | [](../events/js_eventcalendar_deleteevent_event.md)     | @getshort(../events/js_eventcalendar_deleteevent_event.md)     |
 | [](../events/js_eventcalendar_editevent_event.md)       | @getshort(../events/js_eventcalendar_editevent_event.md)       |
 | [](../events/js_eventcalendar_selectevent_event.md)     | @getshort(../events/js_eventcalendar_selectevent_event.md)     |

@@ -73,8 +73,10 @@ new eventCalendar.EventCalendar("#root", {
 
 | Name                                                     | Description                                                     |
 | -------------------------------------------------------- | --------------------------------------------------------------- |
+| [](api/events/js_eventcalendar_addcalendar_event.md)     | @getshort(api/events/js_eventcalendar_addcalendar_event.md)     |
 | [](api/events/js_eventcalendar_addevent_event.md)        | @getshort(api/events/js_eventcalendar_addevent_event.md)        |
 | [](api/events/js_eventcalendar_closeeventinfo_event.md)  | @getshort(api/events/js_eventcalendar_closeeventinfo_event.md)  |
+| [](api/events/js_eventcalendar_deletecalendar_event.md)  | @getshort(api/events/js_eventcalendar_deletecalendar_event.md)  |
 | [](api/events/js_eventcalendar_deleteevent_event.md)     | @getshort(api/events/js_eventcalendar_deleteevent_event.md)     |
 | [](api/events/js_eventcalendar_editevent_event.md)       | @getshort(api/events/js_eventcalendar_editevent_event.md)       |
 | [](api/events/js_eventcalendar_selectevent_event.md)     | @getshort(api/events/js_eventcalendar_selectevent_event.md)     |
