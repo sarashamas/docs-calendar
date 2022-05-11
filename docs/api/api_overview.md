@@ -92,6 +92,7 @@ new eventCalendar.EventCalendar("#root", {
 | Name                                                 | Description                                                 |
 | ---------------------------------------------------- | ----------------------------------------------------------- |
 | [](api/config/js_eventcalendar_calendars_config.md)  | @getshort(api/config/js_eventcalendar_calendars_config.md)  |
+| [](api/config/js_eventcalendar_colors_config.md)     | @getshort(api/config/js_eventcalendar_colors_config.md)     |
 | [](api/config/js_eventcalendar_config_config.md)     | @getshort(api/config/js_eventcalendar_config_config.md)     |
 | [](api/config/js_eventcalendar_data_config.md)       | @getshort(api/config/js_eventcalendar_data_config.md)       |
 | [](api/config/js_eventcalendar_date_config.md)       | @getshort(api/config/js_eventcalendar_date_config.md)       |

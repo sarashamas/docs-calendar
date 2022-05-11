@@ -155,6 +155,7 @@ module.exports = {
 					items: [
 						// Event Calendar properties
 						"api/config/js_eventcalendar_calendars_config",
+						"api/config/js_eventcalendar_colors_config",
 						"api/config/js_eventcalendar_config_config",
 						"api/config/js_eventcalendar_data_config",
 						"api/config/js_eventcalendar_date_config",

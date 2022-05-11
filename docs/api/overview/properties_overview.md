@@ -9,6 +9,7 @@ description: You can explore a properties overview in the documentation of the D
 | Name                                                | Description                                                |
 | --------------------------------------------------- | ---------------------------------------------------------- |
 | [](../config/js_eventcalendar_calendars_config.md)  | @getshort(../config/js_eventcalendar_calendars_config.md)  |
+| [](../config/js_eventcalendar_colors_config.md)     | @getshort(../config/js_eventcalendar_colors_config.md)     |
 | [](../config/js_eventcalendar_config_config.md)     | @getshort(../config/js_eventcalendar_config_config.md)     |
 | [](../config/js_eventcalendar_data_config.md)       | @getshort(../config/js_eventcalendar_data_config.md)       |
 | [](../config/js_eventcalendar_date_config.md)       | @getshort(../config/js_eventcalendar_date_config.md)       |
