@@ -8,7 +8,7 @@ description: You can learn about the date config in the documentation of the DHT
 
 ### Description
 
-@short: Optional. The initially selected date of Event Calendar
+@short: Optional. A selected date of Event Calendar
 
 ### Usage
 

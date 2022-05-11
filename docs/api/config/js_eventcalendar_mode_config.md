@@ -8,7 +8,7 @@ description: You can learn about the mode config in the documentation of the DHT
 
 ### Description
 
-@short: Optional. The initial view mode of Event Calendar
+@short: Optional. A view mode of Event Calendar
 
 ### Usage
 
