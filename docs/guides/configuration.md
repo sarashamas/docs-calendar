@@ -13,7 +13,7 @@ You can configure the *Event Calendar* appearance and functionality via correspo
 - set the initial sidebar state via the [`sidebar`](api/config/js_eventcalendar_sidebar_config.md) property
 - set the initial view mode via the [`mode`](api/config/js_eventcalendar_mode_config.md) property
 - set the initial date via the [`date`](api/config/js_eventcalendar_date_config.md) property
-- set the initial set of colors for colorpickers via the [`colors`](api/config/js_eventcalendar_colors_config.md) property
+- set the initial set of colors used in colorpicker via the [`colors`](api/config/js_eventcalendar_colors_config.md) property
 - customize the appearance of visual elements via the [`templates`](api/config/js_eventcalendar_templates_config.md) property
     - *Refer to the [**Customisation**](guides/customization.md) section for details!*
 - apply the desired locale via the [`locale`](api/config/js_eventcalendar_locale_config.md) property
@@ -149,7 +149,7 @@ The *editor* consists of the fields for managing the events data. To configure t
 
 - [**text** and **textarea**](#text-and-textarea-types)
 - [**combo**](#combo-type) (*select and multiselect ?*)
-- [**color**](#color-type)
+- [**colorSchema**](#colorschema-type)
 - [**checkbox**](#checkbox-type)
 - [**date**](#date-type)
 - **radio?** (TODO)
@@ -206,18 +206,31 @@ new eventCalendar.EventCalendar("#root", {
 });
 ~~~
 
-### Color type
+### ColorSchema type
 
-The editor field of **color** type you can set in the following way:
+The editor field of **colorSchema** type you can set in the following way:
 
-~~~jsx {3-12}
+~~~jsx {3-23}
 new eventCalendar.EventCalendar("#root", {
     editorShape: [
         {
-            type: "color", 
+            type: "colorSchema", 
             key: "color_key",
             label: "Event color",
-            colors: ["#65D3B3", "#FFC975", "#58C3FE"],
+            colors: [
+                {
+                    background: "#d62b31",
+                    border: "#32a852",
+                    textColor: "#e5f01d",
+                    colorpicker: "background"
+                },
+                {
+                    background: "#ccf5ff",
+                    border: "#00CDFF",
+                    textColor: "#e5f01d",
+                    colorpicker: "background"
+                }
+            ],
             config: {
                 clear: true,
                 placeholder: "Select color"

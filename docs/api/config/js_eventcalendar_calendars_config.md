@@ -11,7 +11,7 @@ description: You can learn about the calendars config in the documentation of th
 @short: Optional. An array of objects containing the calendars data
 
 :::info
-A **calendar** is a set of parameters you can apply to each event to group events by these parameters!
+A **calendar** is a set of parameters you can apply to the events to group them by these parameters!
 :::
 
 ### Usage
@@ -26,7 +26,7 @@ calendars?: [
 		color?: {
 			background?: string, 
 			border?: string,
-			color?: string
+			textColor?: string
 		}
 	}, {...}
 ];
@@ -38,12 +38,12 @@ For each **calendar** you can specify the following parameters (data):
 
 - `id` - (required) an ID of the calendar
 - `label` - (required) a text label of the calendar
-- `readonly` - (optional) enables/disables editing and deleting of the current calendar
-- `active` - (required) shows/hides all events of the current calendar
-- `color` - (optional) an object of the calendar styles. Here you can specify the following parameters:
-    - `background` - (optional) a background color of the events related to the current calendar
-    - `border` - (optional) a border color of the events related to the current calendar
-    - `color` - (optional) a font color of the events related to the current calendar
+- `active` - (required) shows/hides events of the current calendar
+- `readonly` - (optional) enables/disables an ability to edit and delete the current calendar
+- `color` - (optional) an object with the style parameters, applied to the events of current calendar. Here you can specify the following parameters (styles):
+	- `background` - (optional) a HEX code of the event background color related to the current calendar
+	- `border` - (optional) a HEX code of the event border color related to the current calendar
+	- `textColor` - (optional) a HEX code of the event text color related to the current calendar
 
 ### Default config
 
@@ -52,7 +52,7 @@ const defaultCalendars = [
 	{
 		id: "work",
 		label: "Work",
-		readonly: false, // TODO
+		readonly: false,
 		active: true,
 		color: {
 			background: "#d5eaf7",
@@ -62,7 +62,7 @@ const defaultCalendars = [
 	{
 		id: "meeting",
 		label: "Meeting",
-		readonly: false, // TODO
+		readonly: false,
 		active: true,
 		color: {
 			background: "#E6E5EC",
@@ -72,7 +72,7 @@ const defaultCalendars = [
 	{
 		id: "rest",
 		label: "Rest",
-		readonly: false, // TODO
+		readonly: false,
 		active: true,
 		color: {
 			background: "#EDD1EC",
@@ -82,7 +82,7 @@ const defaultCalendars = [
 	{
 		id: "movie",
 		label: "Movie",
-		readonly: false, // TODO
+		readonly: false,
 		active: true,
 		color: {
 			background: "#CEEDC3",
@@ -110,7 +110,7 @@ const calendars = [
 		color: {
 			background: "#EDD1EC",
 			border: "#AD44AB",
-            color: "#3e98db"
+            textColor: "#3e98db"
 		}
 	},
 	{
@@ -121,7 +121,7 @@ const calendars = [
 		color: {
 			background: "#CEEDC3",
 			border: "#77D257",
-            color: "#3e98db"
+            textColor: "#3e98db"
 		}
 	}
 ];

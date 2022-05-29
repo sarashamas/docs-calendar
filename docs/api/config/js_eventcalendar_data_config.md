@@ -22,12 +22,14 @@ data?: [
         type?: string | number,
         text?: string,
         details?: string,
-        background?: string,
-        border?: string,
-        color?: string,
         dragResize?: boolean,
         readonly?: boolean,
         dragMove?: boolean,
+        color?: {
+            background?: string,
+            border?: string,
+            textColor?: string
+        },
         [custom_key: string]?: any
     },
     {...} // other events data
@@ -50,12 +52,13 @@ If the **allDay** parameter is set to *true*, the **start_date** and **end_date*
 - `type` - (optional) a type (calendar) of the event
 - `text` - (optional) a label of the event
 - `details` - (optional) details of the event
-- `background` - (optional) a background color of the event
-- `border` - (optional) a border color of the event
-- `color` - (optional) a font color of the event
 - `dragResize` - (optional) enables/disables an ability to resize the event via d-n-d
 - `readonly` - (optional) enables/disables an ability to perform all the event's operations
 - `dragMove` - (optional) enables/disables an ability to move the event via d-n-d
+- `color` - (optional) an object with the style parameters of the event. Here you can specify the following parameters (styles):
+    - `background` - (optional) a HEX code of the event background color
+    - `border` - (optional) a HEX code of the event border color
+    - `textColor` - (optional) a HEX code of the event text color
 - `custom_key` - (optional) a custom key of the event
 
 :::info
@@ -66,7 +69,7 @@ To set the Event Calendar data dynamically, you can use the
 
 ### Example
 
-~~~jsx {3-21}
+~~~jsx {3-23}
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
     data: [
@@ -75,15 +78,17 @@ new eventCalendar.EventCalendar("#root", {
             end_date: new Date("2021-06-08 00:00:00"),
             allDay: false,
             id: "1",
-            type: "Work",
+            type: "work",
             text: "Current event",
             details: "Philippe-Chatrier Court\n Paris, FRA",
-            background: "red",
-            border: "green",
-            color: "orange",
             dragResize: true,
             readonly: false,
             dragMove: true,
+            color: {
+                background: "#EDD1EC",
+                border: "#AD44AB",
+                textColor: "#3e98db"
+            },
             custom_key: "Custom key of the event"
         },
         // other events data

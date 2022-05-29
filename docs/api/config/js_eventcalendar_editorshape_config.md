@@ -43,8 +43,16 @@ editorShape?: [
 			disabled?: boolean
 		},
 
-		// for a "color" type only
-		colors?: array,
+		// for a "colorSchema" type only
+		colors?: [
+			{
+				background?: string,
+				border?: string,
+				textColor? string,
+				colorpicker? string
+			},
+			{...}
+		],
 		config?: {
 			placeholder?: string,
 			clear?: boolean
@@ -126,9 +134,13 @@ const editorShape = [
 	- `placeholder` - (optional) a placeholder value
 	- `disabled` - (optional) enables/disables a field state
 
-#### - Parameters for a "color" type
+#### - Parameters for a "colorSchema" type
 
-- `colors` - (optional) an array with valid HEX codes
+- `colors` - (optional) an array of objects containing the parameters of colors used in colorpicker. For each set of colors you can specify the following parameters:
+	- `background` - (optional) a HEX code of the event background color
+	- `border` - (optional) a HEX code of the event border color
+	- `textColor` - (optional) a HEX code of the event text color
+	- `colorpicker` - (optional) a value (color) used in colorpicker. The possible values are *"background"* and *"border"*
 - `config` - (optional) a configuration object of the **"color"** field. Here you can specify the following parameters:
 	- `placeholder` - (optional) a placeholder value
 	- `clear` - (optional) shows/hides a "clear" icon
