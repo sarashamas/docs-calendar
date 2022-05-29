@@ -52,19 +52,19 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 }
 
 .markdown > h1 {
-  font-size: 1.8rem;
+  font-size: 3rem;
 }
 
 /* h2 */
 
 .markdown>h2 {
-  --ifm-h2-font-size: 1.5rem;
+  --ifm-h2-font-size: 2rem;
 }
 
 /* h3 */
 
 .markdown>h3 {
-  --ifm-h3-font-size: 1.2rem;
+  --ifm-h3-font-size: 1.5rem;
 }
 
 /* end typography */
@@ -101,8 +101,10 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 /* icons styles */
 
-.iconExternalLink_I5OW { /* hides the link icon */
-  display: none
+.iconExternalLink_I5OW,
+.iconExternalLink_node_modules-\@docusaurus-theme-classic-lib-theme-IconExternalLink-styles-module {
+/* hides the link icon */
+  display: none;
 }
 
 /* end icons styles */
@@ -112,13 +114,14 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 .markdown img {
   margin-bottom: var(--ifm-leading);
 
-    /* center alignment of images */
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  
-    border-radius: 3px;
+  /* center alignment of images */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+  border-radius: 3px;
 }
+
 
 /* end imgs */
 
@@ -145,7 +148,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   border: 1px solid var(--ifm-hr-border-color);
   margin-bottom: var(--ifm-leading);
 
-  border-radius: 5px; /* new */
+  border-radius: 5px; 
 }
 
 /* end for Code Snippet iframe */
@@ -170,9 +173,9 @@ code {
 
 /* list */
 
-.markdown ul {
+.markdown ul  {
   margin-top: 10px;
-  line-height: 38px;
+	line-height: 38px;
 }
 
 ::marker {
@@ -181,23 +184,41 @@ code {
 
 /* end list */
 
+/* buttons */
+
+.support_btn{
+  
+  font-size: 16pt;
+  color: rgb(53, 148, 243);
+  background-color: transparent;
+  border: 1px solid rgba(53, 148, 243, 0.692);;
+  border-radius: 5px;
+  width: 280px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.support_btn:hover{
+  background-color: rgba(53, 148, 243, 0.692);
+  color: white;
+}
+
+.support_btn > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* buttons end */
+
+
 /* styles for tables */
 
-table{
-  display: inline-table;
+table {
   width: 100%;
+  display: inline-table;
 }
 table th:first-child {
   width: 25%;
 }
 
 /* end styles for tables */
-
-/* sidebar collapse button*/
-
-button.clean-btn.menu__caret {
-  width: 33px;
-  padding: 6px;
-}
-
-/* end sidebar collapse button */
