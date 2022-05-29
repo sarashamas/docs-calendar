@@ -182,8 +182,23 @@ const config = {
 			}
 		]
 	],
+	themes: [ 
+		[ // Local search parameters
+			require.resolve("@easyops-cn/docusaurus-search-local"),
+			{
+				indexDocs: true,
+				indexPages: true,
+				hashed: true,
+				highlightSearchTermsOnTargetPage: true,
+				removeDefaultStemmer: true,
+				removeDefaultStopWordFilter: true,
+				explicitSearchResultPath: true
+			},
+		],
+	],
+
   	themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    /* @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
 		// hideableSidebar: true,
 		// (deprecated) autoCollapseSidebarCategories: true, // collapse a sidebar category when clicking on the other category
@@ -293,7 +308,7 @@ const config = {
 			theme: lightCodeTheme,
 			darkTheme: darkCodeTheme,
 		},
-		algolia: {
+		/*algolia: {
 			// This is a read-only, search-only key served directly by the front-end, managed by Algolia via their
 			// free DocSearch program. The key is not sensitive. See https://docsearch.algolia.com/ for more details.
 			appId: '123',
@@ -304,7 +319,7 @@ const config = {
 			// Optional: Algolia search parameters
 			searchParameters: {},
 			//... other Algolia params
-		}
+		}*/
     })
 };
 
