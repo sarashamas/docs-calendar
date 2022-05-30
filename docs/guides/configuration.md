@@ -51,7 +51,7 @@ new eventCalendar.EventCalendar("#root", {
         createEventOnDbClick: true,
         eventsOverlay: true,
         autoSave: true,
-        readonly: true,
+        readonly: false,
         ...
     },
     // other configuration parameters
@@ -206,16 +206,16 @@ new eventCalendar.EventCalendar("#root", {
 });
 ~~~
 
-### ColorSchema type
+### Color and ColorSchema types
 
-The editor field of **colorSchema** type you can set in the following way:
+The editor fields of **color** and **colorSchema** types you can set in the following way:
 
 ~~~jsx {3-23}
 new eventCalendar.EventCalendar("#root", {
     editorShape: [
-        {
+        { 
             type: "colorSchema", 
-            key: "color_key",
+            key: "colorschema_key",
             label: "Event color",
             colors: [
                 {
@@ -231,6 +231,16 @@ new eventCalendar.EventCalendar("#root", {
                     colorpicker: "background"
                 }
             ],
+            config: {
+                clear: true,
+                placeholder: "Select color"
+            }
+        },
+        { 
+            type: "color", 
+            key: "color_key",
+            label: "Color control",
+            colors: ["#d62b31", "#32a852", "#e5f01d", "#00CDFF", "#ccf5ff"],
             config: {
                 clear: true,
                 placeholder: "Select color"

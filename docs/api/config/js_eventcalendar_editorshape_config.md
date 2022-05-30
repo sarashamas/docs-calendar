@@ -43,8 +43,9 @@ editorShape?: [
 			disabled?: boolean
 		},
 
-		// for a "colorSchema" type only
-		colors?: [
+		// for "color" and "colorSchema" types
+		colors?: [], // for a "color" type only
+		colors?: [ // for a "colorSchema" type only
 			{
 				background?: string,
 				border?: string,
@@ -134,14 +135,23 @@ const editorShape = [
 	- `placeholder` - (optional) a placeholder value
 	- `disabled` - (optional) enables/disables a field state
 
-#### - Parameters for a "colorSchema" type
+#### - Parameters for "color" and "colorSchema" types
 
+:::note
+For a **color** type only
+- `colors` - (optional) an array with valid HEX codes
+:::
+
+:::note
+For a **colorSchema** type only. Unless you specify *colors* for the **colorSchema** type, the colorpicker will use a set of parameters specified via the [`colors`](./js_eventcalendar_colors_config.md) property
 - `colors` - (optional) an array of objects containing the parameters of colors used in colorpicker. For each set of colors you can specify the following parameters:
 	- `background` - (optional) a HEX code of the event background color
 	- `border` - (optional) a HEX code of the event border color
 	- `textColor` - (optional) a HEX code of the event text color
 	- `colorpicker` - (optional) a value (color) used in colorpicker. The possible values are *"background"* and *"border"*
-- `config` - (optional) a configuration object of the **"color"** field. Here you can specify the following parameters:
+:::
+
+- `config` - (optional) a configuration object of the **"color"** and **"colorSchema"** fields. Here you can specify the following parameters:
 	- `placeholder` - (optional) a placeholder value
 	- `clear` - (optional) shows/hides a "clear" icon
 
