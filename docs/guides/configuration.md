@@ -23,21 +23,21 @@ You can configure the *Event Calendar* appearance and functionality via correspo
 
 ## Timetable grid
 
-To configure the appearance and functionality of *timetable grid*, you can use the [config](api/config/js_eventcalendar_config_config.md) property.
+To configure the appearance and functionality of *timetable grid*, you can use the [`config`](api/config/js_eventcalendar_config_config.md) property.
 
 ### Configuring behaviour
 
-In the object of the **config** parameter you can manage the following behaviour:
+In the object of the [`config`](api/config/js_eventcalendar_config_config.md) parameter you can manage the following behaviour:
 
-- an ability to create new events by drag-n-drop `dragCreate: boolean`
-- an ability to reschedule events by resizing `dragResize: boolean`
-- an ability to reschedule events by drag-n-drop `dragMove: boolean`
-- an ability to display info popup by click `eventInfoOnClick: boolean`
-- an ability to open editor by double click `editorOnDblClick: boolean`
-- an ability to create new event by double click `createEventOnDbClick: boolean`
-- an ability to overlay events `eventsOverlay: boolean`
-- an ability to auto save the event data (via the editor) `autoSave: boolean`
-- an ability to block all operations with events `readonly: boolean`
+- an ability to create new events by drag-n-drop <code style = {{color: "green"}}>dragCreate: boolean</code>
+- an ability to reschedule events by resizing <code style = {{color: "green"}}>dragResize: boolean</code>
+- an ability to reschedule events by drag-n-drop <code style = {{color: "green"}}>dragMove: boolean</code>
+- an ability to display info popup by click <code style = {{color: "green"}}>eventInfoOnClick: boolean</code>
+- an ability to open editor by double click <code style = {{color: "green"}}>editorOnDblClick: boolean</code>
+- an ability to create new event by double click <code style = {{color: "green"}}>createEventOnDbClick: boolean</code>
+- an ability to overlay events <code style = {{color: "green"}}>eventsOverlay: boolean</code>
+- an ability to auto save the event data (via the editor) <code style = {{color: "green"}}>autoSave: boolean</code>
+- an ability to block all operations with events <code style = {{color: "green"}}>readonly: boolean</code>
 
 ~~~jsx {4-12}
 // create Event Calendar
@@ -60,13 +60,13 @@ new eventCalendar.EventCalendar("#root", {
 
 ### Configuring appearance
 
-In the object of the **config** parameter you can also set the grid appearance:
+In the object of the [`config`](api/config/js_eventcalendar_config_config.md) parameter you can also set the grid appearance:
 
-- a height of the grid header `tableHeaderHeight: number`
-- a height of the events `eventHeight: number`
-- a step of moving events via drag-n-drop `timeStep: number`
-- a start and end time of day `timeRange: [number, number]`
-- a duration of the new created events by default `defaultEventDuration: number`
+- a height of the grid header <code style = {{color: "green"}}>tableHeaderHeight: number</code>
+- a height of the events <code style = {{color: "green"}}>eventHeight: number</code>
+- a step of moving events via drag-n-drop <code style = {{color: "green"}}>timeStep: number</code>
+- a start and end time of day <code style = {{color: "green"}}>timeRange: [number, number]</code>
+- a duration of the new created events by default <code style = {{color: "green"}}>defaultEventDuration: number</code>
 
 ~~~jsx {3-7}
 config: {
@@ -81,20 +81,20 @@ config: {
 
 ### Configuring view modes
 
-In the object of the **config** parameter you can also set the appearance and functionality for each view mode separately. For this, you need to specify the coresponding objects with settings in the **views** object. Refer to the [**config**](api/config/js_eventcalendar_config_config.md) parameter for details.
+In the object of the [`config`](api/config/js_eventcalendar_config_config.md) parameter you can also set the appearance and functionality for each view mode separately. For this, you need to specify the coresponding objects with settings in the **views** object.
 
 #### Day and Week view modes
 
 For the **Day** and **Week** view modes you can set the following parameters (features):
 
-- a height of multievents `eventHeight: number` (*common config for all view modes*) 
-- enables/disables an ability to overlay events `eventsOverlay: boolean`
-- a step of moving events via d-n-d `timeStep: number`
-- an array with start and end time of day `timeRange: array`
-- a column width of the "hour" scale `hourScaleWidth: number`
-- a row height of the "hour" scale `hourHeight: number`
-- a space between events (px) `eventMargin: string`
-- a right padding of the grid column (px) `columnPadding: string`
+- a height of multievents <code style = {{color: "green"}}>eventHeight: number</code> (*common config for all view modes*) 
+- enables/disables an ability to overlay events <code style = {{color: "green"}}>eventsOverlay: boolean</code>
+- a step of moving events via d-n-d <code style = {{color: "green"}}>timeStep: number</code>
+- an array with start and end time of day <code style = {{color: "green"}}>timeRange: array</code>
+- a column width of the "hour" scale <code style = {{color: "green"}}>hourScaleWidth: number</code>
+- a row height of the "hour" scale <code style = {{color: "green"}}>hourHeight: number</code>
+- a space between events (px) <code style = {{color: "green"}}>eventMargin: string</code>
+- a right padding of the grid column (px) <code style = {{color: "green"}}>columnPadding: string</code>
 
 ~~~jsx {3-10,16,17}
 // settings of the "Day" and "Week" modes
@@ -121,9 +121,9 @@ config: {
 
 For the **Month** view mode you can set the following parameters (features): 
 
-- a height of multievents `eventHeight: number` (*common config for all view modes*)
-- a min height of a grid cell `dayHeight: number`
-- a max number of events per cell `maxEventsPerCell: number`
+- a height of multievents <code style = {{color: "green"}}>eventHeight: number</code> (*common config for all view modes*)
+- a min height of a grid cell <code style = {{color: "green"}}>dayHeight: number</code>
+- a max number of events per cell <code style = {{color: "green"}}>maxEventsPerCell: number</code>
 
 ~~~jsx {3-5,13}
 // settings of the "Month" mode
@@ -145,7 +145,7 @@ config: {
 
 ## Editor
 
-The *editor* consists of the fields for managing the events data. To configure the editor fields (controles), you can use the [editorShape](api/config/js_eventcalendar_editorshape_config.md) property. You can use the following types of the editor fields:
+The *editor* consists of the fields for managing the events data. To configure the editor fields (controls), you can use the [`editorShape`](api/config/js_eventcalendar_editorshape_config.md) property. You can use the following types of the editor fields:
 
 - [**text** and **textarea**](#text-and-textarea-types)
 - [**combo**](#combo-type) (*select and multiselect ?*)
@@ -290,7 +290,7 @@ new eventCalendar.EventCalendar("#root", {
 ### Linking editor fields to data fields
 
 :::info
-To link the editor field to the corresponding data field, you need to provide special **key** for the editor field `key: "custom_field"`. The value of this key will be set automatically in the event data object. You can provide the initial data of event via this key.
+To link the editor field to the corresponding data field, you need to provide special **key** for the editor field <code style = {{color: "green"}}>key: "custom_field"</code>. The value of this key will be set automatically in the event data object. You can provide the initial data of event via this key.
 
 ~~~jsx {5,13,24-25,30-31,38-39}
 // editor settings
@@ -338,16 +338,16 @@ new eventCalendar.EventCalendar("#root", {
 :::
 
 :::note
-Unless you specify the editor settings via the [**editorShape**](api/config/js_eventcalendar_editorshape_config.md) property, the widget will apply a [**defaultEditorShape**](api/config/js_eventcalendar_editorshape_config.md#default-config) set of parameters!
+Unless you specify the editor settings via the [`editorShape`](api/config/js_eventcalendar_editorshape_config.md) property, the widget will apply a [**defaultEditorShape**](api/config/js_eventcalendar_editorshape_config.md#default-config) set of parameters!
 :::
 
 ## Sidebar
 
-To configure a sidebar state, you can use the [sidebar](api/config/js_eventcalendar_sidebar_config.md) property. There are 3 available states:
+To configure a sidebar state, you can use the [`sidebar`](api/config/js_eventcalendar_sidebar_config.md) property. There are 3 available states:
 
-- `sidebar: { show: true }` - a sidebar is shown (a toggle button for switching sidebar is shown)
-- `sidebar: { show: hide }` - a sidebar is hidden (a toggle button for switching sidebar is shown)
-- `sidebar: null` - the sidebar and toggle button are hidden
+- `sidebar:` <code style = {{color: "green"}}>{ show: true }</code> - a sidebar is shown (a toggle button for switching sidebar is shown)
+- `sidebar:` <code style = {{color: "green"}}>{ show: hide }</code> - a sidebar is hidden (a toggle button for switching sidebar is shown)
+- `sidebar:` <code style = {{color: "green"}}>null</code> - the sidebar and toggle button are hidden
 
 ~~~jsx {3}
 // create Event Calendar
@@ -359,11 +359,11 @@ new eventCalendar.EventCalendar("#root", {
 
 ## View Modes
 
-To set an initial view mode, you can use the [mode](api/config/js_eventcalendar_mode_config.md) property. There are 3 available view modes:
+To set an initial view mode, you can use the [`mode`](api/config/js_eventcalendar_mode_config.md) property. There are 3 available view modes:
 
-- `mode: "day"` - a "Day" view mode
-- `mode: "week"` - a "Week" view mode
-- `mode: "month"` - a "Month" view mode
+- <code style = {{color: "green"}}>mode: "day"</code> - a "Day" view mode
+- <code style = {{color: "green"}}>mode: "week"</code> - a "Week" view mode
+- <code style = {{color: "green"}}>mode: "month"</code> - a "Month" view mode
 
 ~~~jsx {3}
 // create Event Calendar
@@ -375,9 +375,10 @@ new eventCalendar.EventCalendar("#root", {
 
 ## Initial Date
 
-To set (select) an initial date, you can use the [date](api/config/js_eventcalendar_date_config.md) property:
+To set (select) an initial date, you can use the [`date`](api/config/js_eventcalendar_date_config.md) property:
 
-- `date: new Date("2022-04-28 09:00:00")` - an initial selected date
+- <code style = {{color: "green"}}>date: new Date("2022-04-28 09:00:00")</code> - an initial selected date
+
 ~~~jsx {3}
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {

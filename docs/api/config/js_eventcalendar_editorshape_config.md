@@ -75,7 +75,7 @@ editorShape?: [
 			disabled?: boolean
 		}*/
 	},{...}
-};
+];
 ~~~
 
 ### Parameters

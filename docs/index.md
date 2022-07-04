@@ -1,8 +1,8 @@
 ---
 sidebar_label: Event Calendar overview
-title: SEO data
+title: JavaScript Event Calendar overview
 slug: /
-description: SEO data
+description: You can have an overview of DHTMLX JavaScript Event Calendar library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
 
 # DHTMLX Event Calendar overview

@@ -1,7 +1,7 @@
 ---
 sidebar_label: How to start
-title: SEO data
-description: SEO data
+title: How to Start
+description: You can explore how to start working with DHTMLX Event Calendar in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
 
 # How to start
@@ -17,20 +17,13 @@ There are two necessary files:
 - the JS file of Event Calendar
 - the CSS file of Event Calendar
 
-and
-
-- the link to the Google Fonts source file for the correct rendering of fonts
-
-~~~html {5,7-9} title="index.html"
+~~~html {5-6} title="index.html"
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>How to Start with Event Calendar</title>
 		<script src="./dist/eventCalendar.js"></script>   
-
 		<link href="./dist/eventCalendar.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500"
-		rel="stylesheet">
 	</head>
 	<body>
 		<script>
@@ -49,20 +42,16 @@ Now you are ready to add Event Calendar to the page. For this you need to take t
 
 The constructor takes an HTML container where the Event Calendar will be placed into and the corresponding configuration object. See an example below:
 
-~~~html {12,14-18} title="index.html"
+~~~html {9,11-13} title="index.html"
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>How to Start with Event Calendar</title>
 		<script src="./dist/eventCalendar.js"></script>   
-
 		<link href="./dist/eventCalendar.css" rel="stylesheet">  
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500"
-		rel="stylesheet">
 	</head>
 	<body>
 		<div id="root"></div>
-
 		<script>
 			new eventCalendar.EventCalendar("#root", {
 				// configuration properties

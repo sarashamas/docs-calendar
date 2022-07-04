@@ -88,7 +88,7 @@ new eventCalendar.EventCalendar("#root", {
 | [](api/events/js_eventcalendar_updateevent_event.md)     | @getshort(api/events/js_eventcalendar_updateevent_event.md)     |
 
 ## Event Calendar properties
- 
+
 | Name                                                 | Description                                                 |
 | ---------------------------------------------------- | ----------------------------------------------------------- |
 | [](api/config/js_eventcalendar_calendars_config.md)  | @getshort(api/config/js_eventcalendar_calendars_config.md)  |

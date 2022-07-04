@@ -9,4 +9,3 @@ description: You can explore a REST methods overview in the documentation of the
 | Name                                                    | Description                                                    |
 | --------------------------------------------------------| ---------------------------------------------------------------|
 | [](../internal/eventcalendar_innermethodname_method.md) | @getshort(../internal/eventcalendar_innermethodname_method.md) |
-
