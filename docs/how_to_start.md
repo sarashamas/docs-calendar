@@ -65,9 +65,10 @@ The constructor takes an HTML container where the Event Calendar will be placed 
 
 Next you can specify configuration properties you want the Event Calendar component to have when initialized.
 
-~~~jsx {2-10}
+~~~jsx {2-11}
 new eventCalendar.EventCalendar("#root", {
 	calendars,
+	colors,
 	config,
 	data,
 	date,

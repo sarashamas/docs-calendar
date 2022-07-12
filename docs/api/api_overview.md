@@ -67,7 +67,8 @@ new eventCalendar.EventCalendar("#root", {
 
 | Name                                                     | Description                                                     |
 | -------------------------------------------------------- | --------------------------------------------------------------- |
-| [](api/internal/eventcalendar_innermethodname_method.md) | @getshort(api/internal/eventcalendar_innermethodname_method.md) |
+| [](api/provider/js_eventcalendar_getcalendars_method.md) | @getshort(api/provider/js_eventcalendar_getcalendars_method.md) |
+| [](api/provider/js_eventcalendar_getevents_method.md)    | @getshort(api/provider/js_eventcalendar_getevents_method.md)    |
 
 ## Event Calendar events
 

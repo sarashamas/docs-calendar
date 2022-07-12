@@ -17,46 +17,46 @@ The **Toolbar** is the top part of Event Calendar. It consists of the controls f
 
 - switch between the **Day**, **Week** and **Month** view modes of Event Calendar using the corresponding controls
 - go to the current date of Event Calendar using a **Today** button
-- switch to the needed date of Event Calendar using the special arrows in the middle part of a toolbar
+- switch to the needed date of Event Calendar using the special arrows in the middle part of Toolbar
 - create new events, using a **+ Create event** button
 - hide/show a sidebar using a "humburger" icon
 
-!!! **TODO Toolbar picture here**
+![Event Calendar Toolbar](assets/001_toolbar.png)
 
 ### Sidebar
 
-The **Sidebar** is a modal panel of Event Calendar. It consists of the compact datepicker for managing dates and the predefined calendars. You can show/hide the sidebar using the "humburger" icon on the left part of the toolbar. Here you can perform the following operations:
+The **Sidebar** is a modal part of Event Calendar located on the left. It consists of the compact datepicker for managing dates and controls for managing the predefined calendars. You can show/hide the sidebar using the "humburger" icon on the left part of Toolbar. The Sidebar controls allow you to perform the following operations:
 
-- pick the desired date on the compact datepicker
-- hide/show events used the predefined calendars
+- pick the desired date using the compact datepicker
+- hide/show events related the predefined or custom calendars
 
-!!! **TODO Sidebar picture here**
+![Event Calendar Sidebar](assets/002_sidebar.png)
 
 ### Grid
 
-The **Grid** is the main part of Event Calendar. It consists of the ***events*** distributed into the corresponding *cells* of the grid depending on the set mode. You can flexibly configure the grid appearance. Read more in the [Configuration](./guides/configuration#grid) section.
+The **Grid** is the main part of Event Calendar. It consists of the ***events*** distributed into the corresponding *cells* (or *rows*). Depending on the display mode, the grid may include the vertical and horizontal timescales. You can flexibly configure the grid appearance to meet your project needs. Read more in the [Configuration](./guides/configuration#grid) section.
 
 On the **Grid** panel you can work with ***events*** in the following way:
 
 - add new events by clicking on the empty space and dragging the cursor down
-- show an info popup window by clicking on the event to look through the event data
-- open a special editor by double clicking on the event to edit the event data
+- show an info popup window by clicking on the event 
+- open an editor by double clicking on the event 
 - reschedule events by dragging them to the desired place (calendar cell/date) 
 - reschedule events by resizing them
 
-!!! **TODO Grid picture here**
+![Event Calendar Grid](assets/003_grid.png)
 
 ### Editor
 
 The **Editor** is a modal panel that consists of the fields and controls for managing the selected event data. To display the editor, double click on the event you want to change or click on the "Edit event" button in the popup window. You can flexibly configure the editor structure by adding new fields and controls. Read more in the [Configuration](./guides/configuration#editor) section.
 
-!!! **TODO Editor picture here**
+![Event Calendar Editor](assets/004_editor.png)
 
 ### Popup window
 
 The **Popup window** is a modal part of Event Calendar that displays the event data. To show the popup window, click on the event the data of which you want to look through. You can flexibly configure the popup structure by adding new fields. Read more in the [Configuration](./guides/configuration#popup-window) section.
 
-!!! **TODO Popup window picture here**
+![Event Calendar Editor](assets/005_popup.png)
 
 ## What's next
 
