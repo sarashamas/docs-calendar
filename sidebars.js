@@ -77,7 +77,7 @@ module.exports = {
 							collapsed: true,
 							link: {
 								type: 'doc',
-								id: "api/overview/eventbus_overview"
+								id: "api/overview/internal_eventbus_overview"
 							},
 							items: [
 								"api/internal/js_eventcalendar_exec_method",
@@ -93,7 +93,7 @@ module.exports = {
 							collapsed: true,
 							link: {
 								type: 'doc',
-								id: "api/overview/state_overview"
+								id: "api/overview/internal_state_overview"
 							},
 							items: [
 								"api/internal/js_eventcalendar_getreactivestate_method",
@@ -108,10 +108,11 @@ module.exports = {
 							collapsed: true,
 							link: {
 								type: 'doc',
-								id: "api/overview/rest_overview"
+								id: "api/overview/internal_rest_overview"
 							},
 							items: [
-								"api/internal/eventcalendar_innermethodname_method",
+								"api/provider/js_eventcalendar_getcalendars_method",
+								"api/provider/js_eventcalendar_getevents_method"
 							]
 						}
 					]
