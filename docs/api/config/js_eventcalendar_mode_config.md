@@ -8,7 +8,7 @@ description: You can learn about the mode config in the documentation of the DHT
 
 ### Description
 
-@short: Optional. A view mode of Event Calendar
+@short: Optional. An initial view mode of Event Calendar
 
 ### Usage
 
@@ -34,8 +34,8 @@ mode: "week"
 
 :::info
 To set the view mode dynamically, you can use the
-[**setMode()**](../../methods/js_eventcalendar_setmode_method) and
-[**setConfig()**](../../methods/js_eventcalendar_setconfig_method) methods
+[`setMode()`](../../methods/js_eventcalendar_setmode_method) and
+[`setConfig()`](../../methods/js_eventcalendar_setconfig_method) methods
 :::
 
 ### Example

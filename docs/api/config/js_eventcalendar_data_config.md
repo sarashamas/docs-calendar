@@ -63,8 +63,8 @@ If the **allDay** parameter is set to *true*, the **start_date** and **end_date*
 
 :::info
 To set the Event Calendar data dynamically, you can use the 
-[**parse()**](api/methods/js_eventcalendar_parse_method.md) and
-[**setConfig()**](api/methods/js_eventcalendar_setconfig_method.md) methods. You can also update the event data using the [**updateEvent()**](api/methods/js_eventcalendar_updateevent_method.md) method.
+[`parse()`](api/methods/js_eventcalendar_parse_method.md) and
+[`setConfig()`](api/methods/js_eventcalendar_setconfig_method.md) methods. You can also update the event data using the [`updateEvent()`](api/methods/js_eventcalendar_updateevent_method.md) method.
 :::
 
 ### Example

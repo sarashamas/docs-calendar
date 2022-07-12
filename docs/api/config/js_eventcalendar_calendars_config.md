@@ -94,7 +94,7 @@ const defaultCalendars = [
 
 :::info
 To set the **calendars** config dynamically, you can use the 
-[**setConfig()**](api/methods/js_eventcalendar_setconfig_method.md) method. You can also update the calendar data using the [**updateCalendar()**](api/methods/js_eventcalendar_updatecalendar_method.md) method, add a new calendar using the [**addCalendar()**](api/methods/js_eventcalendar_addcalendar_method.md) method, and delete a calendar via the [**deleteCalendar()**](api/methods/js_eventcalendar_deletecalendar_method.md) method.
+[`setConfig()`](api/methods/js_eventcalendar_setconfig_method.md) method. You can also update the calendar data using the [`updateCalendar()`](api/methods/js_eventcalendar_updatecalendar_method.md) method, add a new calendar using the [`addCalendar()`](api/methods/js_eventcalendar_addcalendar_method.md) method, and delete a calendar via the [`deleteCalendar()`](api/methods/js_eventcalendar_deletecalendar_method.md) method.
 :::
 
 ### Example

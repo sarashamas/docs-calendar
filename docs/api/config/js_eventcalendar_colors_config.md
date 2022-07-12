@@ -57,7 +57,7 @@ const defaultColors = [
 
 :::info
 To set the colors dynamically, you can use the
-[**setConfig()**](../../methods/js_eventcalendar_setconfig_method) method
+[`setConfig()`](../../methods/js_eventcalendar_setconfig_method) method
 :::
 
 ### Example

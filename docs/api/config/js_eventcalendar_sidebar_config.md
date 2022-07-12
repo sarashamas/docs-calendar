@@ -32,7 +32,7 @@ sidebar: { show: true }
 
 :::info
 To set the **sidebar** config dynamically, you can use the 
-[**setConfig()**](api/methods/js_eventcalendar_setconfig_method.md) method
+[`setConfig()`](api/methods/js_eventcalendar_setconfig_method.md) method
 :::
 
 ### Example

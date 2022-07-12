@@ -8,11 +8,11 @@ description: You can learn about the editorShape config in the documentation of 
 
 ### Description
 
-@short: Optional. An array of objects containing the editor's settings
+@short: Optional. An array of objects containing settings for managing the appearance and functionality of the Event Calendar editor
 
 ### Usage
 
-~~~jsx {}
+~~~jsx {3,8,18,31,47,50,53}
 editorShape?: [
 	{
 		// common settings
@@ -30,7 +30,7 @@ editorShape?: [
 			inputStyle?: string
 		},
 
-		// for a "combo" type only ( TODO "select" and "multiview" ???)
+		// for a "combo" type only
 		options?: [
 			{
 				id: any,
@@ -65,15 +65,14 @@ editorShape?: [
 		// for a "date" type only
 		time?: boolean
 
-		// radio TODO ? !!!
-		// uploader TODO ? !!!
-
-		// TODO
-		// common configs ???
-		/*config?: {
-			placeholder?: string,
-			disabled?: boolean
-		}*/
+		// for a "files" type only
+		uploadURL?: string,
+		config?: {
+			accept?: string,
+			disabled?: boolean,
+			multiple?: boolean,
+			folder?: boolean
+		}
 	},{...}
 ];
 ~~~
@@ -84,8 +83,8 @@ To configure the editor appearance and functionality, you can specify the follow
 
 #### - Common parameters for all types
 
-- `type` - (required) an editor field type. Here you can specify the following types: **text**, **textarea**,  **combo** ( **select** and **multiselect**? **radio**? **files**?) **color**, **checkbox**, **date**
-- `key` - (required) an editor field key. Here you need to use the value specified in the [data](../js_eventcalendar_data_config) property. See the example below:
+- `type` - (required) an editor field type. Here you can specify the following types: **text**, **textarea**,  **combo**, **color**, **checkbox**, **date** and **files**
+- `key` - (required) an editor field key. Here you need to use the value specified in the [`data`](../js_eventcalendar_data_config) property. See the example below:
 
 ~~~js {4-5,12,20}
 // event data
@@ -126,7 +125,7 @@ const editorShape = [
 	- `type` - (optional) a type of the input field (only for **text** type). Here you can specify only the **password**, **number**, and **text** values)
 	- `inputStyle` - (optional) a custom css style
 
-#### - Parameters for a "combo" type (TODO "select" and "multiselect"?)
+#### - Parameters for a "combo" type
 
 - `options` - (optional) an array of objects containing the dropdown options data. Here you can specify the following parameters:
 	- `id` - (required) an option **ID** 
@@ -162,6 +161,15 @@ For a **colorSchema** type only. Unless you specify *colors* for the **colorSche
 #### - Parameters for a "date" type
 
 - `time` - (optional) - enables/disables a *timepicker* (besides a *datepicker*)
+
+#### - Parameters for a "files" type
+
+- `uploadURL` - (optional) an URL of the editor uploader
+- `config` - (optional) a configuration object of the **"files"** field. Here you can specify the following parameters:
+	- `accept` - (optional) a file type to be uploaded (***"image/\*", "video/\*", "audio/\*"*** *and other*)
+	- `disabled` - (optional) enables/disables uploading *files*
+	- `multiple` - (optional) enables/disables uploading *multiple files*
+	- `folder` - (optional) enables/disables uploading *folders*
 
 :::info
 Unless you specify the editor settings via the **editorShape** property, the widget will apply the **defaultEditorShape** set of parameters!
@@ -214,7 +222,7 @@ const defaultEditorShape = [
 
 :::info
 To set the **editorShape** config dynamically, you can use the 
-[**setConfig()**](api/methods/js_eventcalendar_setconfig_method.md) method
+[`setConfig()`](api/methods/js_eventcalendar_setconfig_method.md) method
 :::
 
 ### Example

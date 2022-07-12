@@ -44,14 +44,14 @@ In the **templates** object you can specify custom templates for the following e
 
 :::info
 To set the templates dynamically, you can use the
-[**setConfig()**](../../methods/js_eventcalendar_setconfig_method) method
+[`setConfig()`](../../methods/js_eventcalendar_setconfig_method) method
 :::
 
 ### Example
 
 ~~~jsx {5-14,16-22,24-30,32-40,42-55}
-// create Event Calendar
-new eventCalendar.EventCalendar("#root", {
+const { format } = dateFns; // date-fns library  (https://date-fns.org/)
+new eventCalendar.EventCalendar("#root", { // create Event Calendar
     templates: {
         // the event template of the "Week" and "Day" modes
         weekEvent: ({ event, calendar }) => {

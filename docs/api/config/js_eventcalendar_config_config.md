@@ -132,7 +132,7 @@ const defaultConfig = {
 
 :::info
 To set the **config** property dynamically, you can use the 
-[**setConfig()**](api/methods/js_eventcalendar_setconfig_method.md) method
+[`setConfig()`](api/methods/js_eventcalendar_setconfig_method.md) method
 :::
 
 ### Example

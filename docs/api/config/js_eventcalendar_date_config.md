@@ -18,8 +18,8 @@ date?: Date;
 
 :::info
 To set the current date of Event Calendar dynamically, you can use the 
-[**setDate()**](api/methods/js_eventcalendar_setdate_method.md) and
-[**setConfig()**](api/methods/js_eventcalendar_setconfig_method.md) methods
+[`setDate()`](api/methods/js_eventcalendar_setdate_method.md) and
+[`setConfig()`](api/methods/js_eventcalendar_setconfig_method.md) methods
 :::
 
 ### Example
