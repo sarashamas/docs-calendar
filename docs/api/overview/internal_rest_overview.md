@@ -8,4 +8,5 @@ description: You can explore a REST methods overview in the documentation of the
 
 | Name                                                    | Description                                                    |
 | --------------------------------------------------------| ---------------------------------------------------------------|
-| [](../internal/eventcalendar_innermethodname_method.md) | @getshort(../internal/eventcalendar_innermethodname_method.md) |
+| [](../provider/js_eventcalendar_getcalendars_method.md) | @getshort(../provider/js_eventcalendar_getcalendars_method.md) |
+| [](../provider/js_eventcalendar_getevents_method.md)    | @getshort(../provider/js_eventcalendar_getevents_method.md)    |
