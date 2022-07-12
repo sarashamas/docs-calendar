@@ -34,5 +34,6 @@ const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration parameters
 });
 // get an object of the Event Calendar data
-calendar.serialize();
+const serialized_data = calendar.serialize();
+console.log(serialized_data);
 ~~~

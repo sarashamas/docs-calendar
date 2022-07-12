@@ -13,15 +13,16 @@ description: You can learn about the setLocale method in the documentation of th
 ### Usage
 
 ~~~jsx {}
-setLocale(locale: object): void;
+setLocale(null | locale?: object): void;
 ~~~
 
 ### Parameters
 
-- `locale` - (required) a data object of the new locale 
+- `null` - (optional) resets to the default locale (*English*)
+- `locale` - (optional) the object of data of the new locale to be applied
 
 :::info
-Using this method, you can set a built-in locale (**en**, **ru**) as well as a custom one.
+Using this method, you can apply a new locale to Event Calendar. To reset widget to the default locale, call the method without arguments (or with a *null* value)
 :::
 
 ### Example
