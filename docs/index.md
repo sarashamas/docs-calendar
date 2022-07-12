@@ -32,11 +32,11 @@ The **Sidebar** is a modal part of Event Calendar located on the left. It consis
 
 ![Event Calendar Sidebar](assets/002_sidebar.png)
 
-### Grid
+### Timetable grid
 
-The **Grid** is the main part of Event Calendar. It consists of the ***events*** distributed into the corresponding *cells* (or *rows*). Depending on the display mode, the grid may include the vertical and horizontal timescales. You can flexibly configure the grid appearance to meet your project needs. Read more in the [Configuration](./guides/configuration#grid) section.
+The **Timetable grid** is the main part of Event Calendar. It consists of the ***events*** distributed into the corresponding *cells* (or *rows*). Depending on the display mode, the grid may include the vertical and horizontal timescales. You can flexibly configure the grid appearance to meet your project needs. Read more in the [Configuration](./guides/configuration/#timetable-grid) section.
 
-On the **Grid** panel you can work with ***events*** in the following way:
+On the **Timetable grid** you can work with ***events*** in the following way:
 
 - add new events by clicking on the empty space and dragging the cursor down
 - show an info popup window by clicking on the event 
