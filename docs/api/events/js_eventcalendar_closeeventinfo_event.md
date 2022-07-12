@@ -21,7 +21,7 @@ description: You can learn about the close-event-info event in the documentation
 The callback of the **close-event-info** event doesn't take any parameters!
 
 :::info
-For handling the inner events of Event Calendar you can use the [**Event Bus methods**](api/overview/eventbus_overview.md)
+For handling the inner events of Event Calendar you can use the [**Event Bus methods**](api/overview/internal_eventbus_overview.md)
 :::
 
 ### Example

@@ -23,7 +23,7 @@ The callback of the **set-bound** event can take an object with the following pa
 - `step` - (required) a value that allows to switch to the next/previous date in a calendar
 
 :::info
-For handling the inner events of Event Calendar you can use the [**Event Bus methods**](api/overview/eventbus_overview.md)
+For handling the inner events of Event Calendar you can use the [**Event Bus methods**](api/overview/internal_eventbus_overview.md)
 :::
 
 ### Example

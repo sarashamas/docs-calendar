@@ -23,7 +23,7 @@ The callback of the **set-mode** event can take an object with the following par
 - `value` - (required) a view mode to be applied
 
 :::info
-For handling the inner events of Event Calendar you can use the [**Event Bus methods**](api/overview/eventbus_overview.md)
+For handling the inner events of Event Calendar you can use the [**Event Bus methods**](api/overview/internal_eventbus_overview.md)
 :::
 
 ### Example

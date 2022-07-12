@@ -27,7 +27,7 @@ The callback of the **update-event** event can take an object with the following
 - `id` - (required) an ID of the event to be updated
 
 :::info
-For handling the inner events of Event Calendar you can use the [**Event Bus methods**](api/overview/eventbus_overview.md)
+For handling the inner events of Event Calendar you can use the [**Event Bus methods**](api/overview/internal_eventbus_overview.md)
 :::
 
 ### Example
