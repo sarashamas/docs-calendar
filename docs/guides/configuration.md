@@ -148,12 +148,11 @@ config: {
 The *editor* consists of the fields for managing the events data. To configure the editor fields (controls), you can use the [`editorShape`](api/config/js_eventcalendar_editorshape_config.md) property. You can use the following types of the editor fields:
 
 - [**text** and **textarea**](#text-and-textarea-types)
-- [**combo**](#combo-type) (*select and multiselect ?*)
-- [**colorSchema**](#colorschema-type)
+- [**combo**](#combo-type)
+- [**color** and **colorSchema**](#color-and-colorschema-types)
 - [**checkbox**](#checkbox-type)
 - [**date**](#date-type)
-- **radio?** (TODO)
-- **uploader?** (TODO)
+- [**files**](#files-type)
 
 ### Text and Textarea types
 
@@ -171,7 +170,7 @@ new eventCalendar.EventCalendar("#root", {
                 focus: true,
                 disabled: false,
                 placeholder: "Type your tips here",
-                type: "text", // or "number" and "password"
+                type: "text", // or "number"/"password"
                 inputStyle: "height: 50px;"
             }
         },
@@ -188,7 +187,7 @@ The editor field of **combo** type you can set in the following way:
 new eventCalendar.EventCalendar("#root", {
     editorShape: [
         {
-            type: "combo", // select and multiselect TODO ?
+            type: "combo",
             key: "priority_key",
             label: "Event priority",
             options: [
@@ -210,7 +209,7 @@ new eventCalendar.EventCalendar("#root", {
 
 The editor fields of **color** and **colorSchema** types you can set in the following way:
 
-~~~jsx {3-23}
+~~~jsx {4-24,27-34}
 new eventCalendar.EventCalendar("#root", {
     editorShape: [
         { 
@@ -287,10 +286,35 @@ new eventCalendar.EventCalendar("#root", {
 });
 ~~~
 
-### Linking editor fields to data fields
+### Files type
+
+The editor field of **files** type can be set in the following way:
+
+~~~jsx {4-15}
+const url = "https://some_backend_url";
+new eventCalendar.EventCalendar("#root", {
+    editorShape: [
+        {
+            type: "files", 
+            key: "attached", // the "attached" key is used when providing the event data via the "data" property
+            label: "Attachment",
+			uploadURL: url + "/uploads",
+			config: {
+				accept: "image/*", // "video/*", "audio/*"
+				disabled: false,
+				multiple: true,
+				folder: false
+			}
+        },
+        // settings of other fields
+    ]
+});
+~~~
+
+### Linking editor fields to the data
 
 :::info
-To link the editor field to the corresponding data field, you need to provide special **key** for the editor field <code style = {{color: "green"}}>key: "custom_field"</code>. The value of this key will be set automatically in the event data object. You can provide the initial data of event via this key.
+To link the editor field to the corresponding data field, you need to provide a unique **key** for the editor field. The value of this key will be set automatically in the event data object. You can also provide the initial event data via this key.
 
 ~~~jsx {5,13,24-25,30-31,38-39}
 // editor settings
@@ -346,7 +370,7 @@ Unless you specify the editor settings via the [`editorShape`](api/config/js_eve
 To configure a sidebar state, you can use the [`sidebar`](api/config/js_eventcalendar_sidebar_config.md) property. There are 3 available states:
 
 - `sidebar:` <code style = {{color: "green"}}>{ show: true }</code> - a sidebar is shown (a toggle button for switching sidebar is shown)
-- `sidebar:` <code style = {{color: "green"}}>{ show: hide }</code> - a sidebar is hidden (a toggle button for switching sidebar is shown)
+- `sidebar:` <code style = {{color: "green"}}>{ show: false }</code> - a sidebar is hidden (a toggle button for switching sidebar is shown)
 - `sidebar:` <code style = {{color: "green"}}>null</code> - the sidebar and toggle button are hidden
 
 ~~~jsx {3}
@@ -386,3 +410,10 @@ new eventCalendar.EventCalendar("#root", {
     // other configuration parameters
 });
 ~~~
+
+## Example
+
+In this snippet you can see how to configure Event Calendar:
+
+**[TODO]!!! Заменить ссылку на сниппет с максимальными настройками виджета**
+<iframe src="" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
