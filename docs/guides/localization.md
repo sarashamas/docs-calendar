@@ -10,50 +10,79 @@ You can localize labels in the interface of JavaScript Event Calendar and presen
 
 ## Default locale
 
-The English locale is used by default:
+The **English** locale is used by default:
 
 ~~~jsx {}
 const en = {
     dateFnsLocale: dateFnsLocaleEn, // ??? TODO
-    scheduler: { // ??? Rename
-        "Create event": "Create event",
-        "Edit event": "Edit event",
-        "Delete event": "Delete event",
-        "Event name": "Event name",
-        "Start date": "Start date",
-        "End date": "End date",
+    eventCalendar: { // translations of the Event Calendar labels
+        "Add description": "Add description",
         "All day": "All day",
-        Type: "Type",
-        Description: "Description",
-        Today: "Today",
-        Day: "Day",
-        Week: "Week",
-        Month: "Month",
+        "Create event": "Create event",
+        "Delete event": "Delete event",
+        "Edit event": "Edit event",
+        "End date": "End date",
+        "Event name": "Event name",
+        "New Event": "New Event",
+        "Start date": "Start date",
+        Add: "Add",
+        Calendar: "Calendar",
         Calendars: "Calendars",
+        Color: "Color",
+        confirmDelete: "Are you sure you want to delete this event?",
+        confirmUnsaved: "You have unsaved changes! Do you want to discard them?",
+        Day: "Day",
+        Delete: "Delete",
+        Description: "Description",
+        Edit: "Edit",
+        Month: "Month",
+        Name: "Name",
+        New: "New",
+        Save: "Save",
+        Today: "Today",
+        Type: "Type",
+        Week: "Week",
         // time and date settings
-        timeFormat: 12,
-        hourFormat: "h",
+        dateFormat: "EEE, d",
+        hourFormat: "H",
         minuteFormat: "mm",
         monthFormat: "EEE",
-        dateFormat: "EEE, d"
+        timeFormat: 12 // 24
+
     },
-    core: {
-        // UI controls translations here (TODO !!!)
-        ..., 
-        // months and days translations  
-        months: [
-            "January", "February", "March", "April", "May", "June",
-            "July", "August", "September", "October", "November", "December"
+    calendar: { // translations and settings of the calendar
+        monthFull: [
+            "January", "February", "March", "April",
+            "May", "June", "July", "August", 
+            "September", "October", "November", "December"
         ],
-        monthsShort: [
-            "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+        monthShort: [
+            "Jan", "Feb", "Mar", "Apr",
+            "May", "Jun", "Jul", "Aug",
+            "Sep", "Oct", "Nov", "Dec"
         ],
-        days: [ 
-            "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" 
+        dayFull: [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
         ],
-        // start of week
-        weekStart: 7
+        dayShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+        hours: "Hours",
+        minutes: "Minutes",
+        done: "Done",
+        clear: "Clear",
+        today: "Today",
+        am: ["am", "AM"],
+        pm: ["pm", "PM"],
+        weekStart: 7, // ???
+    },
+    core: { // translations of the WX core elements
+        ok: "OK",
+        cancel: "Cancel"
     }
 };
 ~~~
@@ -68,45 +97,71 @@ Besides the ***en*** locale, Event Calendar also includes a built-in ***ru*** on
 ~~~jsx
 const ru = {
     dateFnsLocale: dateFnsLocaleRu, // ??? TODO
-    scheduler: { // ??? Rename
-        "Create event": "Создать событие",
-        "Edit event": "Редактировать событие",
-        "Delete event": "Удалить событие",
-        "Event name": "Название события",
-        "Start date": "Дата начала",
-        "End date": "Дата конца",
-        "All day": "Весь день",
-        Type: "Тип",
-        Description: "Описание",
-        Today: "Сегодня",
-        Day: "День",
-        Week: "Неделя",
-        Month: "Месяц",
-        Calendars: "Календари",
-        // настройки даты и времени
-        timeFormat: 24,
+    eventCalendar: {
+		"Add description": "Описание",
+		"All day": "Весь день",
+		"Create event": "Создать событие",
+		"Delete event": "Удалить",
+		"Edit event": "Редактировать",
+		"End date": "Дата окончания",
+		"Event name": "Название",
+		"New Event": "Новое событие",
+		"Start date": "Дата начала",
+		Add: "Добавить",
+		Calendar: "Календарь",
+		Calendars: "Календари",
+		Color: "Цвет",
+		confirmDelete: "Вы уверены, что хотите удалить это событие?",
+		confirmUnsaved: "У вас есть несохраненные изменения! Вы действительно хотите отменить их?",
+		Day: "День",
+		Delete: "Удалить",
+		Description: "Описание",
+		Edit: "Редактировать",
+		Month: "Месяц",
+		Name: "Имя",
+		New: "Новый",
+		Save: "Сохранить",
+		Today: "Сегодня",
+		Type: "Тип",
+		Week: "Неделя",
+        // time and date settings
+		dateFormat: "EEE, d",
+		minuteFormat: "mm",
+		monthFormat: "EEE",
         hourFormat: "H",
-        minuteFormat: "mm",
-        monthFormat: "EEE",
-        dateFormat: "EEE, d"
+        timeFormat: 24 // 12
+	},
+    calendar: {
+        monthFull: [
+            "Январь", "Февраль", "Март", "Апрель",
+            "Maй", "Июнь", "Июль", "Август",
+            "Сентябрь", "Oктябрь", "Ноябрь", "Декабрь",
+        ],
+        monthShort: [
+            "Янв", "Фев", "Maр", "Aпр",
+            "Maй", "Июн", "Июл", "Aвг",
+            "Сен", "Окт", "Ноя", "Дек",
+        ],
+        dayFull: [
+            "Воскресенье",
+            "Понедельник",
+            "Вторник",
+            "Среда",
+            "Четверг",
+            "Пятница",
+            "Суббота",
+        ],
+        dayShort: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+        hours: "Часы",
+        minutes: "Минуты",
+        done: "Гoтовo",
+        clear: "Очистить",
+        today: "Сегодня",
+        weekStart: 1, // ???
     },
     core: {
-        // здесь будут переводы контролов календаря (TODO !!!)
-        ..., 
-        // переводы для месяцев и дней календаря 
-        months: [
-            "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", 
-            "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
-        ],
-        monthsShort: [
-            "Янв", "Фев", "Мар", "Апр", "Май", "Июн",
-            "Июл", "Авг", "Сен", "Окт", "Ноя", "Дек"
-        ],
-        days: [ 
-            "Вск", "Пон", "Втр", "Срд", "Чет", "Птн", "Суб"
-        ],
-        // день начала недели
-        weekStart: 7
+        ok:"OK",
+        cancel:"Отмена"
     }
 };
 ~~~
@@ -117,7 +172,7 @@ const ru = {
 To apply a custom locale you need to:
 
 - create custom locale (or modify the existing one) and provide translations for all text labels of Event Calendar (it can be any language you need)
-- apply new locale via the [**locale**](api/config/js_eventcalendar_locale_config.md) property or via the [**setLocale()**](api/methods/js_eventcalendar_setlocale_method.md) method, that takes an object with translations (custom locale) as a parameter
+- apply new locale via the [`locale`](api/config/js_eventcalendar_locale_config.md) property or via the [`setLocale()`](api/methods/js_eventcalendar_setlocale_method.md) method, that takes an object with translations (custom locale) as a parameter
 
 ## Example
 
