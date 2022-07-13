@@ -6,7 +6,7 @@ description: You can learn about the localization in the documentation of the DH
 
 # Localization
 
-You can localize labels in the interface of JavaScript Event Calendar and present it in any necessary language. You just need to provide localized strings for labels and apply your locale to the component.
+You can localize all labels of JavaScript Event Calendar and present them in any necessary language. For this you just need to provide the corresponding translations for labels and apply a custom locale to the component.
 
 ## Default locale
 
@@ -88,7 +88,7 @@ const en = {
 ~~~
 
 :::info
-Besides the ***en*** locale, Event Calendar also includes a built-in ***ru*** one
+Besides the ***en*** locale, Event Calendar also includes a built-in ***ru*** one.
 :::
 
 <details>

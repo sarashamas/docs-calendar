@@ -38,7 +38,7 @@ There are two necessary files:
 Now you are ready to add Event Calendar to the page. For this you need to take the following steps:
 
 - specify a DIV container in the *index.html* file
-- initialize component using the **eventCalendar.EventCalendar()** constructor
+- initialize component using the `eventCalendar.EventCalendar()` constructor
 
 The constructor takes an HTML container where the Event Calendar will be placed into and the corresponding configuration object. See an example below:
 

@@ -51,7 +51,7 @@ new eventCalendar.EventCalendar("#root", {
 ~~~
 
 :::tip
-The list of the Event Calendar configuration properties can be found [**here**](../../api/overview/properties_overview).
+The full list of the Event Calendar configuration properties can be found [**here**](../../api/overview/properties_overview).
 :::
 ## Example
 

@@ -8,7 +8,7 @@ description: You can learn about the data config in the documentation of the DHT
 
 ### Description
 
-@short: Optional. An array of objects containing the event data
+@short: Optional. An array of objects containing the events data
 
 ### Usage
 

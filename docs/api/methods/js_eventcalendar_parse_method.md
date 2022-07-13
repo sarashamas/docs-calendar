@@ -21,7 +21,7 @@ parse(data: array): void;
 - `data` - (required) an array of objects of the events data
 
 :::info
-For details, see the [**data**](../../config/js_eventcalendar_data_config) config of Event Calendar
+For details, see the [`data`](../../config/js_eventcalendar_data_config) config of Event Calendar
 :::
 
 ### Example
@@ -32,10 +32,10 @@ const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration parameters
 });
 
-const calendar_data = [
+const data = [
 	{
 		id: "1",
-		type: "Work",
+		type: "work",
 		start_date: new Date("2021-05-24 00:00:00"),
 		end_date: new Date("2021-06-08 00:00:00"),
 		text: "French Open",
@@ -43,7 +43,7 @@ const calendar_data = [
 	},
 	{
 		id: "2",
-		type: "Work",
+		type: "work",
 		start_date: new Date("2021-06-07 00:00:00"),
 		end_date: new Date("2021-06-13 00:00:00"),
 		text: "French Open",
@@ -51,7 +51,7 @@ const calendar_data = [
 	}, ...
 ];
 // parse data into Event Calendar
-calendar.parse(calendar_data);
+calendar.parse(data);
 ~~~
 
 **Related articles:** [Working with Data](../../../guides/working_with_data#loading-data-from-local-source)
