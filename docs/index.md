@@ -7,17 +7,17 @@ description: You can have an overview of DHTMLX JavaScript Event Calendar librar
 
 # DHTMLX Event Calendar overview
 
-JavaScript **Event Calendar** is a modern web tool for time-management and scheduling events. It perfectly works on both desktop and mobile platforms. This solution will help you to manage your schedule as well as plane new appointments by adding as much events as you need. It is also possible to reschedule all the events using drag-n-drop. The appropriate display modes will help to look through the events scheduled for a day, week or month.
+JavaScript **Event Calendar** is a modern web tool for efficient time-management and scheduling events. It perfectly works on both desktop and mobile platforms. This solution will help you to manage your schedule as well as plane new appointments by adding as much events as you need. It is also easy to reschedule all the events using drag-n-drop. The appropriate display modes will help to look through the events scheduled for a day, week or month.
 
 ## Event Calendar structure
 
 ### Toolbar
 
-The **Toolbar** is the top part of Event Calendar. It consists of the controls for managing the Event Calendar functionality. Here you can perform the following operations:
+The **Toolbar** is the top part of Event Calendar. It consists of the controls for managing the widget functionality. Here you can perform the following operations:
 
-- switch between the **Day**, **Week** and **Month** view modes of Event Calendar using the corresponding controls
-- go to the current date of Event Calendar using a **Today** button
-- switch to the needed date of Event Calendar using the special arrows in the middle part of Toolbar
+- switch between the **Day**, **Week** and **Month** view modes using the corresponding controls
+- go to the current date using a **Today** button
+- switch to the needed date using the special arrows in the middle part of Toolbar
 - create new events, using a **+ Create event** button
 - hide/show a sidebar using a "humburger" icon
 
@@ -25,10 +25,12 @@ The **Toolbar** is the top part of Event Calendar. It consists of the controls f
 
 ### Sidebar
 
-The **Sidebar** is a modal part of Event Calendar located on the left. It consists of the compact datepicker for managing dates and controls for managing the predefined calendars. You can show/hide the sidebar using the "humburger" icon on the left part of Toolbar. The Sidebar controls allow you to perform the following operations:
+The **Sidebar** is a modal part of Event Calendar located on the left. It includes a compact *datepicker* for picking dates and special controls for managing the predefined calendars. You can show/hide the sidebar using a "humburger" icon on the left part of Toolbar or manage it via API. Read more in the [Configuration](./guides/configuration/#sidebar) section.
+
+The Sidebar controls allow performing the following operations:
 
 - pick the desired date using the compact datepicker
-- hide/show events related the predefined or custom calendars
+- hide/show events related to the predefined or custom calendars
 
 ![Event Calendar Sidebar](assets/002_sidebar.png)
 
@@ -39,8 +41,8 @@ The **Timetable grid** is the main part of Event Calendar. It consists of the **
 On the **Timetable grid** you can work with ***events*** in the following way:
 
 - add new events by clicking on the empty space and dragging the cursor down
-- show an info popup window by clicking on the event 
-- open an editor by double clicking on the event 
+- show an info popup window by clicking on the event
+- open an editor by double clicking on the event
 - reschedule events by dragging them to the desired place (calendar cell/date) 
 - reschedule events by resizing them
 
@@ -48,13 +50,13 @@ On the **Timetable grid** you can work with ***events*** in the following way:
 
 ### Editor
 
-The **Editor** is a modal panel that consists of the fields and controls for managing the selected event data. To display the editor, double click on the event you want to change or click on the "Edit event" button in the popup window. You can flexibly configure the editor structure by adding new fields and controls. Read more in the [Configuration](./guides/configuration#editor) section.
+The **Editor** is a modal part of Event Calendar located on the right. It consists of the fields and controls for managing data of the selected event. To display the editor, double click on the event you want to modify or click on the "Edit event" button in the popup window. You can flexibly configure the editor structure by adding new fields and controls. Read more in the [Configuration](./guides/configuration#editor) section.
 
 ![Event Calendar Editor](assets/004_editor.png)
 
 ### Popup window
 
-The **Popup window** is a modal part of Event Calendar that displays the event data. To show the popup window, click on the event the data of which you want to look through. You can flexibly configure the popup structure by adding new fields. Read more in the [Configuration](./guides/configuration#popup-window) section.
+The **Popup window** is a modal part of Event Calendar that displays the event data. To show the popup, click on the event the data of which you want to look through. You can flexibly configure the popup appearance by adding new fields. Read more in the [Configuration](./guides/configuration#popup-window) section.
 
 ![Event Calendar Editor](assets/005_popup.png)
 

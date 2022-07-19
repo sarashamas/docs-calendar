@@ -6,7 +6,7 @@ description: You can learn about the initialization in the documentation of the 
 
 # Initialization
 
-This guide will give you detailed instructions on how to create Event Calendar on a page to enrich your application with rich features of this tool. Take the following steps to get a ready-to-use component:
+This guide will give you detailed instructions on how to create Event Calendar on a page to enrich your application with the features of this tool. Take the following steps to get a ready-to-use component:
 
 1. [Include the Event Calendar source files on a page](#including-source-files)
 2. [Create a container for Event Calendar](#creating-container)

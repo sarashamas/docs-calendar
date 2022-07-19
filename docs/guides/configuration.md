@@ -21,7 +21,7 @@ You can configure the *Event Calendar* appearance and functionality via correspo
 - load data for events and calendars via the [`data`](api/config/js_eventcalendar_data_config.md) and [`calendars`](api/config/js_eventcalendar_calendars_config.md) properties 
     - *Refer to the [**Working with data**](guides/working_with_data.md) section for details!*
 
-## Timetable grid
+## Timetable Grid
 
 To configure the appearance and functionality of *timetable grid*, you can use the [`config`](api/config/js_eventcalendar_config_config.md) property.
 
@@ -373,10 +373,36 @@ To configure a sidebar state, you can use the [`sidebar`](api/config/js_eventcal
 - `sidebar:` <code style = {{color: "green"}}>{ show: false }</code> - a sidebar is hidden (a toggle button for switching sidebar is shown)
 - `sidebar:` <code style = {{color: "green"}}>null</code> - the sidebar and toggle button are hidden
 
-~~~jsx {3}
+To provide the initial data for calendars (event types) located on the sidebar, you can use the [`calendars`](api/config/js_eventcalendar_calendars_config.md) property
+
+~~~jsx {3-4}
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
     sidebar: { show: false }, // the sidebar is hidden initially
+    calendars: [ // data for calendars (event types) located on sidebar
+        {
+            id: "rest",
+            label: "Custom Rest",
+            readonly: true,
+            active: true,
+            color: {
+                background: "#EDD1EC",
+                border: "#AD44AB",
+                textColor: "#3e98db"
+            }
+        },
+        {
+            id: "movie",
+            label: "Custom Movie",
+            readonly: false,
+            active: false,
+            color: {
+                background: "#CEEDC3",
+                border: "#77D257",
+                textColor: "#3e98db"
+            }
+        }
+    ]
     // other configuration parameters
 });
 ~~~
@@ -406,7 +432,7 @@ To set (select) an initial date, you can use the [`date`](api/config/js_eventcal
 ~~~jsx {3}
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
-    date: new Date("2022-04-28 09:00:00", // the initially selected date
+    date: new Date("2022-04-28 09:00:00"), // the initially selected date
     // other configuration parameters
 });
 ~~~

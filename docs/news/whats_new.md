@@ -10,6 +10,8 @@ description: You can explore what's new in DHTMLX Event Calendar and its release
 
 Released on Month Day, 2022
 
+[Review of release on the blog](https://dhtmlx.com/blog/)
+
 ### Initial functionality
 
 -

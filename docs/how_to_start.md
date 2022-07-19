@@ -14,8 +14,8 @@ Start from creating an HTML file and call it *index.html*. Then proceed to inclu
 
 There are two necessary files:
 
-- the JS file of Event Calendar
-- the CSS file of Event Calendar
+- the *JS* file of Event Calendar
+- the *CSS* file of Event Calendar
 
 ~~~html {5-6} title="index.html"
 <!DOCTYPE html>
@@ -40,7 +40,7 @@ Now you are ready to add Event Calendar to the page. For this you need to take t
 - specify a DIV container in the *index.html* file
 - initialize component using the `eventCalendar.EventCalendar()` constructor
 
-The constructor takes an HTML container where the Event Calendar will be placed into and the corresponding configuration object. See an example below:
+The constructor takes an ID of HTML container where Event Calendar will be placed into and an object with the corresponding configuration properties. See an example below:
 
 ~~~html {9,11-13} title="index.html"
 <!DOCTYPE html>
@@ -63,7 +63,7 @@ The constructor takes an HTML container where the Event Calendar will be placed 
 
 ## Step 3. Configuring Event Calendar
 
-Next you can specify configuration properties you want the Event Calendar component to have when initialized.
+Next you can specify the configuration properties you want the Event Calendar component to have when initialized.
 
 ~~~jsx {2-11}
 new eventCalendar.EventCalendar("#root", {
