@@ -141,7 +141,7 @@ const config = {
 	favicon: 'img/favicon.ico',
 	organizationName: 'DHTMLX', // Usually your GitHub org/user name.
 	projectName: 'docs-calendar', // Usually your repo name.
-	trailingSlash: false, // !!!!!!!!!!!!!!!!!!! test
+	trailingSlash: true,
 	presets: [
 		[
 			'@docusaurus/preset-classic',
