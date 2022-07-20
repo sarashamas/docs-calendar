@@ -141,7 +141,7 @@ const config = {
 	favicon: 'img/favicon.ico',
 	organizationName: 'DHTMLX', // Usually your GitHub org/user name.
 	projectName: 'docs-calendar', // Usually your repo name.
-	trailingSlash: true,
+	trailingSlash: false, // !!!!!!!!!!!!!!!!!!! test
 	presets: [
 		[
 			'@docusaurus/preset-classic',
@@ -158,7 +158,7 @@ const config = {
 				sitemap: {
 					changefreq: 'daily',
 					priority: 0.5,
-					//trailingSlash: true
+					// trailingSlash: true
 				},
 			}),
 		],
@@ -193,17 +193,14 @@ const config = {
 				removeDefaultStemmer: true,
 				removeDefaultStopWordFilter: true,
 				explicitSearchResultPath: true
-			},
-		],
+			}
+		]
 	],
 
   	themeConfig:
     /* @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-		// hideableSidebar: true,
-		// (deprecated) autoCollapseSidebarCategories: true, // collapse a sidebar category when clicking on the other category
 		navbar: {
-			// hideOnScroll:true,
 			title: 'JavaScript Event Calendar Documentation',
 			logo: {
 				alt: 'DHTMLX JavaScript Event Calendar Logo',
