@@ -187,8 +187,13 @@ module.exports = {
 				"guides/stylization",
 				"guides/localization",
 				"guides/working_with_data",
-				"guides/working_with_server"
+				"guides/working_with_server",
+				"guides/typescript_support"
 			]
+		},
+		{
+			type: "doc",
+			id: "howtos"
 		}
 	]
 };
