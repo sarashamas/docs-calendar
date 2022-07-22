@@ -34,7 +34,7 @@ To interact with the server, you need to connect **RestDataProvider** to the cor
 
 or you can create a custom one.
 
-To connect **RestDataProvider** to the backend, you need to call the **eventCalendar.RestDataProvider()** constructor by passing the corresponding **URL** as a parameter.
+To connect **RestDataProvider** to the backend, you need to call the `eventCalendar.RestDataProvider()` constructor by passing the corresponding **URL** as a parameter.
 
 ~~~js {1-2,12}
 const url = "https://some_backend_url";
@@ -53,7 +53,7 @@ Promise.all([
 ~~~
 
 :::info
-You need to include **RestDataProvider** into the **Event Bus** order via the [**api.setNext()**](api/internal/js_eventcalendar_setnext_method.md) method to perform all the operations with data (*adding*, *editing*, *deleting* etc) and send the corresponding requests to the server
+You need to include **RestDataProvider** into the **Event Bus** order via the [`api.setNext()`](api/internal/js_eventcalendar_setnext_method.md) method to perform all the operations with data (*adding*, *editing*, *deleting* etc) and send the corresponding requests to the server
 :::
 
 ## Example

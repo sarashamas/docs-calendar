@@ -4,7 +4,7 @@ title: toggle-sidebar Event
 description: You can learn about the toggle-sidebar event in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
 
-# update-sidebar
+# toggle-sidebar
 
 ### Description
 
@@ -18,7 +18,7 @@ description: You can learn about the toggle-sidebar event in the documentation o
 
 ### Parameters
 
-The callback of the **update-sidebar** event can take an object with the following parameter:
+The callback of the **toggle-sidebar** event can take an object with the following parameter:
 
 - `show` - (optional) allows to show/hide a sidebar  
 

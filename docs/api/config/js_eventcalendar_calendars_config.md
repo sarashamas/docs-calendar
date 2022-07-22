@@ -8,7 +8,7 @@ description: You can learn about the calendars config in the documentation of th
 
 ### Description
 
-@short: Optional. An array of objects containing the calendars data
+@short: Optional. An array of objects containing the calendars (event types) data
 
 :::info
 A **calendar** is a set of parameters you can apply to the events to group them by these parameters!
@@ -34,7 +34,7 @@ calendars?: [
 
 ### Parameters
 
-For each **calendar** you can specify the following parameters (data):
+For each **calendar** (*event type*) you can specify the following parameters (data):
 
 - `id` - (required) an ID of the calendar
 - `label` - (required) a text label of the calendar

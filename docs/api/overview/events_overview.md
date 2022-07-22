@@ -21,4 +21,3 @@ description: You can explore an events overview in the documentation of the DHTM
 | [](../events/js_eventcalendar_togglesidebar_event.md)   | @getshort(../events/js_eventcalendar_togglesidebar_event.md)   |
 | [](../events/js_eventcalendar_updatecalendar_event.md)  | @getshort(../events/js_eventcalendar_updatecalendar_event.md)  |
 | [](../events/js_eventcalendar_updateevent_event.md)     | @getshort(../events/js_eventcalendar_updateevent_event.md)     |
-
