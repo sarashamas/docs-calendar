@@ -15,6 +15,7 @@ description: You can explore a methods overview in the documentation of the DHTM
 | [](../methods/js_eventcalendar_deletecalendar_method.md)| @getshort(../methods/js_eventcalendar_deletecalendar_method.md)|
 | [](../methods/js_eventcalendar_deleteevent_method.md)   | @getshort(../methods/js_eventcalendar_deleteevent_method.md)   |
 | [](../methods/js_eventcalendar_destructor_method.md)    | @getshort(../methods/js_eventcalendar_destructor_method.md)    |
+| [](../methods/js_eventcalendar_getcalendar_method.md)   | @getshort(../methods/js_eventcalendar_getcalendar_method.md)   |
 | [](../methods/js_eventcalendar_getevent_method.md)      | @getshort(../methods/js_eventcalendar_getevent_method.md)      |
 | [](../methods/js_eventcalendar_hideeventinfo_method.md) | @getshort(../methods/js_eventcalendar_hideeventinfo_method.md) |
 | [](../methods/js_eventcalendar_openeditor_method.md)    | @getshort(../methods/js_eventcalendar_openeditor_method.md)    |

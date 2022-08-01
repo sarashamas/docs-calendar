@@ -20,7 +20,7 @@ description: You can learn about the add-event event in the documentation of the
 
 The callback of the **add-event** event can take an object with the following parameter:
 
-- `event` - (required) an object of the event data. The full list of the **event** parameters can be found [**here**](api/config/js_eventcalendar_data_config.md)
+- `event` - (required) an object of the event data. The full list of the **event** parameters can be found [**here**](api/config/js_eventcalendar_events_config.md)
 
 :::info
 For handling the inner events of Event Calendar you can use the [**Event Bus methods**](api/overview/internal_eventbus_overview.md)

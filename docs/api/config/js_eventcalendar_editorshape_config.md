@@ -84,11 +84,11 @@ To configure the editor appearance and functionality, you can specify the follow
 #### - Common parameters for all types
 
 - `type` - (required) an editor field type. Here you can specify the following types: **text**, **textarea**,  **combo**, **color**, **checkbox**, **date** and **files**
-- `key` - (required) an editor field key. Here you need to use the value specified in the [`data`](../js_eventcalendar_data_config) property. See the example below:
+- `key` - (required) an editor field key. Here you need to use the value specified in the [`events`](../js_eventcalendar_events_config) property. See the example below:
 
 ~~~js {4-5,12,20}
 // event data
-const data = [
+const events = [
 	{
 		text: "Current event",
 		start_date: new Date("2021-05-24 00:00:00")

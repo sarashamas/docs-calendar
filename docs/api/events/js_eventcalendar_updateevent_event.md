@@ -23,7 +23,7 @@ description: You can learn about the update-event event in the documentation of 
 
 The callback of the **update-event** event can take an object with the following parameters:
 
-- `event` - (required) an object of the event data. The full list of the **event** parameters can be found [**here**](api/config/js_eventcalendar_data_config.md)
+- `event` - (required) an object of the event data. The full list of the **event** parameters can be found [**here**](api/config/js_eventcalendar_events_config.md)
 - `id` - (required) an ID of the event to be updated
 
 :::info

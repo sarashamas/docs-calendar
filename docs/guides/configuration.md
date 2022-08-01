@@ -6,7 +6,7 @@ description: You can learn about the configuration in the documentation of the D
 
 # Configuration
 
-You can configure the *Event Calendar* appearance and functionality via corresponding API. The available parameters will allow you to: 
+You can configure the *Event Calendar* appearance and functionality via corresponding API. The available parameters will allow you to:
 
 - configure the timetable grid via the [`config`](api/config/js_eventcalendar_config_config.md) property
 - configure the editor fields via the [`editorShape`](api/config/js_eventcalendar_editorshape_config.md) property
@@ -18,7 +18,7 @@ You can configure the *Event Calendar* appearance and functionality via correspo
     - *Refer to the [**Customisation**](guides/customization.md) section for details!*
 - apply the desired locale via the [`locale`](api/config/js_eventcalendar_locale_config.md) property
     - *Refer to the [**Localization**](guides/localization.md) section for details!*
-- load data for events and calendars via the [`data`](api/config/js_eventcalendar_data_config.md) and [`calendars`](api/config/js_eventcalendar_calendars_config.md) properties 
+- load data for events and calendars via the [`events`](api/config/js_eventcalendar_events_config.md) and [`calendars`](api/config/js_eventcalendar_calendars_config.md) properties 
     - *Refer to the [**Working with data**](guides/working_with_data.md) section for details!*
 
 ## Timetable Grid
@@ -296,7 +296,7 @@ new eventCalendar.EventCalendar("#root", {
     editorShape: [
         {
             type: "files", 
-            key: "attached", // the "attached" key is used when providing the event data via the "data" property
+            key: "attached", // the "attached" key is used when providing the event data via the "events" property
             label: "Attachment",
 			uploadURL: url + "/uploads",
 			config: {
@@ -314,7 +314,7 @@ new eventCalendar.EventCalendar("#root", {
 ### Linking editor fields to the data
 
 :::info
-To link the editor field to the corresponding data field, you need to provide a unique **key** for the editor field. The value of this key will be set automatically in the event data object. You can also provide the initial event data via this key.
+To link the editor field to the corresponding event data field, you need to provide a unique **key** for the editor field. The value of this key will be set automatically in the event data object. You can also provide the initial event data via this key.
 
 ~~~jsx {5,13,24-25,30-31,38-39}
 // editor settings
@@ -338,7 +338,7 @@ const editorShape = [
     }
 ];
 // events data
-const data = [
+const events = [
     {
         label_key: "Volvo",
         color_key: "#65D3B3",
@@ -355,7 +355,7 @@ const data = [
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
     editorShape,
-    data
+    events
     // other configuration parameters
 });
 ~~~

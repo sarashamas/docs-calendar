@@ -35,8 +35,8 @@ Promise.all([
 	restProvider.getCalendars()
 ]).then(([events, calendars]) => {
 	const calendar = new eventCalendar("#root", {
-		data: events,
-		calendars,
+		events,
+		calendars
 	});
 	calendar.api.setNext(restProvider);
 });

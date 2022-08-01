@@ -18,7 +18,7 @@ getEvent({ id: string | number }): object;
 
 ### Returns
 
-The **getEvent()** method returns an object of the event data by the specified ID. For detaild, see the [**data**](../../config/js_eventcalendar_data_config) property
+The **getEvent()** method returns an object of the event data by the specified ID. For details, see the [**events**](../../config/js_eventcalendar_events_config) property
 
 ### Parameters
 

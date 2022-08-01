@@ -25,7 +25,7 @@ updateEvent({
 - `id` - (required) an ID of the current event
 
 :::info
-Note, the **ID** of the event to be updated is required. Other event parameters can be found [**here**](api/config/js_eventcalendar_data_config.md).
+Note, the **ID** of the event to be updated is required. Other event parameters can be found [**here**](api/config/js_eventcalendar_events_config.md).
 :::
 
 ### Example

@@ -51,7 +51,7 @@ In these sections you can find out how to perform operations with events, work w
 | Topic                                                                      | Description                               |
 | -------------------------------------------------------------------------- | ----------------------------------------- |
 | [Getting event data](api/methods/js_eventcalendar_getevent_method.md)      | Learn how to get the event data by its ID |
-| [Loading initial data](api/config/js_eventcalendar_data_config.md)         | Learn how to load the initial event data  |
+| [Loading initial data](api/config/js_eventcalendar_events_config.md)       | Learn how to load the initial event data  |
 | [Parsing event data](api/methods/js_eventcalendar_parse_method.md)         | Learn how to parse the event data         |
 | [Serializing event data](api/methods/js_eventcalendar_serialize_method.md) | Learn how to serialize the event data     |
 

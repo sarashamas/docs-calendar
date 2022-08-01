@@ -21,7 +21,7 @@ setConfig(config: object): void;
 - `config` - (required) the object of the Event Calendar configuration. See the full list of the parameters [here](api/overview/properties_overview.md)
 
 :::tip
-Using this method, you can set the configuration parameters of the Event Calendar widget as well as events data. The method changes only the parameters you passed.
+Using this method, you can set the configuration parameters of the Event Calendar widget as well as events and calendars data. The method changes only the parameters you passed.
 :::
 
 ### Example

@@ -8,31 +8,39 @@ description: You can learn about the parse method in the documentation of the DH
 
 ### Description
 
-@short: Parses data into Event Calendar
+@short: Parses data into Event Calendar (for events and calendars)
 
 ### Usage
 
 ~~~jsx {}
-parse(data: array): void;
+parse(data: array | { events: array, calendars: array }): void;
 ~~~
 
 ### Parameters
 
+To load data for **events** only, pass the following parameter:
+
 - `data` - (required) an array of objects of the events data
 
+To load data for **events** and **calendars**, pass the following parameters:
+
+- `data` - (required) an object of the events and calendars data:
+	- `events` - an array of objects of the events data
+	- `calendars` - an array of objects of the calendars data
+
 :::info
-For details, see the [`data`](../../config/js_eventcalendar_data_config) config of Event Calendar
+For details, see the [`events`](../../config/js_eventcalendar_events_config) and [`calendars`](../../config/js_eventcalendar_calendars_config) properties of Event Calendar
 :::
 
 ### Example
 
-~~~jsx {6-23,25}
+~~~jsx {6-23,25-48,50}
 // create Event Calendar
 const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration parameters
 });
-
-const data = [
+// events data
+const events = [
 	{
 		id: "1",
 		type: "work",
@@ -50,8 +58,33 @@ const data = [
 		details: "Philippe-Chatrier Court\n Paris, FRA",
 	}, ...
 ];
-// parse data into Event Calendar
-calendar.parse(data);
+// calendars data
+const calendars = [
+    {
+        id: "rest",
+        label: "Rest",
+        readonly: true,
+        active: true,
+        color: {
+            background: "#EDD1EC",
+            border: "#AD44AB",
+            textColor: "#3e98db"
+        }
+    },
+    {
+        id: "movie",
+        label: "Movie",
+        readonly: false,
+        active: false,
+        color: {
+            background: "#CEEDC3",
+            border: "#77D257",
+            textColor: "#3e98db"
+        }
+    }
+];
+// parse the events and calendars data into Event Calendar
+calendar.parse({ events, calendars });
 ~~~
 
 **Related articles:** [Working with Data](../../../guides/working_with_data#loading-data-from-local-source)

@@ -23,17 +23,19 @@ The method returns an object with the following properties:
 ~~~jsx {}
 {
 	bounds: object,
+	calendars: object,
+	colors: object,
 	config: object,
-	data: object,
 	date: object,
-	dateRange: object,
 	datepicker: object,
+	dateRange: object,
 	edit: object,
 	editorShape: object,
-	eventTypes: object,
+	events: object,
 	mode: object,
 	popupInfo: object,
 	selected: object,
+	sidebar: object,
 	viewData: object,
 	viewModel: object
 }

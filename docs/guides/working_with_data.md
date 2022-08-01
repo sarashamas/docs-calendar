@@ -8,7 +8,7 @@ description: You can learn about working with data in the documentation of the D
 
 ## Initial data loading
 
-When initializing Event Calendar, you can to provide the initial data for [**events**](api/config/js_eventcalendar_data_config.md), [**calendars**](api/config/js_eventcalendar_calendars_config.md) and [**colors**](api/config/js_eventcalendar_colors_config.md).
+When initializing Event Calendar, you can to provide the initial data for [**events**](api/config/js_eventcalendar_events_config.md), [**calendars**](api/config/js_eventcalendar_calendars_config.md) and [**colors**](api/config/js_eventcalendar_colors_config.md).
 
 ~~~jsx {1,38,63,86-88}
 const events = [ // data for events
@@ -96,7 +96,7 @@ const colors = [ // data for colors used in colorpicker
 
 // initialize Event Calendar with the initial data for events, calendars and colors
 new eventCalendar.EventCalendar("#root", {
-	data: events, 
+	events, 
 	calendars, 
 	colors 
 });
@@ -104,13 +104,24 @@ new eventCalendar.EventCalendar("#root", {
 
 ## Loading data from local source
 
-To load data for ***events*** from a local source, you can use the [`parse()`](api/methods/js_eventcalendar_parse_method.md) method. It takes an array with the needed data as a parameter. 
+To load data for ***events*** and ***calendars*** from a local source, you can use the [`parse()`](api/methods/js_eventcalendar_parse_method.md) method. It takes an array with the needed data as a parameter.
+
+### Loading data for events
 
 ~~~js {4}
 // create Event Calendar
 const calendar = new eventCalendar.EventCalendar("#root", { /*...*/ });
 // load data into Event Calendar
-calendar.parse(data);
+calendar.parse(events);
+~~~
+
+### Loading data for events and calendars
+
+~~~js {4}
+// create Event Calendar
+const calendar = new eventCalendar.EventCalendar("#root", { /*...*/ });
+// load data into Event Calendar
+calendar.parse({ events, calendars });
 ~~~
 
 ## Getting Event Calendar data

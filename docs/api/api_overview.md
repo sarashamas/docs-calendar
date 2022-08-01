@@ -30,6 +30,7 @@ new eventCalendar.EventCalendar("#root", {
 | [](api/methods/js_eventcalendar_deletecalendar_method.md)| @getshort(api/methods/js_eventcalendar_deletecalendar_method.md)|
 | [](api/methods/js_eventcalendar_deleteevent_method.md)   | @getshort(api/methods/js_eventcalendar_deleteevent_method.md)   |
 | [](api/methods/js_eventcalendar_destructor_method.md)    | @getshort(api/methods/js_eventcalendar_destructor_method.md)    |
+| [](api/methods/js_eventcalendar_getcalendar_method.md)   | @getshort(api/methods/js_eventcalendar_getcalendar_method.md)   |
 | [](api/methods/js_eventcalendar_getevent_method.md)      | @getshort(api/methods/js_eventcalendar_getevent_method.md)      |
 | [](api/methods/js_eventcalendar_hideeventinfo_method.md) | @getshort(api/methods/js_eventcalendar_hideeventinfo_method.md) |
 | [](api/methods/js_eventcalendar_openeditor_method.md)    | @getshort(api/methods/js_eventcalendar_openeditor_method.md)    |
