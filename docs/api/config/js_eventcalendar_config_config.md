@@ -76,14 +76,11 @@ To configure the **Day**, **Week** and **Month** view modes separately, you can 
 - `eventsOverlay?: boolean` - (optional) enables/disables an ability to overlay events
 - `timeStep?: number` - (optional) a step of moving an event via d-n-d
 - `timeRange?: array` - (optional) an array with start and end time of day
-- `hourScaleWidth?: number` - (optional) a column width of the "hour" scale of the grid
-- `hourHeight?: number` - (optional) a row height of the "hour" scale
 - `eventMargin?: string` - (optional) a space between events (*px*). To use this parameter, you need to set ***eventsOverlay*** to ***false***
 - `columnPadding?: string` - (optional) a right padding of the grid column (*px*)
 
 <h4 style = {{color: "green"}}>"Month" view mode settings</h4>
 
-- `dayHeight?: number` - (optional) a min height of a grid cell 
 - `maxEventsPerCell?: number` - (optional) a max number of events per cell
 :::
 
@@ -91,14 +88,11 @@ To configure the **Day**, **Week** and **Month** view modes separately, you can 
 
 ~~~jsx {}
 const defaultWeekConfig = {
-    hourScaleWidth: 70,
-    hourHeight: 42,
     eventMargin: "3px",
     columnPadding: "8px"
 };
 
 const defaultMonthConfig = {
-    dayHeight: 200,
     maxEventsPerCell: 4
 };
 
@@ -147,9 +141,7 @@ new eventCalendar.EventCalendar("#root", {
         dragMove: false,
         views: {
             day: {
-                eventsOverlay: false, 
-                hourScaleWidth: 60, 
-                hourHeight: 50, 
+                eventsOverlay: false,  
                 timeStep: 20, 
                 eventHeight: 30, 
                 timeRange: [8, 18], 
