@@ -21,6 +21,55 @@ Note, that **WX** library is used for inner processes only. It provides some sma
 .wx-portal {
 /* Event Calendar css variables */
 
+    --wx-event-calendar_hour-scale-width: 70px;
+    --wx-event-calendar_hour-cell-height: 42px;
+    --wx-event-calendar_month-cell-min-height: 200px;
+
+/* end of Event Calendar css variables */
+
+/* WX library css variables */
+
+    /* font style */
+    --wx-font-size-md: 16px;
+    --wx-font-weight-md: 500;
+    --wx-line-height-md: 24px;
+    --wx-font-weight-b: 700;
+    --wx-color-font-disabled: rgba(0, 0, 0, 0.3);
+    --wx-line-height: 20px;
+    --wx-color-font: rgba(0, 0, 0, 0.7);
+    --wx-font-family: Roboto, Arial, Helvetica, sans-serif;
+    --wx-color-font-alt: rgba(0, 0, 0, 0.5);
+    /* end of font style */
+
+    /* icon style */
+    --wx-icon-color: rgba(0, 0, 0, 0.5);
+    --wx-icon-size: 20px;
+    /* end of icon style */
+
+    --wx-border:  1px solid #dfdfdf;
+    
+    /* calendar style */
+    --wx-calendar-padding: 20px 10px !important;
+    --wx-calendar-cell-gap: 5px !important;
+    /* end of calendar style */
+
+    /* color style */
+    --wx-background-alt-hover: linear-gradient(
+        rgba(0, 0, 0, 0.15) 0%,
+        rgba(0, 0, 0, 0.15) 100%
+    );
+    --wx-color-danger: #ff5252;
+    --wx-background: #fff;
+    --wx-background-hover: linear-gradient(
+        rgba(0, 0, 0, 0.15) 0%,
+        rgba(0, 0, 0, 0.15) 100%
+    );
+    --wx-popup-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    --wx-background-alt: #f7f7f7;
+    --wx-color-primary: #2f77e3;
+    /* end of color style */
+
+/* end of WX library css variables */
 }
 ~~~
 
