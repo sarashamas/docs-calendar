@@ -131,7 +131,7 @@ To set the **config** property dynamically, you can use the
 
 ### Example
 
-~~~jsx {3-20}
+~~~jsx {3-18}
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
     config: {

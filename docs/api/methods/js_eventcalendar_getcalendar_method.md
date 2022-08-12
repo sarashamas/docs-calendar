@@ -18,7 +18,9 @@ getCalendar({ id: string | number }): object;
 
 ### Returns
 
-The **getCalendar()** method returns an object of the calendar data by the specified ID. For details, see the [**calendars**](../../config/js_eventcalendar_calendars_config) property
+:::info
+The `getCalendar()` method returns an object of the calendar data by the specified ID. For details, see the [`calendars`](../../config/js_eventcalendar_calendars_config) property!
+:::
 
 ### Parameters
 
