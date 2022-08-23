@@ -24,10 +24,13 @@ To set the current date of Event Calendar dynamically, you can use the
 
 ### Example
 
-~~~jsx {3}
+~~~jsx {4}
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
+    events,
     date: new Date("2022-04-22 00:00:00"),
     // other configuration parameters
 });
 ~~~
+
+**Related sample:** [Event Calendar. Initialization](https://snippet.dhtmlx.com/btytgzed)

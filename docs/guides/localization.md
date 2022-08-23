@@ -14,7 +14,7 @@ The **English** locale is used by default:
 
 ~~~jsx {}
 const en = {
-    dateFnsLocale: dateFnsLocaleEn, // ??? TODO
+    dateFnsLocale: dateFnsLocaleEn, 
     eventCalendar: { // translations of the Event Calendar labels
         "Add description": "Add description",
         "All day": "All day",
@@ -78,7 +78,7 @@ const en = {
         today: "Today",
         am: ["am", "AM"],
         pm: ["pm", "PM"],
-        weekStart: 7, // ???
+        weekStart: 7, 
     },
     core: { // translations of the WX core elements
         ok: "OK",
@@ -96,7 +96,7 @@ Besides the ***en*** locale, Event Calendar also includes a built-in ***ru*** on
 
 ~~~jsx
 const ru = {
-    dateFnsLocale: dateFnsLocaleRu, // ??? TODO
+    dateFnsLocale: dateFnsLocaleRu,
     eventCalendar: {
 		"Add description": "Описание",
 		"All day": "Весь день",
@@ -157,7 +157,7 @@ const ru = {
         done: "Гoтовo",
         clear: "Очистить",
         today: "Сегодня",
-        weekStart: 1, // ???
+        weekStart: 1,
     },
     core: {
         ok:"OK",
@@ -176,7 +176,6 @@ To apply a custom locale you need to:
 
 ## Example
 
-In this snippet you can see how to switch between the *EN* and *RU* locales:
+In this snippet you can see how to switch between the *EN* and *DE* locales:
 
-**[TODO]!!! Заменить ссылку на сниппет с локализацией**
-<iframe src="" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+<iframe src="https://snippet.dhtmlx.com/v3lszmay?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>

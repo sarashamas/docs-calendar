@@ -153,3 +153,5 @@ new eventCalendar.EventCalendar("#root", {
     // other configuration parameters
 });
 ~~~
+
+**Related sample:** [Event Calendar. Event color](https://snippet.dhtmlx.com/qw45r367)

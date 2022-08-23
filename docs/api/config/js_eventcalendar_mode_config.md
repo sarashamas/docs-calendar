@@ -47,3 +47,5 @@ new eventCalendar.EventCalendar("#root", {
 	// other configuration parameters
 });
 ~~~
+
+**Related sample:** [Event Calendar. Readonly](https://snippet.dhtmlx.com/8eixd7r6)

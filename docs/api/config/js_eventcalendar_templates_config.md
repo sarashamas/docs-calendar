@@ -109,3 +109,5 @@ new eventCalendar.EventCalendar("#root", { // create Event Calendar
 	// other configuration parameters
 });
 ~~~
+
+**Related sample:** [Event Calendar. Custom templates](https://snippet.dhtmlx.com/rmgc73n6)

@@ -252,3 +252,5 @@ new eventCalendar.EventCalendar("#root", {
 ~~~
 
 **Related articles:** [Configuration](../../../guides/configuration#editor)
+
+**Related sample:** [Event Calendar. Event color](https://snippet.dhtmlx.com/qw45r367)
