@@ -40,6 +40,7 @@ new eventCalendar.EventCalendar("#root", {
 | [](api/methods/js_eventcalendar_setdate_method.md)       | @getshort(api/methods/js_eventcalendar_setdate_method.md)       |
 | [](api/methods/js_eventcalendar_setlocale_method.md)     | @getshort(api/methods/js_eventcalendar_setlocale_method.md)     |
 | [](api/methods/js_eventcalendar_setmode_method.md)       | @getshort(api/methods/js_eventcalendar_setmode_method.md)       |
+| [](api/methods/js_eventcalendar_settheme_method.md)      | @getshort(api/methods/js_eventcalendar_settheme_method.md)      |
 | [](api/methods/js_eventcalendar_showeventinfo_method.md) | @getshort(api/methods/js_eventcalendar_showeventinfo_method.md) |
 | [](api/methods/js_eventcalendar_togglesidebar_method.md) | @getshort(api/methods/js_eventcalendar_togglesidebar_method.md) |
 | [](api/methods/js_eventcalendar_updatecalendar_method.md)| @getshort(api/methods/js_eventcalendar_updatecalendar_method.md)|
@@ -103,3 +104,4 @@ new eventCalendar.EventCalendar("#root", {
 | [](api/config/js_eventcalendar_mode_config.md)       | @getshort(api/config/js_eventcalendar_mode_config.md)       |
 | [](api/config/js_eventcalendar_sidebar_config.md)    | @getshort(api/config/js_eventcalendar_sidebar_config.md)    |
 | [](api/config/js_eventcalendar_templates_config.md)  | @getshort(api/config/js_eventcalendar_templates_config.md)  |
+| [](api/config/js_eventcalendar_theme_config.md)      | @getshort(api/config/js_eventcalendar_theme_config.md)      |

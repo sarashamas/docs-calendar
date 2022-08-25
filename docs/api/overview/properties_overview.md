@@ -18,3 +18,4 @@ description: You can explore a properties overview in the documentation of the D
 | [](../config/js_eventcalendar_mode_config.md)       | @getshort(../config/js_eventcalendar_mode_config.md)       |
 | [](../config/js_eventcalendar_sidebar_config.md)    | @getshort(../config/js_eventcalendar_sidebar_config.md)    |
 | [](../config/js_eventcalendar_templates_config.md)  | @getshort(../config/js_eventcalendar_templates_config.md)  |
+| [](../config/js_eventcalendar_theme_config.md)      | @getshort(../config/js_eventcalendar_theme_config.md)      |

@@ -51,6 +51,7 @@ module.exports = {
 						"api/methods/js_eventcalendar_setdate_method",
 						"api/methods/js_eventcalendar_setlocale_method",
 						"api/methods/js_eventcalendar_setmode_method",
+						"api/methods/js_eventcalendar_settheme_method",
 						"api/methods/js_eventcalendar_showeventinfo_method",
 						"api/methods/js_eventcalendar_togglesidebar_method",
 						"api/methods/js_eventcalendar_updatecalendar_method",
@@ -165,7 +166,8 @@ module.exports = {
 						"api/config/js_eventcalendar_locale_config",
 						"api/config/js_eventcalendar_mode_config",
 						"api/config/js_eventcalendar_sidebar_config",
-						"api/config/js_eventcalendar_templates_config"
+						"api/config/js_eventcalendar_templates_config",
+						"api/config/js_eventcalendar_theme_config"
 					]
 				}
 			]

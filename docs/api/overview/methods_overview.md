@@ -25,6 +25,7 @@ description: You can explore a methods overview in the documentation of the DHTM
 | [](../methods/js_eventcalendar_setdate_method.md)       | @getshort(../methods/js_eventcalendar_setdate_method.md)       |
 | [](../methods/js_eventcalendar_setlocale_method.md)     | @getshort(../methods/js_eventcalendar_setlocale_method.md)     |
 | [](../methods/js_eventcalendar_setmode_method.md)       | @getshort(../methods/js_eventcalendar_setmode_method.md)       |
+| [](../methods/js_eventcalendar_settheme_method.md)      | @getshort(../methods/js_eventcalendar_settheme_method.md)      |
 | [](../methods/js_eventcalendar_showeventinfo_method.md) | @getshort(../methods/js_eventcalendar_showeventinfo_method.md) |
 | [](../methods/js_eventcalendar_togglesidebar_method.md) | @getshort(../methods/js_eventcalendar_togglesidebar_method.md) |
 | [](../methods/js_eventcalendar_updatecalendar_method.md)| @getshort(../methods/js_eventcalendar_updatecalendar_method.md)|
