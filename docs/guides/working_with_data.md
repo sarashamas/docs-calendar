@@ -8,7 +8,7 @@ description: You can learn about working with data in the documentation of the D
 
 ## Initial data loading
 
-When initializing Event Calendar, you can to provide the initial data for [**events**](api/config/js_eventcalendar_events_config.md), [**calendars**](api/config/js_eventcalendar_calendars_config.md) and [**colors**](api/config/js_eventcalendar_colors_config.md).
+When initializing Event Calendar, you can provide the initial data for [**events**](api/config/js_eventcalendar_events_config.md), [**calendars**](api/config/js_eventcalendar_calendars_config.md) and [**colors**](api/config/js_eventcalendar_colors_config.md).
 
 ~~~jsx {1,38,63,86-88}
 const events = [ // data for events
@@ -163,7 +163,6 @@ To remove the *events* and *calendars*, you can use the following methods:
 
 ## Example
 
-In this snippet you can see how to use Event Calendar API for working with data:
+In this snippet you can see how to provide the initial data for *events* and *calendars*:
 
-**[TODO]!!! Заменить ссылку на сниппет с использованием API**
-<iframe src="" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+<iframe src="https://snippet.dhtmlx.com/qw45r367" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>

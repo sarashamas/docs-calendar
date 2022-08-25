@@ -12,6 +12,7 @@ You can configure the *Event Calendar* appearance and functionality via correspo
 - configure the editor fields via the [`editorShape`](api/config/js_eventcalendar_editorshape_config.md) property
 - set the initial sidebar state via the [`sidebar`](api/config/js_eventcalendar_sidebar_config.md) property
 - set the initial view mode via the [`mode`](api/config/js_eventcalendar_mode_config.md) property
+- set the initial theme via the [`theme`](api/config/js_eventcalendar_theme_config.md) property
 - set the initial date via the [`date`](api/config/js_eventcalendar_date_config.md) property
 - set the initial set of colors used in colorpicker via the [`colors`](api/config/js_eventcalendar_colors_config.md) property
 - customize the appearance of visual elements via the [`templates`](api/config/js_eventcalendar_templates_config.md) property

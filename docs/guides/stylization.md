@@ -6,12 +6,12 @@ description: You can learn about the stylization in the documentation of the DHT
 
 # Stylization
 
-You can stylize any part of the interface of JavaScript Event Calendar to meet your project requirements. For this, the library provides a wide range of CSS variables. Note, that Event Calendar includes two types of variables:
-- CSS variables related to **Event Calendar** style
+You can stylize any part of the JavaScript Event Calendar interface to meet your project requirements. For this, the library provides a wide range of CSS variables and 3 built-in themes. Note, that Event Calendar includes two types of variables:
+- CSS variables related to the **Event Calendar** style
 - CSS variables related to the **WX** library style (*controls, calendars etc*)
 
 :::info
-Note, that **WX** library is used for inner processes only. It provides some small elements used in Event Calendar (*controls, calendars etc*)
+Note, that **WX** library is used for inner processes only. It provides some small elements used in Event Calendar and other widgets (*controls, calendars etc*)
 :::
 
 ## Default style
@@ -76,6 +76,20 @@ Note, that **WX** library is used for inner processes only. It provides some sma
 :::tip Note
 Next versions of Event Calendar can bring some changes for the variables and their names. Please, do not forget to check the names after updating to the newer versions and modify them in your code to avoid problems with display of the component.
 :::
+
+## Themes
+
+Event Calendar allows styling its interface by applying any of 3 built-in themes, namely:
+
+- "material"
+- "willow"
+- "willowDark".
+
+For details, refer to the [`theme`](api/config/js_eventcalendar_theme_config.md) config.
+
+In this snippet you can see how to apply a new theme to Event Calendar
+
+<iframe src="https://snippet.dhtmlx.com/nh2g0j2o?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
 ## Custom style
 
