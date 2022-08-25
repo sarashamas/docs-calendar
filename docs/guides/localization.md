@@ -88,80 +88,80 @@ const en = {
 ~~~
 
 :::info
-Besides the ***en*** locale, Event Calendar also includes a built-in ***ru*** one.
+Besides the ***en*** locale, Event Calendar also includes a built-in ***de*** one.
 :::
 
 <details>
-<summary><b>ru</b> locale</summary>
+<summary><b>de</b> locale</summary>
 
 ~~~jsx
-const ru = {
-    dateFnsLocale: dateFnsLocaleRu,
-    eventCalendar: {
-		"Add description": "Описание",
-		"All day": "Весь день",
-		"Create event": "Создать событие",
-		"Delete event": "Удалить",
-		"Edit event": "Редактировать",
-		"End date": "Дата окончания",
-		"Event name": "Название",
-		"New Event": "Новое событие",
-		"Start date": "Дата начала",
-		Add: "Добавить",
-		Calendar: "Календарь",
-		Calendars: "Календари",
-		Color: "Цвет",
-		confirmDelete: "Вы уверены, что хотите удалить это событие?",
-		confirmUnsaved: "У вас есть несохраненные изменения! Вы действительно хотите отменить их?",
-		Day: "День",
-		Delete: "Удалить",
-		Description: "Описание",
-		Edit: "Редактировать",
-		Month: "Месяц",
-		Name: "Имя",
-		New: "Новый",
-		Save: "Сохранить",
-		Today: "Сегодня",
-		Type: "Тип",
-		Week: "Неделя",
+const de = {
+    dateFnsLocale: dateFnsLocaleDe,
+    eventCalendar: { // translations of the Event Calendar labels
+		"New Event": "Neuer Eintrag",
+		"Add description": "Beschreibung",
+		"Create event": "Neuer Eintrag",
+		"Edit event": "Ändern",
+		"Delete event": "Löschen",
+		"Event name": "Name",
+		"Start date": "Start",
+		"End date": "Ende",
+		"All day": "Den ganzen Tag",
+		Type: "Typ",
+		Description: "Beschreibung",
+		Today: "Heute",
+		Day: "Tag",
+		Week: "Woche",
+		Month: "Monat",
+		Calendars: "Kalender",
+		Color: "Farbe",
+		Delete: "Löschen",
+		Edit: "Ändern",
+		Calendar: "Kalender",
+		New: "Neuer",
+		Name: "Name",
+		Save: "Speichern",
+		Add: "Hinzufügen",
+		confirmDelete: "Der Eintrag wird gelöscht",
+		confirmUnsaved: "Du hast nicht gespeicherte Änderungen! Möchten Sie sie verwerfen?",
         // time and date settings
-		dateFormat: "EEE, d",
+	    hourFormat: "H",
 		minuteFormat: "mm",
 		monthFormat: "EEE",
-        hourFormat: "H",
+		dateFormat: "EEE, d",
         timeFormat: 24 // 12
 	},
-    calendar: {
-        monthFull: [
-            "Январь", "Февраль", "Март", "Апрель",
-            "Maй", "Июнь", "Июль", "Август",
-            "Сентябрь", "Oктябрь", "Ноябрь", "Декабрь",
+    calendar: { // translations and settings of the calendar
+        monthFull:[
+            "Januar", "Februar", "März", "April",
+            "Mai", "Juni", "Juli", "August",
+            "September", "Oktober", "November", "Dezember"
         ],
-        monthShort: [
-            "Янв", "Фев", "Maр", "Aпр",
-            "Maй", "Июн", "Июл", "Aвг",
-            "Сен", "Окт", "Ноя", "Дек",
+        monthShort:[
+            "Jan", "Feb", "Mrz", "Apr",
+            "Mai", "Jun", "Jul", "Aug", 
+            "Sep", "Okt", "Nov", "Dez"
         ],
-        dayFull: [
-            "Воскресенье",
-            "Понедельник",
-            "Вторник",
-            "Среда",
-            "Четверг",
-            "Пятница",
-            "Суббота",
+        dayFull:[
+            "Sonntag",
+            "Montag",
+            "Dienstag",
+            "Mittwoch",
+            "Donnerstag",
+            "Freitag",
+            "Samstag"
         ],
-        dayShort: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
-        hours: "Часы",
-        minutes: "Минуты",
-        done: "Гoтовo",
-        clear: "Очистить",
-        today: "Сегодня",
-        weekStart: 1,
+        dayShort:["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
+        hours: "Stunden",
+        minutes: "Minuten",
+        done:"Fertig",
+        clear: "Entfernen",
+        today: "Heute",
+        weekStart: 1
     },
-    core: {
-        ok:"OK",
-        cancel:"Отмена"
+    core: { // translations of the WX core elements
+        ok: "OK",
+        cancel: "Abbrechen"
     }
 };
 ~~~

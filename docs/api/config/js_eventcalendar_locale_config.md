@@ -33,7 +33,7 @@ To change the current locale dynamically, you can use the [`setLocale()`](../../
 ~~~jsx {3}
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
-	locale: eventСalendar.ru // apply the "ru" locale
+	locale: eventСalendar.de // apply the "de" locale
 	// other configuration parameters
 });
 ~~~
