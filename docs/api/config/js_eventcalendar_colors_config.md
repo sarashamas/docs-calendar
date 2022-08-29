@@ -37,21 +37,27 @@ For each set of colors you can specify the following parameters:
 
 ~~~jsx {}
 const defaultColors = [
-    { background: "#d0fefd", border: "#12FCF7" },
-    { background: "#ccf5ff", border: "#00CDFF" },
-    { background: "#cee8f8", border: "#098CDC" },
-    { background: "#fbe5fa", border: "#EA7EE6" },
-    { background: "#efdaee", border: "#AD44AB" },
-    { background: "#ffdfde", border: "#FE6158" },
-    { background: "#fef1d5", border: "#FCBA2E" },
-    { background: "#fefee3", border: "#F9F871" },
-    { background: "#f2f6dd", border: "#BED453" },
-    { background: "#e4f6dd", border: "#77D257" },
-    { background: "#cceeda", border: "#00AA48" },
-    { background: "#eeeef1", border: "#ACA9BB" },
-    { background: "#f0eef8", border: "#B6A8DE" },
-    { background: "#e4e1fb", border: "#7A67EB" },
-    { background: "#d7d6ef", border: "#3733AE" }
+    { background: "#5890DC", border: "#2D74D3" },
+    { background: "#3AA3E3", border: "#098CDC" },
+    { background: "#006ECC", border: "#045AA3" },
+    { background: "#0054B4", border: "#014593" },
+    { background: "#84BF70", border: "#61A649" },
+    { background: "#009492", border: "#157B7A" },
+    { background: "#009C5A", border: "#04864F" },
+    { background: "#005A3A", border: "#054830" },
+    { background: "#BD69BC", border: "#AD44AB" },
+    { background: "#CB61C8", border: "#9E3C9C" },
+    { background: "#E94C93", border: "#AC3C6E" },
+    { background: "#E54D54", border: "#BA282E" },
+    { background: "#FF8750", border: "#BD4E1B" },
+    { background: "#DC9F54", border: "#B87728" },
+    { background: "#E67400", border: "#B65F06" },
+    { background: "#9585EF", border: "#7A67EB" },
+    { background: "#7366CC", border: "#4536AD" },
+    { background: "#3537A6", border: "#282A8A" },
+    { background: "#3E3A98", border: "#36337E" },
+    { background: "#3D446F", border: "#2A2F50" },
+    { background: "#454555", border: "#363645" }
 ];
 ~~~
 
