@@ -49,4 +49,4 @@ new eventCalendar.EventCalendar("#root", {
 });
 ~~~
 
-**Related sample:** [Event Calendar. Styling (willowDark theme)](https://snippet.dhtmlx.com/nh2g0j2o)
+**Related sample:** [Event Calendar. Styling (Built-in themes)](https://snippet.dhtmlx.com/nh2g0j2o)

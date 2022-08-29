@@ -89,12 +89,12 @@ For details, refer to the [`theme`](api/config/js_eventcalendar_theme_config.md)
 
 In this snippet you can see how to apply a new theme to Event Calendar
 
-<iframe src="https://snippet.dhtmlx.com/nh2g0j2o?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+<iframe src="https://snippet.dhtmlx.com/nh2g0j2o?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ## Custom style
 
 In this snippet you can see how to apply a custom style to Event Calendar
 
-<iframe src="https://snippet.dhtmlx.com/w0qhtloa?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+<iframe src="https://snippet.dhtmlx.com/w0qhtloa?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 **Related articles:** [Customization](../customization/#custom-styles)
