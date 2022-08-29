@@ -48,7 +48,6 @@ const en = {
         minuteFormat: "mm",
         monthFormat: "EEE",
         timeFormat: 12 // 24
-
     },
     calendar: { // translations and settings of the calendar
         monthFull: [
@@ -88,7 +87,7 @@ const en = {
 ~~~
 
 :::info
-Besides the ***en*** locale, Event Calendar also includes a built-in ***de*** one.
+Besides the ***en*** locale, Event Calendar also includes the built-in ***de*** and ***ru*** ones.
 :::
 
 <details>
@@ -98,37 +97,37 @@ Besides the ***en*** locale, Event Calendar also includes a built-in ***de*** on
 const de = {
     dateFnsLocale: dateFnsLocaleDe,
     eventCalendar: { // translations of the Event Calendar labels
-		"New Event": "Neuer Eintrag",
 		"Add description": "Beschreibung",
-		"Create event": "Neuer Eintrag",
-		"Edit event": "Ändern",
-		"Delete event": "Löschen",
-		"Event name": "Name",
-		"Start date": "Start",
-		"End date": "Ende",
 		"All day": "Den ganzen Tag",
-		Type: "Typ",
-		Description: "Beschreibung",
-		Today: "Heute",
-		Day: "Tag",
-		Week: "Woche",
-		Month: "Monat",
+		"Create event": "Neuer Eintrag",
+		"Delete event": "Löschen",
+		"Edit event": "Ändern",
+		"End date": "Ende",
+		"Event name": "Name",
+		"New Event": "Neuer Eintrag",
+		"Start date": "Start",
+		Add: "Hinzufügen",
+		Calendar: "Kalender",
 		Calendars: "Kalender",
 		Color: "Farbe",
-		Delete: "Löschen",
-		Edit: "Ändern",
-		Calendar: "Kalender",
-		New: "Neuer",
-		Name: "Name",
-		Save: "Speichern",
-		Add: "Hinzufügen",
 		confirmDelete: "Der Eintrag wird gelöscht",
 		confirmUnsaved: "Du hast nicht gespeicherte Änderungen! Möchten Sie sie verwerfen?",
+		Day: "Tag",
+		Delete: "Löschen",
+		Description: "Beschreibung",
+		Edit: "Ändern",
+		Month: "Monat",
+		Name: "Name",
+		New: "Neuer",
+		Save: "Speichern",
+		Today: "Heute",
+		Type: "Typ",
+		Week: "Woche",
         // time and date settings
-	    hourFormat: "H",
+		dateFormat: "EEE, d",
 		minuteFormat: "mm",
 		monthFormat: "EEE",
-		dateFormat: "EEE, d",
+	    hourFormat: "H",
         timeFormat: 24 // 12
 	},
     calendar: { // translations and settings of the calendar
@@ -137,12 +136,12 @@ const de = {
             "Mai", "Juni", "Juli", "August",
             "September", "Oktober", "November", "Dezember"
         ],
-        monthShort:[
+        monthShort: [
             "Jan", "Feb", "Mrz", "Apr",
             "Mai", "Jun", "Jul", "Aug", 
             "Sep", "Okt", "Nov", "Dez"
         ],
-        dayFull:[
+        dayFull: [
             "Sonntag",
             "Montag",
             "Dienstag",
@@ -151,7 +150,7 @@ const de = {
             "Freitag",
             "Samstag"
         ],
-        dayShort:["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
+        dayShort: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
         hours: "Stunden",
         minutes: "Minuten",
         done:"Fertig",
@@ -167,6 +166,82 @@ const de = {
 ~~~
 </details>
 
+<details>
+<summary><b>ru</b> locale</summary>
+
+~~~jsx
+const ru = {
+    dateFnsLocale: dateFnsLocaleRu,
+    eventCalendar: { // translations of the Event Calendar labels
+		"Add description": "Описание",
+		"All day": "Весь день",
+		"Create event": "Создать событие",
+		"Delete event": "Удалить",
+		"Edit event": "Редактировать",
+		"End date": "Дата окончания",
+		"Event name": "Название",
+		"Start date": "Дата начала",
+        "New Event": "Новое событие",
+		Add: "Добавить",
+		Calendar: "Календарь",
+		Calendars: "Календари",
+		Color: "Цвет",
+		confirmDelete: "Вы уверены, что хотите удалить это событие?",
+		confirmUnsaved: "У вас есть несохраненные изменения!  Вы действительно хотите отменить их?",
+		Day: "День",
+		Delete: "Удалить",
+		Description: "Описание",
+		Edit: "Редактировать",
+		Month: "Месяц",
+		Name: "Имя",
+		New: "Новый",
+		Save: "Сохранить",
+		Today: "Сегодня",
+		Type: "Тип",
+		Week: "Неделя",
+        // time and date settings
+        dateFormat: "EEE, d",
+        hourFormat: "H",
+        minuteFormat: "mm",
+        monthFormat: "EEE",
+        timeFormat: 24,
+    },
+    calendar: { // translations and settings of the calendar
+        monthFull: [
+            "Январь", "Февраль", "Март", "Апрель",
+            "Maй", "Июнь", "Июль", "Август",
+            "Сентябрь", "Oктябрь", "Ноябрь", "Декабрь"
+        ],
+        monthShort: [
+            "Янв", "Фев", "Maр", "Aпр",
+            "Maй", "Июн", "Июл", "Aвг",
+            "Сен", "Окт", "Ноя", "Дек"
+        ],
+        dayFull: [
+            "Воскресенье",
+            "Понедельник",
+            "Вторник",
+            "Среда",
+            "Четверг",
+            "Пятница",
+            "Суббота",
+        ],
+        dayShort: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+        hours: "Часы",
+        minutes: "Минуты",
+        done: "Гoтовo",
+        clear: "Очистить",
+        today: "Сегодня",
+        weekStart: 1
+    },
+    core: { // translations of the WX core elements
+        ok: "OK",
+        cancel: "Отмена"
+    }
+};
+~~~
+</details>
+
 ## Custom locale
 
 To apply a custom locale you need to:
@@ -176,6 +251,6 @@ To apply a custom locale you need to:
 
 ## Example
 
-In this snippet you can see how to switch between the *EN* and *DE* locales:
+In this snippet you can see how to switch between the *EN*, *DE* and *RU* locales:
 
-<iframe src="https://snippet.dhtmlx.com/v3lszmay?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+<iframe src="https://snippet.dhtmlx.com/v3lszmay?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="620"></iframe>
