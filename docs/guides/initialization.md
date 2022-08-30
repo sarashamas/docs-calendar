@@ -57,4 +57,4 @@ The full list of the Event Calendar configuration properties can be found [**her
 
 In this snippet you can see how to initialize **JavaScript Event Calendar** with the initial settings:
 
-<iframe src="https://snippet.dhtmlx.com/btytgzed?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+<iframe src="https://snippet.dhtmlx.com/btytgzed?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>

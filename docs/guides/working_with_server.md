@@ -29,8 +29,8 @@ The **RestDataProvider** service includes the special REST methods for dynamic d
 
 To interact with the server, you need to connect **RestDataProvider** to the corresponding server scripts. If you want to use the built-in backend, you can find the needed scripts in the following repositories:
 
-- [**Go**](https://github.com/web-widgets/eventcalendar-go) backend **[TODO]!!!**
-- [**Node**](https://github.com/web-widgets/eventcalendar-node) backend **[TODO]!!!**
+- [**Go**](https://github.com/web-widgets/event-calendar-go) backend 
+- [**Node**](https://github.com/web-widgets/event-calendar-node) backend 
 
 or you can create a custom one.
 
@@ -60,4 +60,4 @@ You need to include **RestDataProvider** into the **Event Bus** order via the [`
 
 In this snippet you can see how to connect **RestDataProvider** to the **Go** backend and load server data dynamically:
 
-<iframe src="https://snippet.dhtmlx.com/b3iubgj8?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+<iframe src="https://snippet.dhtmlx.com/b3iubgj8?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
