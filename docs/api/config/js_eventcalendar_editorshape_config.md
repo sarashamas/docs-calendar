@@ -91,7 +91,7 @@ To configure the editor appearance and functionality, you can specify the follow
 const events = [
 	{
 		text: "Current event",
-		start_date: new Date("2021-05-24 00:00:00")
+		start_date: new Date("2021-05-24T00:00:00")
 	}, {...}
 ];
 // editor settings

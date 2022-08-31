@@ -32,8 +32,8 @@ Using this method, you can apply a new locale to Event Calendar. To reset widget
 const calendar = new eventCalendar.EventCalendar("#root", {
 	locale: eventcalendar.en // the "en" locale is set by default
 });
-// apply "ru" locale
-calendar.setLocale(eventCalendar.ru);
+// apply "de" locale
+calendar.setLocale(eventCalendar.de);
 ~~~
 
 **Related articles:** [Localization](guides/localization.md)

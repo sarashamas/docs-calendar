@@ -343,14 +343,14 @@ const events = [
     {
         label_key: "Volvo",
         color_key: "#65D3B3",
-        start_date: new Date("2022-04-24 08:00:00"),
-        end_date: new Date("2022-04-24 09:00:00")
+        start_date: new Date("2022-04-24T08:00:00"),
+        end_date: new Date("2022-04-24T09:00:00")
     },
     {
         label_key: "BMW",
         color_key: "#FFC975",
-        start_date: new Date("2022-04-24 10:00:00"),
-        end_date: new Date("2022-04-24 11:00:00")
+        start_date: new Date("2022-04-24T10:00:00"),
+        end_date: new Date("2022-04-24T11:00:00")
     }
 ];
 // create Event Calendar
@@ -370,8 +370,8 @@ Unless you specify the editor settings via the [`editorShape`](api/config/js_eve
 
 To configure a sidebar state, you can use the [`sidebar`](api/config/js_eventcalendar_sidebar_config.md) property. There are 3 available states:
 
-- `sidebar:` <code style = {{color: "green"}}>{ show: true }</code> - a sidebar is shown (a toggle button for switching sidebar is shown)
-- `sidebar:` <code style = {{color: "green"}}>{ show: false }</code> - a sidebar is hidden (a toggle button for switching sidebar is shown)
+- `sidebar:` <code style = {{color: "green"}}>{ show: true }</code> - the sidebar is shown (a toggle button for switching sidebar is shown)
+- `sidebar:` <code style = {{color: "green"}}>{ show: false }</code> - the sidebar is hidden (a toggle button for switching sidebar is shown)
 - `sidebar:` <code style = {{color: "green"}}>null</code> - the sidebar and toggle button are hidden
 
 To provide the initial data for calendars (event types) located on the sidebar, you can use the [`calendars`](api/config/js_eventcalendar_calendars_config.md) property
@@ -412,9 +412,9 @@ new eventCalendar.EventCalendar("#root", {
 
 To set an initial view mode, you can use the [`mode`](api/config/js_eventcalendar_mode_config.md) property. There are 3 available view modes:
 
-- <code style = {{color: "green"}}>mode: "day"</code> - a "Day" view mode
-- <code style = {{color: "green"}}>mode: "week"</code> - a "Week" view mode
-- <code style = {{color: "green"}}>mode: "month"</code> - a "Month" view mode
+- <code style = {{color: "green"}}>mode: "day"</code> - the "Day" view mode
+- <code style = {{color: "green"}}>mode: "week"</code> - the "Week" view mode
+- <code style = {{color: "green"}}>mode: "month"</code> - the "Month" view mode
 
 ~~~jsx {3}
 // create Event Calendar
@@ -428,12 +428,12 @@ new eventCalendar.EventCalendar("#root", {
 
 To set (select) an initial date, you can use the [`date`](api/config/js_eventcalendar_date_config.md) property:
 
-- <code style = {{color: "green"}}>date: new Date("2022-04-28 09:00:00")</code> - an initial selected date
+- <code style = {{color: "green"}}>date: new Date("2022-04-28 09:00:00")</code> - an initially selected date
 
 ~~~jsx {3}
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
-    date: new Date("2022-04-28 09:00:00"), // the initially selected date
+    date: new Date("2022-04-28T09:00:00"), // the initially selected date
     // other configuration parameters
 });
 ~~~

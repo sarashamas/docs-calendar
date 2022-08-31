@@ -13,16 +13,8 @@ description: You can learn about the theme config in the documentation of the DH
 ### Usage
 
 ~~~jsx {}
-theme?: string; 
+theme?: "material"|"willow"|"willowDark"; 
 ~~~
-
-### Parameters
-
-You can set the **theme** parameter to the following values:
-
-- "material"
-- "willow"
-- "willowDark"
 
 ### Default config
 

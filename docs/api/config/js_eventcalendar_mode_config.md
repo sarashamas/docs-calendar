@@ -13,16 +13,8 @@ description: You can learn about the mode config in the documentation of the DHT
 ### Usage
 
 ~~~jsx {}
-mode?: string; 
+mode?: "day" | "week" | "month"; 
 ~~~
-
-### Parameters
-
-You can set the **mode** parameter to the following values:
-
-- "day"
-- "week"
-- "month"
 
 ### Default config
 

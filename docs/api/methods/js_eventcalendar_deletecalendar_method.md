@@ -13,9 +13,7 @@ description: You can learn about the deleteCalendar method in the documentation 
 ### Usage
 
 ~~~jsx {}
-deleteCalendar({  
-	id: string | number 
-}): void;
+deleteCalendar({ id: string | number }): void;
 ~~~
 
 ### Parameters

@@ -74,8 +74,8 @@ To set the events data dynamically, you can use the
 new eventCalendar.EventCalendar("#root", {
     events: [
         {
-            start_date: new Date("2021-05-24 00:00:00"),
-            end_date: new Date("2021-06-08 00:00:00"),
+            start_date: new Date("2021-05-24T00:00:00"),
+            end_date: new Date("2021-06-08T00:00:00"),
             allDay: false,
             id: "1",
             type: "work",

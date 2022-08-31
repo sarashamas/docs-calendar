@@ -44,16 +44,16 @@ const events = [
 	{
 		id: "1",
 		type: "work",
-		start_date: new Date("2021-05-24 00:00:00"),
-		end_date: new Date("2021-06-08 00:00:00"),
+		start_date: new Date("2021-05-24T00:00:00"),
+		end_date: new Date("2021-06-08T00:00:00"),
 		text: "French Open",
 		details: "Philippe-Chatrier Court\n Paris, FRA",
 	},
 	{
 		id: "2",
 		type: "work",
-		start_date: new Date("2021-06-07 00:00:00"),
-		end_date: new Date("2021-06-13 00:00:00"),
+		start_date: new Date("2021-06-07T00:00:00"),
+		end_date: new Date("2021-06-13T00:00:00"),
 		text: "French Open",
 		details: "Philippe-Chatrier Court\n Paris, FRA",
 	}, ...
