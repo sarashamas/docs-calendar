@@ -210,7 +210,7 @@ const config = {
 			items: [
 				{
 					"label": "Examples",
-					"href": "https://snippet.dhtmlx.com", // [TODO] change before release
+					"href": "https://snippet.dhtmlx.com/qw45r367",
 					"position": "right"
 				},
 				{
@@ -225,7 +225,7 @@ const config = {
 				},
 				{
 					"label": "Download",
-					"href": "https://dhtmlx.com/docs/products/dhtmlxEventCalendar/download.shtml", // [TODO] change before release
+					"href": "https://dhtmlx.com/docs/products/dhtmlxEventCalendar/download.shtml",
 					"position": "right"
 				}
 			],
@@ -238,12 +238,12 @@ const config = {
 					"items": [
 						{
 							"label": "Download Event Calendar",
-							"href": "https://dhtmlx.com/docs/products/dhtmlxEventCalendar/download.shtml", // [TODO] change before release
+							"href": "https://dhtmlx.com/docs/products/dhtmlxEventCalendar/download.shtml",
 							"position": "right"
 						},
 						{
 							"label": "Examples",
-							"href": "https://snippet.dhtmlx.com", // [TODO] change before release
+							"href": "https://snippet.dhtmlx.com/qw45r367",
 							"position": "right"
 						},
 						{
@@ -295,7 +295,7 @@ const config = {
 						},
 						{
 							"label": "Licensing",
-							"href": "https://dhtmlx.com/docs/products/dhtmlxEventCalendar/#licensing" // [TODO] change before release
+							"href": "https://dhtmlx.com/docs/products/dhtmlxEventCalendar/#licensing"
 						}
 					]
 				}
