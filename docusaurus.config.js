@@ -210,7 +210,7 @@ const config = {
 			items: [
 				{
 					"label": "Examples",
-					"href": "https://snippet.dhtmlx.com/qw45r367",
+					"href": "https://snippet.dhtmlx.com/qw45r367?tag=event_calendar",
 					"position": "right"
 				},
 				{
@@ -243,7 +243,7 @@ const config = {
 						},
 						{
 							"label": "Examples",
-							"href": "https://snippet.dhtmlx.com/qw45r367",
+							"href": "https://snippet.dhtmlx.com/qw45r367?tag=event_calendar",
 							"position": "right"
 						},
 						{
