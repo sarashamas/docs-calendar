@@ -18,14 +18,14 @@ This guide will give you detailed instructions on how to create Event Calendar o
 
 To create Event Calendar, you need to include 2 source files on your page:
 
-- *eventCalendar.js*
-- *eventCalendar.css*
+- *event-calendar.js*
+- *event-calendar.css*
 
 Make sure that you set the correct paths to the source files:
 
 ~~~html title="index.html"
-<script type="text/javascript" src="./dist/eventCalendar.js"></script>  
-<link rel="stylesheet" href="./dist/eventCalendar.css">
+<script type="text/javascript" src="./dist/event-calendar.js"></script>  
+<link rel="stylesheet" href="./dist/event-calendar.css">
 ~~~
 
 ## Creating container

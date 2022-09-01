@@ -22,8 +22,8 @@ There are two necessary files:
 <html>
 	<head>
 		<title>How to Start with Event Calendar</title>
-		<script src="./dist/eventCalendar.js"></script>   
-		<link href="./dist/eventCalendar.css" rel="stylesheet">
+		<script src="./dist/event-calendar.js"></script>   
+		<link href="./dist/event-calendar.css" rel="stylesheet">
 	</head>
 	<body>
 		<script>
@@ -47,8 +47,8 @@ The constructor takes an ID of HTML container where Event Calendar will be place
 <html>
 	<head>
 		<title>How to Start with Event Calendar</title>
-		<script src="./dist/eventCalendar.js"></script>   
-		<link href="./dist/eventCalendar.css" rel="stylesheet">  
+		<script src="./dist/event-calendar.js"></script>   
+		<link href="./dist/event-calendar.css" rel="stylesheet">  
 	</head>
 	<body>
 		<div id="root"></div>

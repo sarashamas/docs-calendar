@@ -58,7 +58,7 @@ The **Editor** is a modal part of Event Calendar located on the right. It consis
 
 The **Popup window** is a modal part of Event Calendar that displays the event data. To show the popup, click on the event the data of which you want to look through. You can flexibly customize the popup appearance by adding new fields. Read more in the [Customization](./guides/customization/#custom-events-popups-and-timescale-header) section.
 
-![Event Calendar Editor](assets/005_popup.png)
+![Event Calendar Popup](assets/005_popup.png)
 
 ## What's next
 
