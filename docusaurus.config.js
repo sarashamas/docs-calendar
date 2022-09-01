@@ -135,7 +135,7 @@ const config = {
 	title: 'DHTMLX Event Calendar Docs',
 	tagline: 'DHTMLX Event Calendar Docs',
 	url: 'https://docs.dhtmlx.com',
-	baseUrl: '/calendar/',
+	baseUrl: '/eventcalendar/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.ico',
