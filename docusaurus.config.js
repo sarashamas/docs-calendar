@@ -131,7 +131,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	noIndex: true, // TODO: delete before release
+	noIndex: false,
 	title: 'DHTMLX Event Calendar Docs',
 	tagline: 'DHTMLX Event Calendar Docs',
 	url: 'https://docs.dhtmlx.com',

@@ -8,9 +8,9 @@ description: You can explore what's new in DHTMLX Event Calendar and its release
 
 ## Version 1.0
 
-Released on Month Day, 2022
+Released on September 1, 2022
 
-[Review of release on the blog](https://dhtmlx.com/blog/)
+[Review of release on the blog](https://dhtmlx.com/blog/meet-dhtmlx-event-calendar-v1-0/)
 
 ### Initial functionality
 
