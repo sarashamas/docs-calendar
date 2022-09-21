@@ -149,7 +149,7 @@ const config = {
 			({
 				docs: {
 					sidebarPath: require.resolve('./sidebars.js'),
-					//editUrl: 'https://github.com/DHTMLX/docs-calendar/edit/master/',
+					editUrl: 'https://github.com/DHTMLX/docs-calendar/edit/master/',
 					routeBasePath: '/',
 				},
 				theme: {
