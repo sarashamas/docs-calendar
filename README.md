@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://docs.dhtmlx.com/calendar/">DHTMLX Event Calendar Documentation</a></h1>
+<h1 align="center"><a href="https://docs.dhtmlx.com/eventcalendar/">DHTMLX Event Calendar Documentation</a></h1>
 
 New Event Calendar description here
 
