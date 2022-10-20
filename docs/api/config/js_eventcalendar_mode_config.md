@@ -13,7 +13,7 @@ description: You can learn about the mode config in the documentation of the DHT
 ### Usage
 
 ~~~jsx {}
-mode?: "day" | "week" | "month"; 
+mode?: "day" | "week" | "month" | "year" | "agenda"; 
 ~~~
 
 ### Default config
@@ -35,9 +35,11 @@ To set the view mode dynamically, you can use the
 ~~~jsx {3}
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
-    mode: "month"
+    mode: "year"
 	// other configuration parameters
 });
 ~~~
 
 **Related sample:** [Event Calendar. Readonly](https://snippet.dhtmlx.com/8eixd7r6)
+
+**Change log:** The ***year*** and ***agenda*** modes were added in v1.1
