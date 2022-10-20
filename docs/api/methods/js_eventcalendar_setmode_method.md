@@ -13,7 +13,7 @@ description: You can learn about the setMode method in the documentation of the 
 ### Usage
 
 ~~~jsx {}
-setMode({ value: string }): void;
+setMode({ value: "day" | "week" | "month" | "year" | "agenda" }): void;
 ~~~
 
 ### Parameters
@@ -21,7 +21,7 @@ setMode({ value: string }): void;
 - `value` - (required) a view mode of Event Calendar
 
 :::info
-You can set the **value** parameter to the *"day"*, *"week"* or *"month"* values
+You can set the **value** parameter to the *"day"*, *"week"*, *"month"*, *"year"* or *"agenda"*  modes
 :::
 
 ### Example
@@ -32,5 +32,7 @@ const calendar = new eventCalendar.EventCalendar("#root", {
 	// initial configuration parameters
 });
 // set the "day" mode
-calendar.setMode({ value: "day" });
+calendar.setMode({ value: "year" });
 ~~~
+
+**Change log:** The ***year*** and ***agenda*** modes were added in v1.1
