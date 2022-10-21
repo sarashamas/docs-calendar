@@ -16,9 +16,12 @@ description: You can learn about the templates config in the documentation of th
 templates?: {
     weekEvent?: function({ event, calendar }), // => html string
     monthEvent?: function({ event, calendar }), // => html string
+    yearEvent?: function({ event, calendar }), // => html string
+    agendaEvent?: function({ event, calendar }), // => html string
+    agendaDate?: function({ event, calendar }), // => html string
     multievent?: function({ event, calendar }), // => html string
     header?: function({ date, dateFormat }), // => html string
-    popup?: function({ date, dateFormat }) // => html string
+    popup?: function({ event, calendar }) // => html string
 }; 
 ~~~
 
@@ -32,6 +35,15 @@ In the **templates** object you can specify custom templates for the following e
 - `monthEvent` - (optional) a function needs to return a custom template of the event in the **Month** mode. It takes an object with the following parameters:
     - ***event*** - current event data
     - ***calendar*** - current calendar data
+- `yearEvent` - (optional) a function needs to return a custom template of the event in the **Year** mode. It takes an object with the following parameters:
+    - ***event*** - current event data
+    - ***calendar*** - current calendar data
+- `agendaEvent` - (optional) a function needs to return a custom template of the event in the **Agenda** mode. It takes an object with the following parameters:
+    - ***event*** - current event data
+    - ***calendar*** - current calendar data
+- `agendaDate` - (optional) a function needs to return a custom template of the Date cell in the **Agenda** mode. It takes an object with the following parameters:
+    - ***event*** - current event data
+    - ***calendar*** - current calendar data
 - `multievent` - (optional) a function needs to return a custom template of the multievent. It takes an object with the following parameters:
     - ***event*** - current event data
     - ***calendar*** - current calendar data
@@ -39,8 +51,8 @@ In the **templates** object you can specify custom templates for the following e
     - ***date*** - a current date
     - ***dateFormat*** - a current date format
 - `popup` - (optional) a function needs to return a custom template of the info popup window. It takes an object with the following parameters:
-    - ***date*** - a current date
-    - ***dateFormat*** - a current date format 
+    - ***event*** - current event data
+    - ***calendar*** - current calendar data
 
 :::info
 To set the templates dynamically, you can use the
@@ -49,7 +61,7 @@ To set the templates dynamically, you can use the
 
 ### Example
 
-~~~jsx {5-14,16-22,24-30,32-40,42-55}
+~~~jsx {5-14,16-22,24-30,32-44,46-55,57-63,65-73,75-88}
 const { format } = dateFns; // date-fns library  (https://date-fns.org/)
 new eventCalendar.EventCalendar("#root", { // create Event Calendar
     templates: {
@@ -71,6 +83,39 @@ new eventCalendar.EventCalendar("#root", { // create Event Calendar
                     <i class="mdi mdi-account-multiple"></i>
                     <span class="label"> ${event.text} </span>
                 </div>`;
+        },
+         // the event template of the "Year" mode
+        yearEvent: ({ event, calendar }) => {
+            return `
+                <div class="wrapper">
+                    <i class="mdi mdi-calendar-multiple"> </i>
+                    <span class="multievent_label">${event.text}</span>
+                </div>`;
+        },
+        // the event template of the "Agenda" mode
+        agendaEvent: ({ event, calendar }) => {
+            const { start_date, end_date, text } = event;
+            const start = format(start_date, "HH:mm");
+            const end = format(end_date, "HH:mm");
+            const label = `
+                <b>Event:</b> ${text} </br>
+                <b>Time:</b> ${start}-${end}`;
+            return `
+                <div>
+                    <span class="label"> ${label} </span>
+                </div>
+            `;
+        },
+        // the template of the date cell in the "Agenda" mode
+        agendaDate: ({ event, calendar }) => {
+            const day = format(date, "do");
+            const week = format(date, "dddd");
+            return `
+                <div class="custom-date">
+                    <b>${day}</b>
+                    ${week}
+                </div>
+            `;
         },
         // the template of the grid header
         header: ({ date, dateFormat }) => {
@@ -111,3 +156,5 @@ new eventCalendar.EventCalendar("#root", { // create Event Calendar
 ~~~
 
 **Related sample:** [Event Calendar. Custom templates](https://snippet.dhtmlx.com/rmgc73n6)
+
+**Change log:** The ***yearEvent***, ***agendaEvent*** and ***agendaDate*** templates were added in v1.1
