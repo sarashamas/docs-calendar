@@ -33,10 +33,14 @@ config?: {
     timeRange?: [number, number],
     defaultEventDuration?: number,
 
+    // this property is used in any of view mode configuration objects 
+    // to apply a custom style to the grid cell
+    cellCss?: (date) => string, 
+
     views?: { 
        day?: object,
        week?: object,
-       month?: object
+       month?: object,
     }
 };
 ~~~
@@ -59,6 +63,7 @@ In the **config** object you can specify the following parameters:
 - `timeStep` - (optional) a step of moving an event via d-n-d
 - `timeRange` - (optional) an array with start and end time of day in the "day" and "week" modes (*0-24*)
 - `defaultEventDuration` - (optional) a duration of the new created event by default (without taking into account creating an event via d-n-d)
+- `cellCss` - (optional) a custom CSS selector to be applied to a grid cell. This property is used in any of view mode configuration objects to apply a custom style to the grid cell
 - `views` - (optional) an object of configurations of the specific view modes. Here you can specify the following objects of settings:
     - `day` - (optional) an object of settings of the "Day" view mode
     - `week` - (optional) an object of settings of the "Week" view mode
@@ -70,6 +75,7 @@ To configure the **Day**, **Week** and **Month** view modes separately, you can 
 <h4 style = {{color: "green"}}>Common settings</h4>
 
 - `eventHeight?: number` - (optional) a height of the Event Calendar multievents
+- `cellCss?: (date) => string` - (optional) a CSS selector to be applied to a grid cell
 
 <h4 style = {{color: "green"}}>"Day" and "Week" view modes settings</h4>
 
@@ -131,7 +137,7 @@ To set the **config** property dynamically, you can use the
 
 ### Example
 
-~~~jsx {3-18}
+~~~jsx {3-25}
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
     config: {
@@ -146,7 +152,14 @@ new eventCalendar.EventCalendar("#root", {
                 eventHeight: 30, 
                 timeRange: [8, 18], 
                 eventMargin: "10px", 
-                columnPadding: "450px"
+                columnPadding: "450px",
+                cellCss: date => {
+                    const hour = new Date(date).getHours();
+                    if (hour === 12) {
+                        return "custom-disabled-time";
+                    }
+                    return "";
+                },
             }
         }
     },
@@ -155,3 +168,5 @@ new eventCalendar.EventCalendar("#root", {
 ~~~
 
 **Related sample:** [Event Calendar. Event color](https://snippet.dhtmlx.com/qw45r367)
+
+**Change log:** The ***cellCss*** parameter of view modes was added in v1.1
