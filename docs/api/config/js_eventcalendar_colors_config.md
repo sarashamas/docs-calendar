@@ -35,6 +35,10 @@ For each set of colors you can specify the following parameters:
 
 ### Default config
 
+:::note
+You can export the default config using the `eventCalendar.defaultColors` expression.
+:::
+
 ~~~jsx {}
 const defaultColors = [
     { background: "#5890DC", border: "#2D74D3" },
@@ -94,3 +98,5 @@ new eventCalendar.EventCalendar("#root", {
 	// other configuration parameters
 });
 ~~~
+
+**Change log:** Export of the ***defaultColors*** parameter was added in v1.1
