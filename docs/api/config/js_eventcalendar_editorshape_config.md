@@ -194,6 +194,10 @@ Unless you specify the editor settings via the **editorShape** property, the wid
 
 ### Default config
 
+:::note
+You can export the default config using the `eventCalendar.defaultEditorShape` expression.
+:::
+
 ~~~jsx {}
 const defaultEditorShape = [
 	{

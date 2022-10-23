@@ -47,6 +47,10 @@ For each **calendar** (*event type*) you can specify the following parameters (d
 
 ### Default config
 
+:::note
+You can export the default config using the `eventCalendar.defaultCalendars` expression.
+:::
+
 ~~~jsx {}
 const defaultCalendars = [
 	{
