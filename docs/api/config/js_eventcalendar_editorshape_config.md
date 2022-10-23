@@ -12,7 +12,7 @@ description: You can learn about the editorShape config in the documentation of 
 
 ### Usage
 
-~~~jsx {3,8,18,31,47,50,53}
+~~~jsx {3,8,18,32,41,57,60,63}
 editorShape?: [
 	{
 		// common settings
@@ -30,11 +30,12 @@ editorShape?: [
 			inputStyle?: string
 		},
 
-		// for a "combo" type only
+		// for "combo" and "multiselect" types only
+		template?: (option) => string 
 		options?: [
 			{
 				id: any,
-				label: string
+				label: string,
 			},
 			{...} // other options
 		],
@@ -42,6 +43,15 @@ editorShape?: [
 			placeholder?: string,
 			disabled?: boolean
 		},
+
+		// for a "radio" type only
+		options?: [
+			{
+				id: any,
+				label?: string, 
+			},
+			{...} // other options
+		],
 
 		// for "color" and "colorSchema" types
 		colors?: [], // for a "color" type only
@@ -83,7 +93,7 @@ To configure the editor appearance and functionality, you can specify the follow
 
 #### - Common parameters for all types
 
-- `type` - (required) an editor field type. Here you can specify the following types: **text**, **textarea**,  **combo**, **color**, **checkbox**, **date** and **files**
+- `type` - (required) an editor field type. Here you can specify the following types: **text**, **textarea**,  **combo**, **multiselect**, **color**, **checkbox**, **date**, **radio** and **files**
 - `key` - (required) an editor field key. Here you need to use the value specified in the [`events`](../js_eventcalendar_events_config) property. See the example below:
 
 ~~~js {4-5,12,20}
@@ -125,14 +135,21 @@ const editorShape = [
 	- `type` - (optional) a type of the input field (only for **text** type). Here you can specify only the **password**, **number**, and **text** values)
 	- `inputStyle` - (optional) a custom css style
 
-#### - Parameters for a "combo" type
+#### - Parameters for "combo" and "multiselect" types
 
+- `template` - (optional) a function that needs to return a custom template of the drop-down options
 - `options` - (optional) an array of objects containing the dropdown options data. Here you can specify the following parameters:
 	- `id` - (required) an option **ID** 
 	- `label` - (required) an option label 
 - `config` - (optional) a configuration object of the **"combo"** field. Here you can specify the following parameters:
 	- `placeholder` - (optional) a placeholder value
 	- `disabled` - (optional) enables/disables a field state
+
+#### - Parameters for a "radio" type
+
+- `options` - (optional) an array of objects containing the radio button data. Here you can specify the following parameters:
+	- `id` - (required) a radio button **ID** 
+	- `label` - (optional) an option label 
 
 #### - Parameters for "color" and "colorSchema" types
 
@@ -230,15 +247,15 @@ To set the **editorShape** config dynamically, you can use the
 ~~~jsx {8-16,19}
 // event priorities
 const priorities = [
-    { id: 1, label: "high" },
-    { id: 2, label: "medium" },
-    { id: 3, label: "low" }
+    { id: 1, label: "High" },
+    { id: 2, label: "Medium" },
+    { id: 3, label: "Low" }
 ];
 // editor settings
 const editorShape = [ 
 	...eventCalendar.defaultEditorShape, // include the default settings
-	{ // add custom field
-		type: "combo",
+	{ // add custom radio field
+		type: "radio",
 		key: "priority",
 		label: "Priority",
 		options: priorities
@@ -253,4 +270,9 @@ new eventCalendar.EventCalendar("#root", {
 
 **Related articles:** [Configuration](../../../guides/configuration#editor)
 
-**Related sample:** [Event Calendar. Event color](https://snippet.dhtmlx.com/qw45r367)
+**Related sample:** [Event Calendar. Event color](https://snippet.dhtmlx.com/qw45r367) and [Event Calendar. Custom editor fields](https://snippet.dhtmlx.com/bxwdj1rt) 
+
+**Change log:** 
+
+- The ***multiselect*** and ***radio*** types of editor were added in v1.1
+- The  *template* parameter of the ***multiselect*** and ***combo*** types of editor was added in v1.1
