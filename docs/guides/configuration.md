@@ -149,7 +149,8 @@ config: {
 The *editor* consists of the fields for managing the events data. To configure the editor fields (controls), you can use the [`editorShape`](api/config/js_eventcalendar_editorshape_config.md) property. You can use the following types of the editor fields:
 
 - [**text** and **textarea**](#text-and-textarea-types)
-- [**combo**](#combo-type)
+- [**combo** and **multiselect**](#combo-and-multiselect-types)
+- [**radio**](#radio-type)
 - [**color** and **colorSchema**](#color-and-colorschema-types)
 - [**checkbox**](#checkbox-type)
 - [**date**](#date-type)
@@ -159,9 +160,10 @@ The *editor* consists of the fields for managing the events data. To configure t
 
 The editor fields of **text** and **textarea** types you can set in the following way:
 
-~~~jsx {3-15}
+~~~jsx {4-16}
 new eventCalendar.EventCalendar("#root", {
     editorShape: [
+        ...eventCalendar.defaultEditorShape,
         {
             type: "text", // or "textarea"
             key: "label_key",
@@ -180,15 +182,16 @@ new eventCalendar.EventCalendar("#root", {
 });
 ~~~
 
-### Combo type
+### Combo and Multiselect types
 
-The editor field of **combo** type you can set in the following way:
+The editor field of **combo** and **multiselect** types you can set in the following way:
 
-~~~jsx {3-16}
+~~~jsx {4-22}
 new eventCalendar.EventCalendar("#root", {
     editorShape: [
+        ...eventCalendar.defaultEditorShape,
         {
-            type: "combo",
+            type: "multiselect", // or "combo"
             key: "priority_key",
             label: "Event priority",
             options: [
@@ -199,7 +202,35 @@ new eventCalendar.EventCalendar("#root", {
             config: {
                 disabled: false,
                 placeholder: "Select priority"
+            },
+            template: (option) => {
+                return `<div class="multiselect-wraper">
+                    <img src=${option.avatar} alt="" class="multieselectOption-img" />
+                    ${option.label} </div>`
             }
+        },
+        // settings of other fields
+    ]
+});
+~~~
+
+### Radio type
+
+The editor field of **radio** type you can set in the following way:
+
+~~~jsx {4-13}
+new eventCalendar.EventCalendar("#root", {
+    editorShape: [
+        ...eventCalendar.defaultEditorShape,
+        { 
+            type: "radio",
+            key: "priority",
+            label: "Priority",
+            options: [
+                { id: 1, label: "High" },
+                { id: 2, label: "Medium" },
+                { id: 3, label: "Low" }
+            ]
         },
         // settings of other fields
     ]
@@ -210,9 +241,10 @@ new eventCalendar.EventCalendar("#root", {
 
 The editor fields of **color** and **colorSchema** types you can set in the following way:
 
-~~~jsx {4-24,27-34}
+~~~jsx {5-25,28-35}
 new eventCalendar.EventCalendar("#root", {
     editorShape: [
+        ...eventCalendar.defaultEditorShape,
         { 
             type: "colorSchema", 
             key: "colorschema_key",
@@ -255,9 +287,10 @@ new eventCalendar.EventCalendar("#root", {
 
 The editor field of **checkbox** type you can set in the following way:
 
-~~~jsx {3-8}
+~~~jsx {4-9}
 new eventCalendar.EventCalendar("#root", {
     editorShape: [
+        ...eventCalendar.defaultEditorShape,
         {
             type: "checkbox", 
             key: "checkbox_key",
@@ -273,9 +306,10 @@ new eventCalendar.EventCalendar("#root", {
 
 The editor field of **date** type you can set in the following way:
 
-~~~jsx {3-8}
+~~~jsx {4-9}
 new eventCalendar.EventCalendar("#root", {
     editorShape: [
+        ...eventCalendar.defaultEditorShape,
         {
             type: "date", 
             key: "start_date_key",
@@ -291,10 +325,11 @@ new eventCalendar.EventCalendar("#root", {
 
 The editor field of **files** type can be set in the following way:
 
-~~~jsx {4-15}
+~~~jsx {5-16}
 const url = "https://some_backend_url";
 new eventCalendar.EventCalendar("#root", {
     editorShape: [
+        ...eventCalendar.defaultEditorShape,
         {
             type: "files", 
             key: "attached", // the "attached" key is used when providing the event data via the "events" property
@@ -415,11 +450,13 @@ To set an initial view mode, you can use the [`mode`](api/config/js_eventcalenda
 - <code style = {{color: "green"}}>mode: "day"</code> - the "Day" view mode
 - <code style = {{color: "green"}}>mode: "week"</code> - the "Week" view mode
 - <code style = {{color: "green"}}>mode: "month"</code> - the "Month" view mode
+- <code style = {{color: "green"}}>mode: "year"</code> - the "Year" view mode
+- <code style = {{color: "green"}}>mode: "agenda"</code> - the "Agenda" view mode
 
 ~~~jsx {3}
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
-    mode: "week", // the "Week" mode is displayed initially
+    mode: "agenda", // the "Agenda" mode is displayed initially
     // other configuration parameters
 });
 ~~~
