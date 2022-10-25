@@ -6,6 +6,36 @@ description: You can explore what's new in DHTMLX Event Calendar and its release
 
 # What's new
 
+If you are updating Event Calendar from an older version, check [Migration to newer versions](news/migration.md) for details.
+
+## Version 1.1
+
+Released on November Day [TODO], 2022
+
+[Review of release on the blog](https://dhtmlx.com/blog/meet-dhtmlx-event-calendar-v1-1/) [TODO]
+
+### New functionality
+
+- An ability to view events in the Year and Agenda modes ([Example](https://snippet.dhtmlx.com/6nl72051))
+- An ability to highlight the grid cells via API ([Example](https://snippet.dhtmlx.com/z03jrdu4))
+- An ability to use the **multiselet** and **radio** types of editor ([Example](https://snippet.dhtmlx.com/bxwdj1rt))
+
+### Updates
+
+- #### Methods
+
+    - The [`setMode()`](../../api/methods/js_kanban_setmode_method) method of Kanban is updated
+
+- #### Properties
+
+    - The [`templates`](../../api/config/js_kanban_templates_config) property of Event Calendat is extended by the ***yearEvent***, ***agendaEvent*** and ***agendaDate*** parameters ([Example](https://snippet.dhtmlx.com/6nl72051))
+
+    - The [`config`](../../api/config/js_kanban_config_config) property of Event Calendat is extended by the ***cellCss*** parameter ([Example](https://snippet.dhtmlx.com/z03jrdu4))
+
+    - The [`editorShape`](../../api/config/js_kanban_editorshape_config) property is extended by the ***multiselect*** and ***radio*** types ([Example](https://snippet.dhtmlx.com/bxwdj1rt))
+
+    - The [`mode`](../../api/config/js_kanban_mode_config) property of Event Calendat is extended by the ***year*** and ***agenda*** parameters (view modes)
+
 ## Version 1.0
 
 Released on September 1, 2022
