@@ -9,8 +9,20 @@ module.exports = {
 			id: "how_to_start"
 		},
 		{
-			type: "doc",
-			id: "news/whats_new"
+			type: "category",
+			label: "What's new and migration",
+			collapsible: true,
+			collapsed: true,
+			link: {
+				type: 'generated-index',
+				title: "What's new and migration",
+				keywords: ['news'],
+				image: '/img/docusaurus.png',
+			},
+			items: [
+				"news/whats_new",
+				"news/migration"
+			]
 		},
 		{
 			type: "category",
