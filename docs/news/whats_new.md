@@ -24,17 +24,17 @@ Released on November Day [TODO], 2022
 
 - #### Methods
 
-    - The [`setMode()`](../../api/methods/js_kanban_setmode_method) method of Kanban is updated
+    - The [`setMode()`](../../api/methods/js_eventcalendar_setmode_method) method of Event Calendar is updated
 
 - #### Properties
 
-    - The [`templates`](../../api/config/js_kanban_templates_config) property of Event Calendat is extended by the ***yearEvent***, ***agendaEvent*** and ***agendaDate*** parameters ([Example](https://snippet.dhtmlx.com/6nl72051))
+    - The [`templates`](../../api/config/js_eventcalendar_templates_config) property of Event Calendat is extended by the ***yearEvent***, ***agendaEvent*** and ***agendaDate*** parameters ([Example](https://snippet.dhtmlx.com/6nl72051))
 
-    - The [`config`](../../api/config/js_kanban_config_config) property of Event Calendat is extended by the ***cellCss*** parameter ([Example](https://snippet.dhtmlx.com/z03jrdu4))
+    - The [`config`](../../api/config/js_eventcalendar_config_config) property of Event Calendat is extended by the ***cellCss*** parameter ([Example](https://snippet.dhtmlx.com/z03jrdu4))
 
-    - The [`editorShape`](../../api/config/js_kanban_editorshape_config) property is extended by the ***multiselect*** and ***radio*** types ([Example](https://snippet.dhtmlx.com/bxwdj1rt))
+    - The [`editorShape`](../../api/config/js_eventcalendar_editorshape_config) property is extended by the ***multiselect*** and ***radio*** types ([Example](https://snippet.dhtmlx.com/bxwdj1rt))
 
-    - The [`mode`](../../api/config/js_kanban_mode_config) property of Event Calendat is extended by the ***year*** and ***agenda*** parameters (view modes)
+    - The [`mode`](../../api/config/js_eventcalendar_mode_config) property of Event Calendat is extended by the ***year*** and ***agenda*** parameters (view modes)
 
 ## Version 1.0
 

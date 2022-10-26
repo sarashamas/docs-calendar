@@ -31,7 +31,7 @@ You can set the **value** parameter to the *"day"*, *"week"*, *"month"*, *"year"
 const calendar = new eventCalendar.EventCalendar("#root", {
 	// initial configuration parameters
 });
-// set the "day" mode
+// set the "year" mode
 calendar.setMode({ value: "year" });
 ~~~
 
