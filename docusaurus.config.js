@@ -215,7 +215,7 @@ const config = {
 				},
 				{
 					"label": "Forum",
-					"href": "https://forum.dhtmlx.com/c/widgets/",
+					"href": "https://forum.dhtmlx.com/c/event-calendar/",
 					"position": "right"
 				},
 				{
@@ -252,7 +252,7 @@ const config = {
 						},
 						{
 							"label": "Forum",
-							"href": "https://forum.dhtmlx.com/c/widgets/",
+							"href": "https://forum.dhtmlx.com/c/event-calendar/",
 							"position": "right"
 						}
 					]

@@ -24,13 +24,13 @@ The **getState()** method returns an object with the following properties:
 {
 	bounds: array,
 	config: object,
-	data: array,
+	events: array,
 	date: Date,
 	dateRange: array,
 	datepicker: object,
 	edit: boolean,
 	editorShape: array,
-	eventTypes: array,
+	calendars: array,
 	mode: string,
 	popupInfo: object,
 	selected: string,
@@ -41,12 +41,18 @@ The **getState()** method returns an object with the following properties:
 
 ### Example
 
-~~~jsx {6}
+~~~jsx {5-13}
 // create Event Calendar
 const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration parameters
 });
 // get the state of Event Calendar
 const state = calendar.api.getState();
-console.log(state);
+console.log(state.events); // output the events data
+console.log(state.mode); // output the selected mode
+console.log(state.config); // output the configuration object
+console.log(state.calendars); // output the calendars data
+console.log(state.editorShape); // output the editor configuration object
+console.log(state.selected); // output the selected event data
+//...
 ~~~

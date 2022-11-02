@@ -43,14 +43,48 @@ The method returns an object with the following properties:
 
 ### Example
 
-~~~jsx {6-11}
+~~~jsx {6-44}
 // create Event Calendar
 const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration properties
 });
-// subscribe on the event selection
-calendar.api.getReactiveState().selected.subscribe((value) => {
-	console.log(value);
+
+// get reactive state
+const state = calendar.api.getReactiveState();
+
+// subscribe on the calendars changes and output the calendars data
+state.calendars.subscribe((data) => {
+	console.log(data);
+});
+
+// subscribe on the events changes and output the events data
+state.events.subscribe((data) => {
+	console.log(data);
+});
+
+// subscribe on the event selection and output the data of the selected event
+state.selected.subscribe((data) => {
+	console.log(data);
 	// other actions
+});
+
+// subscribe on the date changes and output the selected date
+state.date.subscribe((date) => {
+	console.log(date);
+});
+
+// subscribe on the modes changes and output the selected mode
+state.mode.subscribe((mode) => {
+	console.log(mode);
+});
+
+// set new mode
+state.mode.set("day");
+
+// update mode
+state.mode.update((mode) => {
+	if(mode === "day"){
+		return "week";
+	}
 });
 ~~~
