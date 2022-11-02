@@ -7,7 +7,7 @@ description: You can have an overview of DHTMLX JavaScript Event Calendar librar
 
 # DHTMLX Event Calendar overview
 
-JavaScript **Event Calendar** is a modern web tool for efficient time-management and scheduling events. It perfectly works on both desktop and mobile platforms. This solution will help you to manage your schedule as well as plane new appointments by adding as much events as you need. It is also easy to reschedule all the events using drag-n-drop. The appropriate display modes will help to look through the events scheduled for a day, week or month.
+JavaScript **Event Calendar** is a modern web tool for efficient time-management and scheduling events. It perfectly works on both desktop and mobile platforms. This solution will help you to manage your schedule as well as plane new appointments by adding as much events as you need. It is also easy to reschedule all the events using drag-n-drop. The appropriate display modes will help to look through the events scheduled for a day, week, month, year and agenda.
 
 ## Event Calendar structure
 
@@ -15,7 +15,7 @@ JavaScript **Event Calendar** is a modern web tool for efficient time-management
 
 The **Toolbar** is the top part of Event Calendar. It consists of the controls for managing the widget functionality. Here you can perform the following operations:
 
-- switch between the **Day**, **Week** and **Month** view modes using the corresponding controls
+- view the events throught the **Day**, **Week**, **Month**, **Year** and **Agenda** view modes using the corresponding controls
 - go to the current date using a **Today** button
 - switch to the needed date using the special arrows in the middle part of Toolbar
 - create new events, using a **+ Create event** button
