@@ -1,7 +1,7 @@
 ---
 sidebar_label: Post /events
 title: Post /events
-description: You can learn about the Post /events route in the documentation of the DHTMLX JavaScript To Do List library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
+description: You can learn about the Post /events route in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
 ---
 
 # Post /events
