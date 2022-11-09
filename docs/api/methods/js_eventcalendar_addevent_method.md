@@ -21,7 +21,7 @@ addEvent({ event: object }): void;
 - `event` - (required) an object of the event data
 
 :::tip
-The full list of the **event** parameters can be found [**here**](api/config/js_eventcalendar_data_config.md)
+The full list of the **event** parameters can be found [**here**](api/config/js_eventcalendar_events_config.md)
 :::
 
 ### Example
