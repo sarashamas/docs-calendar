@@ -8,7 +8,7 @@ description: You can learn about the Get /uploads route in the documentation of 
 
 ### Description
 
-@short:Gets the requested binary file from the server
+@short: Gets the requested binary file from the server
 
 The route handles the GET request made to the **'/uploads/{id}/{name}'** path.
 
@@ -50,4 +50,4 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 
 ---
 
-**Related articles**: 
+**Related articles**: [Working with server](guides/working_with_server.md)

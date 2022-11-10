@@ -8,7 +8,7 @@ description: You can learn about the Delete /events route in the documentation o
 
 ### Description
 
-@short:Deletes data on an event
+@short: Deletes data on an event
 
 The route handles the DELETE request made to the **'/events/{id}'** path. 
 
@@ -49,3 +49,5 @@ No data is returned back. The HTTP status code shows whether the request succeed
 ---
 
 **Related articles**: 
+- [Working with server](guides/working_with_server.md)
+- [send()](api/provider/rest_methods/js_eventcalendar_send_method.md)

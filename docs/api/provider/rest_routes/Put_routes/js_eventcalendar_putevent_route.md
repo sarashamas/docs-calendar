@@ -8,7 +8,7 @@ description: You can learn about the Put /events route in the documentation of t
 
 ### Description
 
-@short:Updates data on an event
+@short: Updates data on an event
 
 The route handles the PUT request made to the **'/events/{id}'** path. 
 
@@ -49,7 +49,7 @@ The server expects to receive a json object with the next properties (both uncha
 | `allDay`       |  boolean  | *Optional*. Enables/disables the event duration throughout the day.|
 | `type`       |  number  | *Required*. The calendar ID which is the event type.|
 | `details`       |  string  | *Optional*. Details about the event.|
-| `files`       |  object | *Optional*. An array of the files to be attached to the event. You can attach files that are already uploaded to the server. The file object should contain the file id, name, and url.|
+| `files`       |  object | *Optional*. An array of the files to be attached to the event. You can attach files that are already [uploaded](api/provider/rest_routes/Post_routes/js_eventcalendar_postupload_route.md) to the server. The file object should contain the file id, name, and url.|
 
 
 Example:
@@ -80,3 +80,6 @@ No data is returned back. The HTTP status code shows whether the request succeed
 ---
 
 **Related articles**: 
+- [Working with server](guides/working_with_server.md)
+- [send()](api/provider/rest_methods/js_eventcalendar_send_method.md)
+- [Post /uploads](api/provider/rest_routes/Post_routes/js_eventcalendar_postupload_route.md)

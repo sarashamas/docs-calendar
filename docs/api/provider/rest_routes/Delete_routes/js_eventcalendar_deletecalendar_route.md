@@ -8,7 +8,7 @@ description: You can learn about the Delete /calendars route in the documentatio
 
 ### Description
 
-@short:Deletes data on a calendar (event type)
+@short: Deletes data on a calendar (event type)
 
 The route handles the DELETE request made to the **'/calendars/{id}'** path. 
 
@@ -49,3 +49,5 @@ No data is returned back. The HTTP status code shows whether the request succeed
 ---
 
 **Related articles**: 
+- [Working with server](guides/working_with_server.md)
+- [send()](api/provider/rest_methods/js_eventcalendar_send_method.md)

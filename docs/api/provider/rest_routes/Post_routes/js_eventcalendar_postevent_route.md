@@ -8,7 +8,7 @@ description: You can learn about the Post /events route in the documentation of 
 
 ### Description
 
-@short:Creates a new event and returns a json object with the event ID in it
+@short: Creates a new event and returns a json object with the event ID in it
 
 The route handles the POST request made to the **'/events'** path. 
 
@@ -39,7 +39,7 @@ The server needs to receive a json object with the next properties:
 | `allDay`       |  boolean  | *Optional*. Enables/disables the event duration throughout the day.|
 | `type`       |  number  | *Required*. The calendar ID which is the event type.|
 | `details`       |  string  | *Optional*. Details about a new event.|
-| `files`       |  object | *Optional*. An array of the files to be attached to a new event. You can attach files that are already uploaded on the server. The file object should contain the file id, name, and url.|
+| `files`       |  object | *Optional*. An array of the files to be attached to a new event. You can attach files that are already [uploaded](api/provider/rest_routes/Post_routes/js_eventcalendar_postupload_route.md) to the server. The file object should contain the file id, name, and url.|
 
 
 Example:
@@ -78,3 +78,6 @@ Example:
 ---
 
 **Related articles**: 
+- [Working with server](guides/working_with_server.md)
+- [send()](api/provider/rest_methods/js_eventcalendar_send_method.md)
+- [Post /uploads](api/provider/rest_routes/Post_routes/js_eventcalendar_postupload_route.md)

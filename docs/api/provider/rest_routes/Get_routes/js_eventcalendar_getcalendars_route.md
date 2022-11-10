@@ -8,7 +8,7 @@ description: You can learn about the Get /calendars route in the documentation o
 
 ### Description
 
-@short:Gets data on all calendars and returns a json object with an array of calendars objects
+@short: Gets data on all calendars and returns a json object with an array of calendars objects
 
 The route handles the GET request made to the **'/calendars'** path.
 
@@ -70,3 +70,5 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 ---
 
 **Related articles**: 
+- [Working with server](guides/working_with_server.md)
+- [getCalendars](api/provider/rest_methods/js_eventcalendar_getcalendars_method.md)

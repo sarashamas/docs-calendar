@@ -46,4 +46,6 @@ Promise.all([
 You need to include **RestDataProvider** into the **Event Bus** order to perform operations with data (***adding***, ***deleting*** etc) and send the corresponding requests to the server
 :::
 
-**Related articles:** [Working with Server](../../../guides/working_with_server)
+---
+
+**Related articles:** [Working with server](../../../guides/working_with_server)

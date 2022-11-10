@@ -8,7 +8,7 @@ description: You can learn about the Put /calendars route in the documentation o
 
 ### Description
 
-@short:Updates data on a calendar (event type)
+@short: Updates data on a calendar (event type)
 
 The route handles the PUT request made to the **'/calendars/{id}'** path. 
 
@@ -67,3 +67,5 @@ No data is returned back. The HTTP status code shows whether the request succeed
 ---
 
 **Related articles**: 
+- [Working with server](guides/working_with_server.md)
+- [send()](api/provider/rest_methods/js_eventcalendar_send_method.md)

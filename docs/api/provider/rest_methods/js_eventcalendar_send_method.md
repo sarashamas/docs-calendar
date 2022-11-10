@@ -8,7 +8,7 @@ description: You can learn about the send method of the RestDataProvider in the 
 
 ### Description
 
-@short:Sends a necessary HTTP request to the server and returns a promise with or without data depending on the request 
+@short: Sends a necessary HTTP request to the server and returns a promise with or without data depending on the request 
 
 All requests to the server are made with the **send()** method which is a part of the [**RestDataProvider**](guides/working_with_server.md/#restdataprovider) service.
 
@@ -74,7 +74,7 @@ Promise.all([
     calendar.api.on("set-event", obj => {
         obj.custom = "custom event";
         restProvider.send(`events/0`, "GET", obj).then(data => {
-            list.api.parse({ tasks: data });
+            list.api.parse({ events: data });
             return Promise.resolve();
         }),
 
@@ -100,4 +100,4 @@ calendar.api.setNext(new MyDataProvider(url));
 ~~~ 
 ---
 
-**Related articles**: [Working with Server](guides/working_with_server.md)
+**Related articles**: [Working with server](guides/working_with_server.md)

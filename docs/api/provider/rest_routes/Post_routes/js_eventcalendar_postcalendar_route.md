@@ -8,7 +8,7 @@ description: You can learn about the Post /calendars route in the documentation 
 
 ### Description
 
-@short:Creates a new calendar (event type) and returns a json object with the calendar ID in it
+@short: Creates a new calendar (event type) and returns a json object with the calendar ID in it
 
 The route handles the POST request made to the **'/calendars'** path. 
 
@@ -35,7 +35,7 @@ The server needs to receive a json object with the next properties:
 | ----------- | ----------- | ----------- |
 | `label`       |  string  | *Required*. The name of a new calendar to be added.|
 | `description`       |  string  | *Optional*. Calendar description.|
-| `color`       | object | *Required*. An object with the style parameters applied to the events of the calendar: `background` - (optional) a HEX code of the event background color related to the current calendar, `border` - (optional) a HEX code of the event border color related to the current calendar, `textColor` - (optional) a HEX code of the event text color related to the current calendar.|
+| `color`       | object | *Required*. An object with the style parameters applied to the events of the calendar: `background` - (optional) a HEX code of the event background color related to the calendar, `border` - (optional) a HEX code of the event border color related to the calendar, `textColor` - (optional) a HEX code of the event text color related to the calendar.|
 
 Example:
 
@@ -66,3 +66,5 @@ Example:
 ---
 
 **Related articles**: 
+- [Working with server](guides/working_with_server.md)
+- [send()](api/provider/rest_methods/js_eventcalendar_send_method.md)

@@ -8,7 +8,7 @@ description: You can learn about the Post /uploads route in the documentation of
 
 ### Description
 
-@short:Uploads a binary file to the server and returns a json object with the file id, name, and url
+@short: Uploads a binary file to the server and returns a json object with the file id, name, and url
 
 The route handles the POST request made to the **'/uploads'** path.
 
@@ -53,3 +53,5 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 ---
 
 **Related articles**: 
+- [Working with server](guides/working_with_server.md)
+- [send()](api/provider/rest_methods/js_eventcalendar_send_method.md)

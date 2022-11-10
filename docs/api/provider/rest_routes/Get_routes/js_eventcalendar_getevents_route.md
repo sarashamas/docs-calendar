@@ -8,7 +8,7 @@ description: You can learn about the Get /events route in the documentation of t
 
 ### Description
 
-@short:Gets data on all events and returns a json object with an array of events objects
+@short: Gets data on all events and returns a json object with an array of events objects
 
 The route handles the GET request made to the **'/events'** path.
 
@@ -78,3 +78,5 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 ---
 
 **Related articles**: 
+- [Working with server](guides/working_with_server.md)
+- [getEvents](api/provider/rest_methods/js_eventcalendar_getevents_method.md)
