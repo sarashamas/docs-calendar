@@ -28,13 +28,13 @@ Released on November 10, 2022
 
 - #### Properties
 
-    - The [`templates`](../../api/config/js_eventcalendar_templates_config) property of Event Calendat is extended by the ***yearEvent***, ***agendaEvent*** and ***agendaDate*** parameters ([Example](https://snippet.dhtmlx.com/6nl72051))
+    - The [`templates`](../../api/config/js_eventcalendar_templates_config) property of Event Calendar is extended by the ***yearEvent***, ***agendaEvent*** and ***agendaDate*** parameters ([Example](https://snippet.dhtmlx.com/6nl72051))
 
-    - The [`config`](../../api/config/js_eventcalendar_config_config) property of Event Calendat is extended by the ***cellCss*** parameter ([Example](https://snippet.dhtmlx.com/z03jrdu4))
+    - The [`config`](../../api/config/js_eventcalendar_config_config) property of Event Calendar is extended by the ***cellCss*** parameter ([Example](https://snippet.dhtmlx.com/z03jrdu4))
 
     - The [`editorShape`](../../api/config/js_eventcalendar_editorshape_config) property is extended by the ***multiselect*** and ***radio*** types ([Example](https://snippet.dhtmlx.com/bxwdj1rt))
 
-    - The [`mode`](../../api/config/js_eventcalendar_mode_config) property of Event Calendat is extended by the ***year*** and ***agenda*** parameters (view modes)
+    - The [`mode`](../../api/config/js_eventcalendar_mode_config) property of Event Calendar is extended by the ***year*** and ***agenda*** parameters (view modes)
 
 ## Version 1.0
 
