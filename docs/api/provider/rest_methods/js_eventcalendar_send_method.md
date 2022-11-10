@@ -1,7 +1,7 @@
 ---
 sidebar_label: send()
 title: send Method
-description: You can learn about the send method of the RestDataProvider in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX To Do List.
+description: You can learn about the send method of the RestDataProvider in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
 
 # send()
