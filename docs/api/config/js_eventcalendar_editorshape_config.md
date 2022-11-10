@@ -31,7 +31,7 @@ editorShape?: [
 		},
 
 		// for "combo" and "multiselect" types only
-		template?: (option) => string 
+		template?: (option) => string, 
 		options?: [
 			{
 				id: any,

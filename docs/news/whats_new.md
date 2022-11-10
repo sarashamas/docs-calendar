@@ -10,9 +10,9 @@ If you are updating Event Calendar from an older version, check [Migration to ne
 
 ## Version 1.1
 
-Released on November Day [TODO], 2022
+Released on November 10, 2022
 
-[Review of release on the blog](https://dhtmlx.com/blog/meet-dhtmlx-event-calendar-v1-1/) [TODO]
+[Review of release on the blog](https://dhtmlx.com/blog/meet-dhtmlx-event-calendar-v1-1/)
 
 ### New functionality
 
