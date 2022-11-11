@@ -67,13 +67,12 @@ Promise.all([
     restProvider.getCalendars()
 ]).then(([events, calendars]) => {
     const calendar = new eventCalendar("#root", {
-        events,
-        calendars
+       // configuration parameters
     });
 
-    calendar.api.on("set-event", obj => {
+    calendar.api.on("update-event", obj => {
         obj.custom = "custom event";
-        restProvider.send(`events/0`, "GET", obj).then(data => {
+        restProvider.send(`events/0`, "PUT", obj).then(data => {
             list.api.parse({ events: data });
             return Promise.resolve();
         }),
