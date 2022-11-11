@@ -10,7 +10,7 @@ description: You can learn about the Post /uploads route in the documentation of
 
 @short: Uploads a binary file to the server and returns a json object with the file id, name, and url
 
-The route handles the POST request made to the **'/uploads'** path.
+The route handles the POST multipart request made to the **'/uploads'** path.
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">
@@ -27,7 +27,28 @@ The route handles the POST request made to the **'/uploads'** path.
 
 ### Payload
 
-The server needs to receive a binary file.
+The server needs to receive a binary file via the **multipart/form-data** request. As with all multipart MIME types, the request body should contain:
+
+- the **Content-Disposition** header that should be set to **form-data**
+  - the **name** attribute with the **upload** value 
+  - **filename** - the original file name of the uploaded file
+- the **Content-Type** header - the type of the file data content
+
+Only one file can be sent per request.
+
+Example:
+
+~~~
+
+------WebKitFormBoundary1aDBIObTwl1A4Vpf
+Content-Disposition: form-data; name="upload"; filename="Screenshot from 2022-11-11 12-35-01.png"
+Content-Type: image/png
+
+------WebKitFormBoundary1aDBIObTwl1A4Vpf--
+
+
+~~~
+
 
 
 ### Response
