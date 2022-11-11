@@ -79,4 +79,5 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 
 **Related articles**: 
 - [Working with server](guides/working_with_server.md)
-- [getEvents](api/provider/rest_methods/js_eventcalendar_getevents_method.md)
+- [getEvents()](api/provider/rest_methods/js_eventcalendar_getevents_method.md)
+- [send()](api/provider/rest_methods/js_eventcalendar_send_method.md)

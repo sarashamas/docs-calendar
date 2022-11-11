@@ -225,8 +225,9 @@ module.exports = {
 						image: '/img/docusaurus.png'
 								},
 								items: [
-									"api/provider/rest_routes/Get_routes/js_eventcalendar_getcalendars_route",
+									
 										"api/provider/rest_routes/Get_routes/js_eventcalendar_getevents_route",
+										"api/provider/rest_routes/Get_routes/js_eventcalendar_getcalendars_route",
 										"api/provider/rest_routes/Get_routes/js_eventcalendar_getuploads_route",
 								]
 		
