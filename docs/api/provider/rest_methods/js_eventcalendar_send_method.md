@@ -31,8 +31,8 @@ send(
 | ----------- | ----------- | ----------- |
 | `url`         |  string     | *Required*. A path to the server where a request is sent to.            |
 | `method`            |string             | *Required*. An HTTP method type (Get, Post, Put, Delete)            |
-| `data`  | object        | *Optional*. Parameters that are sent to the server. By default, parameters of the fired event are sent.  But you are free to add additional parameters with the custom object. See the [Example](#examples) below. |
-| `headers`  |object       | *Optional*. A default header is the **Content-Type** header set to *application/json*. More optional headers can be added with the **customHeaders** parameter. See the [Example](#examples) below. |
+| `data`  | object        | *Optional*. Parameters that are sent to the server. By default, parameters of the fired event are sent.  But you are free to add additional parameters with the custom object. See [Example 2](#examples) below. |
+| `headers`  |object       | *Optional*. A default header is the **Content-Type** header set to *application/json*. More optional headers can be added with the **customHeaders** parameter. See [Example 1](#examples) below. |
 
 ### Response
 
@@ -56,9 +56,25 @@ restDataProvider.send(url, method, data)
 
 ### Examples
 
-The example below shows how to send a request with additional parameters besides the default ones:
+The next example shows how to add headers by extending RestDataProvider, which can give you more control of the data you send to the server: 
 
-~~~js {13-18}
+~~~jsx title="Example 1"{3-8}
+const url = "https://some_backend_url";
+
+class MyDataProvider extends RestDataProvider {
+    send(url, method, data, headers) {
+        headers = { ...headers, "SomeToken": "abc" };
+        return super.send(url, methods, data, headers);
+    }
+}
+
+calendar.api.setNext(new MyDataProvider(url));
+~~~
+
+The example below shows how to add additional parameters to the **/event** requests. Note, that parameters are added to the calendar data object for the **update-event**/**add-event** handler. 
+You don't need to call the **send()** method manually here as it's called via the **api.setNext()** method. The same approach can be applied to the **update-calendar** and **add-calendar** events.
+
+~~~jsx title="Example 2"{12-16}
 const url = "https://some_backend_url";
 const restProvider = new eventCalendar.RestDataProvider(url);
 
@@ -70,33 +86,22 @@ Promise.all([
        // configuration parameters
     });
 
-    calendar.api.on("update-event", obj => {
-        obj.custom = "custom event";
-        restProvider.send(`events/0`, "PUT", obj).then(data => {
-            list.api.parse({ events: data });
-            return Promise.resolve();
-        }),
-
-        calendar.api.setNext(restProvider);
+    calendar.api.on("update-event", data => {
+        data.custom = "custom event";
     });
+    calendar.api.setNext(restProvider);
 });
-
 ~~~
 
-The next example shows how to add headers by extending RestDataProvider, which can give you more control of the data you send to the server: 
+If you send an arbitrary request that is not managed by the EventCalendar API, you can pass the parameters object into the **send()** method of the RestDataProvider manually:
 
-~~~js {3-8}
-const url = "https://some_backend_url";
-
-class MyDataProvider extends RestDataProvider {
-    send(url, method, data, headers) {
-        headers = { ...headers, "SomeToken": "abc" };
-        return super.send(url, methods, data, headers);
-    }
-}
-
-calendar.api.setNext(new MyDataProvider(url));
-~~~ 
+~~~jsx title="Example 3"{5}
+const customEndpoint = `projects/1`;
+const params = {
+       lastModified: Date.now()
+};
+restProvider.send(customEndpoint , "PUT",  params).then(data => {}),
+~~~
 ---
 
 **Related articles**: [Working with server](guides/working_with_server.md)
