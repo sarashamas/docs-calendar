@@ -227,9 +227,9 @@ new eventCalendar.EventCalendar("#root", {
             key: "priority",
             label: "Priority",
             options: [
-                { id: 1, label: "High" },
-                { id: 2, label: "Medium" },
-                { id: 3, label: "Low" }
+                { value: 1, label: "High" },
+                { value: 2, label: "Medium" },
+                { value: 3, label: "Low" }
             ]
         },
         // settings of other fields

@@ -148,7 +148,7 @@ const editorShape = [
 #### - Parameters for a "radio" type
 
 - `options` - (optional) an array of objects containing the radio button data. Here you can specify the following parameters:
-	- `id` - (required) a radio button **ID** 
+	- `value` - (required) a radio button value 
 	- `label` - (optional) an option label 
 
 #### - Parameters for "color" and "colorSchema" types
@@ -251,9 +251,9 @@ To set the **editorShape** config dynamically, you can use the
 ~~~jsx {8-16,19}
 // event priorities
 const priorities = [
-    { id: 1, label: "High" },
-    { id: 2, label: "Medium" },
-    { id: 3, label: "Low" }
+    { value: 1, label: "High" },
+    { value: 2, label: "Medium" },
+    { value: 3, label: "Low" }
 ];
 // editor settings
 const editorShape = [ 
