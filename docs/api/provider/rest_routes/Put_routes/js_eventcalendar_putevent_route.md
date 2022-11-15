@@ -81,5 +81,4 @@ No data is returned back. The HTTP status code shows whether the request succeed
 
 **Related articles**: 
 - [Working with server](guides/working_with_server.md)
-- [send()](api/provider/rest_methods/js_eventcalendar_send_method.md)
 - [Post /uploads](api/provider/rest_routes/Post_routes/js_eventcalendar_postupload_route.md)

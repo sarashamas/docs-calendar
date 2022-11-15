@@ -65,6 +65,4 @@ Example:
 
 ---
 
-**Related articles**: 
-- [Working with server](guides/working_with_server.md)
-- [send()](api/provider/rest_methods/js_eventcalendar_send_method.md)
+**Related articles**: [Working with server](guides/working_with_server.md)
