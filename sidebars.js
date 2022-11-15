@@ -190,10 +190,9 @@ module.exports = {
 						label: "REST methods",
 						collapsed: true,
 						link: {
-							type: 'generated-index',
-							title: "REST methods",
-							keywords: ['rest methods'],
-							image: '/img/docusaurus.png'
+							type: 'doc',
+							id: "api/overview/rest_methods_overview"
+														
 						},
 						items: [
 							
