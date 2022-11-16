@@ -48,4 +48,4 @@ You need to include **RestDataProvider** into the **Event Bus** order to perform
 
 ---
 
-**Related articles:** [Working with server](../../../guides/working_with_server)
+**Related articles:** [Working with server](/guides/working_with_server)

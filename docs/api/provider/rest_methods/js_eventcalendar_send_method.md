@@ -105,5 +105,5 @@ restProvider.send(customEndpoint , "PUT",  params).then(data => {}),
 ---
 
 **Related articles**: 
-- [Working with server](guides/working_with_server.md)
+- [Working with server](/guides/working_with_server)
 - [api.setNext()](api/internal/js_eventcalendar_setnext_method.md)
