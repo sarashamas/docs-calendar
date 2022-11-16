@@ -159,7 +159,7 @@ For a **color** type only
 :::
 
 :::note
-For a **colorSchema** type only. Unless you specify *colors* for the **colorSchema** type, the colorpicker will use a set of parameters specified via the [`colors`](./js_eventcalendar_colors_config.md) property
+For a **colorSchema** type only. Unless you specify *colors* for the **colorSchema** type, the colorpicker will use a set of parameters specified via the [`colors`](../js_eventcalendar_colors_config) property
 - `colors` - (optional) an array of objects containing the parameters of colors used in colorpicker. For each set of colors you can specify the following parameters:
 	- `background` - (optional) a HEX code of the event background color
 	- `border` - (optional) a HEX code of the event border color
