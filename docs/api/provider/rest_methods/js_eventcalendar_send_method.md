@@ -71,7 +71,7 @@ class MyDataProvider extends RestDataProvider {
 calendar.api.setNext(new MyDataProvider(url));
 ~~~
 
-The example below shows how to add additional parameters to the **/event** requests. Note, that parameters are added to the calendar data object for the **update-event**/**add-event** handler. 
+The example below shows how to add additional parameters to the **/events** requests. Note, that parameters are added to the calendar data object for the **update-event**/**add-event** handler. 
 You don't need to call the **send()** method manually here as it's called via the **api.setNext()** method. The same approach can be applied to the **update-calendar** and **add-calendar** events.
 
 ~~~jsx title="Example 2"{12-16}
