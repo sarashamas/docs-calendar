@@ -114,13 +114,13 @@ new eventCalendar.EventCalendar("#root", {
 
 | Name                                                                  | Description                                                                  |
 | --------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| [](api/provider/rest_routes/Get_routes/js_eventcalendar_getcalendars_route.md) | @getshort(api/provider/rest_routes/Get_routes/js_eventcalendar_getcalendars_route.md) |
-| [](api/provider/rest_routes/Get_routes/js_eventcalendar_getevents_route.md) | @getshort(api/provider/rest_routes/Get_routes/js_eventcalendar_getevents_route.md) |
-| [](api/provider/rest_routes/Get_routes/js_eventcalendar_getuploads_route.md) | @getshort(api/provider/rest_routes/Get_routes/js_eventcalendar_getuploads_route.md) |
-| [](api/provider/rest_routes/Post_routes/js_eventcalendar_postevent_route.md) | @getshort(api/provider/rest_routes/Post_routes/js_eventcalendar_postevent_route.md) |
-| [](api/provider/rest_routes/Post_routes/js_eventcalendar_postcalendar_route.md) | @getshort(api/provider/rest_routes/Post_routes/js_eventcalendar_postcalendar_route.md) |
-| [](api/provider/rest_routes/Post_routes/js_eventcalendar_postupload_route.md) | @getshort(api/provider/rest_routes/Post_routes/js_eventcalendar_postupload_route.md) |
-| [](api/provider/rest_routes/Put_routes/js_eventcalendar_putevent_route.md) | @getshort(api/provider/rest_routes/Put_routes/js_eventcalendar_putevent_route.md) |
-| [](api/provider/rest_routes/Put_routes/js_eventcalendar_putcalendar_route.md) | @getshort(api/provider/rest_routes/Put_routes/js_eventcalendar_putcalendar_route.md) |
-| [](api/provider/rest_routes/Delete_routes/js_eventcalendar_deleteevent_route.md) | @getshort(api/provider/rest_routes/Delete_routes/js_eventcalendar_deleteevent_route.md) |
-| [](api/provider/rest_routes/Delete_routes/js_eventcalendar_deletecalendar_route.md) | @getshort(api/provider/rest_routes/Delete_routes/js_eventcalendar_deletecalendar_route.md) |
+| [Get /calendars](api/provider/rest_routes/get_routes/js_eventcalendar_getcalendars_route.md) | @getshort(api/provider/rest_routes/get_routes/js_eventcalendar_getcalendars_route.md) |
+| [Get /events](api/provider/rest_routes/get_routes/js_eventcalendar_getevents_route.md) | @getshort(api/provider/rest_routes/get_routes/js_eventcalendar_getevents_route.md) |
+| [Get /uploads](api/provider/rest_routes/get_routes/js_eventcalendar_getuploads_route.md) | @getshort(api/provider/rest_routes/get_routes/js_eventcalendar_getuploads_route.md) |
+| [Post /events](api/provider/rest_routes/post_routes/js_eventcalendar_postevent_route.md) | @getshort(api/provider/rest_routes/post_routes/js_eventcalendar_postevent_route.md) |
+| [Post /calendars](api/provider/rest_routes/post_routes/js_eventcalendar_postcalendar_route.md) | @getshort(api/provider/rest_routes/post_routes/js_eventcalendar_postcalendar_route.md) |
+| [Post /uploads](api/provider/rest_routes/post_routes/js_eventcalendar_postupload_route.md) | @getshort(api/provider/rest_routes/post_routes/js_eventcalendar_postupload_route.md) |
+| [Put /events](api/provider/rest_routes/put_routes/js_eventcalendar_putevent_route.md) | @getshort(api/provider/rest_routes/put_routes/js_eventcalendar_putevent_route.md) |
+| [Put /calendars](api/provider/rest_routes/put_routes/js_eventcalendar_putcalendar_route.md) | @getshort(api/provider/rest_routes/put_routes/js_eventcalendar_putcalendar_route.md) |
+| [Delete /events](api/provider/rest_routes/delete_routes/js_eventcalendar_deleteevent_route.md) | @getshort(api/provider/rest_routes/delete_routes/js_eventcalendar_deleteevent_route.md) |
+| [Delete /calendars](api/provider/rest_routes/delete_routes/js_eventcalendar_deletecalendar_route.md) | @getshort(api/provider/rest_routes/delete_routes/js_eventcalendar_deletecalendar_route.md) |

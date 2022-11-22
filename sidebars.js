@@ -225,9 +225,9 @@ module.exports = {
 								},
 								items: [
 									
-										"api/provider/rest_routes/Get_routes/js_eventcalendar_getevents_route",
-										"api/provider/rest_routes/Get_routes/js_eventcalendar_getcalendars_route",
-										"api/provider/rest_routes/Get_routes/js_eventcalendar_getuploads_route",
+										"api/provider/rest_routes/get_routes/js_eventcalendar_getevents_route",
+										"api/provider/rest_routes/get_routes/js_eventcalendar_getcalendars_route",
+										"api/provider/rest_routes/get_routes/js_eventcalendar_getuploads_route",
 								]
 		
 							},
@@ -243,9 +243,9 @@ module.exports = {
 								},
 								items: [
 									
-									"api/provider/rest_routes/Post_routes/js_eventcalendar_postevent_route",
-									"api/provider/rest_routes/Post_routes/js_eventcalendar_postcalendar_route",
-									"api/provider/rest_routes/Post_routes/js_eventcalendar_postupload_route",
+									"api/provider/rest_routes/post_routes/js_eventcalendar_postevent_route",
+									"api/provider/rest_routes/post_routes/js_eventcalendar_postcalendar_route",
+									"api/provider/rest_routes/post_routes/js_eventcalendar_postupload_route",
 								
 								]
 		
@@ -262,8 +262,8 @@ module.exports = {
 								},
 								items: [
 									
-									"api/provider/rest_routes/Put_routes/js_eventcalendar_putevent_route",
-									"api/provider/rest_routes/Put_routes/js_eventcalendar_putcalendar_route",
+									"api/provider/rest_routes/put_routes/js_eventcalendar_putevent_route",
+									"api/provider/rest_routes/put_routes/js_eventcalendar_putcalendar_route",
 								
 								]
 		
@@ -280,8 +280,8 @@ module.exports = {
 						image: '/img/docusaurus.png'
 								},
 								items: [
-									"api/provider/rest_routes/Delete_routes/js_eventcalendar_deleteevent_route",
-									"api/provider/rest_routes/Delete_routes/js_eventcalendar_deletecalendar_route",									
+									"api/provider/rest_routes/delete_routes/js_eventcalendar_deleteevent_route",
+									"api/provider/rest_routes/delete_routes/js_eventcalendar_deletecalendar_route",									
 								
 								]
 		
