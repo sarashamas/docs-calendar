@@ -49,7 +49,7 @@ The server expects to receive a json object with the next properties (both uncha
 | `allDay`       |  boolean  | *Optional*. Enables/disables the event duration throughout the day.|
 | `type`       |  number  | *Required*. The calendar ID which is the event type.|
 | `details`       |  string  | *Optional*. Details about the event.|
-| `files`       |  object | *Optional*. An array of the files to be attached to the event. You can attach files that are already [uploaded](api/provider/rest_routes/Post_routes/js_eventcalendar_postupload_route.md) to the server. The file object should contain the file id, name, and url.|
+| `files`       |  object | *Optional*. An array of the files to be attached to the event. You can attach files that are already [uploaded](api/provider/rest_routes/post_routes/js_eventcalendar_postupload_route.md) to the server. The file object should contain the file id, name, and url.|
 
 
 Example:
