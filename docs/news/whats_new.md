@@ -16,9 +16,9 @@ Released on November 10, 2022
 
 ### New functionality
 
-- An ability to view events in the Year and Agenda modes ([Example](https://snippet.dhtmlx.com/6nl72051))
-- An ability to highlight the grid cells via API ([Example](https://snippet.dhtmlx.com/z03jrdu4))
-- An ability to use the **multiselet** and **radio** types of editor ([Example](https://snippet.dhtmlx.com/bxwdj1rt))
+- An ability to view events in the Year and Agenda modes ([Example](https://snippet.dhtmlx.com/6nl72051?tag=event_calendar))
+- An ability to highlight the grid cells via API ([Example](https://snippet.dhtmlx.com/z03jrdu4?tag=event_calendar))
+- An ability to use the **multiselet** and **radio** types of editor ([Example](https://snippet.dhtmlx.com/bxwdj1rt?tag=event_calendar))
 
 ### Updates
 
@@ -28,11 +28,11 @@ Released on November 10, 2022
 
 - #### Properties
 
-    - The [`templates`](../../api/config/js_eventcalendar_templates_config) property of Event Calendar is extended by the ***yearEvent***, ***agendaEvent*** and ***agendaDate*** parameters ([Example](https://snippet.dhtmlx.com/6nl72051))
+    - The [`templates`](../../api/config/js_eventcalendar_templates_config) property of Event Calendar is extended by the ***yearEvent***, ***agendaEvent*** and ***agendaDate*** parameters ([Example](https://snippet.dhtmlx.com/6nl72051?tag=event_calendar))
 
-    - The [`config`](../../api/config/js_eventcalendar_config_config) property of Event Calendar is extended by the ***cellCss*** parameter ([Example](https://snippet.dhtmlx.com/z03jrdu4))
+    - The [`config`](../../api/config/js_eventcalendar_config_config) property of Event Calendar is extended by the ***cellCss*** parameter ([Example](https://snippet.dhtmlx.com/z03jrdu4?tag=event_calendar))
 
-    - The [`editorShape`](../../api/config/js_eventcalendar_editorshape_config) property is extended by the ***multiselect*** and ***radio*** types ([Example](https://snippet.dhtmlx.com/bxwdj1rt))
+    - The [`editorShape`](../../api/config/js_eventcalendar_editorshape_config) property is extended by the ***multiselect*** and ***radio*** types ([Example](https://snippet.dhtmlx.com/bxwdj1rt?tag=event_calendar))
 
     - The [`mode`](../../api/config/js_eventcalendar_mode_config) property of Event Calendar is extended by the ***year*** and ***agenda*** parameters (view modes)
 

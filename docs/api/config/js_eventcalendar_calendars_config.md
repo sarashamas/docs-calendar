@@ -136,4 +136,4 @@ new eventCalendar.EventCalendar("#root", {
 });
 ~~~
 
-**Related sample:** [Event Calendar. Event color](https://snippet.dhtmlx.com/qw45r367)
+**Related sample:** [Event Calendar. Event color](https://snippet.dhtmlx.com/qw45r367?tag=event_calendar)

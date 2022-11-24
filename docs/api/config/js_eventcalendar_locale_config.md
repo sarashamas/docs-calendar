@@ -40,4 +40,4 @@ new eventCalendar.EventCalendar("#root", {
 
 **Related articles:** [Localization](../../../guides/localization)
 
-**Related sample:** [Event Calendar. Localization](https://snippet.dhtmlx.com/v3lszmay)
+**Related sample:** [Event Calendar. Localization](https://snippet.dhtmlx.com/v3lszmay?tag=event_calendar)

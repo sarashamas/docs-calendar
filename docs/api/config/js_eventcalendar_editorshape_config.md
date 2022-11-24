@@ -274,7 +274,7 @@ new eventCalendar.EventCalendar("#root", {
 
 **Related articles:** [Configuration](../../../guides/configuration#editor)
 
-**Related sample:** [Event Calendar. Event color](https://snippet.dhtmlx.com/qw45r367) and [Event Calendar. Custom editor fields](https://snippet.dhtmlx.com/bxwdj1rt) 
+**Related sample:** [Event Calendar. Event color](https://snippet.dhtmlx.com/qw45r367?tag=event_calendar) and [Event Calendar. Custom editor fields](https://snippet.dhtmlx.com/bxwdj1rt?tag=event_calendar) 
 
 **Change log:** 
 

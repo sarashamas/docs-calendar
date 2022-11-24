@@ -33,4 +33,4 @@ new eventCalendar.EventCalendar("#root", {
 });
 ~~~
 
-**Related sample:** [Event Calendar. Initialization](https://snippet.dhtmlx.com/btytgzed)
+**Related sample:** [Event Calendar. Initialization](https://snippet.dhtmlx.com/btytgzed?tag=event_calendar)

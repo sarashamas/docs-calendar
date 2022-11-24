@@ -479,4 +479,4 @@ new eventCalendar.EventCalendar("#root", {
 
 In this snippet you can see how to configure Event Calendar:
 
-<iframe src="https://snippet.dhtmlx.com/qw45r367?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+<iframe src="https://snippet.dhtmlx.com/qw45r367?mode=result&tag=event_calendar" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>

@@ -9,7 +9,7 @@ description: You can learn about using typescript with the DHTMLX JavaScript Eve
 The library of DHTMLX Event Calendar provides an ability to use TypeScript definitions. The built-in support of TypeScript works out of the box.
 
 :::note
-You can try out the functionality right in our <a href="https://snippet.dhtmlx.com/qw45r367"  target="_blank">**Snippet Tool**</a>.
+You can try out the functionality right in our <a href="https://snippet.dhtmlx.com/qw45r367?tag=event_calendar"  target="_blank">**Snippet Tool**</a>.
 :::
 
 ## Advantages of using TypeScript
