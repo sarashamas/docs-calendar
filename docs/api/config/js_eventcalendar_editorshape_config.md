@@ -31,7 +31,7 @@ editorShape?: [
 		},
 
 		// for "combo" and "multiselect" types only
-		template?: (option) => string 
+		template?: (option) => string, 
 		options?: [
 			{
 				id: any,
@@ -148,7 +148,7 @@ const editorShape = [
 #### - Parameters for a "radio" type
 
 - `options` - (optional) an array of objects containing the radio button data. Here you can specify the following parameters:
-	- `id` - (required) a radio button **ID** 
+	- `value` - (required) a radio button value 
 	- `label` - (optional) an option label 
 
 #### - Parameters for "color" and "colorSchema" types
@@ -159,7 +159,7 @@ For a **color** type only
 :::
 
 :::note
-For a **colorSchema** type only. Unless you specify *colors* for the **colorSchema** type, the colorpicker will use a set of parameters specified via the [`colors`](./js_eventcalendar_colors_config.md) property
+For a **colorSchema** type only. Unless you specify *colors* for the **colorSchema** type, the colorpicker will use a set of parameters specified via the [`colors`](../js_eventcalendar_colors_config) property
 - `colors` - (optional) an array of objects containing the parameters of colors used in colorpicker. For each set of colors you can specify the following parameters:
 	- `background` - (optional) a HEX code of the event background color
 	- `border` - (optional) a HEX code of the event border color
@@ -251,9 +251,9 @@ To set the **editorShape** config dynamically, you can use the
 ~~~jsx {8-16,19}
 // event priorities
 const priorities = [
-    { id: 1, label: "High" },
-    { id: 2, label: "Medium" },
-    { id: 3, label: "Low" }
+    { value: 1, label: "High" },
+    { value: 2, label: "Medium" },
+    { value: 3, label: "Low" }
 ];
 // editor settings
 const editorShape = [ 
@@ -274,7 +274,7 @@ new eventCalendar.EventCalendar("#root", {
 
 **Related articles:** [Configuration](../../../guides/configuration#editor)
 
-**Related sample:** [Event Calendar. Event color](https://snippet.dhtmlx.com/qw45r367) and [Event Calendar. Custom editor fields](https://snippet.dhtmlx.com/bxwdj1rt) 
+**Related sample:** [Event Calendar. Event color](https://snippet.dhtmlx.com/qw45r367?tag=event_calendar) and [Event Calendar. Custom editor fields](https://snippet.dhtmlx.com/bxwdj1rt?tag=event_calendar) 
 
 **Change log:** 
 

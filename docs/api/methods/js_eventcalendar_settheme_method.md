@@ -34,4 +34,4 @@ const calendar = new eventCalendar.EventCalendar("#root", {
 calendar.setTheme( "willow" );
 ~~~
 
-**Related sample:** [Event Calendar. Styling (Buil-in themes)](https://snippet.dhtmlx.com/nh2g0j2o)
+**Related sample:** [Event Calendar. Styling (Buil-in themes)](https://snippet.dhtmlx.com/nh2g0j2o?tag=event_calendar)

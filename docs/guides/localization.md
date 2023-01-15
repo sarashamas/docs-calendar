@@ -253,4 +253,4 @@ To apply a custom locale you need to:
 
 In this snippet you can see how to switch between the *EN*, *DE* and *RU* locales:
 
-<iframe src="https://snippet.dhtmlx.com/v3lszmay?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="620"></iframe>
+<iframe src="https://snippet.dhtmlx.com/v3lszmay?mode=result&tag=event_calendar" frameborder="0" class="snippet_iframe" width="100%" height="620"></iframe>

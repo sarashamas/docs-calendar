@@ -167,6 +167,6 @@ new eventCalendar.EventCalendar("#root", {
 });
 ~~~
 
-**Related sample:** [Event Calendar. Event color](https://snippet.dhtmlx.com/qw45r367)
+**Related sample:** [Event Calendar. Event color](https://snippet.dhtmlx.com/qw45r367?tag=event_calendar)
 
 **Change log:** The ***cellCss*** parameter of view modes was added in v1.1

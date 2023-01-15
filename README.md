@@ -29,7 +29,7 @@ $ yarn start
 
 [Download DHTMLX Event Calendar](https://dhtmlx.com/docs/products/dhtmlxEventCalendar/download.shtml)
 
-[Live demos](https://snippet.dhtmlx.com/qw45r367)
+[Live demos](https://snippet.dhtmlx.com/qw45r367?tag=event_calendar)
 
 [Blog](https://dhtmlx.com/blog/)
 

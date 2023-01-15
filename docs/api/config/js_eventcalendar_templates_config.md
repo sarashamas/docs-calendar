@@ -155,6 +155,6 @@ new eventCalendar.EventCalendar("#root", { // create Event Calendar
 });
 ~~~
 
-**Related sample:** [Event Calendar. Custom templates](https://snippet.dhtmlx.com/rmgc73n6)
+**Related sample:** [Event Calendar. Custom templates](https://snippet.dhtmlx.com/rmgc73n6?tag=event_calendar)
 
 **Change log:** The ***yearEvent***, ***agendaEvent*** and ***agendaDate*** templates were added in v1.1

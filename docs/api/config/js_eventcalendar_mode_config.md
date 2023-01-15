@@ -40,6 +40,6 @@ new eventCalendar.EventCalendar("#root", {
 });
 ~~~
 
-**Related sample:** [Event Calendar. Readonly](https://snippet.dhtmlx.com/8eixd7r6)
+**Related sample:** [Event Calendar. Readonly](https://snippet.dhtmlx.com/8eixd7r6?tag=event_calendar)
 
 **Change log:** The ***year*** and ***agenda*** modes were added in v1.1

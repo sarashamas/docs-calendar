@@ -60,4 +60,4 @@ You need to include **RestDataProvider** into the **Event Bus** order via the [`
 
 In this snippet you can see how to connect **RestDataProvider** to the **Go** backend and load server data dynamically:
 
-<iframe src="https://snippet.dhtmlx.com/b3iubgj8?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+<iframe src="https://snippet.dhtmlx.com/b3iubgj8?mode=js&tag=event_calendar" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>

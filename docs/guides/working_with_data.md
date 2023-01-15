@@ -165,4 +165,4 @@ To remove the *events* and *calendars*, you can use the following methods:
 
 In this snippet you can see how to provide the initial data for *events* and *calendars*:
 
-<iframe src="https://snippet.dhtmlx.com/qw45r367?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+<iframe src="https://snippet.dhtmlx.com/qw45r367?mode=result&tag=event_calendar" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
