@@ -118,8 +118,6 @@ module.exports = {
 						
 					]
 				},	 
-
-				
 				{
 					type: "category",
 					label: "Event Calendar events",
@@ -172,7 +170,6 @@ module.exports = {
 					]
 				},
 				// RestDataProvider api
-		
 				{
 					type: "category",
 					label: "RestDataProvider API",
@@ -186,115 +183,97 @@ module.exports = {
 					},
 					items: [
 						{
-						type: "category",
-						label: "REST methods",
-						collapsed: true,
-						link: {
-							type: 'doc',
-							id: "api/overview/rest_methods_overview"
-														
-						},
-						items: [
+							type: "category",
+							label: "REST methods",
+							collapsed: true,
+							link: {
+								type: 'doc',
+								id: "api/overview/rest_methods_overview"							
+							},
+							items: [
+								"api/provider/rest_methods/js_eventcalendar_getevents_method",
+								"api/provider/rest_methods/js_eventcalendar_getcalendars_method",
+								"api/provider/rest_methods/js_eventcalendar_send_method",
+							]
 							
-										"api/provider/rest_methods/js_eventcalendar_getevents_method",
-										"api/provider/rest_methods/js_eventcalendar_getcalendars_method",
-										"api/provider/rest_methods/js_eventcalendar_send_method",
-						]
-						
-					},
-					{
-						type: "category",
-						label: "REST routes",
-						collapsed: true,
-						link: {
-							type: 'doc',
-							id: "api/overview/rest_routes_overview"
-														
 						},
-						
-						items: [
-							{
-								type: "category",
-								label: "Get routes",
-								collapsed: true,
-								link: {
-									type: 'generated-index',
-									title: "GET routes",
-						keywords: ['routes'],
-						image: '/img/docusaurus.png'
-								},
-								items: [
-									
+						{
+							type: "category",
+							label: "REST routes",
+							collapsed: true,
+							link: {
+								type: 'doc',
+								id: "api/overview/rest_routes_overview"							
+							},
+							items: [
+								{
+									type: "category",
+									label: "GET routes",
+									collapsed: true,
+									link: {
+										type: 'generated-index',
+										title: "GET routes",
+										keywords: ['routes'],
+										image: '/img/docusaurus.png'
+									},
+									items: [
 										"api/provider/rest_routes/get_routes/js_eventcalendar_getevents_route",
 										"api/provider/rest_routes/get_routes/js_eventcalendar_getcalendars_route",
 										"api/provider/rest_routes/get_routes/js_eventcalendar_getuploads_route",
-								]
-		
-							},
-							{
-								type: "category",
-								label: "Post routes",
-								collapsed: true,
-								link: {
-									type: 'generated-index',
-									title: "POST routes",
-						keywords: ['routes'],
-						image: '/img/docusaurus.png'
+									]
 								},
-								items: [
-									
-									"api/provider/rest_routes/post_routes/js_eventcalendar_postevent_route",
-									"api/provider/rest_routes/post_routes/js_eventcalendar_postcalendar_route",
-									"api/provider/rest_routes/post_routes/js_eventcalendar_postupload_route",
-								
-								]
-		
-							},
-							{
-								type: "category",
-								label: "Put routes",
-								collapsed: true,
-								link: {
-									type: 'generated-index',
-									title: "PUT routes",
-						keywords: ['routes'],
-						image: '/img/docusaurus.png'
+								{
+									type: "category",
+									label: "POST routes",
+									collapsed: true,
+									link: {
+										type: 'generated-index',
+										title: "POST routes",
+										keywords: ['routes'],
+										image: '/img/docusaurus.png'
+									},
+									items: [
+										"api/provider/rest_routes/post_routes/js_eventcalendar_postevent_route",
+										"api/provider/rest_routes/post_routes/js_eventcalendar_postcalendar_route",
+										"api/provider/rest_routes/post_routes/js_eventcalendar_postupload_route",
+									]
 								},
-								items: [
-									
-									"api/provider/rest_routes/put_routes/js_eventcalendar_putevent_route",
-									"api/provider/rest_routes/put_routes/js_eventcalendar_putcalendar_route",
-								
-								]
-		
-							},
-		
-							{
-								type: "category",
-								label: "Delete routes",
-								collapsed: true,
-								link: {
-									type: 'generated-index',
-									title: "DELETE routes",
-						keywords: ['routes'],
-						image: '/img/docusaurus.png'
+								{
+									type: "category",
+									label: "PUT routes",
+									collapsed: true,
+									link: {
+										type: 'generated-index',
+										title: "PUT routes",
+										keywords: ['routes'],
+										image: '/img/docusaurus.png'
+									},
+									items: [
+										"api/provider/rest_routes/put_routes/js_eventcalendar_putevent_route",
+										"api/provider/rest_routes/put_routes/js_eventcalendar_putcalendar_route",
+									]
 								},
-								items: [
-									"api/provider/rest_routes/delete_routes/js_eventcalendar_deleteevent_route",
-									"api/provider/rest_routes/delete_routes/js_eventcalendar_deletecalendar_route",									
-								
-								]
-		
-							}
-						]
-						
-					}
-		
-				]
-			},
+								{
+									type: "category",
+									label: "DELETE routes",
+									collapsed: true,
+									link: {
+										type: 'generated-index',
+										title: "DELETE routes",
+										keywords: ['routes'],
+										image: '/img/docusaurus.png'
+									},
+									items: [
+										"api/provider/rest_routes/delete_routes/js_eventcalendar_deleteevent_route",
+										"api/provider/rest_routes/delete_routes/js_eventcalendar_deletecalendar_route",									
+									]
+								}
+							]
+						}
+					]
+				},
 			]
 		},
-	
 		{
 			type: "category",
 			label: "Guides",

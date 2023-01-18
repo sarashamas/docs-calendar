@@ -1,10 +1,10 @@
 ---
-sidebar_label: Get /calendars
-title: Get /calendars
-description: You can learn about the Get /calendars route in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
+sidebar_label: GET /calendars
+title: GET /calendars
+description: You can learn about the GET /calendars route in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
 
-# Get /calendars
+# GET /calendars
 
 ### Description
 
@@ -25,11 +25,9 @@ The route handles the GET request made to the **'/calendars'** path.
 </tbody>
 </table>
 
-
 ### Payload
 
 No payload is required.
-
 
 ### Response
 
@@ -69,7 +67,7 @@ The HTTP status code shows whether the request succeeds (response.status == 200)
 
 ---
 
-**Related articles**: 
+**Related articles**:
 - [Working with server](guides/working_with_server.md)
 - [getCalendars()](api/provider/rest_methods/js_eventcalendar_getcalendars_method.md)
 - [send()](api/provider/rest_methods/js_eventcalendar_send_method.md)

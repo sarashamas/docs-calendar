@@ -1,17 +1,16 @@
 ---
-sidebar_label: Put /calendars
-title: Put /calendars
-description: You can learn about the Put /calendars route in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
+sidebar_label: PUT /calendars
+title: PUT /calendars
+description: You can learn about the PUT /calendars route in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
 
-# Put /calendars
+# PUT /calendars
 
 ### Description
 
 @short: Updates data on a calendar (event type)
 
-The route handles the PUT request made to the **'/calendars/{id}'** path. 
-
+The route handles the PUT request made to the **'/calendars/{id}'** path.
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">
@@ -21,7 +20,7 @@ The route handles the PUT request made to the **'/calendars/{id}'** path.
 </thead>
 <tbody style="border: 1px solid white; border-collapse: collapse">
 <tr>
-<td>Put</td>
+<td>PUT</td>
 <td>/calendars</td>
 <td>id</td>
 </tr>
@@ -62,7 +61,6 @@ Example:
 ### Response
 
 No data is returned back. The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
-
 
 ---
 

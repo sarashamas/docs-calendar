@@ -1,10 +1,10 @@
 ---
-sidebar_label: Delete /events
-title: Delete /events
-description: You can learn about the Delete /events route in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
+sidebar_label: DELETE /events
+title: DELETE /events
+description: You can learn about the DELETE /events route in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
 
-# Delete /events
+# DELETE /events
 
 ### Description
 
@@ -21,7 +21,7 @@ The route handles the DELETE request made to the **'/events/{id}'** path.
 </thead>
 <tbody style="border: 1px solid white; border-collapse: collapse">
 <tr>
-<td>Delete</td>
+<td>DELETE</td>
 <td>/events</td>
 <td>id</td>
 </tr>
@@ -35,7 +35,6 @@ The next parameter is sent in the request line:
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
 | `id`       |  number   | *Required*. The ID of the event to be deleted.|
-
 
 ### Payload
 

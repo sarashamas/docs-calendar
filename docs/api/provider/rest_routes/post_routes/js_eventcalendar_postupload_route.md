@@ -1,10 +1,10 @@
 ---
-sidebar_label: Post /uploads
-title: Post /uploads
-description: You can learn about the Post /uploads route in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
+sidebar_label: POST /uploads
+title: POST /uploads
+description: You can learn about the POST /uploads route in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
 
-# Post /uploads
+# POST /uploads
 
 ### Description
 
@@ -19,7 +19,7 @@ The route handles the POST multipart request made to the **'/uploads'** path.
 </thead>
 <tbody style="border: 1px solid white; border-collapse: collapse">
 <tr>
-<td>Post</td>
+<td>POST</td>
 <td>/uploads</td>
 </tr>
 </tbody>
@@ -39,24 +39,18 @@ Only one file can be sent per request.
 Example:
 
 ~~~
-
 ------WebKitFormBoundary1aDBIObTwl1A4Vpf
 Content-Disposition: form-data; name="upload"; filename="Screenshot from 2022-11-11 12-35-01.png"
 Content-Type: image/png
 
 ------WebKitFormBoundary1aDBIObTwl1A4Vpf--
-
-
 ~~~
-
-
 
 ### Response
 
 The route returns a json object with the file id, name, and url.
 
 Example:
-
 
 ~~~ json
 
@@ -67,7 +61,6 @@ Example:
 }
 
 ~~~
-
 
 The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
 

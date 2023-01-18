@@ -1,17 +1,16 @@
 ---
-sidebar_label: Post /calendars
-title: Post /calendars
-description: You can learn about the Post /calendars route in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
+sidebar_label: POST /calendars
+title: POST /calendars
+description: You can learn about the POST /calendars route in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
 
-# Post /calendars
+# POST /calendars
 
 ### Description
 
 @short: Creates a new calendar (event type) and returns a json object with the calendar ID in it
 
-The route handles the POST request made to the **'/calendars'** path. 
-
+The route handles the POST request made to the **'/calendars'** path.
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">
@@ -25,7 +24,6 @@ The route handles the POST request made to the **'/calendars'** path.
 </tr>
 </tbody>
 </table>
-
 
 ### Payload
 
@@ -52,7 +50,7 @@ Example:
 
 ### Response
 
-The route returns a json object with the ID of a new calendar. 
+The route returns a json object with the ID of a new calendar.
 
 Example:
 
@@ -61,7 +59,6 @@ Example:
 ~~~
 
  The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
-
 
 ---
 

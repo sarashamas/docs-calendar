@@ -99,7 +99,7 @@ new eventCalendar.EventCalendar("#root", {
 | [](api/config/js_eventcalendar_templates_config.md)  | @getshort(api/config/js_eventcalendar_templates_config.md)  |
 | [](api/config/js_eventcalendar_theme_config.md)      | @getshort(api/config/js_eventcalendar_theme_config.md)      |
 
-## RestDataProvider API 
+## RestDataProvider API
 
 ### RestDataProvider methods
 
@@ -108,7 +108,6 @@ new eventCalendar.EventCalendar("#root", {
 | [](api/provider/rest_methods/js_eventcalendar_getcalendars_method.md) | @getshort(api/provider/rest_methods/js_eventcalendar_getcalendars_method.md) |
 | [](api/provider/rest_methods/js_eventcalendar_getevents_method.md)    | @getshort(api/provider/rest_methods/js_eventcalendar_getevents_method.md)    |
 | [](api/provider/rest_methods/js_eventcalendar_send_method.md)         | @getshort(api/provider/rest_methods/js_eventcalendar_send_method.md)         |
-
 
 ### RestDataProvider routes
 

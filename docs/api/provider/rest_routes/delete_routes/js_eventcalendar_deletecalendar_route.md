@@ -1,7 +1,7 @@
 ---
-sidebar_label: Delete /calendars
-title: Delete /calendars
-description: You can learn about the Delete /calendars route in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
+sidebar_label: DELETE /calendars
+title: DELETE /calendars
+description: You can learn about the DELETE /calendars route in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
 
 # Delete /calendars
@@ -12,7 +12,6 @@ description: You can learn about the Delete /calendars route in the documentatio
 
 The route handles the DELETE request made to the **'/calendars/{id}'** path. 
 
-
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">
 <th style="width:25%">HTTP method</th>
@@ -21,13 +20,12 @@ The route handles the DELETE request made to the **'/calendars/{id}'** path.
 </thead>
 <tbody style="border: 1px solid white; border-collapse: collapse">
 <tr>
-<td>Delete</td>
+<td>DELETE</td>
 <td>/calendars</td>
 <td>id</td>
 </tr>
 </tbody>
 </table>
-
 
 ### Query parameters
 
@@ -44,7 +42,6 @@ No payload is required.
 ### Response
 
 No data is returned back. The HTTP status code shows whether the request succeeds (response.status == 200) or fails (response.status == 500).
-
 
 ---
 

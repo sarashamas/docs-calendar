@@ -12,7 +12,6 @@ description: You can learn about the send method of the RestDataProvider in the 
 
 All requests to the server are made with the **send()** method which is a part of the [**RestDataProvider**](guides/working_with_server.md/#restdataprovider) service.
 
-
 ### Usage
 
 ~~~js
@@ -25,7 +24,6 @@ send(
 ~~~
 
 ### Parameters
-
 
 | Name       | Type        | Description |
 | ----------- | ----------- | ----------- |
@@ -98,7 +96,7 @@ If you send an arbitrary request that is not managed by the EventCalendar API, y
 ~~~jsx title="Example 3"{5}
 const customEndpoint = `projects/1`;
 const params = {
-       lastModified: Date.now()
+    lastModified: Date.now()
 };
 restProvider.send(customEndpoint , "PUT",  params).then(data => {}),
 ~~~

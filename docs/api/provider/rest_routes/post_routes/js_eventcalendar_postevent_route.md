@@ -1,17 +1,16 @@
 ---
-sidebar_label: Post /events
-title: Post /events
-description: You can learn about the Post /events route in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
+sidebar_label: POST /events
+title: POST /events
+description: You can learn about the POST /events route in the documentation of the DHTMLX JavaScript Event Calendar library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Event Calendar.
 ---
 
-# Post /events
+# POST /events
 
 ### Description
 
 @short: Creates a new event and returns a json object with the event ID in it
 
 The route handles the POST request made to the **'/events'** path. 
-
 
 <table style="border: 1px solid white; border-collapse: collapse; width:50%">
 <thead style="border: 1px solid white; border-collapse: collapse;">
@@ -25,7 +24,6 @@ The route handles the POST request made to the **'/events'** path.
 </tr>
 </tbody>
 </table>
-
 
 ### Payload
 
@@ -41,24 +39,23 @@ The server needs to receive a json object with the next properties:
 | `details`       |  string  | *Optional*. Details about a new event.|
 | `files`       |  object | *Optional*. An array of the files to be attached to a new event. You can attach files that are already [uploaded](api/provider/rest_routes/post_routes/js_eventcalendar_postupload_route.md) to the server. The file object should contain the file id, name, and url.|
 
-
 Example:
 
 ~~~json
 {
-"text": "New Event",
-"start_date": "2021-06-10T03:05:00.369Z",
-"end_date": "2021-06-10T10:10:00.369Z",
-"allDay": true,
-"type": 1,
-"details": "Some details",
-"files": [
-{
-"id": 2,
-"name": "document.html",
-"url": "http://localhost:3000/uploads/2/document.html"
-}
-]
+    "text": "New Event",
+    "start_date": "2021-06-10T03:05:00.369Z",
+    "end_date": "2021-06-10T10:10:00.369Z",
+    "allDay": true,
+    "type": 1,
+    "details": "Some details",
+    "files": [
+        {
+            "id": 2,
+            "name": "document.html",
+            "url": "http://localhost:3000/uploads/2/document.html"
+        }
+    ]
 }
 ~~~
 
