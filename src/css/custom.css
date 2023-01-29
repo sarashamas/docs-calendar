@@ -218,12 +218,9 @@ table th:first-child {
 
 /* styles for infoblock */
 
-.admonition-content > p {
-  line-height: 2.2;
-}
-
-.admonition {
-  margin-top: 15px;
+.theme-admonition.theme-admonition-info {
+  line-height: 35px;
 }
 
 /* end styles for infoblock */
+
