@@ -155,6 +155,7 @@ The *editor* consists of the fields for managing the events data. To configure t
 - [**checkbox**](#checkbox-type)
 - [**date**](#date-type)
 - [**files**](#files-type)
+- [**recurring**](#recurring-type)
 
 ### Text and Textarea types
 
@@ -347,6 +348,34 @@ new eventCalendar.EventCalendar("#root", {
 });
 ~~~
 
+### Recurring type
+
+The editor field of **recurring** type can be set in the following way:
+
+~~~jsx {15-18}
+const events = [
+    {
+        ...,
+        // repeat the event on working days only
+        recurring: true,
+        STDATE: new Date("2023-01-27T15:00:00"),
+        DTEND: new Date("2023-06-27T15:00:00"),
+        RRULE: "FREQ=WEEKLY;INTERVAL=1;BYDAY=Mo,Tu,We,Th,Fr"
+    }, {...}
+];
+
+new eventCalendar.EventCalendar("#root", {
+    events,
+    editorShape: [
+        {
+            type: "recurring", 
+            label: "Repeat event"
+        },
+        // settings of other custom fields
+    ]
+});
+~~~
+
 ### Linking editor fields to the data
 
 :::info
@@ -445,18 +474,19 @@ new eventCalendar.EventCalendar("#root", {
 
 ## View Modes
 
-To set an initial view mode, you can use the [`mode`](api/config/js_eventcalendar_mode_config.md) property. There are 3 available view modes:
+To set an initial view mode, you can use the [`mode`](api/config/js_eventcalendar_mode_config.md) property. There are 6 available view modes:
 
 - <code style = {{color: "green"}}>mode: "day"</code> - the "Day" view mode
 - <code style = {{color: "green"}}>mode: "week"</code> - the "Week" view mode
 - <code style = {{color: "green"}}>mode: "month"</code> - the "Month" view mode
 - <code style = {{color: "green"}}>mode: "year"</code> - the "Year" view mode
 - <code style = {{color: "green"}}>mode: "agenda"</code> - the "Agenda" view mode
+- <code style = {{color: "green"}}>mode: "timeline"</code> - the "Timeline" view mode
 
 ~~~jsx {3}
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
-    mode: "agenda", // the "Agenda" mode is displayed initially
+    mode: "timeline", // the "Timeline" mode is displayed initially
     // other configuration parameters
 });
 ~~~
