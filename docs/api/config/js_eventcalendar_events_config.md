@@ -30,9 +30,12 @@ events?: [
             border?: string,
             textColor?: string
         },
+        recurring?: boolean, 
+        RRULE?: string, 
+        STDATE?: Date, 
+        DTEND?: Date,
         [custom_key: string]?: any
-    },
-    {...} // other events data
+    }, {...} // other events data
 ];
 ~~~
 
@@ -59,6 +62,10 @@ If the **allDay** parameter is set to *true*, the **start_date** and **end_date*
     - `background` - (optional) a HEX code of the event background color
     - `border` - (optional) a HEX code of the event border color
     - `textColor` - (optional) a HEX code of the event text color
+- `recurring` - (optional) enables/disables an ability to repeat the event
+- `RRULE` - (optional) a rule the event is repeated. You can read more about recurrence rule [here](https://icalendar.org/iCalendar-RFC-5545/3-3-10-recurrence-rule.html)
+- `STDATE` - (optional) a start date of the period the event is repeated
+- `DTEND` - (optional) an end date of the period the event is repeated
 - `custom_key` - (optional) a custom key of the event
 
 :::info
@@ -69,13 +76,13 @@ To set the events data dynamically, you can use the
 
 ### Example
 
-~~~jsx {3-23}
+~~~jsx {3-27}
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
     events: [
         {
-            start_date: new Date("2021-05-24T00:00:00"),
-            end_date: new Date("2021-06-08T00:00:00"),
+            start_date: new Date("2023-01-27T15:10:00"),
+            end_date: new Date("2023-01-27T15:12:00"),
             allDay: false,
             id: "1",
             type: "work",
@@ -89,6 +96,10 @@ new eventCalendar.EventCalendar("#root", {
                 border: "#AD44AB",
                 textColor: "#3e98db"
             },
+            recurring: true,
+            STDATE: new Date("2023-01-27T15:00:00"),
+            DTEND: new Date("2023-06-27T15:00:00"),
+            RRULE: "FREQ=WEEKLY;INTERVAL=1;BYDAY=Mo,Tu,We,Th,Fr",
             custom_key: "Custom key of the event"
         },
         // other events data
