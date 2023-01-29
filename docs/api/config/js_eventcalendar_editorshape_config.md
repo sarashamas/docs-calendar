@@ -83,7 +83,7 @@ editorShape?: [
 			multiple?: boolean,
 			folder?: boolean
 		}
-	},{...}
+	}, {...}
 ];
 ~~~
 
@@ -93,7 +93,7 @@ To configure the editor appearance and functionality, you can specify the follow
 
 #### - Common parameters for all types
 
-- `type` - (required) an editor field type. Here you can specify the following types: **text**, **textarea**,  **combo**, **multiselect**, **color**, **checkbox**, **date**, **radio** and **files**
+- `type` - (required) an editor field type. Here you can specify the following types: **text**, **textarea**,  **combo**, **multiselect**, **color**, **checkbox**, **date**, **radio**, **files** and **recurring**
 - `key` - (required) an editor field key. Here you need to use the value specified in the [`events`](../js_eventcalendar_events_config) property. See the example below:
 
 ~~~js {4-5,12,20}
@@ -237,6 +237,10 @@ const defaultEditorShape = [
 		config: {
 			placeholder: "Add description"
 		}
+	},
+	{
+		type: "recurring",
+		label: "Repeat event"
 	}
 ];
 ~~~
@@ -276,7 +280,4 @@ new eventCalendar.EventCalendar("#root", {
 
 **Related sample:** [Event Calendar. Event color](https://snippet.dhtmlx.com/qw45r367?tag=event_calendar) and [Event Calendar. Custom editor fields](https://snippet.dhtmlx.com/bxwdj1rt?tag=event_calendar) 
 
-**Change log:** 
-
-- The ***multiselect*** and ***radio*** types of editor were added in v1.1
-- The  *template* parameter of the ***multiselect*** and ***combo*** types of editor was added in v1.1
+**Change log:** The ***recurring*** type of editor was added in v2.0
