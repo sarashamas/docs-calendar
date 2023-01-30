@@ -37,6 +37,7 @@ config?: {
     // to apply a custom style to the grid cell
     cellCss?: (date) => string, 
 
+    viewControl?: string, // "auto" | "toggle" | "dropdown" | "none"
     views?: { 
        day?: object,
        week?: object,
@@ -64,6 +65,7 @@ In the **config** object you can specify the following parameters:
 - `timeRange` - (optional) an array with start and end time of day in the "day" and "week" modes (*0-24*)
 - `defaultEventDuration` - (optional) a duration of the new created event by default (without taking into account creating an event via d-n-d)
 - `cellCss` - (optional) a custom CSS selector to be applied to a grid cell. This property is used in any of view mode configuration objects to apply a custom style to the grid cell
+- `viewControl` - (optional) defines a control to switch through the view modes. Here you can specify the following values: `"auto" | "toggle" | "dropdown" | "none"`. The `auto` value is set by default
 - `views` - (optional) an object of configurations of the specific view modes. Here you can specify the following objects of settings:
     - `day` - (optional) an object of settings of the "Day" view mode
     - `week` - (optional) an object of settings of the "Week" view mode
@@ -122,6 +124,7 @@ const defaultConfig = {
     timeRange: [0, 24],
     defaultEventDuration: 60,
     
+    viewControl: "auto",
     views: {
         week: defaultWeekConfig,
         day: defaultWeekConfig,
@@ -145,6 +148,7 @@ new eventCalendar.EventCalendar("#root", {
         dragResize: false,
         readonly: true,
         dragMove: false,
+        viewControl: "toggle",
         views: {
             day: {
                 eventsOverlay: false,  
@@ -169,4 +173,4 @@ new eventCalendar.EventCalendar("#root", {
 
 **Related sample:** [Event Calendar. Event color](https://snippet.dhtmlx.com/qw45r367?tag=event_calendar)
 
-**Change log:** The ***cellCss*** parameter of view modes was added in v1.1
+**Change log:** The ***viewControl*** property was added in v2.0
