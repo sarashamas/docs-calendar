@@ -357,9 +357,6 @@ const events = [
     {
         ...,
         // repeat the event on working days only
-        recurring: true,
-        STDATE: new Date("2023-01-27T15:00:00"),
-        DTEND: new Date("2023-06-27T15:00:00"),
         RRULE: "FREQ=WEEKLY;INTERVAL=1;BYDAY=Mo,Tu,We,Th,Fr"
     }, {...}
 ];
