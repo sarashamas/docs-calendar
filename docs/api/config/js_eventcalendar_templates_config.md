@@ -21,7 +21,8 @@ templates?: {
     agendaDate?: function({ event, calendar }), // => html string
     multievent?: function({ event, calendar }), // => html string
     header?: function({ date, dateFormat }), // => html string
-    popup?: function({ event, calendar }) // => html string
+    popup?: function({ event, calendar }), // => html string
+    timelineSection?: function(section) // => html string
 }; 
 ~~~
 
@@ -53,6 +54,7 @@ In the **templates** object you can specify custom templates for the following e
 - `popup` - (optional) a function needs to return a custom template of the info popup window. It takes an object with the following parameters:
     - ***event*** - current event data
     - ***calendar*** - current calendar data
+- `timelineSection` - (optional) a function needs to return a custom template of the Timeline section. It takes an object of the **section** parameters.
 
 :::info
 To set the templates dynamically, you can use the
@@ -137,7 +139,7 @@ new eventCalendar.EventCalendar("#root", { // create Event Calendar
         },
         // the info popup template
         popup: ({ event, calendar }) => {
-            const start_date = format(event.start_date, "MMM, do  h:mm");
+            const start_date = format(event.start_date, "MMM, do h:mm");
             const end_date = format(event.end_date, "MMM, do h:mm");
             return `
                 <div class="popup_wrapper">
@@ -149,6 +151,13 @@ new eventCalendar.EventCalendar("#root", { // create Event Calendar
                         <div>${start_date} - ${end_date}</div>
                     </div>
                 </div>`;
+        },
+        // the Timeline section template
+        timelineSection: (section) => {
+            return `<div class="template-wrapper">
+                    <img src=${section.img} alt=${section.label} class="section-img" />
+                <div class="section-label">${section.label}</div>
+            </div>`;
         }
     },
 	// other configuration parameters
@@ -157,4 +166,6 @@ new eventCalendar.EventCalendar("#root", { // create Event Calendar
 
 **Related sample:** [Event Calendar. Custom templates](https://snippet.dhtmlx.com/rmgc73n6?tag=event_calendar)
 
-**Change log:** The ***yearEvent***, ***agendaEvent*** and ***agendaDate*** templates were added in v1.1
+**Change log:**
+- The ***yearEvent***, ***agendaEvent*** and ***agendaDate*** templates were added in v1.1
+- The ***timelineSection*** template was added in v2.0
