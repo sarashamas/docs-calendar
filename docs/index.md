@@ -15,7 +15,7 @@ JavaScript **Event Calendar** is a modern web tool for efficient time-management
 
 The **Toolbar** is the top part of Event Calendar. It consists of the controls for managing the widget functionality. Here you can perform the following operations:
 
-- view the events throught the **Day**, **Week**, **Month**, **Year** and **Agenda** view modes using the corresponding controls
+- view the events through the **Day**, **Week**, **Month**, **Year**, **Agenda** and **Timeline** view modes using the corresponding toggle or selector controls
 - go to the current date using a **Today** button
 - switch to the needed date using the special arrows in the middle part of Toolbar
 - create new events, using a **+ Create event** button
@@ -47,6 +47,8 @@ On the **Timetable grid** you can work with ***events*** in the following way:
 - reschedule events by resizing them
 - set recurring events
 - dim past events
+- use section for unassigned events in the Timeline view
+- highlight the current time in the calendar
 
 ![Event Calendar Grid](assets/003_grid.png)
 

@@ -15,11 +15,11 @@ description: You can learn about the Migration to Newer Versions in the document
 - The [`mode`](../../api/config/js_eventcalendar_mode_config) property was extended by the new mode. Starting from v2.0, you can use the ***timeline*** mode.
 
 ~~~jsx title="Before v2.0"
-mode: "day", // "week" | "month" | "year" | "agenda"
+mode: "day", // "week" | "month" | "year" | "agenda" 
 ~~~
 
 ~~~jsx title="From v2.0"
-mode: "day", // "week" | "month" | "year" | "agenda" | "timeline"
+mode: "day", // "week" | "month" | "year" | "agenda" | "timeline" | custom_view_id
 ~~~
 
 - The [`templates`](../../api/config/js_eventcalendar_templates_config) property was extended by the new template. Starting from v2.0, you can use the ***timelineSection*** template.
@@ -122,7 +122,7 @@ editorShape: [
     {
         type: "combo", // "text" | "textarea" | "multiselect" | "color" | "checkbox" | "date" | "radio" | "files" 
         ...,
-    }
+    },
 ]
 ~~~
 
@@ -136,6 +136,34 @@ editorShape: [
 ]      
 ~~~
 
+- The [`events`](../../api/config/js_eventcalendar_events_config) property was extended by the new fields. Starting from v2.0, you can use the ***RRULE***, ***STDATE***, ***DTEND*** and ***recurring*** parameters (data fields).
+
+~~~jsx title="Before v2.0"
+events: [
+    {
+        id: "1",
+        type: "work",
+        // ...
+    }, {...}
+    // other events data
+]
+~~~
+
+~~~jsx {6-9} title="From v2.0"
+events: [
+    {
+        id: "1",
+        type: "work",
+        // ...
+        RRULE: "FREQ=WEEKLY;INTERVAL=1;BYDAY=Mo,Tu,We,Th,Fr",
+        recurring: true,
+        STDATE: new Date("2023-01-27T15:00:00"),
+        DTEND: new Date("2023-06-27T15:00:00"),
+    }, {...}
+    // other events data
+]
+~~~
+
 #### Methods
 
 - The [`setMode()`](../../api/methods/js_eventcalendar_setmode_method) method was updated:
@@ -145,7 +173,7 @@ setMode({ value: "day" }); // value: "day" | "week" | "month" | "year" | "agenda
 ~~~
 
 ~~~jsx {} title="From v2.0"
-setMode({ value: "day" }); // value: "timeline" | "day" | "week" | "month" | "year" | "agenda" 
+setMode({ value: "day" }); // value: "timeline" | "day" | "week" | "month" | "year" | "agenda" | custom_view_id
 ~~~
 
 ## 1.0 -> 1.1

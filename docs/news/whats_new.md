@@ -16,10 +16,13 @@ Released on February Day, 2023
 
 ### New functionality
 
-- An ability to view events in the **Timeline** or **custom** modes (Example)
-- An ability to work with recurring events (Example)
-- An ability to switch through the view modes via the **toggle** or **selector** controls (Example)
+- Timeline view
+- Recurring events
+- An ability to define custom views
+- Section for unassigned events in the Timeline view
+- An ability to switch through the view modes via the toggle or selector controls (Example)
 - An ability to dim past events
+- Current time is now marked in the calendar
 
 ### Updates
 
@@ -33,7 +36,7 @@ Released on February Day, 2023
 
     - The [`editorShape`](../../api/config/js_eventcalendar_editorshape_config) property is extended by the ***recurring*** type (*editor field*) (Example)
 
-    - The [`events`](../../api/config/js_eventcalendar_events_config) property of Event Calendar is extended by the ***RRULE*** parameter (*data field*). This parameter is bind to the **recurring** type of editor
+    - The [`events`](../../api/config/js_eventcalendar_events_config) property of Event Calendar is extended by the ***RRULE***, ***STDATE***, ***DTEND*** and ***recurring*** parameters (*data fields*). These parameters are bind to the **recurring** type of editor
 
     - The [`mode`](../../api/config/js_eventcalendar_mode_config) property of Event Calendar is extended by the ***timeline*** parameter (*view mode*). The **Timeline** view mode is optional and can be configured in the `config.views` property (Example)
 

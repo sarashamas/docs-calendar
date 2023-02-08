@@ -35,7 +35,7 @@ In the object of the [`config`](api/config/js_eventcalendar_config_config.md) pa
 - an ability to reschedule events by drag-n-drop <code style = {{color: "green"}}>dragMove: boolean</code>
 - an ability to display info popup by click <code style = {{color: "green"}}>eventInfoOnClick: boolean</code>
 - an ability to open editor by double click <code style = {{color: "green"}}>editorOnDblClick: boolean</code>
-- an ability to create new event by double click <code style = {{color: "green"}}>createEventOnDbClick: boolean</code>
+- an ability to create new event by double click <code style = {{color: "green"}}>createEventOnDblClick: boolean</code>
 - an ability to overlay events <code style = {{color: "green"}}>eventsOverlay: boolean</code>
 - an ability to auto save the event data (via the editor) <code style = {{color: "green"}}>autoSave: boolean</code>
 - an ability to block all operations with events <code style = {{color: "green"}}>readonly: boolean</code>
@@ -49,7 +49,7 @@ new eventCalendar.EventCalendar("#root", {
         dragMove: true,
         eventInfoOnClick: true,
         editorOnDblClick: true,
-        createEventOnDbClick: true,
+        createEventOnDblClick: true,
         eventsOverlay: true,
         autoSave: true,
         readonly: false,
@@ -150,8 +150,8 @@ config: {
         {
             id: "month",
             label: "Month",
-            config: month_settings,
-            layout: "month"
+            layout: "month",
+            config: month_settings
         },
         // other view modes settings
     ]
@@ -160,7 +160,7 @@ config: {
 
 The **Timeline** view mode can be set in the following way:
 
-~~~jsx {3-5,10-18}
+~~~jsx {3-19,24-32}
 // settings of the "Timeline" mode
 const timeline_settings = {
     colsCount: 90,
@@ -404,10 +404,13 @@ new eventCalendar.EventCalendar("#root", {
 
 The editor field of **recurring** type can be set in the following way:
 
-~~~jsx {15-18}
+~~~jsx {4-8,15-18}
 const events = [
     {
         ...,
+        recurring: true,
+        STDATE: new Date("2023-01-27T15:00:00"),
+        DTEND: new Date("2023-06-27T15:00:00"),
         // repeat the event on working days only
         RRULE: "FREQ=WEEKLY;INTERVAL=1;BYDAY=Mo,Tu,We,Th,Fr"
     }, {...}
@@ -523,7 +526,7 @@ new eventCalendar.EventCalendar("#root", {
 
 ## View Modes
 
-To set an initial view mode, you can use the [`mode`](api/config/js_eventcalendar_mode_config.md) property. There are 6 available view modes:
+To set an initial view mode, you can use the [`mode`](api/config/js_eventcalendar_mode_config.md) property. There are 6 default view modes:
 
 - <code style = {{color: "green"}}>mode: "day"</code> - the "Day" view mode
 - <code style = {{color: "green"}}>mode: "week"</code> - the "Week" view mode
@@ -531,6 +534,7 @@ To set an initial view mode, you can use the [`mode`](api/config/js_eventcalenda
 - <code style = {{color: "green"}}>mode: "year"</code> - the "Year" view mode
 - <code style = {{color: "green"}}>mode: "agenda"</code> - the "Agenda" view mode
 - <code style = {{color: "green"}}>mode: "timeline"</code> - the "Timeline" view mode
+- <code style = {{color: "green"}}>mode: custom_view_id</code> - the custom view mode
 
 ~~~jsx {3}
 // create Event Calendar
@@ -539,6 +543,10 @@ new eventCalendar.EventCalendar("#root", {
     // other configuration parameters
 });
 ~~~
+
+:::info
+Use the `config.views` property to set a custom view mode
+:::
 
 ## Initial Date
 

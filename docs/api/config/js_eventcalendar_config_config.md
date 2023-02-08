@@ -20,7 +20,7 @@ config?: {
 
     eventInfoOnClick?: boolean, 
     editorOnDblClick?: boolean,
-    createEventOnDbClick?: boolean,
+    createEventOnDblClick?: boolean,
 
     eventsOverlay?: boolean,
     autoSave?: boolean,
@@ -102,7 +102,7 @@ In the **config** object you can specify the following parameters:
 - `dragMove` - (optional) enables/disables an ability to move events via d-n-d
 - `eventInfoOnClick` - (optional) enables/disables an ability to show info popup by click
 - `editorOnDblClick` - (optional) enables/disables an ability to open editor by double click
-- `createEventOnDbClick` - (optional) enables/disables an ability to create an event by double click
+- `createEventOnDblClick` - (optional) enables/disables an ability to create an event by double click
 - `eventsOverlay` - (optional) enables/disables an ability to overlay events
 - `autoSave` - (optional) enables/disables an ability to auto save event data (via the editor)
 - `readonly` - (optional) enables/disables an ability to perform operations on events
@@ -278,7 +278,7 @@ const defaultConfig = {
 
     eventInfoOnClick: true,
     editorOnDblClick: true,
-    createEventOnDbClick: true,
+    createEventOnDblClick: true,
 
     eventsOverlay: false,
     autoSave: true,

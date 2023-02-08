@@ -61,7 +61,7 @@ In these sections you can find out how to perform operations with events, work w
 | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
 | [Creating events](api/config/js_eventcalendar_config_config.md)         | Learn how to enable/disable creating events (see the *readonly* parameter)           |
 | [Creating events via dnd](api/config/js_eventcalendar_config_config.md) | Learn how to enable/disable creating events via dnd (see the *dragCreate* parameter) |
-| [Creating events via double clicking](api/config/js_eventcalendar_config_config.md)| Learn how to enable/disable creating events via double clicking (see the *createEventOnDbClick* parameter)|
+| [Creating events via double clicking](api/config/js_eventcalendar_config_config.md)| Learn how to enable/disable creating events via double clicking (see the *createEventOnDblClick* parameter)|
 | [Resizing events via dnd](api/config/js_eventcalendar_config_config.md) | Learn how to enable/disable resizing events via dnd (see the *dragResize* parameter) |
 | [Dragging (moving) events](api/config/js_eventcalendar_config_config.md)| Learn how to enable/disable dragging (moving) events (see the *dragMove* parameter)  |
 | [Editing events](api/config/js_eventcalendar_config_config.md)          | Learn how to enable/disable editing events (see the *readonly* parameter)            |

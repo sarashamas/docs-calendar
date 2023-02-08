@@ -13,7 +13,7 @@ description: You can learn about the mode config in the documentation of the DHT
 ### Usage
 
 ~~~jsx {}
-mode?: "day" | "week" | "month" | "year" | "agenda" | "timeline"; 
+mode?: string | number; // "day" | "week" | "month" | "year" | "agenda" | "timeline" | custom_id 
 ~~~
 
 ### Default config
@@ -23,6 +23,10 @@ By default, the **mode** config is set to the **"week"** value
 ~~~jsx {}
 mode: "week" 
 ~~~
+
+:::note
+You can set the `mode` property to the *"day"*, *"week"*, *"month"*, *"year"*, *"agenda"* or *"timeline"* view IDs used by default, or define a custom ID in the **config.views** property
+:::
 
 :::info
 To set the view mode dynamically, you can use the

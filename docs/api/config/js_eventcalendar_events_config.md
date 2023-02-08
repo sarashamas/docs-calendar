@@ -29,8 +29,11 @@ events?: [
             background?: string,
             border?: string,
             textColor?: string
-        },
+        }, 
         RRULE?: string, 
+        STDATE?: Date, 
+        DTEND?: Date, 
+        recurring?: boolean,
         [custom_key: string]?: any
     }, {...} // other events data
 ];
@@ -60,7 +63,14 @@ If the **allDay** parameter is set to *true*, the **start_date** and **end_date*
     - `border` - (optional) a HEX code of the event border color
     - `textColor` - (optional) a HEX code of the event text color
 - `RRULE` - (optional) a string that defines a rule for a recurring event. You can read more about recurrence rules [here](https://icalendar.org/iCalendar-RFC-5545/3-3-10-recurrence-rule.html)
+- `STDATE` - (optional) a start date of the period the event is repeated
+- `DTEND` - (optional) an end date of the period the event is repeated
+- `recurring` - (optional) enables/disables an ability to repeat the event
 - `custom_key` - (optional) a custom key of the event
+
+:::caution
+The `STDATE`, `DTEND` and `recurring` fields generated automatically. We don't recommend to change these fields, to avoid unpredictable mistakes
+:::
 
 :::info
 To set the events data dynamically, you can use the 
@@ -70,7 +80,7 @@ To set the events data dynamically, you can use the
 
 ### Example
 
-~~~jsx {3-22}
+~~~jsx {3-27}
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
     events: [
@@ -91,6 +101,9 @@ new eventCalendar.EventCalendar("#root", {
                 textColor: "#3e98db"
             },
             RRULE: "FREQ=WEEKLY;INTERVAL=1;BYDAY=Mo,Tu,We,Th,Fr",
+            recurring: true,
+            STDATE: new Date("2023-01-27T15:00:00"),
+            DTEND: new Date("2023-06-27T15:00:00"),
             custom_key: "Custom key of the event"
         },
         // other events data
@@ -99,4 +112,4 @@ new eventCalendar.EventCalendar("#root", {
 });
 ~~~
 
-**Change log:** The ***RRULE*** parameter was added in v2.0
+**Change log:** The ***RRULE***, ***STDATE***, ***DTEND*** and ***recurring*** parameters were added in v2.0

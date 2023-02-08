@@ -13,15 +13,15 @@ description: You can learn about the setMode method in the documentation of the 
 ### Usage
 
 ~~~jsx {}
-setMode({ value: "day" | "week" | "month" | "year" | "agenda" | "timeline" }): void;
+setMode({ value: string | number }): void;
 ~~~
 
 ### Parameters
 
-- `value` - (required) a view mode of Event Calendar
+- `value` - (required) a view mode ID specified in the **config.views** property.
 
 :::info
-You can set the **value** parameter to the *"day"*, *"week"*, *"month"*, *"year"*, *"agenda"* or *"timeline"* modes
+You can set the **value** parameter to the *"day"*, *"week"*, *"month"*, *"year"*, *"agenda"* or *"timeline"* view IDs used by default, or define a custom ID in the **config.views** property
 :::
 
 ### Example

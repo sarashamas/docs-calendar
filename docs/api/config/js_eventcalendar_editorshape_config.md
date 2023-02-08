@@ -94,6 +94,11 @@ To configure the editor appearance and functionality, you can specify the follow
 #### - Common parameters for all types
 
 - `type` - (required) an editor field type. Here you can specify the following types: **text**, **textarea**,  **combo**, **multiselect**, **color**, **checkbox**, **date**, **radio**, **files** and **recurring**
+
+:::note
+The **recurring** type of editor doesn't require a key to bind to events!
+:::
+
 - `key` - (required) an editor field key. Here you need to use the value specified in the [`events`](../js_eventcalendar_events_config) property. See the example below:
 
 ~~~js {4-5,12,20}
