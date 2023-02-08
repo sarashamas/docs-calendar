@@ -45,6 +45,8 @@ On the **Timetable grid** you can work with ***events*** in the following way:
 - open an editor by double clicking on the event
 - reschedule events by dragging them to the desired place (calendar cell/date) 
 - reschedule events by resizing them
+- set recurring events
+- dim past events
 
 ![Event Calendar Grid](assets/003_grid.png)
 
