@@ -54,7 +54,7 @@ In the **templates** object you can specify custom templates for the following e
 - `popup` - (optional) a function needs to return a custom template of the info popup window. It takes an object with the following parameters:
     - ***event*** - current event data
     - ***calendar*** - current calendar data
-- `timelineSection` - (optional) a function needs to return a custom template of the Timeline section. It takes an object of the **section** parameters.
+- `timelineSection` - (optional) a function needs to return a custom template of the **Timeline** mode section. It takes an object of the **section** parameters.
 
 :::info
 To set the templates dynamically, you can use the
@@ -63,7 +63,7 @@ To set the templates dynamically, you can use the
 
 ### Example
 
-~~~jsx {5-14,16-22,24-30,32-44,46-55,57-63,65-73,75-88}
+~~~jsx {5-14,16-22,24-30,32-44,46-55,57-63,65-73,75-88,90-97}
 const { format } = dateFns; // date-fns library  (https://date-fns.org/)
 new eventCalendar.EventCalendar("#root", { // create Event Calendar
     templates: {
@@ -152,12 +152,13 @@ new eventCalendar.EventCalendar("#root", { // create Event Calendar
                     </div>
                 </div>`;
         },
-        // the Timeline section template
+        // the "Timeline" mode section template
         timelineSection: (section) => {
-            return `<div class="template-wrapper">
+            return `
+                <div class="template-wrapper">
                     <img src=${section.img} alt=${section.label} class="section-img" />
-                <div class="section-label">${section.label}</div>
-            </div>`;
+                    <div class="section-label">${section.label}</div>
+                </div>`;
         }
     },
 	// other configuration parameters
@@ -166,6 +167,4 @@ new eventCalendar.EventCalendar("#root", { // create Event Calendar
 
 **Related sample:** [Event Calendar. Custom templates](https://snippet.dhtmlx.com/rmgc73n6?tag=event_calendar)
 
-**Change log:**
-- The ***yearEvent***, ***agendaEvent*** and ***agendaDate*** templates were added in v1.1
-- The ***timelineSection*** template was added in v2.0
+**Change log:** The ***timelineSection*** template was added in v2.0

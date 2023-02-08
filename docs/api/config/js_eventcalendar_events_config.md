@@ -59,7 +59,7 @@ If the **allDay** parameter is set to *true*, the **start_date** and **end_date*
     - `background` - (optional) a HEX code of the event background color
     - `border` - (optional) a HEX code of the event border color
     - `textColor` - (optional) a HEX code of the event text color
-- `RRULE` - (optional) a rule the event is repeated. You can read more about recurrence rules [here](https://icalendar.org/iCalendar-RFC-5545/3-3-10-recurrence-rule.html)
+- `RRULE` - (optional) a string that defines a rule for a recurring event. You can read more about recurrence rules [here](https://icalendar.org/iCalendar-RFC-5545/3-3-10-recurrence-rule.html)
 - `custom_key` - (optional) a custom key of the event
 
 :::info
@@ -98,3 +98,5 @@ new eventCalendar.EventCalendar("#root", {
 	// other configuration parameters
 });
 ~~~
+
+**Change log:** The ***RRULE*** parameter was added in v2.0

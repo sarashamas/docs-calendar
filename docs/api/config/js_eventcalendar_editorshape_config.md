@@ -73,7 +73,7 @@ editorShape?: [
 		text?: string,
 
 		// for a "date" type only
-		time?: boolean
+		time?: boolean,
 
 		// for a "files" type only
 		uploadURL?: string,
