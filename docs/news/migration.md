@@ -6,6 +6,148 @@ description: You can learn about the Migration to Newer Versions in the document
 
 # Migration to newer versions
 
+## 1.1 -> 2.0
+
+### Api
+
+#### Properties
+
+- The [`mode`](../../api/config/js_eventcalendar_mode_config) property was extended by the new mode. Starting from v2.0, you can use the ***timeline*** mode.
+
+~~~jsx title="Before v2.0"
+mode: "day", // "week" | "month" | "year" | "agenda"
+~~~
+
+~~~jsx title="From v2.0"
+mode: "day", // "week" | "month" | "year" | "agenda" | "timeline"
+~~~
+
+- The [`templates`](../../api/config/js_eventcalendar_templates_config) property was extended by the new template. Starting from v2.0, you can use the ***timelineSection*** template.
+
+~~~jsx title="Before v2.0"
+templates: {
+    weekEvent: ({ event, calendar }) => {...},
+    monthEvent: ({ event, calendar }) => {...},
+    yearEvent: ({ event, calendar }) => {...},
+    agendaEvent: ({ event, calendar }) => {...},
+    agendaDate: ({ event, calendar }) => {...},
+    multievent: ({ event, calendar }) => {...},
+    header: ({ date, dateFormat }) => {...},
+    popup: ({ event, calendar }) => {...}
+}
+~~~
+
+~~~jsx {10} title="From v2.0"
+templates: {
+    weekEvent: ({ event, calendar }) => {...},
+    monthEvent: ({ event, calendar }) => {...},
+    yearEvent: ({ event, calendar }) => {...},
+    agendaEvent: ({ event, calendar }) => {...},
+    agendaDate: ({ event, calendar }) => {...},
+    multievent: ({ event, calendar }) => {...},
+    header: ({ date, dateFormat }) => {...},
+    popup: ({ event, calendar }) => {...},
+    timelineSection: (section) => {...},
+}
+~~~
+
+- The [`config`](../../api/config/js_eventcalendar_config_config) property was extended by the new parameters. Starting from v2.0, you can use the ***viewControl*** and ***dimPastEvents*** parameters. The ***views*** parameter was fully updated.
+
+~~~jsx title="Before v2.0"
+config: {
+    ...,
+    views: { 
+        day: {
+            ...,
+            cellCss: (date) => {
+                ...,
+                return string;
+            },
+        },
+        week: { ... },
+        month: { ... }
+    }
+}
+~~~
+
+~~~jsx {3-39} title="From v2.0"
+config: {
+    ...,
+    dimPastEvents: true,
+    viewControl: "auto", // "toggle" | "dropdown" | "none"
+    views: [
+        {
+            id: "week",
+            label: "Week",
+            layout: "week",
+            config: defaultWeekConfig
+        },
+        { 
+            id: "day", 
+            label: "Day",  
+            layout: "day",
+            config: defaultWeekConfig
+        },
+        { 
+            id: "month",
+            label: "Month",
+            layout: "month",
+            config: defaultMonthConfig
+        },
+        { 
+            id: "year", 
+            label: "Year", 
+            layout: "year" 
+        },
+        { 
+            id: "agenda", 
+            label: "Agenda", 
+            layout: "agenda" 
+        },
+        { 
+            id: "timeline",
+            label: "Timeline",
+            layout: "timeline",
+            config: defaultTimelineConfig
+        }
+    ]
+}
+~~~
+
+- The [`editorShape`](../../api/config/js_eventcalendar_editorshape_config) property was extended by the new editor type. Starting from v2.0, you can use the ***recurring*** editor type.
+
+~~~jsx title="Before v2.0"
+editorShape: [
+    ...,
+    {
+        type: "combo", // "text" | "textarea" | "multiselect" | "color" | "checkbox" | "date" | "radio" | "files" 
+        ...,
+    }
+]
+~~~
+
+~~~jsx {} title="From v2.0"
+editorShape: [
+    ...,
+    {
+        type: "combo", // "recurring" | "text" | "textarea" | "multiselect" | "color" | "checkbox" | "date" | "radio" | "files" 
+        ...,
+    },   
+]      
+~~~
+
+#### Methods
+
+- The [`setMode()`](../../api/methods/js_eventcalendar_setmode_method) method was updated:
+
+~~~jsx {} title="Before v2.0"
+setMode({ value: "day" }); // value: "day" | "week" | "month" | "year" | "agenda"
+~~~
+
+~~~jsx {} title="From v2.0"
+setMode({ value: "day" }); // value: "timeline" | "day" | "week" | "month" | "year" | "agenda" 
+~~~
+
 ## 1.0 -> 1.1
 
 ### Api
@@ -53,9 +195,9 @@ templates: {
 config: {
     ...,
     views: { 
-       day: { ... },
-       week: { ... },
-       month: { ... }
+        day: { ... },
+        week: { ... },
+        month: { ... }
     }
 }
 ~~~
@@ -64,15 +206,15 @@ config: {
 config: {
     ...,
     views: { 
-       day: {
-        ...,
-        cellCss: (date) => {
+        day: {
             ...,
-            return string;
+            cellCss: (date) => {
+                ...,
+                return string;
+            },
         },
-    },
-       week: { ... },
-       month: { ... }
+        week: { ... },
+        month: { ... }
     }
 }
 ~~~
