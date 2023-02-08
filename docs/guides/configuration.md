@@ -82,11 +82,11 @@ config: {
 
 ### Configuring view modes
 
-In the object of the [`config`](api/config/js_eventcalendar_config_config.md) parameter you can also set the appearance and functionality for each view mode separately. For this, you need to specify the coresponding objects with settings in the **views** object.
+In the object of the [`config`](api/config/js_eventcalendar_config_config.md) parameter you can also set the appearance and functionality for each view mode separately. For this, you need to specify the corresponding objects with settings in the **views** array.
 
 #### Day and Week view modes
 
-For the **Day** and **Week** view modes you can set the following parameters (features):
+The **Day** and **Week** view modes can be set in the following way:
 
 - a height of multievents <code style = {{color: "green"}}>eventHeight: number</code> (*common config for all view modes*) 
 - enables/disables an ability to overlay events <code style = {{color: "green"}}>eventsOverlay: boolean</code>
@@ -97,7 +97,7 @@ For the **Day** and **Week** view modes you can set the following parameters (fe
 - a space between events (px) <code style = {{color: "green"}}>eventMargin: string</code>
 - a right padding of the grid column (px) <code style = {{color: "green"}}>columnPadding: string</code>
 
-~~~jsx {3-10,16,17}
+~~~jsx {3-10,15-29}
 // settings of the "Day" and "Week" modes
 const day_and_week_settings = {
     eventHeight: 40,
@@ -112,21 +112,31 @@ const day_and_week_settings = {
 // Event Calendar settings
 config: {
     ...,
-    views: {
-        day: day_and_week_settings,
-        week: day_and_week_settings,
-        month: {...}
-    }
+    views: [
+        {
+            id: "week",
+            label: "Week",
+            layout: "week",
+            config: day_and_week_settings
+        },
+        { 
+            id: "day", 
+            label: "Day",
+            layout: "day", 
+            config: day_and_week_settings, 
+        },
+        // other view modes settings
+    ]
 }
 ~~~
 
-For the **Month** view mode you can set the following parameters (features): 
+The **Month** view mode can be set in the following way:
 
 - a height of multievents <code style = {{color: "green"}}>eventHeight: number</code> (*common config for all view modes*)
 - a min height of a grid cell <code style = {{color: "green"}}>dayHeight: number</code>
 - a max number of events per cell <code style = {{color: "green"}}>maxEventsPerCell: number</code>
 
-~~~jsx {3-5,13}
+~~~jsx {3-5,10-18}
 // settings of the "Month" mode
 const month_settings = {
     eventHeight: 35,
@@ -136,11 +146,53 @@ const month_settings = {
 // Event Calendar settings
 config: {
     ...,
-    views: {
-        day: {...},
-        week: {...},
-        month: month_settings
-    }
+    views: [
+        {
+            id: "month",
+            label: "Month",
+            config: month_settings,
+            layout: "month"
+        },
+        // other view modes settings
+    ]
+}
+~~~
+
+The **Timeline** view mode can be set in the following way:
+
+~~~jsx {3-5,10-18}
+// settings of the "Timeline" mode
+const timeline_settings = {
+    colsCount: 90,
+    minEventWidth: 50,
+    colsWidth: 90,
+    minSectionHeight: 100,
+    sectionWidth: 158,
+    step: [7, "day"],
+    key: "section",
+    header: [
+        { unit: "month", step: 1, format: "MMM" },
+        { unit: "day", step: 1, format: "d MMM" },
+    ],
+    sections: [
+        { id: "1", label: "Section 1" },
+        { id: "2", label: "Section 2" },
+        { id: "3", label: "Section 3" },
+    ],
+    unassignedCol: true,
+};
+// Event Calendar settings
+config: {
+    ...,
+    views: [
+        {
+            id: "month",
+            label: "Month",
+            layout: "month",
+            config: timeline_settings
+        },
+        // other view modes settings
+    ]
 }
 ~~~
 
