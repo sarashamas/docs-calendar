@@ -8,6 +8,39 @@ description: You can explore what's new in DHTMLX Event Calendar and its release
 
 If you are updating Event Calendar from an older version, check [Migration to newer versions](news/migration.md) for details.
 
+## Version 2.0
+
+Released on February Day, 2023
+
+[Review of release on the blog](https://dhtmlx.com/blog/meet-dhtmlx-event-calendar-v2-0/)
+
+### New functionality
+
+- An ability to view events in the **Timeline** or **custom** modes (Example)
+- An ability to work with recurring events (Example)
+- An ability to switch through the view modes via the **toggle** or **selector** controls (Example)
+- An ability to dim past events
+
+### Updates
+
+- #### Methods
+
+    - The [`setMode()`](../../api/methods/js_eventcalendar_setmode_method) method of Event Calendar is updated
+
+- #### Properties
+
+    - The [`templates`](../../api/config/js_eventcalendar_templates_config) property of Event Calendar is extended by the ***timelineSection*** parameter (*template*) (Example)
+
+    - The [`editorShape`](../../api/config/js_eventcalendar_editorshape_config) property is extended by the ***recurring*** type (*editor field*) (Example)
+
+    - The [`events`](../../api/config/js_eventcalendar_events_config) property of Event Calendar is extended by the ***RRULE*** parameter (*data field*). This parameter is bind to the **recurring** type of editor
+
+    - The [`mode`](../../api/config/js_eventcalendar_mode_config) property of Event Calendar is extended by the ***timeline*** parameter (*view mode*). The **Timeline** view mode is optional and can be configured in the `config.views` property (Example)
+
+    - The [`config`](../../api/config/js_eventcalendar_config_config) property of Event Calendar is extended by the ***viewControl*** and ***dimPastEvents*** parameters (Example)
+
+    - The [`config.view`](../../api/config/js_eventcalendar_config_config) property of Event Calendar is fully updated. See the [Migration to newer versions](news/migration.md/#11---20) for details. (Example)
+
 ## Version 1.1
 
 Released on November 10, 2022
