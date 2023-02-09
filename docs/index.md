@@ -15,13 +15,19 @@ JavaScript **Event Calendar** is a modern web tool for efficient time-management
 
 The **Toolbar** is the top part of Event Calendar. It consists of the controls for managing the widget functionality. Here you can perform the following operations:
 
-- view the events through the **Day**, **Week**, **Month**, **Year**, **Agenda** and **Timeline** view modes using the corresponding toggle or selector controls
+- view the events through the **Day**, **Week**, **Month**, **Year**, **Agenda**, **Timeline** or custom view modes using the corresponding toggle buttons or selector with dropdown options
 - go to the current date using a **Today** button
 - switch to the needed date using the special arrows in the middle part of Toolbar
 - create new events, using a **+ Create event** button
 - hide/show a sidebar using a "humburger" icon
 
+#### Toggle mode
+
 ![Event Calendar Toolbar](assets/001_toolbar.png)
+
+#### Dropdown mode
+
+![Event Calendar Toolbar](assets/001_toolbar(2).png)
 
 ### Sidebar
 
