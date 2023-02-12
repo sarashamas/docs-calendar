@@ -364,7 +364,7 @@ new eventCalendar.EventCalendar("#root", {
 });
 ~~~
 
-**Related sample:** [Event Calendar. Event color](https://snippet.dhtmlx.com/qw45r367?tag=event_calendar)
+**Related sample:** [Event Calendar. Timeline and Custom view modes](https://snippet.dhtmlx.com/dmoijc47?tag=event_calendar)
 
 **Change log:** 
 - The ***viewControl*** and ***dimPastEvents*** properties were added in v2.0

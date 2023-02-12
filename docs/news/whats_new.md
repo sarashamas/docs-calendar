@@ -18,11 +18,11 @@ Released on February Day, 2023
 
 - Timeline view
 - Recurring events
-- An ability to define custom views
+- Custom view modes
 - Section for unassigned events in the Timeline view
-- An ability to switch through the view modes via the toggle or selector controls (Example)
-- An ability to dim past events
-- Current time is now marked in the calendar
+- Switching through the view modes via the toggle or dropdawn controls ([Example](https://snippet.dhtmlx.com/dmoijc47))
+- Dim past events
+- Highlight the current time using red line in the **Day**, **Week**, **Agenda** and **Timeline** view modes
 
 ### Updates
 
@@ -32,17 +32,17 @@ Released on February Day, 2023
 
 - #### Properties
 
-    - The [`templates`](../../api/config/js_eventcalendar_templates_config) property of Event Calendar is extended by the ***timelineSection*** parameter (*template*) (Example)
+    - The [`templates`](../../api/config/js_eventcalendar_templates_config) property of Event Calendar is extended by the ***timelineSection*** parameter (*template*) ([Example](https://snippet.dhtmlx.com/rmgc73n6))
 
-    - The [`editorShape`](../../api/config/js_eventcalendar_editorshape_config) property is extended by the ***recurring*** type (*editor field*) (Example)
+    - The [`editorShape`](../../api/config/js_eventcalendar_editorshape_config) property is extended by the ***recurring*** type (*editor field*) ([Example](https://snippet.dhtmlx.com/bxwdj1rt))
 
     - The [`events`](../../api/config/js_eventcalendar_events_config) property of Event Calendar is extended by the ***RRULE***, ***STDATE***, ***DTEND*** and ***recurring*** parameters (*data fields*). These parameters are bind to the **recurring** type of editor
 
-    - The [`mode`](../../api/config/js_eventcalendar_mode_config) property of Event Calendar is extended by the ***timeline*** parameter (*view mode*). The **Timeline** view mode is optional and can be configured in the `config.views` property (Example)
+    - The [`mode`](../../api/config/js_eventcalendar_mode_config) property of Event Calendar is extended by the ***timeline*** parameter (*view mode*). The **Timeline** view mode is optional and can be configured in the `config.views` property ([Example](https://snippet.dhtmlx.com/dmoijc47))
 
-    - The [`config`](../../api/config/js_eventcalendar_config_config) property of Event Calendar is extended by the ***viewControl*** and ***dimPastEvents*** parameters (Example)
+    - The [`config`](../../api/config/js_eventcalendar_config_config) property of Event Calendar is extended by the ***viewControl*** and ***dimPastEvents*** parameters ([Example](https://snippet.dhtmlx.com/qw45r367))
 
-    - The [`config.view`](../../api/config/js_eventcalendar_config_config) property of Event Calendar is fully updated. See the [Migration to newer versions](news/migration.md/#11---20) for details. (Example)
+    - The [`config.view`](../../api/config/js_eventcalendar_config_config) property of Event Calendar is fully updated. See the [Migration to newer versions](news/migration.md/#11---20) for details. ([Example](https://snippet.dhtmlx.com/dmoijc47))
 
 ## Version 1.1
 

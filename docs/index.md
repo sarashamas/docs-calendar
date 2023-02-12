@@ -49,12 +49,12 @@ On the **Timetable grid** you can work with ***events*** in the following way:
 - add new events by clicking on the empty space and dragging the cursor down
 - show an info popup window by clicking on the event
 - open an editor by double clicking on the event
-- reschedule events by dragging them to the desired place (calendar cell/date) 
+- reschedule events by dragging them to the desired place (calendar cell/date)
 - reschedule events by resizing them
 - set recurring events
 - dim past events
 - use section for unassigned events in the Timeline view
-- highlight the current time in the calendar
+- highlight the current time using red line in the **Day**, **Week**, **Agenda** and **Timeline** view modes
 
 ![Event Calendar Grid](assets/003_grid.png)
 
