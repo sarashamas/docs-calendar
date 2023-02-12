@@ -70,7 +70,7 @@ config: {
 }
 ~~~
 
-~~~jsx {3-39} title="From v2.0"
+~~~jsx {3-40} title="From v2.0"
 config: {
     ...,
     dimPastEvents: true,
