@@ -18,10 +18,10 @@ Released on February 14, 2023
 
 - Timeline view
 - Recurring events
-- Custom view modes
-- Section for unassigned events in the Timeline view
+- Custom view modes ([Example](https://snippet.dhtmlx.com/dmoijc47?tag=event_calendar))
+- Section for unassigned events in the Timeline view 
 - Switching through the view modes via the toggle or dropdown controls ([Example](https://snippet.dhtmlx.com/dmoijc47?tag=event_calendar))
-- Dim past events
+- Dim past events ([Example](https://snippet.dhtmlx.com/teaka0o8?tag=event_calendar))
 - Highlight the current time using red line in the **Day**, **Week**, **Agenda** and **Timeline** view modes
 
 ### Updates
