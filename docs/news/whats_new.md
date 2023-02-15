@@ -12,7 +12,7 @@ If you are updating Event Calendar from an older version, check [Migration to ne
 
 Released on February 14, 2023
 
-[Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-event-calendar-v2-0/)
+[Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-event-calendar-2-0/)
 
 ### New functionality
 
