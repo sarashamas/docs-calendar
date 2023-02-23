@@ -8,6 +8,16 @@ description: You can explore what's new in DHTMLX Event Calendar and its release
 
 If you are updating Event Calendar from an older version, check [Migration to newer versions](news/migration.md) for details.
 
+## Version 2.0.1
+
+Released on February Day, 2023
+
+### Fixes​
+
+- The **Repeat event** control resets week days when the **End by** part of new event is changed
+- The **Popup window** of **Recurring events** sometimes has an incorrect position in the **Agenda** view
+- *TypeError*  when the **Create event** button is doubleclicked
+
 ## Version 2.0
 
 Released on February 14, 2023
