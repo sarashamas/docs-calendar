@@ -33,6 +33,22 @@ There are two necessary files:
 </html>
 ~~~
 
+:::info
+You can also import Event Calendar into your project using `yarn` or `npm` commands. To get the trial version of Event Calendar, run the following commands:
+
+~~~jsx {2-3,6-7}
+// npm
+npm config set @dhx:registry https://npm.dhtmlx.com
+npm i @dhx/trial-eventcalendar
+
+// yarn
+yarn config set @dhx:registry https://npm.dhtmlx.com
+yarn add @dhx/trial-eventcalendar
+~~~
+
+To get PRO version of Event Calendar, refer to **[Support Center](https://dhtmlx.com/docs/technical-support.shtml)**!
+:::
+
 ## Step 2. Creating Event Calendar
 
 Now you are ready to add Event Calendar to the page. For this you need to take the following steps:
