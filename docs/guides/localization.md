@@ -77,7 +77,7 @@ const en = {
         today: "Today",
         am: ["am", "AM"],
         pm: ["pm", "PM"],
-        weekStart: 7, 
+        weekStart: 7, // defines a first day of week (Sunday by default)
     },
     core: { // translations of the WX core elements
         ok: "OK",
@@ -85,6 +85,22 @@ const en = {
     }
 };
 ~~~
+
+:::tip Changing the first day of week
+To define a first day of week, assign the required day number to the `weekStart` property. Take into account that **Monday** is equal to **1**.
+
+~~~jsx {2}
+const locale = eventCalendar.en;
+locale.calendar.weekStart = 1; // change start day of week
+
+const calendar = new eventCalendar.EventCalendar("#root", {
+    events,
+    mode: "month",
+    date: new Date("2023-02-12T00:00:00"),
+    locale
+});
+~~~
+:::
 
 :::info
 Besides the ***en*** locale, Event Calendar also includes the built-in ***de*** and ***ru*** ones.
@@ -156,7 +172,7 @@ const de = {
         done:"Fertig",
         clear: "Entfernen",
         today: "Heute",
-        weekStart: 1
+        weekStart: 1, // defines a first day of week (Monday by default)
     },
     core: { // translations of the WX core elements
         ok: "OK",
@@ -232,7 +248,7 @@ const ru = {
         done: "Гoтовo",
         clear: "Очистить",
         today: "Сегодня",
-        weekStart: 1
+        weekStart: 1, // defines a first day of week (Monday by default)
     },
     core: { // translations of the WX core elements
         ok: "OK",
