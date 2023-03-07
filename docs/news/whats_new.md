@@ -10,7 +10,7 @@ If you are updating Event Calendar from an older version, check [Migration to ne
 
 ## Version 2.0.2
 
-Released on March Day, 2023
+Released on March 7, 2023
 
 ### Updates
 
