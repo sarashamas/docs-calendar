@@ -6,6 +6,29 @@ description: You can learn about the Migration to Newer Versions in the document
 
 # Migration to newer versions
 
+## 2.0.1 -> 2.0.2
+
+### Api
+
+#### Properties
+
+- The [`config`](../../api/config/js_eventcalendar_config_config) property was extended by the ***dateClick*** parameter.
+
+~~~jsx title="Before v2.0.2"
+config: {
+    ...,
+    dimPastEvents: true,
+}
+~~~
+
+~~~jsx {4} title="From v2.0.2"
+config: {
+    ...,
+    dimPastEvents: true,
+    dateClick: false, // or "day" | "week" | "month" | "year" | "agenda" | "timeline"
+}
+~~~
+
 ## 1.1 -> 2.0
 
 ### Api

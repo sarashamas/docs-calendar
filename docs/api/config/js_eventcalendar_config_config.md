@@ -26,6 +26,7 @@ config?: {
     autoSave?: boolean,
     readonly?: boolean,
     dimPastEvents?: boolean,
+    dateClick?: boolean | string, // (true/false or "day" | "week" | "month" | "year" | "agenda" | "timeline")
 
     tableHeaderHeight?: number,
     eventHeight?: number,
@@ -39,7 +40,7 @@ config?: {
         {
             id: string | number,
             label: string,
-            layout: string, // "day" | "week" | "month" | "year" | "agenda" | "timeline",
+            layout: string, // "day" | "week" | "month" | "year" | "agenda" | "timeline"
             config?: {
                 // Common settings
                 eventHeight?: number, 
@@ -107,6 +108,9 @@ In the **config** object you can specify the following parameters:
 - `autoSave` - (optional) enables/disables an ability to auto save event data (via the editor)
 - `readonly` - (optional) enables/disables an ability to perform operations on events
 - `dimPastEvents` - (optional) enables/disables an ability to dim past events
+- `dateClick` - (optional) defines a behavior of clicking on the date in a grid cell in the following way:
+    - ***true/false*** - enables/disables an ability to click on the date in a grid cell to go to the corresponding day
+    - ***"day" | "week" | "month" | "year" | "agenda" | "timeline"*** - a view mode to be open when a user clicks on a grid cell
 - `tableHeaderHeight` - (optional) a height of the Event Calendar header (px)
 - `eventHeight` - (optional) a height of the Event Calendar multievents
 - `timeStep` - (optional) a step of moving an event via d-n-d
@@ -366,6 +370,7 @@ new eventCalendar.EventCalendar("#root", {
 
 **Related sample:** [Event Calendar. Timeline and Custom view modes](https://snippet.dhtmlx.com/dmoijc47?tag=event_calendar)
 
-**Change log:** 
+**Change log:**
 - The ***viewControl*** and ***dimPastEvents*** properties were added in v2.0
 - The ***view*** property was fully updated in v2.0
+- The ***dateClick*** property was added in v2.0.2

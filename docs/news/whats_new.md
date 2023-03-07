@@ -8,6 +8,20 @@ description: You can explore what's new in DHTMLX Event Calendar and its release
 
 If you are updating Event Calendar from an older version, check [Migration to newer versions](news/migration.md) for details.
 
+## Version 2.0.2
+
+Released on March Day, 2023
+
+### Updates
+
+- #### Properties
+
+    - The [`config`](../../api/config/js_eventcalendar_config_config) property of Event Calendar is extended by the ***dateClick*** property
+
+### Fixes​
+
+- An event is out of the month cell if the `eventHeight` property is set to **50** or more
+
 ## Version 2.0.1
 
 Released on February 23, 2023
