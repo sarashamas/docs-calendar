@@ -15,6 +15,7 @@ Released on March 13, 2023
 ### Fixes​
 
 - The **Agenda** view issues cause script errors on the page
+- The `cellCss` template in the **Week** view works incorrectly
 
 ## Version 2.0.2
 
