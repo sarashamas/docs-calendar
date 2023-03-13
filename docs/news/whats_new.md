@@ -8,6 +8,14 @@ description: You can explore what's new in DHTMLX Event Calendar and its release
 
 If you are updating Event Calendar from an older version, check [Migration to newer versions](news/migration.md) for details.
 
+## Version 2.0.3
+
+Released on March 13, 2023
+
+### Fixes​
+
+- The **Agenda** view issues cause script errors on the page
+
 ## Version 2.0.2
 
 Released on March 7, 2023
