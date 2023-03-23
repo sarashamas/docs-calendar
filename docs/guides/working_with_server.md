@@ -22,8 +22,8 @@ JavaScript Event Calendar has the **RestDataProvider** service that completely s
 
 The **RestDataProvider** service includes the special REST methods for dynamic data loading:
 
-- [`getCalendars()`](api/provider/js_eventcalendar_getcalendars_method.md) - gets a promise with the ***calendars data***
-- [`getEvents()`](api/provider/js_eventcalendar_getevents_method.md) - gets a promise with the ***events data***
+- [`getCalendars()`](api/provider/rest_methods/js_eventcalendar_getcalendars_method.md) - gets a promise with the ***calendars data***
+- [`getEvents()`](api/provider/rest_methods/js_eventcalendar_getevents_method.md) - gets a promise with the ***events data***
 
 ## Interacting with backend  
 

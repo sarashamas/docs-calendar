@@ -121,8 +121,8 @@ In this section you can find out how to work with an events editor
 
 | Topic                                                                                     | Description                                        |
 | ----------------------------------------------------------------------------------------- | -------------------------------------------------- |
-| [Loading server data for events](api/provider/js_eventcalendar_getevents_method.md)       | Learn how to load server data for events           |
-| [Loading server data for calendars](api/provider/js_eventcalendar_getcalendars_method.md) | Learn how to load server data for calendars        |
+| [Loading server data for events](api/provider/rest_methods/js_eventcalendar_getevents_method.md)       | Learn how to load server data for events           |
+| [Loading server data for calendars](api/provider/rest_methods/js_eventcalendar_getcalendars_method.md) | Learn how to load server data for calendars        |
 | [Working with server](guides/working_with_server.md)                                      | Learn how to work with server via REST API         |
 
 ## How to work with state
