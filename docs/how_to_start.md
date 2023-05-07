@@ -46,7 +46,7 @@ yarn config set @dhx:registry https://npm.dhtmlx.com
 yarn add @dhx/trial-eventcalendar
 ~~~
 
-To get PRO version of Event Calendar, refer to **[Support Center](https://dhtmlx.com/docs/technical-support.shtml)**!
+To get Event Calendar under the proprietary license, refer to **[Support Center](https://dhtmlx.com/docs/technical-support.shtml)**!
 :::
 
 ## Step 2. Creating Event Calendar
