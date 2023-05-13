@@ -49,6 +49,10 @@ yarn add @dhx/trial-eventcalendar
 To get Event Calendar under the proprietary license, refer to **[Support Center](https://dhtmlx.com/docs/technical-support.shtml)**!
 :::
 
+:::tip
+If you want to integrate JavaScript Event Calendar into the React, Angular or Vue project, refer to the corresponding [**Examples on Replit**](https://replit.com/@dhtmlx) for more information.
+:::
+
 ## Step 2. Creating Event Calendar
 
 Now you are ready to add Event Calendar to the page. For this you need to take the following steps:
