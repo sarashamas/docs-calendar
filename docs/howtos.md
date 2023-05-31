@@ -30,7 +30,7 @@ In this section you can find out corresponding references of Event Calendar API
 | [Event Calendar methods](api/overview/methods_overview.md)         | Learn how to work with Event Calendar methods      |
 | [Event Calendar properties](api/overview/properties_overview.md)   | Learn how to work with Event Calendar properties   |
 | [Event Bus methods](api/overview/internal_eventbus_overview.md)    | Learn how to work with Event Bus methods           |
-| [RestDataProvider methods](api/overview/internal_rest_overview.md) | Learn how to work with RestDataProvider methods    |
+| [RestDataProvider methods](api/overview/rest_methods_overview.md)  | Learn how to work with RestDataProvider methods    |
 | [State methods](api/overview/internal_state_overview.md)           | Learn how to work with State methods               |
 
 ## How to work with events
