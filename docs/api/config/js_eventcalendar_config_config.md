@@ -211,7 +211,7 @@ step: [8, "hour"], // "day" | "week" | "month" | "year" | "hour" | "minute"
 header: [
     {
         unit: "month", // "year" | "quarter" | "month" | "week" | "day" | "hour" | "minute"
-        format: format(new Date(), 'yyyy-MM-dd'),
+        format: 'yyyy-MM-dd',
         step: 3
     },
     { ... }
