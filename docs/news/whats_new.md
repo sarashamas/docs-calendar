@@ -8,6 +8,17 @@ description: You can explore what's new in DHTMLX Event Calendar and its release
 
 If you are updating Event Calendar from an older version, check [Migration to newer versions](news/migration.md) for details.
 
+## Version 2.1
+
+Released on August Day, 2023
+
+### Fixes​
+
+- The info popup does not show in the **readonly** mode
+- The event can be created via an editor in the **readonly** mode
+- *Script error* occurs when a date is clicked in the **Year** view
+- The view selector width on Toolbar is 100% on any screen
+
 ## Version 2.0.3
 
 Released on March 13, 2023
