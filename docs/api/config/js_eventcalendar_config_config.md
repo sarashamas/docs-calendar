@@ -27,9 +27,11 @@ config?: {
     readonly?: boolean,
     dimPastEvents?: boolean,
     dateClick?: boolean | string, // (true/false or "day" | "week" | "month" | "year" | "agenda" | "timeline")
+    dateTitle?: (date, [start, end]) => string, 
 
     tableHeaderHeight?: number,
     eventHeight?: number,
+    eventVerticalSpace?: number, // for the "day" | "week" | "month" | "timeline" view modes only
 
     timeStep?: number,
     timeRange?: [number, number],
@@ -44,13 +46,16 @@ config?: {
             config?: {
                 // Common settings
                 eventHeight?: number, 
+                eventVerticalSpace?: number, // for the "day" | "week" | "month" | "timeline" view modes separately
                 cellCss?: (date) => string,
+                dateTitle?: (date, [start, end]) => string,
 
                 // Day and Week view modes settings
                 eventsOverlay?: boolean,
                 timeStep?: number,
                 timeRange?: array,
-                eventMargin?: string,
+                // eventMargin?: string, Deprecated !!!
+                eventHorizontalSpace?: number, 
                 columnPadding?: string,
 
                 // Month view mode settings
@@ -111,8 +116,16 @@ In the **config** object you can specify the following parameters:
 - `dateClick` - (optional) defines a behavior of clicking on the date in a grid cell in the following way:
     - ***true/false*** - enables/disables an ability to click on the date in a grid cell to go to the corresponding day
     - ***"day" | "week" | "month" | "year" | "agenda" | "timeline"*** - a view mode to be open when a user clicks on a grid cell
+- `dateTitle`- (optional) defines a date title that displays on toolbar. The callback function takes a current date and an array with date range (start-end), and must return a string value of the date title
+
+~~~jsx {}
+dateTitle: (date, [start, end]) => 
+    `${format(start, "do")} - ${format(end, "do")} ${format(date, "LLL")}`
+~~~
+
 - `tableHeaderHeight` - (optional) a height of the Event Calendar header (px)
 - `eventHeight` - (optional) a height of the Event Calendar multievents
+- `eventVerticalSpace` - (optional) a custom vertical space between events in the "week", "day", "timeline" and "month" views
 - `timeStep` - (optional) a step of moving an event via d-n-d
 - `timeRange` - (optional) an array with start and end time of day in the "day" and "week" modes (*0-24*)
 - `defaultEventDuration` - (optional) a duration of the new created event by default (without taking into account creating an event via d-n-d)
@@ -130,14 +143,17 @@ To configure a custom view mode (or ***modes***), you can specify the following 
 <h4 style = {{color: "green"}}>Common settings</h4>
 
 - `eventHeight?: number` - (optional) a height of the Event Calendar multievents
+- `eventVerticalSpace?: number` - (optional) a custom vertical space between events. You can specify it for the "week", "day", "timeline" and "month" view modes separately
 - `cellCss?: (date) => string` - (optional) a CSS selector to be applied to a grid cell
+- `dateTitle?: (date, [start, end]) => string` - (optional) defines a date title that displays on toolbar. The callback function takes a current date and an array with date range (start-end), and must return a string value of the date title. You can specify the **dateTitle** property for each view modes separately
 
 <h4 style = {{color: "green"}}>"Day" and "Week" view modes settings</h4>
 
 - `eventsOverlay?: boolean` - (optional) enables/disables an ability to overlay events
 - `timeStep?: number` - (optional) a step of moving an event via d-n-d
 - `timeRange?: array` - (optional) an array with start and end time of day
-- `eventMargin?: string` - (optional) a space between events (*px*). To use this parameter, you need to set ***eventsOverlay*** to ***false***
+- `eventMargin?: string` - (optional) deprecated property
+- `eventHorizontalSpace?: number` - (optional) a custom horizontal space between events. To use this parameter, you need to set ***eventsOverlay*** to ***false***
 - `columnPadding?: string` - (optional) a right padding of the grid column (*px*)
 
 <h4 style = {{color: "green"}}>"Month" view mode settings</h4>
@@ -241,8 +257,9 @@ sections: [
 
 ~~~jsx {}
 const defaultWeekConfig = {
-	eventMargin: "3px",
+	eventHorizontalSpace: 3,
 	columnPadding: "8px",
+    
 };
 
 const defaultMonthConfig = {
@@ -290,6 +307,7 @@ const defaultConfig = {
 
     tableHeaderHeight: 32,
     eventHeight: 24,
+    eventVerticalSpace: 6,
 
     timeStep: 5,
     timeRange: [0, 24],
@@ -329,7 +347,7 @@ To set the **config** property dynamically, you can use the
 
 ### Example
 
-~~~jsx {3-34}
+~~~jsx {3-36}
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
     config: {
@@ -339,6 +357,8 @@ new eventCalendar.EventCalendar("#root", {
         dragMove: false,
         viewControl: "toggle",
         dimPastEvents: true,
+        eventVerticalSpace: 8,
+        dateTitle: (date, [start, end]) => `${format(start, "do")} - ${format(end, "do")} ${format(date, "LLL")}`,
         views: [
 			{
 				id: "timeline",
@@ -371,6 +391,7 @@ new eventCalendar.EventCalendar("#root", {
 **Related sample:** [Event Calendar. Timeline and Custom view modes](https://snippet.dhtmlx.com/dmoijc47?tag=event_calendar)
 
 **Change log:**
-- The ***viewControl*** and ***dimPastEvents*** properties were added in v2.0
-- The ***view*** property was fully updated in v2.0
+
 - The ***dateClick*** property was added in v2.0.2
+- The ***dateTitle***, ***eventVerticalSpace*** and ***eventHorizontalSpace*** properties were added in v2.1
+- The ***eventMargin*** property was deprecated in v2.1
