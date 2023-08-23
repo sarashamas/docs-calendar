@@ -12,6 +12,14 @@ If you are updating Event Calendar from an older version, check [Migration to ne
 
 Released on August Day, 2023
 
+### Updates
+
+The [`config`](../../api/config/js_eventcalendar_config_config) property was extended by the ***dateTitle***, ***eventVerticalSpace*** and ***eventHorizontalSpace*** parameters
+
+### Deprecated API
+
+The ***eventMargin*** parameter of the [`config`](../../api/config/js_eventcalendar_config_config) property was deprecated. Use the ***eventHorizontalSpace*** parameter instead
+
 ### Fixes​
 
 - The info popup does not show in the **readonly** mode

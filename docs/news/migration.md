@@ -6,6 +6,51 @@ description: You can learn about the Migration to Newer Versions in the document
 
 # Migration to newer versions
 
+## 2.0.2 -> 2.1
+
+### Api
+
+#### Properties
+
+- The [`config`](../../api/config/js_eventcalendar_config_config) property was extended by the ***dateTitle***, ***eventVerticalSpace*** and ***eventHorizontalSpace*** parameters
+
+~~~jsx {9} title="Before v2.1"
+config: {
+    ...,
+    views: [
+        ...,
+        {
+            ...,
+            config: {
+                ...,
+                eventMerge: "10px",
+            }
+        }
+    ]
+}
+~~~
+
+~~~jsx {3-5,12-14} title="From v2.1"
+config: {
+    ...,
+    dateTitle: (date, [start, end]) => 
+        `${format(start, "do")} - ${format(end, "do")} ${format(date, "LLL")}`, // you can also specify this property for each view separately
+    eventVerticalSpace: 8, // you can also specify this property for the "day" | "week" | "month" | "timeline" view modes separately
+    views: [
+        ...,
+        {
+            ...,
+            config: {
+                ...,
+                // the "eventMerge" parameter was deprecated
+                // use the "eventHorizontalSpace" parameter instead of "eventMerge" one
+                eventHorizontalSpace: 10,
+            }
+        }
+    ]
+}
+~~~
+
 ## 2.0.1 -> 2.0.2
 
 ### Api
