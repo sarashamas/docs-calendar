@@ -10,11 +10,15 @@ If you are updating Event Calendar from an older version, check [Migration to ne
 
 ## Version 2.1
 
-Released on August Day, 2023
+Released on August 30, 2023
 
 ### Updates
+- #### Properties
 
-The [`config`](../../api/config/js_eventcalendar_config_config) property was extended by the ***dateTitle***, ***eventVerticalSpace*** and ***eventHorizontalSpace*** parameters
+    - The [`config`](../../api/config/js_eventcalendar_config_config) property was extended by the ***dateTitle***, ***eventVerticalSpace*** and ***eventHorizontalSpace*** parameters
+- #### Style
+
+    - New CSS animations and transitions when working with UI
 
 ### Deprecated API
 
