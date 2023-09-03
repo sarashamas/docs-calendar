@@ -56,8 +56,91 @@ Promise.all([
 You need to include **RestDataProvider** into the **Event Bus** order via the [`api.setNext()`](api/internal/js_eventcalendar_setnext_method.md) method to perform all the operations with data (*adding*, *editing*, *deleting* etc) and send the corresponding requests to the server
 :::
 
-## Example
+### Example
 
 In this snippet you can see how to connect **RestDataProvider** to the **Go** backend and load server data dynamically:
 
 <iframe src="https://snippet.dhtmlx.com/b3iubgj8?mode=js&tag=event_calendar" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+
+## Multiuser backend
+
+Event Calendar is a modern web tool for efficient time-management and scheduling events for both one user and multiple users. Considering this, it is important to provide a seamless user experience for multiple users. The new multiuser backend feature allows users to efficiently manage the same events in a real-time, without the need for page reloads. As a result, end-users can collaborate and stay up-to-date with one another's actions, enhancing productivity and overall satisfaction.
+
+To implement a multiuser backend, you need to get authorization on the server before the Event Calendar initialization. For this, you can create the `login(url: string)` function:
+
+~~~js {}
+const login = (url) => {
+    var token = sessionStorage.getItem("login-token");
+    if (token) {
+        return Promise.resolve(token);
+    }
+
+    return fetch(url + "/login?id=1")
+        .then(raw => raw.text())
+        .then(token => {
+            sessionStorage.setItem("login-token", token);
+            return token;
+        });
+};
+~~~
+
+This function only simulates authorization, and all users will be authorized with an ID of 1. After successful authorization, the server sends a token that needs to be used in every subsequent request to the server. To automate the token sending, the `RestDataProvider.setHeaders()` function is used. This function adds custom headers to the requests. By default, our server stores the token in the `"Remote-Token":<value>` header:
+
+~~~js {}
+login(url).then(token => {
+    // rest provider initialization
+    const restProvider = new eventCalendar.RestDataProvider(url);
+    // set token as the custom header
+    restProvder.setHeaders({
+        "Remote-Token": "eyJpZCI6IjEzMzciLCJ1c2VybmFtZSI6ImJpem9uZSIsImlhdC...",
+    });
+    
+    // widget initialization...
+});
+~~~
+
+After receiving the token, you should initialize the widget. It can be done in the following way:
+
+~~~js {}
+// widget initialization...
+Promise.all([
+    restProvider.getEvents(),
+    restProvider.getCalendars()
+]).then(([events, calendars]) => {
+    const calendar = new eventCalendar("#root", {
+        events,
+        calendars
+    });
+
+    // save data from client to server
+    calendar.api.setNext(restProvider);
+    
+    // multiuser initialization...
+});
+~~~
+
+After the widget initialization, you need to add WebSocket aimed to listen for events from the server. It can be done in the following way:
+
+~~~js {}
+// multiuser initialization...
+
+// connect to server events
+const remoteEvents = new RemoteEvents(
+    url + "/api/v1",
+    token
+);
+remoteEvents.on(
+    remoteUpdates(calendar.api, restProvider.getIDResolver())
+);
+~~~
+
+- `remoteEvents` - the object that connects to the server and listens for all incoming events
+- `remoteUpdates.on(calendar.api, restProvider.getIDResolver())` - applies client handlers to server events
+
+After integrating the multiuser backend into your app, you can simplify collaboration between users and enable them to keep track of any changes via the UI in a real time.
+
+### Example
+
+The snippet below shows how to configure the multiuser backend to track changes of other users in a real time:
+
+<iframe src="https://snippet.dhtmlx.com/ga85sc0x?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
