@@ -8,6 +8,15 @@ description: You can explore what's new in DHTMLX Event Calendar and its release
 
 If you are updating Event Calendar from an older version, check [Migration to newer versions](news/migration.md) for details.
 
+## Version 2.1.1
+
+Released on September 5, 2023
+
+### Updates
+
+- Support of server-side updates and [Multiuser backend](../../guides/working_with_server/#multiuser-backend) ([Example](https://snippet.dhtmlx.com/ga85sc0x?tag=event_calendar))
+- An ability to import Event Calendar package as ES module
+
 ## Version 2.1
 
 Released on August 30, 2023
