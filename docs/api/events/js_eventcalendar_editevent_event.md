@@ -15,7 +15,7 @@ description: You can learn about the edit-event event in the documentation of th
 ~~~jsx {}
 "edit-event": ({
 	id?: string | number, 
-	add?: boolean
+	add?: boolean | object
 }) => void;
 ~~~
 
@@ -24,7 +24,9 @@ description: You can learn about the edit-event event in the documentation of th
 The callback of the **edit-event** event can take an object with the following parameters:
 
 - `id` - (optional) an ID of the event to be edited
-- `add` - (optional) enables/disables an ability to add new event
+- `add` - (optional) an ability to add new event. This parameter takes one of 2 available options:
+	- **true** / **false** - enables/disables an ability to add new event
+	- **object** - an object of new event
 
 Depending on the passed parameters, you can perform the following operations:
 
@@ -41,9 +43,21 @@ calendar.api.exec("edit-event", { id: "1" });
 
 2) **open the editor** for the new event
 
-~~~jsx {2}
+~~~jsx {2,5-14}
 // open the editor for the new event
 calendar.api.exec("edit-event", { add: true });
+
+// open the editor for the new event with the initial data
+calendar.api.exec("edit-event", { 
+	add: {
+		id: "44",
+		type: "meeting",
+		start_date: new Date("2023-09-16T15:00:00"),
+		end_date: new Date("2023-09-16T16:00:00"),
+		text: "Custom event",
+		details: "Rome, Italy",
+	} 
+});
 ~~~
 
 3) **close the editor**
