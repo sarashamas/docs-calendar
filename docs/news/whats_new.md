@@ -8,6 +8,23 @@ description: You can explore what's new in DHTMLX Event Calendar and its release
 
 If you are updating Event Calendar from an older version, check [Migration to newer versions](news/migration.md) for details.
 
+## Version 2.1.2
+
+Released on September 15, 2023
+
+### Updates
+
+- The [`createEvent()`](../../api/methods/js_eventcalendar_createevent_method) method was extended by the **event** object argument
+
+### Fixes
+
+- Script error when calling the `setConfig()` or `setLocale()` method if the Event Calendar configuration includes templates
+- Rebuilding Event Calendar when calling the `setConfig()` method
+- Regression from v2.1.0 causing a script error at the Event Calendar startup if the *Day/Week* views in the views array lack their own configuration options
+- Event positioning issues occurs after dragging and dropping multiday events
+- Incorrect format of event ID arguments in various event handlers
+- UI animations
+
 ## Version 2.1.1
 
 Released on September 5, 2023
