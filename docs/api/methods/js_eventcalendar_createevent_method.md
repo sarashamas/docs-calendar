@@ -13,16 +13,35 @@ description: You can learn about the createEvent method in the documentation of 
 ### Usage
 
 ~~~jsx {}
-createEvent(): void;
+createEvent({ event?: object }): void;
 ~~~
+
+### Parameters
+
+- `event` - (optional) an object of the event data
+
+:::tip
+The full list of the **event** parameters can be found [**here**](api/config/js_eventcalendar_events_config.md)
+:::
 
 ### Example
 
-~~~jsx {6}
+~~~jsx {6-15}
 // create Event Calendar
 const calendar = new eventCalendar.EventCalendar("#root", {
 	// configuration parameters
 });
 // create new event
-calendar.createEvent();
+calendar.createEvent({
+    event: {
+		id: "44",
+		type: "meeting",
+		start_date: new Date("2023-09-16T15:00:00"),
+		end_date: new Date("2023-09-16T16:00:00"),
+		text: "Custom event",
+		details: "Rome, Italy",
+    }
+});
 ~~~
+
+**Change log:** The ***events*** parameter was added in v2.1.2
