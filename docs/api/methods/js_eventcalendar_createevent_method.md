@@ -44,4 +44,4 @@ calendar.createEvent({
 });
 ~~~
 
-**Change log:** The ***events*** parameter was added in v2.1.2
+**Change log:** The ***event*** parameter was added in v2.1.2
