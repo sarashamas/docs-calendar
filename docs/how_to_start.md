@@ -50,7 +50,7 @@ To get Event Calendar under the proprietary license, refer to **[Support Center]
 :::
 
 :::tip
-If you want to integrate JavaScript Event Calendar into the React, Angular or Vue project, refer to the corresponding [**Examples on Replit**](https://replit.com/@dhtmlx) for more information.
+If you want to integrate JavaScript Event Calendar into React, Angular or Vue projects, refer to the corresponding [**Examples on CodeSandbox**](https://codesandbox.io/u/DHTMLX) for more information.
 :::
 
 ## Step 2. Creating Event Calendar
