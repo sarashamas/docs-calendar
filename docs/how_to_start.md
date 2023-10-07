@@ -62,7 +62,7 @@ Now you are ready to add Event Calendar to the page. For this you need to take t
 
 The constructor takes an ID of HTML container where Event Calendar will be placed into and an object with the corresponding configuration properties. See an example below:
 
-~~~html {9,11-13} title="index.html"
+~~~html {9,11-46} title="index.html"
 <!DOCTYPE html>
 <html>
 	<head>
@@ -75,11 +75,52 @@ The constructor takes an ID of HTML container where Event Calendar will be place
 		<script>
 			new eventCalendar.EventCalendar("#root", {
 				// configuration properties
+				mode: "month",
+				date: new Date("2023-03-12T00:00:00"),
+				events: [
+					{
+						id: "1",
+						type: "work",
+						start_date: new Date("2023-03-23T08:00:00"),
+						end_date: new Date("2023-03-23T10:25:00"),
+						text: "French Open",
+						details: "Philippe-Chatrier Court\n Paris, FRA"
+					},
+					{
+						id: "2",
+						type: "work",
+						start_date: new Date("2023-03-08T00:00:00"),
+						end_date: new Date("2023-03-13T00:00:00"),
+						text: "French Open",
+						details: "Philippe-Chatrier Court\n Paris, FRA",
+					},
+					{
+						id: "3",
+						type: "work",
+						start_date: new Date("2023-02-21T00:00:00"),
+						end_date: new Date("2023-03-16T00:00:00"),
+						text: "Wimbledon",
+						details: "Wimbledon\n June 21, 2009 - July 5, 2009",
+						color: {
+							background: "#BD69BC",
+							border: "#AD44AB",
+							textColor: "#FFFFFF"
+						},
+					}
+				]
 			});
 		</script>
 	</body>
 </html>
 ~~~
+
+Refer to the following properties to get more info on how to provide initial data for **events**, specify initially displayed **date** and **view mode**:
+
+- [`events`](../api/config/js_eventcalendar_events_config)
+- [`date`](../api/config/js_eventcalendar_date_config)
+- [`mode`](../api/config/js_eventcalendar_mode_config)
+
+Refer to the [Working with data](../guides/working_with_data) guide, to find more info on supported data format.
 
 ## Step 3. Configuring Event Calendar
 
@@ -100,6 +141,12 @@ new eventCalendar.EventCalendar("#root", {
 	theme
 });
 ~~~
+
+You can find all supported properties on the following page: [API Overview](../api/overview/properties_overview)
+
+To get to know how all properties are used together, check the [Configuration](../guides/configuration) guide.
+
+If you want to connect **EventCalendar** to REST API, refer to the [Working with server](../guides/working_with_server) guide.
 
 ## What's next
 
