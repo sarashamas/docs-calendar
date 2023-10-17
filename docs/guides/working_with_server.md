@@ -9,7 +9,7 @@ description: You can learn about working with sever in the documentation of the 
 JavaScript Event Calendar allows working both with the client and server data. The widget doesn't have any special requirements for the backend. It can be easily connected with any backend platform which supports the REST API (RESTful API).
 
 :::info
-By default, the widget is shipped with the built-in **Go** and **Node** backend. But you can use your custom server scripts as well
+By default, the widget is shipped with the built-in **Go** and **Node** backend. But you can use your custom server scripts as well.
 :::
 
 ## RestDataProvider
@@ -34,8 +34,8 @@ To interact with the server, you need to connect **RestDataProvider** to the cor
 
 or you can create a custom one.
 
-:::info
-If you use custom backend, refer to the [REST API routes](../../api/overview/rest_routes_overview/) topic for more information.
+:::tip
+If you use custom backend, refer to the [**REST API routes**](../../api/overview/rest_routes_overview/) topic for more information.
 :::
 
 To connect **RestDataProvider** to the backend, you need to call the `eventCalendar.RestDataProvider()` constructor by passing the corresponding **URL** as a parameter.
