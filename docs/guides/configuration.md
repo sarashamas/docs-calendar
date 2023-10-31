@@ -10,6 +10,7 @@ You can configure the *Event Calendar* appearance and functionality via correspo
 
 - configure the timetable grid via the [`config`](api/config/js_eventcalendar_config_config.md) property
 - configure the editor fields via the [`editorShape`](api/config/js_eventcalendar_editorshape_config.md) property
+- configure validation of the editor fields via the [`editorValidation`](api/config/js_eventcalendar_editorvalidation_config.md) property
 - set the initial sidebar state via the [`sidebar`](api/config/js_eventcalendar_sidebar_config.md) property
 - set the initial view mode via the [`mode`](api/config/js_eventcalendar_mode_config.md) property
 - set the initial theme via the [`theme`](api/config/js_eventcalendar_theme_config.md) property
@@ -481,6 +482,20 @@ new eventCalendar.EventCalendar("#root", {
 :::note
 Unless you specify the editor settings via the [`editorShape`](api/config/js_eventcalendar_editorshape_config.md) property, the widget will apply a [**defaultEditorShape**](api/config/js_eventcalendar_editorshape_config.md#default-config) set of parameters!
 :::
+
+### Editor fields validation
+
+To validate data entered into editor fields, you can use the [`editorValidation`](api/config/js_eventcalendar_editorvalidation_config.md) property. See the example below for more details: 
+
+~~~jsx {3-5}
+// create Event Calendar
+new eventCalendar.EventCalendar("#root", {
+    editorValidation: event => {
+        if (!event.Text) return "Text is required";
+    }
+	// other configuration parameters
+});
+~~~
 
 ## Sidebar
 
