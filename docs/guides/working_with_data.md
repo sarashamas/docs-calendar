@@ -106,6 +106,10 @@ new eventCalendar.EventCalendar("#root", {
 
 To load data for ***events*** and ***calendars*** from a local source, you can use the [`parse()`](api/methods/js_eventcalendar_parse_method.md) method. It takes an array with the needed data as a parameter.
 
+:::info
+If there are multiple events with the same **id**, the calendar will drop an error as soon as it finds a duplicated **id**. It is expected that each event has its own unique **id**, or that the **id** is not specified (and then the calendar will generate its own **id**).
+:::
+
 ### Loading data for events
 
 ~~~js {4}
