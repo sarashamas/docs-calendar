@@ -52,6 +52,11 @@ If the **allDay** parameter is set to *true*, the **start_date** and **end_date*
 :::
 
 - `id` - (optional) an ID of the event
+
+:::info
+If there are multiple events with the same **id**, the calendar will drop an error as soon as it finds a duplicated **id**. It is expected that each event has its own unique **id**, or that the **id** is not specified (and then the calendar will generate its own **id**).
+:::
+
 - `type` - (optional) a type (calendar) of the event
 - `text` - (optional) a label of the event
 - `details` - (optional) details of the event
