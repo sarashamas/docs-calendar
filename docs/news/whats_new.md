@@ -8,6 +8,30 @@ description: You can explore what's new in DHTMLX Event Calendar and its release
 
 If you are updating Event Calendar from an older version, check [Migration to newer versions](news/migration.md) for details.
 
+## Version 2.1.3
+
+Released on October 31, 2023
+
+### New functionality
+
+- An ability to validate data entered in the edit panel fields
+
+### New API
+
+- #### Properties
+
+	- [`editorValidation`](../../api/config/js_kanban_editorvalidation_config)
+
+### Fixes
+
+- Incorrect display of events with duplicated ids. Duplicating id is not allowed
+- Contents of Timeline label stretches the column and causes incorrect positions of events
+- The `setLocale()` method doesn't work
+- Timeline shows events that end before min-date of the time scale
+- The **Today** line in Agenda view is displayed on top of datepicker calendar
+- Wrong key for the **Assignees** label in the locale object
+- The `dateTitle` template doesn't work in **Agenda** and **Year** views
+
 ## Version 2.1.2
 
 Released on September 15, 2023

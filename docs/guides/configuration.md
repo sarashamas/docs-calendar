@@ -491,7 +491,7 @@ To validate data entered into editor fields, you can use the [`editorValidation`
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
     editorValidation: event => {
-        if (!event.Text) return "Text is required";
+        if (!event.text) return "Text is required";
     }
 	// other configuration parameters
 });

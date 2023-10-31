@@ -28,10 +28,10 @@ The callback function takes an object with the event data:
 // create Event Calendar
 new eventCalendar.EventCalendar("#root", {
     editorValidation: event => {
-        if (!event.Text) return "Text is required";
+        if (!event.text) return "Text is required";
     }
 	// other configuration parameters
 });
 ~~~
 
-**Change log:** The ***editorValidation*** property was added in v2.2
+**Change log:** The ***editorValidation*** property was added in v2.1.3
