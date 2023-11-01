@@ -25,11 +25,11 @@ Released on October 31, 2023
 ### Fixes
 
 - Incorrect display of events with duplicated ids. Duplicating id is not allowed
-- Contents of Timeline label stretches the column and causes incorrect positions of events
+- Content of the Timeline label stretches the column and causes incorrect position of events
 - The `setLocale()` method doesn't work
 - Timeline shows events that end before min-date of the time scale
-- The **Today** line in Agenda view is displayed on top of datepicker calendar
-- Wrong key for the **Assignees** label in the locale object
+- The **Today** line in **Agenda** view is displayed on top of datepicker calendar
+- The wrong key for the **Assignees** label in the locale object
 - The `dateTitle` template doesn't work in **Agenda** and **Year** views
 
 ## Version 2.1.2
