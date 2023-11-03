@@ -8,6 +8,16 @@ description: You can explore what's new in DHTMLX Event Calendar and its release
 
 If you are updating Event Calendar from an older version, check [Migration to newer versions](news/migration.md) for details.
 
+## Version 2.1.4
+
+Released on November 3, 2023
+
+### Fixes
+
+- A click on the navigation panel doesn't close the datepicker
+- The edit form doesn't work correctly for recurring events
+- Optimize calls of subscribe callback functions
+
 ## Version 2.1.3
 
 Released on October 31, 2023
