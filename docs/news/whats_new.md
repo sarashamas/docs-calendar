@@ -20,7 +20,6 @@ Released on November 15, 2023
 - !Regression in the [`setConfig()`](../../api/methods/js_eventcalendar_setconfig_method) method introduced in v2.1.4
 - !The [`setConfig()`](../../api/methods/js_eventcalendar_setconfig_method) method doesn't store the previous state
 - !Buttons on the Editor panel now have fixed position instead of static
-- Script error occurs when setting start hour later than the end hour while editing recurring event
 - Style improvements
 
 ## Version 2.1.4
