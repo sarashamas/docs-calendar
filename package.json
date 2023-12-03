@@ -13,11 +13,11 @@
     "normalizeLink": "cd plugins && node samplesLinksNormalize.js"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.4.1",
-    "@docusaurus/preset-classic": "^2.4.1",
-    "@easyops-cn/docusaurus-search-local": "^0.27.0",
+    "@docusaurus/core": "^3.0.0",
+    "@docusaurus/preset-classic": "^3.0.0",
+    "@easyops-cn/docusaurus-search-local": "^0.37.1",
     "@mdx-js/react": "^1.6.21",
-    "@svgr/webpack": "^5.5.0",
+    "@svgr/webpack": "^6.0.0",
     "clsx": "^1.1.1",
     "docusaurus-gtm-plugin": "^0.0.2",
     "react": "^17.0.2",
